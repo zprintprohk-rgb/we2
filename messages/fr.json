@@ -1,0 +1,136 @@
+{
+  "siteName": "We2",
+  "tagline": "Grandir à deux, s'aimer plus fort",
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "pricing": "Offres",
+    "community": "Communauté",
+    "login": "Connexion",
+    "dashboard": "Tableau de bord"
+  },
+  "seo": {
+    "siteName": "We2",
+    "description": "We2 est l'application de couple pour la croissance émotionnelle. Check-ins quotidiens, capsules temporelles et animal virtuel – créez des rituels qui renforcent votre complicité. Plus de 10 000 couples nous font confiance dans le monde.",
+    "keywords": "application couple, suivi de relation, journal amoureux, rappel anniversaire, objectifs de couple, intimité émotionnelle, relation à distance, complicité, empreinte émotionnelle",
+    "tagline": "Grandir à deux, s'aimer plus fort"
+  },
+  "home": {
+    "hero": {
+      "title": "Grandir à deux, s'aimer plus fort",
+      "subtitle": "L'application qui transforme les moments du quotidien en habitudes émotionnelles durables. Check-ins quotidiens, capsules temporelles et un animal virtuel qui grandit avec votre amour.",
+      "cta": "Commencer gratuitement – sans CB",
+      "secondary": "Comment ça marche"
+    },
+    "features": {
+      "title": "Conçu pour les vrais couples",
+      "subtitle": "Chaque fonctionnalité est pensée pour vous rapprocher, quelle que soit la distance.",
+      "sharedJournal": {
+        "title": "Check-in quotidien",
+        "desc": "5 minutes de questions conçues par des psychologues de la relation. Construisez votre intimité émotionnelle, jour après jour."
+      },
+      "moodTracker": {
+        "title": "Capsules temporelles",
+        "desc": "Scellez des photos, messages vocaux et lettres à ouvrir lors de vos futurs anniversaires. Votre jardin secret à deux."
+      },
+      "dreamWall": {
+        "title": "Animal virtuel",
+        "desc": "Élevez un animal de compagnie ensemble en relevant des défis quotidiens. Regardez-le grandir au rythme de votre relation."
+      },
+      "dailyGratitude": {
+        "title": "Communauté privée",
+        "desc": "Partagez anonymement vos histoires avec des couples du monde entier. Recevez des conseils, célébrez des étapes, sentez-vous moins seuls."
+      },
+      "petAdoption": {
+        "title": "Journal partagé",
+        "desc": "Écrivez à deux, réfléchissez ensemble. Un espace intime pour votre histoire commune."
+      },
+      "timeCapsule": {
+        "title": "Mur des rêves",
+        "desc": "Épinglez vos rêves, objectifs et souhaits – construisez votre avenir ensemble."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Des offres simples et transparentes",
+    "subtitle": "Choisissez ce qui correspond à votre parcours. Pas de frais cachés. Résiliez à tout moment.",
+    "monthly": "Mensuel",
+    "quarterly": "Trimestriel",
+    "yearly": "Annuel",
+    "popular": "Le plus populaire",
+    "save": "Économisez {discount}%",
+    "tiers": {
+      "free": {
+        "name": "Gratuit",
+        "price": "0€",
+        "features": ["Check-in quotidien", "3 capsules temporelles", "Animal basique", "Accès communauté"]
+      },
+      "plus": {
+        "name": "We2 Plus",
+        "price": "5,49€",
+        "period": "/mois",
+        "features": ["Capsules illimitées", "Skins d'animaux avancés", "Album privé", "Insights relationnels"]
+      },
+      "premium": {
+        "name": "We2 Premium",
+        "price": "13,99€",
+        "period": "/trimestre",
+        "features": ["Tout dans Plus", "Support prioritaire", "Noms d'animaux personnalisés", "Exporter vos souvenirs"]
+      },
+      "lifetime": {
+        "name": "We2 Forever",
+        "price": "39,99€",
+        "period": "/an",
+        "features": ["Tout dans Premium", "Mises à jour à vie", "Contenus exclusifs", "Accès anticipé aux nouveautés"]
+      }
+    },
+    "cta": "Commencer maintenant",
+    "garantie": "Garantie satisfait ou remboursé 30 jours"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce que vous devez savoir sur We2",
+    "items": [
+      {
+        "question": "Qu'est-ce que We2 et comment cela aide-t-il les couples ?",
+        "answer": "We2 est une application de croissance relationnelle qui aide les partenaires à construire des habitudes émotionnelles grâce à des check-ins quotidiens, des capsules temporelles et des défis communs – conçue avec des psychologues."
+      },
+      {
+        "question": "Mes données sont-elles privées et sécurisées ?",
+        "answer": "Absolument. Nous utilisons le chiffrement de bout en bout pour tous les contenus personnels. Vos moments intimes, photos et messages restent strictement entre vous deux. Nous ne vendons jamais vos données."
+      },
+      {
+        "question": "Puis-je utiliser We2 en relation à distance ?",
+        "answer": "Oui ! We2 est conçu pour tous les couples, que vous soyez dans la même pièce ou à l'autre bout du monde. Les capsules temporelles et les check-ins quotidiens sont parfaits pour maintenir le lien malgré la distance."
+      },
+      {
+        "question": "Comment fonctionne l'animal virtuel ?",
+        "answer": "Votre animal grandit à mesure que vous accomplissez ensemble les check-ins et défis quotidiens. C'est une représentation visuelle et ludique de la croissance de votre relation. De nouveaux animaux et skins se débloquent aux étapes importantes."
+      },
+      {
+        "question": "Quels moyens de paiement acceptez-vous ?",
+        "answer": "Nous acceptons PayPal pour tous les utilisateurs ainsi qu'Alipay pour les utilisateurs en Chine. Toutes les transactions sont sécurisées et chiffrées."
+      },
+      {
+        "question": "Puis-je résilier mon abonnement ?",
+        "answer": "Oui, à tout moment. Votre abonnement reste actif jusqu'à la fin de la période en cours. Nous offrons également une garantie satisfait ou remboursé de 30 jours pour les nouveaux abonnés."
+      },
+      {
+        "question": "Comment me connecter avec mon/ma partenaire ?",
+        "answer": "Après inscription, envoyez un code d'invitation à votre partenaire. Une fois accepté, vos comptes sont liés et vous pouvez profiter ensemble des check-ins, capsules et de l'animal virtuel."
+      },
+      {
+        "question": "Y a-t-il une fonction communauté ?",
+        "answer": "Oui ! Notre communauté anonyme vous permet de partager des histoires, demander des conseils et célébrer des étapes avec des couples du monde entier – anonymement ou avec votre profil de couple."
+      }
+    ]
+  },
+  "footer": {
+    "privacy": "Confidentialité",
+    "terms": "CGU",
+    "cookie": "Paramètres des cookies",
+    "help": "Centre d'aide",
+    "contact": "Nous contacter",
+    "copyright": "© {year} We2. Tous droits réservés."
+  }
+}

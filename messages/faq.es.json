@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué es We2 y cómo ayuda a las parejas?",
+      "answer": "We2 es un compañero de relación digital diseñado para ayudar a las parejas a mantenerse conectadas, profundizar la intimidad y celebrar hitos juntos. A través de funciones como una mascota virtual compartida, cápsulas del tiempo, sugerencias diarias y mensajería privada, We2 transforma las interacciones cotidianas en momentos significativos. Ya sea que vivan juntos o estén separados por la distancia, We2 proporciona herramientas para nutrir su vínculo y hacer crecer el amor cada día."
+    },
+    {
+      "question": "¿Mis datos son privados y seguros?",
+      "answer": "Absolutamente. We2 utiliza cifrado de extremo a extremo para todos los mensajes privados y almacena los datos en servidores seguros que cumplen con GDPR y CCPA. Su información personal nunca se vende a terceros. Usted controla lo que comparte y puede eliminar sus datos en cualquier momento desde la configuración de la cuenta. También admitimos autenticación de dos factores para mayor seguridad."
+    },
+    {
+      "question": "¿Podemos usar We2 en una relación a distancia?",
+      "answer": "Sí, We2 fue diseñado pensando en parejas a distancia. La aplicación incluye cuentas regresivas sincronizadas hasta la próxima visita, ideas de citas virtuales, un «mapa de pareja» (solo con consentimiento) y la capacidad de dejar notas de voz o mensajes de video. Muchas de nuestras funciones, como la cápsula del tiempo y la mascota compartida, prosperan con la interacción regular, haciendo que la distancia se sienta más pequeña y el amor más tangible."
+    },
+    {
+      "question": "¿Cómo funciona la mascota virtual?",
+      "answer": "Su mascota virtual crece según cómo usted y su pareja interactúan en We2. Enviar mensajes, completar desafíos compartidos, agregar recuerdos o reaccionar a los momentos del otro alimenta y sube de nivel a su mascota. Cada mascota tiene animaciones únicas y puede desbloquear accesorios especiales a medida que aumentan sus hitos de relación. Es una forma lúdica y sin presión de visualizar la salud de su conexión."
+    },
+    {
+      "question": "¿Qué son las cápsulas del tiempo?",
+      "answer": "Las cápsulas del tiempo son cartas digitales o paquetes multimedia que sella para una fecha futura: su aniversario, un cumpleaños o cualquier día significativo. Ambos socios contribuyen con contenido (texto, fotos, voz) y la cápsula se bloquea hasta la fecha elegida. Ese día, se abre automáticamente, entregando una sorpresa nostálgica. Es una hermosa manera de preservar recuerdos y esperar con ilusión los momentos futuros juntos."
+    },
+    {
+      "question": "¿Cuánto cuesta We2?",
+      "answer": "We2 ofrece un nivel gratuito con funciones básicas: mensajería, vínculo con mascotas y hasta 3 cápsulas del tiempo. Para cápsulas ilimitadas, análisis avanzados y soporte prioritario, tenemos un plan premium de $4.99/mes o $39.99/año. También ofrecemos una opción de por vida por $89.99. Todos los precios están en USD e incluyen los impuestos aplicables."
+    },
+    {
+      "question": "¿Puedo cancelar mi membresía?",
+      "answer": "Sí, puede cancelar en cualquier momento desde su panel de cuenta. Para planes mensuales o anuales, la cancelación detiene la facturación futura y usted mantiene el acceso hasta el final del período de facturación actual. Sin cargos por cancelación. Si encuentra problemas, nuestro equipo de soporte está disponible 24/7 para ayudarle."
+    },
+    {
+      "question": "¿Cómo me conecto con mi pareja?",
+      "answer": "Después de que ambos creen una cuenta, uno envía una solicitud de conexión usando el correo electrónico de la pareja o un enlace de invitación único. El otro acepta y se crea su espacio de pareja. A partir de entonces, todas las actividades, mascotas y cápsulas del tiempo se comparten. We2 está diseñado para parejas exclusivas, fomentando el compromiso y el enfoque."
+    },
+    {
+      "question": "¿Hay una función comunitaria?",
+      "answer": "¡Sí! We2 tiene un «Círculo de Parejas»: un espacio privado donde cada pareja puede opcionalmente unirse a grupos de interés público (consejos para relaciones a distancia, ideas de aniversario, consejos de relación). Todas las interacciones comunitarias son anónimas por defecto y puede optar por salir completamente. Creemos en comunidades seguras y solidarias que respetan la privacidad."
+    },
+    {
+      "question": "¿Qué métodos de pago se aceptan?",
+      "answer": "Aceptamos todas las principales tarjetas de crédito (Visa, Mastercard, American Express), PayPal, Google Pay y Apple Pay. Para planes anuales y de por vida, también admitimos transferencias bancarias (solo EE. UU.) bajo solicitud. Los pagos se procesan de forma segura a través de Stripe y PayPal, sin cargos ocultos."
+    }
+  ]
+}

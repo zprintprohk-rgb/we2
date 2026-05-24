@@ -1,0 +1,136 @@
+{
+  "siteName": "We2",
+  "tagline": "Crecer juntos, amar más profundo",
+  "nav": {
+    "home": "Inicio",
+    "features": "Funciones",
+    "pricing": "Precios",
+    "community": "Comunidad",
+    "login": "Iniciar sesión",
+    "dashboard": "Panel"
+  },
+  "seo": {
+    "siteName": "We2",
+    "description": "We2 es la app de pareja para el crecimiento emocional. Check-ins diarios, cápsulas del tiempo y una mascota virtual — crea rituales que fortalecen vuestra conexión. Más de 10.000 parejas ya confían en nosotros.",
+    "keywords": "app de pareja, diario de amor, recordatorio de aniversario, metas de pareja, intimidad emocional, relación a distancia, complicidad, hábitos emocionales, rituales diarios",
+    "tagline": "Crecer juntos, amar más profundo"
+  },
+  "home": {
+    "hero": {
+      "title": "Crecer juntos, amar más profundo",
+      "subtitle": "La app que convierte los momentos cotidianos en hábitos emocionales duraderos. Check-ins diarios, cápsulas del tiempo y una mascota virtual que crece con vuestro amor.",
+      "cta": "Empezar gratis — sin tarjeta",
+      "secondary": "Cómo funciona"
+    },
+    "features": {
+      "title": "Diseñado para parejas reales",
+      "subtitle": "Cada función pensada para acercaros, sin importar la distancia.",
+      "sharedJournal": {
+        "title": "Check-in diario",
+        "desc": "5 minutos de preguntas diseñadas por psicólogos de pareja. Construid intimidad emocional, día a día."
+      },
+      "moodTracker": {
+        "title": "Cápsulas del tiempo",
+        "desc": "Guardad fotos, notas de voz y cartas para abrir en futuros aniversarios. Vuestro baúl privado de recuerdos."
+      },
+      "dreamWall": {
+        "title": "Mascota virtual",
+        "desc": "Criad juntos una mascota completando desafíos diarios. Vedla crecer al ritmo de vuestra relación."
+      },
+      "dailyGratitude": {
+        "title": "Comunidad privada",
+        "desc": "Compartid historias de forma anónima con parejas de todo el mundo. Recibid consejos, celebrad hitos, sentíos acompañados."
+      },
+      "petAdoption": {
+        "title": "Diario compartido",
+        "desc": "Escribid juntos, reflexionad juntos. Un espacio íntimo para vuestra historia común."
+      },
+      "timeCapsule": {
+        "title": "Muro de sueños",
+        "desc": "Colgad vuestros sueños, metas y deseos — construid juntos vuestro futuro."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Precios simples y transparentes",
+    "subtitle": "Elegid lo que se ajusta a vuestro camino. Sin costes ocultos. Cancelad cuando queráis.",
+    "monthly": "Mensual",
+    "quarterly": "Trimestral",
+    "yearly": "Anual",
+    "popular": "Más popular",
+    "save": "Ahorra un {discount}%",
+    "tiers": {
+      "free": {
+        "name": "Gratis",
+        "price": "0€",
+        "features": ["Check-in diario", "3 cápsulas del tiempo", "Mascota básica", "Acceso a comunidad"]
+      },
+      "plus": {
+        "name": "We2 Plus",
+        "price": "5,49€",
+        "period": "/mes",
+        "features": ["Cápsulas ilimitadas", "Skins avanzados de mascota", "Álbum privado", "Insights de relación"]
+      },
+      "premium": {
+        "name": "We2 Premium",
+        "price": "13,99€",
+        "period": "/trimestre",
+        "features": ["Todo en Plus", "Soporte prioritario", "Nombres personalizados", "Exportar recuerdos"]
+      },
+      "lifetime": {
+        "name": "We2 Forever",
+        "price": "39,99€",
+        "period": "/año",
+        "features": ["Todo en Premium", "Actualizaciones de por vida", "Contenido exclusivo", "Acceso anticipado"]
+      }
+    },
+    "cta": "Comenzar ahora",
+    "guarantee": "Garantía de devolución de 30 días"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Todo lo que necesitáis saber sobre We2",
+    "items": [
+      {
+        "question": "¿Qué es We2 y cómo ayuda a las parejas?",
+        "answer": "We2 es una app de crecimiento emocional que ayuda a las parejas a construir hábitos afectivos mediante check-ins diarios, cápsulas del tiempo y desafíos compartidos — diseñada con psicólogos."
+      },
+      {
+        "question": "¿Mis datos son privados y seguros?",
+        "answer": "Totalmente. Usamos cifrado de extremo a extremo para todo el contenido personal. Vuestros momentos íntimos, fotos y mensajes quedan estrictamente entre vosotros dos. Nunca vendemos datos."
+      },
+      {
+        "question": "¿Puedo usar We2 en una relación a distancia?",
+        "answer": "¡Sí! We2 está diseñado para todo tipo de parejas, ya estéis en la misma habitación o en lados opuestos del mundo. Las cápsulas del tiempo y los check-ins diarios son perfectos para mantener la conexión."
+      },
+      {
+        "question": "¿Cómo funciona la mascota virtual?",
+        "answer": "Vuestra mascota crece a medida que completáis juntos los check-ins y desafíos diarios. Es una representación visual y divertida del crecimiento de vuestra relación. ¡Nuevas mascotas y skins se desbloquean en los hitos importantes!"
+      },
+      {
+        "question": "¿Qué métodos de pago aceptáis?",
+        "answer": "Aceptamos PayPal para todos los usuarios y Alipay para usuarios en China. Todas las transacciones son seguras y están cifradas."
+      },
+      {
+        "question": "¿Puedo cancelar mi membresía?",
+        "answer": "Sí, en cualquier momento. Tu membresía permanece activa hasta el final del período actual. También ofrecemos una garantía de devolución de 30 días para nuevos suscriptores."
+      },
+      {
+        "question": "¿Cómo me conecto con mi pareja?",
+        "answer": "Tras registrarte, envía un código de invitación a tu pareja. Cuando lo acepte, vuestras cuentas quedarán vinculadas y podréis disfrutar juntos de los check-ins, cápsulas y la mascota."
+      },
+      {
+        "question": "¿Hay una función de comunidad?",
+        "answer": "¡Sí! Nuestra comunidad anónima os permite compartir historias, pedir consejo y celebrar hitos con parejas de todo el mundo — de forma anónima o con vuestro perfil de pareja."
+      }
+    ]
+  },
+  "footer": {
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "cookie": "Configuración de cookies",
+    "help": "Centro de ayuda",
+    "contact": "Contacto",
+    "copyright": "© {year} We2. Todos los derechos reservados."
+  }
+}

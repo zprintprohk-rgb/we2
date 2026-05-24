@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "Was ist We2 und wie hilft es Paaren?",
+      "answer": "We2 ist ein digitaler Beziehungsbegleiter, der Paaren hilft, verbunden zu bleiben, Intimität zu vertiefen und Meilensteine gemeinsam zu feiern. Mit Funktionen wie einem gemeinsamen virtuellen Haustier, Zeitkapseln, täglichen Impulsen und privaten Nachrichten verwandelt We2 alltägliche Interaktionen in bedeutungsvolle Momente. Ob ihr zusammenlebt oder durch Entfernung getrennt seid, We2 bietet Werkzeuge, um eure Bindung zu pflegen und die Liebe jeden Tag wachsen zu lassen."
+    },
+    {
+      "question": "Sind meine Daten privat und sicher?",
+      "answer": "Absolut. We2 verwendet Ende-zu-Ende-Verschlüsselung für alle privaten Nachrichten und speichert Daten auf sicheren Servern, die GDPR und CCPA entsprechen. Ihre persönlichen Daten werden niemals an Dritte verkauft. Sie kontrollieren, was Sie teilen, und können Ihre Daten jederzeit in den Kontoeinstellungen löschen. Wir unterstützen auch Zwei-Faktor-Authentifizierung für zusätzliche Sicherheit."
+    },
+    {
+      "question": "Können wir We2 in einer Fernbeziehung nutzen?",
+      "answer": "Ja – We2 wurde mit Blick auf Fernbeziehungen entwickelt. Die App enthält synchronisierte Countdowns bis zum nächsten Besuch, virtuelle Date-Ideen, eine \u201EPaar-Karte\u201C (nur mit Zustimmung) und die Möglichkeit, Sprachnotizen oder Videonachrichten zu hinterlassen. Viele unserer Funktionen, wie die Zeitkapsel und das gemeinsame Haustier, gedeihen durch regelmäßige Interaktion, wodurch die Entfernung kleiner und die Liebe greifbarer wird."
+    },
+    {
+      "question": "Wie funktioniert das virtuelle Haustier?",
+      "answer": "Ihr virtuelles Haustier wächst basierend darauf, wie Sie und Ihr Partner auf We2 interagieren. Nachrichten senden, gemeinsame Herausforderungen abschließen, Erinnerungen hinzufügen oder auf die Momente des anderen reagieren füttert und levelt Ihr Haustier auf. Jedes Haustier hat einzigartige Animationen und kann besondere Accessoires freischalten, wenn Ihre Beziehungsmeilensteine zunehmen. Es ist eine spielerische, druckfreie Art, die Gesundheit Ihrer Verbindung zu visualisieren."
+    },
+    {
+      "question": "Was sind Zeitkapseln?",
+      "answer": "Zeitkapseln sind digitale Briefe oder Medienpakete, die Sie für ein zukünftiges Datum versiegeln – Ihren Jahrestag, einen Geburtstag oder einen anderen bedeutungsvollen Tag. Beide Partner tragen Inhalte bei (Text, Fotos, Sprache), und die Kapsel bleibt bis zum gewählten Datum verschlossen. An diesem Tag öffnet sie sich automatisch und liefert eine nostalgische Überraschung. Es ist eine wunderschöne Art, Erinnerungen zu bewahren und sich auf zukünftige gemeinsame Momente zu freuen."
+    },
+    {
+      "question": "Wie viel kostet We2?",
+      "answer": "We2 bietet eine kostenlose Stufe mit Basisfunktionen: Nachrichten, Haustier-Bindung und bis zu 3 Zeitkapseln. Für unbegrenzte Zeitkapseln, erweiterte Analysen und Prioritäts-Support haben wir einen Premium-Plan für $4,99/Monat oder $39,99/Jahr. Wir bieten auch eine Lifetime-Option für $89,99 an. Alle Preise sind in USD und enthalten ggf. anfallende Steuern."
+    },
+    {
+      "question": "Kann ich meine Mitgliedschaft kündigen?",
+      "answer": "Ja, Sie können jederzeit über Ihr Konto-Dashboard kündigen. Bei monatlichen oder jährlichen Plänen stoppt die Kündigung zukünftige Abrechnungen, und Sie behalten Zugang bis zum Ende des aktuellen Abrechnungszeitraums. Keine Kündigungsgebühren. Bei Problemen steht unser Support-Team rund um die Uhr zur Verfügung."
+    },
+    {
+      "question": "Wie verbinde ich mich mit meinem Partner?",
+      "answer": "Nachdem beide Partner ein Konto erstellt haben, sendet einer eine Verbindungsanfrage mit der E-Mail des Partners oder einem eindeutigen Einladungslink. Der andere akzeptiert, und euer Paar-Bereich wird erstellt. Von da an werden alle Aktivitäten, Haustiere und Zeitkapseln geteilt. We2 ist für exklusive Paare konzipiert und fördert Engagement und Fokus."
+    },
+    {
+      "question": "Gibt es eine Community-Funktion?",
+      "answer": "Ja! We2 hat einen \u201ECouple Circle\u201C – einen privaten Bereich, in dem jedes Paar optional öffentlichen Interessengruppen beitreten kann (Fernbeziehungstipps, Jubiläumsideen, Beziehungsrat). Alle Community-Interaktionen sind standardmäßig anonym, und Sie können vollständig opt-outen. Wir glauben an sichere, unterstützende Communities, die die Privatsphäre respektieren."
+    },
+    {
+      "question": "Welche Zahlungsmethoden werden akzeptiert?",
+      "answer": "Wir akzeptieren alle gängigen Kreditkarten (Visa, Mastercard, American Express), PayPal, Google Pay und Apple Pay. Für Jahres- und Lifetime-Pläne unterstützen wir auf Anfrage auch Banküberweisungen (nur US). Zahlungen werden sicher über Stripe und PayPal verarbeitet, ohne versteckte Gebühren."
+    }
+  ]
+}

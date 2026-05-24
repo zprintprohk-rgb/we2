@@ -1,0 +1,136 @@
+{
+  "siteName": "We2",
+  "tagline": "Gemeinsam wachsen, tiefer lieben",
+  "nav": {
+    "home": "Start",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "community": "Community",
+    "login": "Anmelden",
+    "dashboard": "Dashboard"
+  },
+  "seo": {
+    "siteName": "We2",
+    "description": "We2 ist die App für emotionales Wachstum als Paar. Tägliche Check-ins, Zeitkapseln und ein virtuelles Haustier – schafft tägliche Rituale, die eure Beziehung stärken. Bereits 10.000+ Paare weltweit vertrauen darauf.",
+    "keywords": "Paar App, Beziehungstracker, Liebestagebuch, Jahrestag Erinnerung, Paarziele, emotionale Intimität, Fernbeziehung, Beziehungsarbeit, tägliche Rituale",
+    "tagline": "Gemeinsam wachsen, tiefer lieben"
+  },
+  "home": {
+    "hero": {
+      "title": "Gemeinsam wachsen, tiefer lieben",
+      "subtitle": "Die App, die aus Alltagsmomenten bleibende emotionale Gewohnheiten macht. Tägliche Check-ins, Zeitkapseln und ein virtuelles Haustier, das mit eurer Liebe wächst.",
+      "cta": "Kostenlos starten – ohne Kreditkarte",
+      "secondary": "So funktioniert's"
+    },
+    "features": {
+      "title": "Für echte Paare entwickelt",
+      "subtitle": "Jede Funktion wurde entwickelt, um euch näher zusammenzubringen – ganz egal, wie weit ihr entfernt seid.",
+      "sharedJournal": {
+        "title": "Täglicher Check-in",
+        "desc": "5-minütige tägliche Fragen, entwickelt von Beziehungspsychologen. Baut emotionale Intimität auf, Tag für Tag."
+      },
+      "moodTracker": {
+        "title": "Zeitkapseln",
+        "desc": "Verschließt Fotos, Sprachnachrichten und Briefe, um sie an zukünftigen Jahrestagen zu öffnen. Euer privater Erinnerungstresor."
+      },
+      "dreamWall": {
+        "title": "Virtuelles Haustier",
+        "desc": "Zieht gemeinsam ein Haustier groß, indem ihr tägliche Herausforderungen meistert. Seht zu, wie es mit eurer Beziehung wächst."
+      },
+      "dailyGratitude": {
+        "title": "Private Community",
+        "desc": "Teilt anonym Geschichten mit Paaren weltweit. Holt euch Rat, feiert Meilensteine, fühlt euch weniger allein."
+      },
+      "petAdoption": {
+        "title": "Gemeinsames Tagebuch",
+        "desc": "Schreibt zusammen, reflektiert zusammen. Ein privater Raum für eure gemeinsame Geschichte."
+      },
+      "timeCapsule": {
+        "title": "Traumwand",
+        "desc": "Pinnt eure Träume, Ziele und Wünsche an die Wand – baut gemeinsam eure Zukunft."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preise",
+    "subtitle": "Wählt, was zu eurer Reise passt. Keine versteckten Gebühren. Jederzeit kündbar.",
+    "monthly": "Monatlich",
+    "quarterly": "Vierteljährlich",
+    "yearly": "Jährlich",
+    "popular": "Am beliebtesten",
+    "save": "Spare {discount}%",
+    "tiers": {
+      "free": {
+        "name": "Kostenlos",
+        "price": "0€",
+        "features": ["Täglicher Check-in", "3 Zeitkapseln", "Basis-Haustier", "Community-Zugang"]
+      },
+      "plus": {
+        "name": "We2 Plus",
+        "price": "5,49€",
+        "period": "/Monat",
+        "features": ["Unbegrenzte Kapseln", "Erweiterte Haustier-Skins", "Privates Album", "Beziehungs-Insights"]
+      },
+      "premium": {
+        "name": "We2 Premium",
+        "price": "13,99€",
+        "period": "/Quartal",
+        "features": ["Alles in Plus", "Prioritäts-Support", "Eigene Haustier-Namen", "Erinnerungen exportieren"]
+      },
+      "lifetime": {
+        "name": "We2 Forever",
+        "price": "39,99€",
+        "period": "/Jahr",
+        "features": ["Alles in Premium", "Lebenslange Updates", "Exklusive Inhalte", "Früher Zugang zu Features"]
+      }
+    },
+    "cta": "Jetzt starten",
+    "guarantee": "30-Tage-Geld-zurück-Garantie"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was ihr über We2 wissen müsst",
+    "items": [
+      {
+        "question": "Was ist We2 und wie hilft es Paaren?",
+        "answer": "We2 ist eine App für emotionales Beziehungswachstum, die Partnern hilft, durch tägliche Check-ins, Zeitkapseln und gemeinsame Herausforderungen emotionale Gewohnheiten zu entwickeln – entwickelt mit Psychologen."
+      },
+      {
+        "question": "Sind meine Daten privat und sicher?",
+        "answer": "Absolut. Wir nutzen Ende-zu-Ende-Verschlüsselung für alle persönlichen Inhalte. Eure intimen Momente, Fotos und Nachrichten bleiben nur zwischen euch beiden. Wir verkaufen niemals Daten an Dritte."
+      },
+      {
+        "question": "Kann ich We2 in einer Fernbeziehung nutzen?",
+        "answer": "Ja! We2 ist speziell für alle Paare entwickelt, ob im selben Raum oder am anderen Ende der Welt. Zeitkapseln und tägliche Check-ins sind perfekt, um Verbindung über Distanz zu halten."
+      },
+      {
+        "question": "Wie funktioniert das virtuelle Haustier?",
+        "answer": "Euer Haustier wächst, wenn ihr beide gemeinsam tägliche Check-ins und Herausforderungen abschließt. Es ist eine spielerische visuelle Darstellung eures Beziehungswachstums. Neue Haustiere und Skins schalten sich bei Meilensteinen frei."
+      },
+      {
+        "question": "Welche Zahlungsmethoden akzeptiert ihr?",
+        "answer": "Wir akzeptieren PayPal für alle Nutzer sowie Alipay für Nutzer aus China. Alle Transaktionen sind sicher und verschlüsselt."
+      },
+      {
+        "question": "Kann ich meine Mitgliedschaft kündigen?",
+        "answer": "Ja, jederzeit kündbar. Eure Mitgliedschaft bleibt bis zum Ende des aktuellen Zeitraums aktiv. Wir bieten zudem eine 30-Tage-Geld-zurück-Garantie für neue Abonnenten."
+      },
+      {
+        "question": "Wie verbinde ich mich mit meinem Partner?",
+        "answer": "Nach der Anmeldung sendet deinem Partner einen Einladungscode. Sobald er diesen akzeptiert, sind eure Konten verknüpft und ihr könnt gemeinsam Check-ins, Kapseln und Haustierwachstum genießen."
+      },
+      {
+        "question": "Gibt es eine Community-Funktion?",
+        "answer": "Ja! Unsere anonyme Community erlaubt es euch, Geschichten zu teilen, Rat einzuholen und Meilensteine mit Paaren weltweit zu feiern – anonym oder mit eurem Paar-Profil."
+      }
+    ]
+  },
+  "footer": {
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "cookie": "Cookie-Einstellungen",
+    "help": "Hilfe-Center",
+    "contact": "Kontakt",
+    "copyright": "© {year} We2. Alle Rechte vorbehalten."
+  }
+}

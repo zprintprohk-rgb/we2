@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "question": "Qu'est-ce que We2 et comment aide-t-il les couples ?",
+      "answer": "We2 est un compagnon de relation numérique conçu pour aider les couples à rester connectés, approfondir leur intimité et célébrer ensemble les étapes importantes. Grâce à des fonctionnalités comme un animal de compagnie virtuel partagé, des capsules temporelles, des invitations quotidiennes et une messagerie privée, We2 transforme les interactions quotidiennes en moments significatifs. Que vous viviez ensemble ou soyez séparés par la distance, We2 fournit des outils pour nourrir votre lien et faire grandir l'amour chaque jour."
+    },
+    {
+      "question": "Mes données sont-elles privées et sécurisées ?",
+      "answer": "Absolument. We2 utilise un chiffrement de bout en bout pour tous les messages privés et stocke les données sur des serveurs sécurisés conformes au RGPD et au CCPA. Vos informations personnelles ne sont jamais vendues à des tiers. Vous contrôlez ce que vous partagez et pouvez supprimer vos données à tout moment depuis les paramètres du compte. Nous prenons également en charge l'authentification à deux facteurs pour une sécurité renforcée."
+    },
+    {
+      "question": "Peut-on utiliser We2 dans une relation à distance ?",
+      "answer": "Oui, We2 a été conçu pour les couples à distance. L'application comprend des comptes à rebours synchronisés jusqu'à la prochaine visite, des idées de rendez-vous virtuels, une « carte de couple » (uniquement avec consentement) et la possibilité de laisser des notes vocales ou des messages vidéo. Beaucoup de nos fonctionnalités, comme la capsule temporelle et l'animal partagé, prospèrent grâce à une interaction régulière, rendant la distance plus petite et l'amour plus tangible."
+    },
+    {
+      "question": "Comment fonctionne l'animal virtuel ?",
+      "answer": "Votre animal virtuel grandit en fonction de la façon dont vous et votre partenaire interagissez sur We2. Envoyer des messages, relever des défis partagés, ajouter des souvenirs ou réagir aux moments de l'autre nourrit et fait progresser votre animal. Chaque animal a des animations uniques et peut débloquer des accessoires spéciaux à mesure que vos jalons relationnels augmentent. C'est une façon ludique et sans pression de visualiser la santé de votre connexion."
+    },
+    {
+      "question": "Que sont les capsules temporelles ?",
+      "answer": "Les capsules temporelles sont des lettres numériques ou des lots de médias que vous scellez pour une date future : votre anniversaire de couple, un anniversaire ou tout jour significatif. Les deux partenaires contribuent au contenu (texte, photos, voix) et la capsule reste verrouillée jusqu'à la date choisie. Ce jour-là, elle s'ouvre automatiquement, livrant une surprise nostalgique. C'est une belle façon de préserver des souvenirs et d'attendre avec impatience les moments futurs ensemble."
+    },
+    {
+      "question": "Combien coûte We2 ?",
+      "answer": "We2 propose un niveau gratuit avec des fonctionnalités de base : messagerie, lien avec l'animal et jusqu'à 3 capsules temporelles. Pour des capsules illimitées, des analyses avancées et un support prioritaire, nous avons un plan premium à 4,99 $/mois ou 39,99 $/an. Nous proposons également une option à vie à 89,99 $. Tous les prix sont en USD et incluent les taxes applicables."
+    },
+    {
+      "question": "Puis-je annuler mon abonnement ?",
+      "answer": "Oui, vous pouvez annuler à tout moment depuis votre tableau de bord. Pour les plans mensuels ou annuels, l'annulation arrête la facturation future et vous conservez l'accès jusqu'à la fin de la période de facturation en cours. Aucun frais d'annulation. Si vous rencontrez des problèmes, notre équipe d'assistance est disponible 24h/24 et 7j/7."
+    },
+    {
+      "question": "Comment me connecter avec mon partenaire ?",
+      "answer": "Une fois que les deux partenaires ont créé un compte, l'un envoie une demande de connexion en utilisant l'e-mail du partenaire ou un lien d'invitation unique. L'autre accepte et votre espace couple est créé. Dès lors, toutes les activités, les animaux et les capsules temporelles sont partagés. We2 est conçu pour les couples exclusifs, favorisant l'engagement et la concentration."
+    },
+    {
+      "question": "Y a-t-il une fonctionnalité communautaire ?",
+      "answer": "Oui ! We2 dispose d'un « Cercle de couples » : un espace privé où chaque couple peut optionnellement rejoindre des groupes d'intérêt publics (conseils pour les relations à distance, idées d'anniversaire, conseils relationnels). Toutes les interactions communautaires sont anonymes par défaut et vous pouvez vous désinscrire complètement. Nous croyons en des communautés sûres et bienveillantes qui respectent la vie privée."
+    },
+    {
+      "question": "Quels modes de paiement sont acceptés ?",
+      "answer": "Nous acceptons toutes les principales cartes de crédit (Visa, Mastercard, American Express), PayPal, Google Pay et Apple Pay. Pour les plans annuels et à vie, nous prenons également en charge les virements bancaires (États-Unis uniquement) sur demande. Les paiements sont traités en toute sécurité via Stripe et PayPal, sans frais cachés."
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "siteName": "We2",
+  "tagline": "Grow Together, Love Deeper",
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "community": "Community",
+    "login": "Log In",
+    "dashboard": "Dashboard"
+  },
+  "seo": {
+    "siteName": "We2",
+    "description": "We2 is the couple's app for emotional growth. Build daily rituals, save memories in time capsules, and grow your virtual pet together. Trusted by 10,000+ couples worldwide.",
+    "keywords": "couple app, relationship tracker, love journal, anniversary reminder, couple goals, emotional intimacy, long distance relationship",
+    "tagline": "Grow Together, Love Deeper"
+  },
+  "home": {
+    "hero": {
+      "title": "Grow Together, Love Deeper",
+      "subtitle": "The couple's app that turns everyday moments into lasting emotional habits. Daily check-ins, time capsules, and a virtual pet that grows with your love.",
+      "cta": "Start Free — No Credit Card",
+      "secondary": "See How It Works"
+    },
+    "features": {
+      "title": "Built for Real Couples",
+      "subtitle": "Every feature designed to bring you closer, no matter the distance.",
+      "sharedJournal": {
+        "title": "Daily Check-in",
+        "desc": "5-minute daily questions designed by relationship psychologists. Build emotional intimacy, one day at a time."
+      },
+      "moodTracker": {
+        "title": "Time Capsules",
+        "desc": "Lock photos, voice memos, and letters to open on future anniversaries. Your private memory vault."
+      },
+      "dreamWall": {
+        "title": "Virtual Pet",
+        "desc": "Raise a pet together by completing daily challenges. Watch it grow as your relationship strengthens."
+      },
+      "dailyGratitude": {
+        "title": "Private Community",
+        "desc": "Share stories anonymously with couples worldwide. Get advice, celebrate milestones, feel less alone."
+      },
+      "petAdoption": {
+        "title": "Shared Journal",
+        "desc": "Write together, reflect together. A private space for your shared story."
+      },
+      "timeCapsule": {
+        "title": "Dream Wall",
+        "desc": "Pin your dreams, goals, and wishes — build your future together."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose what fits your journey. No hidden fees. Cancel anytime.",
+    "monthly": "Monthly",
+    "quarterly": "Quarterly",
+    "yearly": "Yearly",
+    "popular": "Most Popular",
+    "save": "Save {discount}%",
+    "tiers": {
+      "free": {
+        "name": "Free",
+        "price": "$0",
+        "features": ["Daily check-in", "3 time capsules", "Basic pet", "Community access"]
+      },
+      "plus": {
+        "name": "We2 Plus",
+        "price": "$5.49",
+        "period": "/month",
+        "features": ["Unlimited capsules", "Advanced pet skins", "Private album", "Relationship insights"]
+      },
+      "premium": {
+        "name": "We2 Premium",
+        "price": "$13.99",
+        "period": "/quarter",
+        "features": ["Everything in Plus", "Priority support", "Custom pet names", "Export memories"]
+      },
+      "lifetime": {
+        "name": "We2 Forever",
+        "price": "$39.99",
+        "period": "/year",
+        "features": ["Everything in Premium", "Lifetime updates", "Exclusive content", "Early features"]
+      }
+    },
+    "cta": "Get Started",
+    "guarantee": "30-day money-back guarantee"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about We2",
+    "items": [
+      {
+        "question": "What is We2 and how does it help couples?",
+        "answer": "We2 is a relationship growth app that helps partners build emotional habits through daily check-ins, time capsules, and shared challenges. It's designed by psychologists to strengthen emotional intimacy over time."
+      },
+      {
+        "question": "Is my data private and secure?",
+        "answer": "Absolutely. We use end-to-end encryption for all personal content. Your intimate moments, photos, and messages stay between you and your partner. We never sell your data to third parties."
+      },
+      {
+        "question": "Can we use We2 in a long-distance relationship?",
+        "answer": "Yes! We2 is specifically designed for all couples, whether you're in the same room or across the world. Time capsules and daily check-ins are perfect for maintaining connection across distance."
+      },
+      {
+        "question": "How does the virtual pet work?",
+        "answer": "Your pet grows as you and your partner complete daily check-ins and challenges together. It's a fun, visual representation of your relationship growth. Different pets and skins unlock as you reach milestones."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept PayPal for global users, Alipay for mainland China users, and AlipayHK for Hong Kong/Taiwan users. All transactions are secure and encrypted."
+      },
+      {
+        "question": "Can I cancel my membership?",
+        "answer": "Yes, you can cancel anytime. Your membership remains active until the end of your current period. We also offer a 30-day money-back guarantee for new subscribers."
+      },
+      {
+        "question": "How do I connect with my partner?",
+        "answer": "After signing up, send your partner a unique invite code. Once they accept, your accounts are linked and you can start sharing check-ins, capsules, and growing your pet together."
+      },
+      {
+        "question": "Is there a community feature?",
+        "answer": "Yes! Our anonymous community lets you share stories, ask advice, and celebrate milestones with couples worldwide. You can choose to post anonymously or with your couple profile."
+      }
+    ]
+  },
+  "auth": {
+    "loginTitle": "Welcome Back",
+    "loginSubtitle": "Sign in to continue your journey together",
+    "registerTitle": "Start Your Journey",
+    "registerSubtitle": "Create your account and invite your partner",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "displayNameLabel": "Display Name",
+    "displayNamePlaceholder": "Your name",
+    "loginButton": "Sign In",
+    "registerButton": "Create Account",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "registerLink": "Sign Up",
+    "loginLink": "Sign In",
+    "forgotPassword": "Forgot password?",
+    "resetPasswordTitle": "Reset Password",
+    "resetPasswordSubtitle": "Enter your email to receive a reset link",
+    "resetPasswordButton": "Send Reset Link",
+    "updatePasswordTitle": "Set New Password",
+    "updatePasswordSubtitle": "Enter your new password",
+    "updatePasswordButton": "Update Password",
+    "orContinueWith": "Or continue with",
+    "google": "Google",
+    "github": "GitHub",
+    "checkEmail": "Check your email for a confirmation link.",
+    "passwordUpdated": "Password updated successfully. You can now sign in.",
+    "signOut": "Sign Out",
+    "dashboard": "Dashboard"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookie": "Cookie Settings",
+    "help": "Help Center",
+    "contact": "Contact Us",
+    "copyright": "© {year} We2. All rights reserved."
+  }
+}
