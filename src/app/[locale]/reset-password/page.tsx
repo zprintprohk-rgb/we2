@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import { getTranslations } from "next-intl/server"
 import { ResetPasswordForm } from "./ResetPasswordForm"
 import type { Metadata } from "next"

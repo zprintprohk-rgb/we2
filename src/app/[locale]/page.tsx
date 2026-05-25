@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { Link } from '@/i18n/routing'
