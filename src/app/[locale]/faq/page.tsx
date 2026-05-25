@@ -1,5 +1,3 @@
-export const runtime = 'edge'
-
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { routing } from '@/i18n/routing'
