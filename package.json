@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "cf-build": "next build && npx @opennextjs/cloudflare build",
+    "cf-build": "next build && npx @opennextjs/cloudflare build && node -e \"require('fs').cpSync('.open-next/assets/_routes.json','.open-next/_routes.json')\"",
     "start": "next start",
     "lint": "eslint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
