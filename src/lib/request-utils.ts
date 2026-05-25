@@ -44,7 +44,7 @@ export function getLocaleFromRequest(request: Request): string {
  * Decode a JWT payload without verification (Edge-compatible).
  * Used to extract user ID from Supabase access token.
  */
-export function decodeJwtPayload(token: string): Record<string, any> | null {
+export function decodeJwtPayload(token: string): Record<string, unknown> | null {
   try {
     const parts = token.split('.')
     if (parts.length !== 3) return null

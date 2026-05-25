@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { headers } from 'next/headers'
-import { routing, type Locale } from '@/i18n/routing'
+import { routing } from '@/i18n/routing'
 import { generateAlternateLinks, siteConfig } from '@/lib/seo'
 import { Link } from '@/i18n/routing'
 import {
@@ -12,9 +12,8 @@ import {
   getOriginalPrice,
   getDiscountPercent,
   getPrice,
-  getDiscountedPrice,
 } from '@/lib/pricing'
-import type { CountryCode, BillingPeriod } from '@/lib/types'
+import type { CountryCode } from '@/lib/types'
 
 // ─── Static params ────────────────────────────────────────────────────────
 export function generateStaticParams() {
@@ -47,16 +46,14 @@ export async function generateMetadata({
 // ─── Client component for interactive pricing card ────────────────────────
 import { PricingCard } from './PricingCard'
 
-// ─── Gateway labels ───────────────────────────────────────────────────────
-const GATEWAY_LABEL: Record<string, string> = {
-  alipay_cn: 'pricing.gatewayAlipayCN',
-  alipay_hk: 'pricing.gatewayAlipayHK',
-  paypal: 'pricing.gatewayPayPal',
-}
-
 // ─── Page ─────────────────────────────────────────────────────────────────
-export default async function PricingPage() {
-  const t = await getTranslations()
+export default async function PricingPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const t = await getTranslations({ locale })
   const h = await headers()
   const country: CountryCode = getCountryFromRequest(h)
   const pricing = getPricing(country)
@@ -219,11 +216,11 @@ export default async function PricingPage() {
               {isActive ? (
                 // Interactive pricing card with period selector
                 <PricingCard
-                  t={t as any}
+                  t={t}
+                  locale={locale}
                   country={country}
                   currency={currency}
                   gateway={gateway}
-                  gatewayLabel={GATEWAY_LABEL[gateway]}
                   monthly={monthly}
                   quarterly={quarterly}
                   yearly={yearly}

@@ -4,16 +4,15 @@ import { useState } from 'react'
 import {
   getDisplayPrice,
   getOriginalPrice,
-  getDiscountedPrice,
 } from '@/lib/pricing'
 import type { CountryCode, CurrencyCode, PaymentGateway, BillingPeriod } from '@/lib/types'
 
 type Props = {
-  t: any // next-intl translations proxy
+  t: (key: string) => string
+  locale: string
   country: CountryCode
   currency: CurrencyCode
   gateway: PaymentGateway
-  gatewayLabel: string
   monthly: number
   quarterly: number
   yearly: number
@@ -23,10 +22,10 @@ type Props = {
 
 export function PricingCard({
   t,
+  locale,
   country,
   currency,
   gateway,
-  gatewayLabel,
   monthly,
   quarterly,
   yearly,
@@ -55,7 +54,7 @@ export function PricingCard({
       const res = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ tier: 'plus', period, locale: t?.()?.locale }),
+        body: JSON.stringify({ tier: 'plus', period, locale }),
       })
 
       if (!res.ok) throw new Error('Payment init failed')
