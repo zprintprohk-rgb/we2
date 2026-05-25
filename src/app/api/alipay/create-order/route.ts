@@ -4,8 +4,6 @@ import { getPricing } from "@/lib/pricing"
 import { getCountryFromRequest } from "@/lib/pricing"
 import { getDisplayPrice } from "@/lib/pricing"
 
-export const runtime = "edge"
-
 /* ─── env ─── */
 const ALIPAY_APP_ID = process.env.ALIPAY_APP_ID!
 const ALIPAY_PRIVATE_KEY = process.env.ALIPAY_PRIVATE_KEY!

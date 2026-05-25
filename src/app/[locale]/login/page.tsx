@@ -1,5 +1,3 @@
-export const runtime = 'edge'
-
 import { getTranslations } from "next-intl/server"
 import { LoginForm } from "./LoginForm"
 import type { Metadata } from "next"

@@ -1,7 +1,5 @@
 import type { NextRequest } from 'next/server'
 
-export const runtime = 'edge'
-
 const locales: string[] = ['en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'de', 'fr', 'es']
 
 function isLocale(s: string | null): s is (typeof locales)[number] {

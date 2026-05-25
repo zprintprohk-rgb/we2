@@ -24,5 +24,3 @@ export async function GET(request: NextRequest) {
   const redirectTo = next.startsWith("/") ? next : "/"
   return NextResponse.redirect(`${origin}${redirectTo}`)
 }
-
-export const runtime = "edge"
