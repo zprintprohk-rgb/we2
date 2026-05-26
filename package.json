@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "cf-build": "next build && npx @opennextjs/cloudflare build && node -e \"var fs=require('fs');fs.cpSync('.open-next/worker.js','.open-next/_worker.js');fs.cpSync('.open-next/assets/_routes.json','.open-next/_routes.json')\"",
+    "cf-build": "next build && npx @opennextjs/cloudflare build && node -e \"var fs=require('fs'),p='.open-next/';var r=JSON.parse(fs.readFileSync(p+'assets/_routes.json','utf8'));r.exclude=['/_next/*','/build/*','/favicon.ico','/file.svg','/globe.svg','/next.svg','/vercel.svg','/window.svg','/sw-push.js'];fs.writeFileSync(p+'_routes.json',JSON.stringify(r));fs.cpSync(p+'worker.js',p+'_worker.js');fs.writeFileSync(p+'_redirects','/* /index.html 200\\n')\"",
     "start": "next start",
     "lint": "eslint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
