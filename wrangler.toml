@@ -15,6 +15,8 @@ service = "we2-v3"
 binding = "IMAGES"
 
 # Pages build configuration
+pages_build_output_dir = ".open-next"
+
 [build]
 command = "npm run cf-build"
 
