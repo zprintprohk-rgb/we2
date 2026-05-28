@@ -1,20 +1,7 @@
-name = "we2-v3"
-main = ".open-next/worker.js"
-compatibility_date = "2026-05-25"
-compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
-
-[assets]
-directory = ".open-next/assets"
-binding = "ASSETS"
-
-[[services]]
-binding = "WORKER_SELF_REFERENCE"
-service = "we2-v3"
-
-[images]
-binding = "IMAGES"
-
-# Pages build configuration
+# Pages-only configuration
+# Cloudflare Pages 只能解析 compat_flags / pages_build_output_dir / [build]
+# Workers 专用字段（main / assets / services）放在 wrangler.jsonc 中供 CLI 使用
+compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next"
 
 [build]
