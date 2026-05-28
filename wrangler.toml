@@ -1,11 +1,3 @@
-# Pages-only configuration
-# Cloudflare Pages 只能解析 compat_flags / pages_build_output_dir / [build]
-# Workers 专用字段（main / assets / services）放在 wrangler.jsonc 中供 CLI 使用
+name = "we2-v3"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next"
-
-[build]
-command = "npm run cf-build"
-
-[build.environment]
-NODE_VERSION = "22"
