@@ -48,8 +48,13 @@ export async function generateMetadata({
 }
 
 // ---------- Page component (server) ----------
-export default async function HomePage() {
-  const t = await getTranslations()
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const t = await getTranslations({ locale })
 
   const features = [
     { key: 'sharedJournal', icon: '📖' },

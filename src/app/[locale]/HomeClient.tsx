@@ -1,6 +1,6 @@
 'use client'
 
-import { Link } from '@/i18n/routing'
+import { Link, useRouter } from '@/i18n/routing'
 import { motion } from 'framer-motion'
 
 type Feature = {
@@ -48,6 +48,7 @@ export function HomeClient({
   footerHelp,
   footerContact,
 }: Props) {
+  const router = useRouter()
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-rose-50 via-pink-50 to-white px-4 py-16 dark:from-rose-950/40 dark:via-purple-950/30 dark:to-zinc-950">
       <main className="w-full max-w-3xl text-center">
@@ -125,7 +126,8 @@ export function HomeClient({
                 boxShadow:
                   '0 12px 40px rgba(244,114,182,0.15), 0 0 0 1px rgba(168,85,247,0.2)',
               }}
-              className="rounded-2xl border border-rose-100 bg-white/70 backdrop-blur p-6 text-left shadow-sm transition-all duration-300 dark:border-purple-800/50 dark:bg-purple-950/30 dark:hover:shadow-purple-500/10"
+              onClick={() => router.push('/features')}
+              className="rounded-2xl border border-rose-100 bg-white/70 backdrop-blur p-6 text-left shadow-sm transition-all duration-300 dark:border-purple-800/50 dark:bg-purple-950/30 dark:hover:shadow-purple-500/10 cursor-pointer"
             >
               <span className="text-3xl">{feature.icon}</span>
               <h3 className="mt-3 font-semibold text-zinc-900 dark:text-zinc-100">
