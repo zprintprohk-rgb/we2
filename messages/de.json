@@ -169,5 +169,33 @@
     "title": "Seite nicht gefunden",
     "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
     "backHome": "Zur Startseite"
+  },
+  "payment": {
+    "title": "Kauf abschließen",
+    "subtitle": "Zahlungsmethode wählen, um We2 Plus freizuschalten",
+    "periodLabel": "Abrechnungszeitraum",
+    "monthly": "Monatlich",
+    "quarterly": "Vierteljährlich",
+    "yearly": "Jährlich",
+    "priceLabel": "Gesamt",
+    "gatewayLabel": "Zahlungsmethode",
+    "paypal": "PayPal",
+    "alipayCn": "Alipay（Festland-China）",
+    "alipayHk": "AlipayHK（Hongkong / Taiwan）",
+    "payButton": "Mit {gateway} bezahlen",
+    "processing": "Zahlung wird verarbeitet…",
+    "success": {
+      "title": "Zahlung erfolgreich!",
+      "message": "Vielen Dank für dein We2 Plus Abo. Weiterleitung zum Dashboard…"
+    },
+    "error": {
+      "title": "Zahlung fehlgeschlagen",
+      "message": "Bei der Zahlungsverarbeitung ist ein Fehler aufgetreten. Bitte versuche es erneut.",
+      "retry": "Erneut versuchen"
+    },
+    "cancel": {
+      "title": "Zahlung abgebrochen",
+      "message": "Du hast die Zahlung abgebrochen. Du kannst es jederzeit erneut versuchen."
+    }
   }
 }

@@ -169,5 +169,33 @@
     "title": "Page Not Found",
     "description": "The page you're looking for doesn't exist or has been moved.",
     "backHome": "Back to Home"
+  },
+  "payment": {
+    "title": "Complete Your Purchase",
+    "subtitle": "Choose your payment method to unlock We2 Plus",
+    "periodLabel": "Billing",
+    "monthly": "Monthly",
+    "quarterly": "Quarterly",
+    "yearly": "Yearly",
+    "priceLabel": "Total",
+    "gatewayLabel": "Payment Method",
+    "paypal": "PayPal",
+    "alipayCn": "Alipay (China Mainland)",
+    "alipayHk": "AlipayHK (Hong Kong / Taiwan)",
+    "payButton": "Pay with {gateway}",
+    "processing": "Processing payment…",
+    "success": {
+      "title": "Payment Successful!",
+      "message": "Thank you for subscribing to We2 Plus. Redirecting to your dashboard…"
+    },
+    "error": {
+      "title": "Payment Failed",
+      "message": "Something went wrong with your payment. Please try again.",
+      "retry": "Try Again"
+    },
+    "cancel": {
+      "title": "Payment Cancelled",
+      "message": "You cancelled the payment. Feel free to try again anytime."
+    }
   }
 }

@@ -11,54 +11,54 @@
   },
   "seo": {
     "siteName": "We2",
-    "description": "We2 es la app de pareja para el crecimiento emocional. Check-ins diarios, cápsulas del tiempo y una mascota virtual — crea rituales que fortalecen vuestra conexión. Más de 10.000 parejas ya confían en nosotros.",
-    "keywords": "app de pareja, diario de amor, recordatorio de aniversario, metas de pareja, intimidad emocional, relación a distancia, complicidad, hábitos emocionales, rituales diarios",
+    "description": "We2 es la app de crecimiento emocional para parejas. Checks diarios, cápsulas del tiempo y mascota virtual – crea rituales diarios que fortalezcan su vínculo. Más de 10,000 parejas ya confían en nosotros.",
+    "keywords": "app parejas, seguimiento relación, diario amor, recordatorio aniversario, metas pareja, intimidad emocional, relación a distancia, conexión emocional, rituales diarios",
     "tagline": "Crecer juntos, amar más profundo"
   },
   "home": {
     "hero": {
-      "title": "Crecer juntos, amar más profundo",
-      "subtitle": "La app que convierte los momentos cotidianos en hábitos emocionales duraderos. Check-ins diarios, cápsulas del tiempo y una mascota virtual que crece con vuestro amor.",
-      "cta": "Empezar gratis — sin tarjeta",
+      "title": "Nuestro espacio, solo nosotros dos",
+      "subtitle": "Más allá de LINE, un lugar solo para ustedes. Checks diarios, cápsulas del tiempo, mascota virtual – que la rutina se vuelva el mejor depósito de amor.",
+      "cta": "Empieza gratis – sin tarjeta",
       "secondary": "Cómo funciona"
     },
     "features": {
       "title": "Diseñado para parejas reales",
-      "subtitle": "Cada función pensada para acercaros, sin importar la distancia.",
+      "subtitle": "Cada función está pensada para acercarlos, sin importar la distancia.",
       "sharedJournal": {
         "title": "Check-in diario",
-        "desc": "5 minutos de preguntas diseñadas por psicólogos de pareja. Construid intimidad emocional, día a día."
+        "desc": "5 minutos de preguntas diseñadas por psicólogos para construir intimidad emocional, día a día."
       },
       "moodTracker": {
         "title": "Cápsulas del tiempo",
-        "desc": "Guardad fotos, notas de voz y cartas para abrir en futuros aniversarios. Vuestro baúl privado de recuerdos."
+        "desc": "Guarda fotos, notas de voz y cartas para abrir en un futuro aniversario. Su cofre de recuerdos privado."
       },
       "dreamWall": {
         "title": "Mascota virtual",
-        "desc": "Criad juntos una mascota completando desafíos diarios. Vedla crecer al ritmo de vuestra relación."
+        "desc": "Críen una mascota juntos completando desafíos diarios. Vean cómo crece con su relación – la prueba más tierna de su inversión."
       },
       "dailyGratitude": {
-        "title": "Comunidad privada",
-        "desc": "Compartid historias de forma anónima con parejas de todo el mundo. Recibid consejos, celebrad hitos, sentíos acompañados."
+        "title": "Comunidad anónima",
+        "desc": "Compartan historias anónimamente con parejas de todo el mundo. Pidan consejo, celebren hitos, siéntanse acompañados."
       },
       "petAdoption": {
         "title": "Diario compartido",
-        "desc": "Escribid juntos, reflexionad juntos. Un espacio íntimo para vuestra historia común."
+        "desc": "Escriban juntos, reflexionen juntos. Un espacio privado para su historia compartida."
       },
       "timeCapsule": {
         "title": "Muro de sueños",
-        "desc": "Colgad vuestros sueños, metas y deseos — construid juntos vuestro futuro."
+        "desc": "Fijen sus sueños, metas y deseos en el muro – construyan su futuro juntos."
       }
     }
   },
   "pricing": {
     "title": "Precios simples y transparentes",
-    "subtitle": "Elegid lo que se ajusta a vuestro camino. Sin costes ocultos. Cancelad cuando queráis.",
+    "subtitle": "Elige lo que mejor se adapte a su viaje. Sin costos ocultos. Cancela cuando quieras.",
     "monthly": "Mensual",
     "quarterly": "Trimestral",
     "yearly": "Anual",
     "popular": "Más popular",
-    "save": "Ahorra un {discount}%",
+    "save": "Ahorra {discount}%",
     "tiers": {
       "free": {
         "name": "Gratis",
@@ -69,19 +69,19 @@
         "name": "We2 Plus",
         "price": "5,49€",
         "period": "/mes",
-        "features": ["Cápsulas ilimitadas", "Skins avanzados de mascota", "Álbum privado", "Insights de relación"]
+        "features": ["Cápsulas ilimitadas", "Skins premium", "Álbum privado", "Insights de relación"]
       },
       "premium": {
         "name": "We2 Premium",
         "price": "13,99€",
         "period": "/trimestre",
-        "features": ["Todo en Plus", "Soporte prioritario", "Nombres personalizados", "Exportar recuerdos"]
+        "features": ["Todo Plus", "Soporte prioritario", "Nombre personalizado", "Exportar recuerdos"]
       },
       "lifetime": {
         "name": "We2 Forever",
         "price": "39,99€",
         "period": "/año",
-        "features": ["Todo en Premium", "Actualizaciones de por vida", "Contenido exclusivo", "Acceso anticipado"]
+        "features": ["Todo Premium", "Actualizaciones de por vida", "Contenido exclusivo", "Acceso anticipado"]
       }
     },
     "cta": "Comenzar ahora",
@@ -89,65 +89,65 @@
   },
   "faq": {
     "title": "Preguntas frecuentes",
-    "subtitle": "Todo lo que necesitáis saber sobre We2",
+    "subtitle": "Todo lo que necesitas saber sobre We2",
     "items": [
       {
         "question": "¿Qué es We2 y cómo ayuda a las parejas?",
-        "answer": "We2 es una app de crecimiento emocional que ayuda a las parejas a construir hábitos afectivos mediante check-ins diarios, cápsulas del tiempo y desafíos compartidos — diseñada con psicólogos."
+        "answer": "We2 es una app de crecimiento emocional diseñada con psicólogos. A través de checks diarios, cápsulas del tiempo y desafíos compartidos, ayuda a las parejas a construir hábitos emocionales duraderos."
       },
       {
-        "question": "¿Mis datos son privados y seguros?",
-        "answer": "Totalmente. Usamos cifrado de extremo a extremo para todo el contenido personal. Vuestros momentos íntimos, fotos y mensajes quedan estrictamente entre vosotros dos. Nunca vendemos datos."
+        "question": "¿Mis datos están privados y seguros?",
+        "answer": "Absolutamente. Usamos cifrado de extremo a extremo para todo el contenido personal. Sus momentos íntimos, fotos y mensajes permanecen solo entre ustedes dos. Nunca vendemos datos."
       },
       {
         "question": "¿Puedo usar We2 en una relación a distancia?",
-        "answer": "¡Sí! We2 está diseñado para todo tipo de parejas, ya estéis en la misma habitación o en lados opuestos del mundo. Las cápsulas del tiempo y los check-ins diarios son perfectos para mantener la conexión."
+        "answer": "¡Sí! We2 está diseñado para todo tipo de parejas, en la misma habitación o en lados opuestos del mundo. Las cápsulas del tiempo y checks diarios son perfectos para mantener la conexión."
       },
       {
         "question": "¿Cómo funciona la mascota virtual?",
-        "answer": "Vuestra mascota crece a medida que completáis juntos los check-ins y desafíos diarios. Es una representación visual y divertida del crecimiento de vuestra relación. ¡Nuevas mascotas y skins se desbloquean en los hitos importantes!"
+        "answer": "Su mascota crece cuando ambos completan checks y desafíos diarios. Es una visualización divertida de su inversión en la relación. Nuevas mascotas y skins se desbloquean en hitos importantes."
       },
       {
-        "question": "¿Qué métodos de pago aceptáis?",
+        "question": "¿Qué métodos de pago aceptan?",
         "answer": "Aceptamos PayPal para todos los usuarios y Alipay para usuarios en China. Todas las transacciones son seguras y están cifradas."
       },
       {
         "question": "¿Puedo cancelar mi membresía?",
-        "answer": "Sí, en cualquier momento. Tu membresía permanece activa hasta el final del período actual. También ofrecemos una garantía de devolución de 30 días para nuevos suscriptores."
+        "answer": "Sí, cancela cuando quieras. Tu membresía permanece activa hasta el final del período actual. También ofrecemos garantía de devolución de 30 días para nuevos suscriptores."
       },
       {
         "question": "¿Cómo me conecto con mi pareja?",
-        "answer": "Tras registrarte, envía un código de invitación a tu pareja. Cuando lo acepte, vuestras cuentas quedarán vinculadas y podréis disfrutar juntos de los check-ins, cápsulas y la mascota."
+        "answer": "Después de registrarte, envía un código de invitación a tu pareja. Una vez que lo acepte, sus cuentas quedarán vinculadas y podrán disfrutar juntos de los checks, cápsulas y la mascota."
       },
       {
         "question": "¿Hay una función de comunidad?",
-        "answer": "¡Sí! Nuestra comunidad anónima os permite compartir historias, pedir consejo y celebrar hitos con parejas de todo el mundo — de forma anónima o con vuestro perfil de pareja."
+        "answer": "¡Sí! Nuestra comunidad anónima te permite compartir historias, pedir consejos y celebrar hitos con parejas de todo el mundo – de forma anónima o con tu perfil de pareja."
       }
     ]
   },
   "auth": {
     "loginTitle": "Bienvenido de nuevo",
-    "loginSubtitle": "Inicia sesión para continuar vuestro viaje juntos",
-    "registerTitle": "Comienza vuestro viaje",
+    "loginSubtitle": "Inicia sesión para continuar su viaje juntos",
+    "registerTitle": "Comiencen su viaje",
     "registerSubtitle": "Crea tu cuenta e invita a tu pareja",
     "emailLabel": "Correo electrónico",
     "emailPlaceholder": "tu@ejemplo.com",
     "passwordLabel": "Contraseña",
-    "passwordPlaceholder": "Introduce tu contraseña",
+    "passwordPlaceholder": "Ingresa tu contraseña",
     "displayNameLabel": "Nombre",
     "displayNamePlaceholder": "Tu nombre",
     "loginButton": "Iniciar sesión",
     "registerButton": "Crear cuenta",
     "noAccount": "¿No tienes cuenta?",
     "hasAccount": "¿Ya tienes cuenta?",
-    "registerLink": "Registrarse",
+    "registerLink": "Regístrate",
     "loginLink": "Iniciar sesión",
     "forgotPassword": "¿Olvidaste tu contraseña?",
     "resetPasswordTitle": "Restablecer contraseña",
-    "resetPasswordSubtitle": "Introduce tu correo para recibir un enlace de restablecimiento",
+    "resetPasswordSubtitle": "Ingresa tu correo para recibir un enlace",
     "resetPasswordButton": "Enviar enlace",
     "updatePasswordTitle": "Establecer nueva contraseña",
-    "updatePasswordSubtitle": "Introduce tu nueva contraseña",
+    "updatePasswordSubtitle": "Ingresa tu nueva contraseña",
     "updatePasswordButton": "Actualizar contraseña",
     "orContinueWith": "O continuar con",
     "google": "Google",
@@ -160,7 +160,7 @@
   "footer": {
     "privacy": "Privacidad",
     "terms": "Términos",
-    "cookie": "Configuración de cookies",
+    "cookie": "Cookies",
     "help": "Ayuda",
     "contact": "Contacto",
     "copyright": "© {year} We2. Todos los derechos reservados."
@@ -169,5 +169,33 @@
     "title": "Página no encontrada",
     "description": "La página que buscas no existe o ha sido movida.",
     "backHome": "Volver al inicio"
+  },
+  "payment": {
+    "title": "Completar compra",
+    "subtitle": "Elige un método de pago para desbloquear We2 Plus",
+    "periodLabel": "Período de facturación",
+    "monthly": "Mensual",
+    "quarterly": "Trimestral",
+    "yearly": "Anual",
+    "priceLabel": "Total",
+    "gatewayLabel": "Método de pago",
+    "paypal": "PayPal",
+    "alipayCn": "Alipay（China continental）",
+    "alipayHk": "AlipayHK（Hong Kong / Taiwán）",
+    "payButton": "Pagar con {gateway}",
+    "processing": "Procesando pago…",
+    "success": {
+      "title": "¡Pago exitoso!",
+      "message": "Gracias por suscribirte a We2 Plus. Redirigiendo al panel…"
+    },
+    "error": {
+      "title": "Pago fallido",
+      "message": "Ocurrió un error al procesar el pago. Por favor, inténtalo de nuevo.",
+      "retry": "Reintentar"
+    },
+    "cancel": {
+      "title": "Pago cancelado",
+      "message": "Has cancelado el pago. Puedes intentarlo de nuevo cuando quieras."
+    }
   }
 }

@@ -10,6 +10,13 @@ compatibility_flags = ["nodejs_compat"]
 NEXT_PUBLIC_SITE_URL = "https://we2.com"
 NEXTJS_ENV = "production"
 PAYPAL_MODE = "live"
+# ⚠️ 以下为必填 — 请在部署前替换为真实值，或留空并通过 wrangler secret 设置
+NEXT_PUBLIC_SUPABASE_URL = ""
+NEXT_PUBLIC_SUPABASE_ANON_KEY = ""
+PAYPAL_CLIENT_ID = ""
+ALIPAY_APP_ID = ""
+ALIPAY_PUBLIC_KEY = ""
+VAPID_PUBLIC_KEY = ""
 
 # 静态资源绑定 (OpenNext 自动生成的 assets 目录)
 [assets]

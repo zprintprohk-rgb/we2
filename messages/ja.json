@@ -169,5 +169,33 @@
     "title": "ページが見つかりません",
     "description": "お探しのページは存在しないか、移動されました。",
     "backHome": "ホームに戻る"
+  },
+  "payment": {
+    "title": "購入手続き",
+    "subtitle": "支払い方法を選択して We2 Plus をアンロック",
+    "periodLabel": "請求期間",
+    "monthly": "月額",
+    "quarterly": "3ヶ月",
+    "yearly": "年間",
+    "priceLabel": "合計",
+    "gatewayLabel": "支払い方法",
+    "paypal": "PayPal",
+    "alipayCn": "Alipay（中国本土向け）",
+    "alipayHk": "AlipayHK（香港 / 台湾向け）",
+    "payButton": "{gateway} で支払う",
+    "processing": "支払いを処理中…",
+    "success": {
+      "title": "支払い完了！",
+      "message": "We2 Plus をご購読いただきありがとうございます。ダッシュボードにリダイレクトします…"
+    },
+    "error": {
+      "title": "支払いに失敗しました",
+      "message": "支払い処理中にエラーが発生しました。もう一度お試しください。",
+      "retry": "再試行"
+    },
+    "cancel": {
+      "title": "支払いをキャンセルしました",
+      "message": "支払いがキャンセルされました。いつでも再試行できます。"
+    }
   }
 }

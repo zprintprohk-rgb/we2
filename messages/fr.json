@@ -1,25 +1,25 @@
 {
   "siteName": "We2",
-  "tagline": "Grandir à deux, s'aimer plus fort",
+  "tagline": "Grandir ensemble, s'aimer plus fort",
   "nav": {
     "home": "Accueil",
     "features": "Fonctionnalités",
-    "pricing": "Offres",
+    "pricing": "Tarifs",
     "community": "Communauté",
     "login": "Connexion",
     "dashboard": "Tableau de bord"
   },
   "seo": {
     "siteName": "We2",
-    "description": "We2 est l'application de couple pour la croissance émotionnelle. Check-ins quotidiens, capsules temporelles et animal virtuel – créez des rituels qui renforcent votre complicité. Plus de 10 000 couples nous font confiance dans le monde.",
-    "keywords": "application couple, suivi de relation, journal amoureux, rappel anniversaire, objectifs de couple, intimité émotionnelle, relation à distance, complicité, empreinte émotionnelle",
-    "tagline": "Grandir à deux, s'aimer plus fort"
+    "description": "We2 est l'application de croissance émotionnelle pour couples. Check-ins quotidiens, capsules temporelles et animal virtuel – créez des rituels quotidiens qui renforcent votre lien. Déjà adopté par 10 000+ couples.",
+    "keywords": "app couple, suivi relation, journal d'amour, rappel anniversaire, objectifs couple, intimité émotionnelle, relation à distance, connexion émotionnelle, rituels quotidiens",
+    "tagline": "Grandir ensemble, s'aimer plus fort"
   },
   "home": {
     "hero": {
-      "title": "Grandir à deux, s'aimer plus fort",
-      "subtitle": "L'application qui transforme les moments du quotidien en habitudes émotionnelles durables. Check-ins quotidiens, capsules temporelles et un animal virtuel qui grandit avec votre amour.",
-      "cta": "Commencer gratuitement – sans CB",
+      "title": "Votre espace intime, à deux",
+      "subtitle": "Loin du bruit de LINE, un endroit rien qu'à vous. Check-ins quotidiens, capsules temporelles, animal virtuel – transformez les moments ordinaires en souvenirs inoubliables.",
+      "cta": "Commencer gratuitement – sans carte",
       "secondary": "Comment ça marche"
     },
     "features": {
@@ -27,33 +27,33 @@
       "subtitle": "Chaque fonctionnalité est pensée pour vous rapprocher, quelle que soit la distance.",
       "sharedJournal": {
         "title": "Check-in quotidien",
-        "desc": "5 minutes de questions conçues par des psychologues de la relation. Construisez votre intimité émotionnelle, jour après jour."
+        "desc": "5 minutes de questions conçues par des psychologues pour construire une intimité émotionnelle jour après jour."
       },
       "moodTracker": {
         "title": "Capsules temporelles",
-        "desc": "Scellez des photos, messages vocaux et lettres à ouvrir lors de vos futurs anniversaires. Votre jardin secret à deux."
+        "desc": "Scellez photos, messages vocaux et lettres à ouvrir lors d'un futur anniversaire. Votre coffre-fort à souvenirs privé."
       },
       "dreamWall": {
         "title": "Animal virtuel",
-        "desc": "Élevez un animal de compagnie ensemble en relevant des défis quotidiens. Regardez-le grandir au rythme de votre relation."
+        "desc": "Élevez un animal ensemble en relevant des défis quotidiens. Regardez-le grandir avec votre relation – la preuve la plus mignonne de votre investissement."
       },
       "dailyGratitude": {
-        "title": "Communauté privée",
-        "desc": "Partagez anonymement vos histoires avec des couples du monde entier. Recevez des conseils, célébrez des étapes, sentez-vous moins seuls."
+        "title": "Communauté anonyme",
+        "desc": "Partagez des histoires anonymement avec des couples du monde entier. Demandez conseil, célébrez des étapes, sentez-vous moins seuls."
       },
       "petAdoption": {
         "title": "Journal partagé",
-        "desc": "Écrivez à deux, réfléchissez ensemble. Un espace intime pour votre histoire commune."
+        "desc": "Écrivez ensemble, réfléchissez ensemble. Un espace privé pour votre histoire commune."
       },
       "timeCapsule": {
         "title": "Mur des rêves",
-        "desc": "Épinglez vos rêves, objectifs et souhaits – construisez votre avenir ensemble."
+        "desc": "Épinglez vos rêves, objectifs et souhaits au mur – construisez votre avenir ensemble."
       }
     }
   },
   "pricing": {
-    "title": "Des offres simples et transparentes",
-    "subtitle": "Choisissez ce qui correspond à votre parcours. Pas de frais cachés. Résiliez à tout moment.",
+    "title": "Des tarifs simples et transparents",
+    "subtitle": "Choisissez ce qui convient à votre parcours. Sans frais cachés. Annulez à tout moment.",
     "monthly": "Mensuel",
     "quarterly": "Trimestriel",
     "yearly": "Annuel",
@@ -63,25 +63,25 @@
       "free": {
         "name": "Gratuit",
         "price": "0€",
-        "features": ["Check-in quotidien", "3 capsules temporelles", "Animal basique", "Accès communauté"]
+        "features": ["Check-in quotidien", "3 capsules temporelles", "Animal de base", "Accès communauté"]
       },
       "plus": {
         "name": "We2 Plus",
         "price": "5,49€",
         "period": "/mois",
-        "features": ["Capsules illimitées", "Skins d'animaux avancés", "Album privé", "Insights relationnels"]
+        "features": ["Capsules illimitées", "Skins d'animaux premium", "Album privé", "Insights relationnels"]
       },
       "premium": {
         "name": "We2 Premium",
         "price": "13,99€",
         "period": "/trimestre",
-        "features": ["Tout dans Plus", "Support prioritaire", "Noms d'animaux personnalisés", "Exporter vos souvenirs"]
+        "features": ["Tout Plus", "Support prioritaire", "Nom d'animal personnalisé", "Export des souvenirs"]
       },
       "lifetime": {
         "name": "We2 Forever",
         "price": "39,99€",
         "period": "/an",
-        "features": ["Tout dans Premium", "Mises à jour à vie", "Contenus exclusifs", "Accès anticipé aux nouveautés"]
+        "features": ["Tout Premium", "Mises à jour à vie", "Contenu exclusif", "Accès anticipé aux nouveautés"]
       }
     },
     "cta": "Commencer maintenant",
@@ -92,46 +92,46 @@
     "subtitle": "Tout ce que vous devez savoir sur We2",
     "items": [
       {
-        "question": "Qu'est-ce que We2 et comment cela aide-t-il les couples ?",
-        "answer": "We2 est une application de croissance relationnelle qui aide les partenaires à construire des habitudes émotionnelles grâce à des check-ins quotidiens, des capsules temporelles et des défis communs – conçue avec des psychologues."
+        "question": "Qu'est-ce que We2 et comment aide-t-il les couples ?",
+        "answer": "We2 est une application de croissance émotionnelle conçue avec des psychologues. Grâce aux check-ins quotidiens, capsules temporelles et défis communs, elle aide les couples à construire des habitudes émotionnelles durables."
       },
       {
         "question": "Mes données sont-elles privées et sécurisées ?",
-        "answer": "Absolument. Nous utilisons le chiffrement de bout en bout pour tous les contenus personnels. Vos moments intimes, photos et messages restent strictement entre vous deux. Nous ne vendons jamais vos données."
+        "answer": "Absolument. Nous utilisons le chiffrement de bout en bout pour tous les contenus personnels. Vos moments intimes, photos et messages restent entre vous deux. Nous ne vendons jamais vos données."
       },
       {
         "question": "Puis-je utiliser We2 en relation à distance ?",
-        "answer": "Oui ! We2 est conçu pour tous les couples, que vous soyez dans la même pièce ou à l'autre bout du monde. Les capsules temporelles et les check-ins quotidiens sont parfaits pour maintenir le lien malgré la distance."
+        "answer": "Oui ! We2 est conçu pour tous les couples, dans la même pièce ou à l'autre bout du monde. Les capsules temporelles et check-ins quotidiens sont parfaits pour maintenir le lien malgré la distance."
       },
       {
         "question": "Comment fonctionne l'animal virtuel ?",
-        "answer": "Votre animal grandit à mesure que vous accomplissez ensemble les check-ins et défis quotidiens. C'est une représentation visuelle et ludique de la croissance de votre relation. De nouveaux animaux et skins se débloquent aux étapes importantes."
+        "answer": "Votre animal grandit lorsque vous terminez tous les deux des check-ins et défis quotidiens. C'est une visualisation ludique de votre investissement relationnel. De nouveaux animaux et skins se débloquent aux étapes importantes."
       },
       {
         "question": "Quels moyens de paiement acceptez-vous ?",
-        "answer": "Nous acceptons PayPal pour tous les utilisateurs ainsi qu'Alipay pour les utilisateurs en Chine. Toutes les transactions sont sécurisées et chiffrées."
+        "answer": "Nous acceptons PayPal pour tous les utilisateurs et Alipay pour les utilisateurs en Chine. Toutes les transactions sont sécurisées et chiffrées."
       },
       {
-        "question": "Puis-je résilier mon abonnement ?",
-        "answer": "Oui, à tout moment. Votre abonnement reste actif jusqu'à la fin de la période en cours. Nous offrons également une garantie satisfait ou remboursé de 30 jours pour les nouveaux abonnés."
+        "question": "Puis-je annuler mon abonnement ?",
+        "answer": "Oui, annulez à tout moment. Votre abonnement reste actif jusqu'à la fin de la période en cours. Nous offrons également une garantie satisfait ou remboursé de 30 jours."
       },
       {
-        "question": "Comment me connecter avec mon/ma partenaire ?",
-        "answer": "Après inscription, envoyez un code d'invitation à votre partenaire. Une fois accepté, vos comptes sont liés et vous pouvez profiter ensemble des check-ins, capsules et de l'animal virtuel."
+        "question": "Comment me connecter avec mon partenaire ?",
+        "answer": "Après inscription, envoyez un code d'invitation à votre partenaire. Une fois accepté, vos comptes sont liés et vous pouvez profiter ensemble des check-ins, capsules et de l'animal."
       },
       {
         "question": "Y a-t-il une fonction communauté ?",
-        "answer": "Oui ! Notre communauté anonyme vous permet de partager des histoires, demander des conseils et célébrer des étapes avec des couples du monde entier – anonymement ou avec votre profil de couple."
+        "answer": "Oui ! Notre communauté anonyme vous permet de partager des histoires, demander conseil et célébrer des étapes avec des couples du monde entier – anonymement ou avec votre profil de couple."
       }
     ]
   },
   "auth": {
-    "loginTitle": "Content de vous revoir",
+    "loginTitle": "Bon retour parmi nous",
     "loginSubtitle": "Connectez-vous pour continuer votre voyage à deux",
     "registerTitle": "Commencez votre voyage",
     "registerSubtitle": "Créez votre compte et invitez votre partenaire",
-    "emailLabel": "Email",
-    "emailPlaceholder": "votre@exemple.com",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "vous@exemple.com",
     "passwordLabel": "Mot de passe",
     "passwordPlaceholder": "Entrez votre mot de passe",
     "displayNameLabel": "Pseudo",
@@ -144,7 +144,7 @@
     "loginLink": "Se connecter",
     "forgotPassword": "Mot de passe oublié ?",
     "resetPasswordTitle": "Réinitialiser le mot de passe",
-    "resetPasswordSubtitle": "Entrez votre email pour recevoir un lien de réinitialisation",
+    "resetPasswordSubtitle": "Entrez votre e-mail pour recevoir un lien de réinitialisation",
     "resetPasswordButton": "Envoyer le lien",
     "updatePasswordTitle": "Définir un nouveau mot de passe",
     "updatePasswordSubtitle": "Entrez votre nouveau mot de passe",
@@ -152,7 +152,7 @@
     "orContinueWith": "Ou continuer avec",
     "google": "Google",
     "github": "GitHub",
-    "checkEmail": "Veuillez vérifier votre email pour le lien de confirmation.",
+    "checkEmail": "Vérifiez votre boîte mail pour le lien de confirmation.",
     "passwordUpdated": "Mot de passe mis à jour. Vous pouvez maintenant vous connecter.",
     "signOut": "Se déconnecter",
     "dashboard": "Tableau de bord"
@@ -160,7 +160,7 @@
   "footer": {
     "privacy": "Confidentialité",
     "terms": "Conditions",
-    "cookie": "Paramètres des cookies",
+    "cookie": "Cookies",
     "help": "Aide",
     "contact": "Contact",
     "copyright": "© {year} We2. Tous droits réservés."
@@ -169,5 +169,33 @@
     "title": "Page introuvable",
     "description": "La page que vous cherchez n'existe pas ou a été déplacée.",
     "backHome": "Retour à l'accueil"
+  },
+  "payment": {
+    "title": "Finaliser l'achat",
+    "subtitle": "Choisissez un mode de paiement pour débloquer We2 Plus",
+    "periodLabel": "Période de facturation",
+    "monthly": "Mensuel",
+    "quarterly": "Trimestriel",
+    "yearly": "Annuel",
+    "priceLabel": "Total",
+    "gatewayLabel": "Mode de paiement",
+    "paypal": "PayPal",
+    "alipayCn": "Alipay（Chine continentale）",
+    "alipayHk": "AlipayHK（Hong Kong / Taïwan）",
+    "payButton": "Payer avec {gateway}",
+    "processing": "Traitement du paiement…",
+    "success": {
+      "title": "Paiement réussi !",
+      "message": "Merci de vous être abonné à We2 Plus. Redirection vers le tableau de bord…"
+    },
+    "error": {
+      "title": "Échec du paiement",
+      "message": "Une erreur est survenue lors du traitement du paiement. Veuillez réessayer.",
+      "retry": "Réessayer"
+    },
+    "cancel": {
+      "title": "Paiement annulé",
+      "message": "Vous avez annulé le paiement. Vous pouvez réessayer à tout moment."
+    }
   }
 }

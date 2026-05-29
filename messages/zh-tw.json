@@ -169,5 +169,33 @@
     "title": "頁面未找到",
     "description": "您訪問的頁面不存在或已被移動。",
     "backHome": "返回首頁"
+  },
+  "payment": {
+    "title": "完成購買",
+    "subtitle": "選擇付款方式，解鎖 We2 Plus",
+    "periodLabel": "計費週期",
+    "monthly": "按月",
+    "quarterly": "按季",
+    "yearly": "按年",
+    "priceLabel": "合計",
+    "gatewayLabel": "付款方式",
+    "paypal": "PayPal",
+    "alipayCn": "Alipay（中國大陸）",
+    "alipayHk": "AlipayHK（香港 / 台灣）",
+    "payButton": "使用 {gateway} 付款",
+    "processing": "正在處理付款…",
+    "success": {
+      "title": "付款成功！",
+      "message": "感謝訂閱 We2 Plus。正在重新導向至儀表板…"
+    },
+    "error": {
+      "title": "付款失敗",
+      "message": "付款過程中發生問題，請再試一次。",
+      "retry": "重新付款"
+    },
+    "cancel": {
+      "title": "付款已取消",
+      "message": "您已取消付款，隨時可以重新嘗試。"
+    }
   }
 }

@@ -10,7 +10,21 @@ export default function proxy(request: NextRequest) {
   res.headers.set('X-Frame-Options', 'DENY')
   res.headers.set('X-Content-Type-Options', 'nosniff')
   res.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
-  res.headers.set('X-XSS-Protection', '1; mode=block')
+
+  // Content Security Policy（现代 XSS 防御）
+  const csp = [
+    "default-src 'self'",
+    "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://js.stripe.com https://www.paypal.com https://www.sandbox.paypal.com",
+    "style-src 'self' 'unsafe-inline'",
+    "img-src 'self' blob: data: https://*.supabase.co https://www.paypal.com",
+    "font-src 'self'",
+    "connect-src 'self' https://*.supabase.co https://api.paypal.com https://api.sandbox.paypal.com https://openapi.alipay.com https://openapi-sandbox.dl.alipaydev.com",
+    "frame-src https://www.paypal.com https://www.sandbox.paypal.com",
+    "base-uri 'self'",
+    "form-action 'self'",
+  ].join('; ')
+
+  res.headers.set('Content-Security-Policy', csp)
 
   // attach CF-IPCountry based geo header for server components
   const country = request.headers.get('cf-ipcountry') ?? ''

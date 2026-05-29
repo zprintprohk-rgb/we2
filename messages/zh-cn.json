@@ -169,5 +169,33 @@
     "title": "页面未找到",
     "description": "您访问的页面不存在或已被移动。",
     "backHome": "返回首页"
+  },
+  "payment": {
+    "title": "完成购买",
+    "subtitle": "选择支付方式，解锁 We2 Plus",
+    "periodLabel": "计费周期",
+    "monthly": "按月",
+    "quarterly": "按季",
+    "yearly": "按年",
+    "priceLabel": "合计",
+    "gatewayLabel": "支付方式",
+    "paypal": "PayPal",
+    "alipayCn": "支付宝（中国大陆）",
+    "alipayHk": "AlipayHK（香港 / 台湾）",
+    "payButton": "使用 {gateway} 支付",
+    "processing": "正在处理支付…",
+    "success": {
+      "title": "支付成功！",
+      "message": "感谢订阅 We2 Plus。正在跳转至控制台…"
+    },
+    "error": {
+      "title": "支付失败",
+      "message": "支付过程中出现问题，请重试。",
+      "retry": "重新支付"
+    },
+    "cancel": {
+      "title": "支付已取消",
+      "message": "您已取消支付，随时可以重新尝试。"
+    }
   }
 }
