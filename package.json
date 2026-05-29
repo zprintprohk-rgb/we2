@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "cf-build": "next build && npx @opennextjs/cloudflare build && node -e \"var fs=require('fs'),p='.open-next/';var r=JSON.parse(fs.readFileSync(p+'assets/_routes.json','utf8'));r.exclude=['/_next/*','/build/*','/favicon.ico','/file.svg','/globe.svg','/next.svg','/vercel.svg','/window.svg','/sw-push.js'];fs.writeFileSync(p+'_routes.json',JSON.stringify(r));fs.cpSync(p+'worker.js',p+'_worker.js')\"",
+    "cf-build": "next build && npx next-sitemap && npx @opennextjs/cloudflare build",
     "start": "next start",
     "lint": "eslint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
@@ -22,6 +22,7 @@
     "date-fns": "^4.3.0",
     "drizzle-kit": "^0.31.10",
     "drizzle-orm": "^0.45.2",
+    "framer-motion": "^12.40.0",
     "lucide-react": "^1.16.0",
     "next": "^15.5.7",
     "next-intl": "^4.12.0",
@@ -38,6 +39,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "next-sitemap": "^4.2.3",
     "tailwindcss": "^4",
     "typescript": "^5",
     "wrangler": "^4.94.0"
