@@ -197,5 +197,16 @@
       "title": "支付已取消",
       "message": "您已取消支付，随时可以重新尝试。"
     }
+  },
+  "upload": {
+    "dragOrClick": "拖拽文件到此处，或点击选择文件",
+    "dropHere": "释放文件以上传",
+    "constraints": "单文件最大 {maxSize}MB，最多 {maxFiles} 个文件",
+    "statusSuccess": "上传成功",
+    "remove": "移除文件",
+    "errorTooLarge": "文件超过 {maxSize}MB 限制",
+    "errorType": "不支持的文件类型。允许：{types}",
+    "errorMaxFiles": "最多允许 {max} 个文件",
+    "errorUpload": "上传失败，请重试"
   }
 }

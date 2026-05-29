@@ -197,5 +197,16 @@
       "title": "Zahlung abgebrochen",
       "message": "Du hast die Zahlung abgebrochen. Du kannst es jederzeit erneut versuchen."
     }
+  },
+  "upload": {
+    "dragOrClick": "Dateien hierher ziehen oder klicken zum Auswählen",
+    "dropHere": "Dateien hier ablegen",
+    "constraints": "Max. {maxSize}MB pro Datei, bis zu {maxFiles} Dateien",
+    "statusSuccess": "Hochgeladen",
+    "remove": "Datei entfernen",
+    "errorTooLarge": "Datei überschreitet {maxSize}MB Limit",
+    "errorType": "Nicht unterstützter Dateityp. Erlaubt: {types}",
+    "errorMaxFiles": "Maximal {max} Dateien erlaubt",
+    "errorUpload": "Upload fehlgeschlagen. Bitte erneut versuchen."
   }
 }

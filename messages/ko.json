@@ -197,5 +197,16 @@
       "title": "결제 취소됨",
       "message": "결제가 취소되었습니다. 언제든지 다시 시도할 수 있습니다."
     }
+  },
+  "upload": {
+    "dragOrClick": "파일을 여기로 드래그하거나 클릭하여 선택",
+    "dropHere": "파일을 놓으세요",
+    "constraints": "파일당 최대 {maxSize}MB, 최대 {maxFiles}개",
+    "statusSuccess": "업로드 완료",
+    "remove": "파일 제거",
+    "errorTooLarge": "파일이 {maxSize}MB 제한을 초과합니다",
+    "errorType": "지원되지 않는 파일 형식입니다. 허용: {types}",
+    "errorMaxFiles": "최대 {max}개 파일 허용",
+    "errorUpload": "업로드 실패. 다시 시도해 주세요."
   }
 }

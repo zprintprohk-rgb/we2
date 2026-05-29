@@ -197,5 +197,16 @@
       "title": "Payment Cancelled",
       "message": "You cancelled the payment. Feel free to try again anytime."
     }
+  },
+  "upload": {
+    "dragOrClick": "Drag & drop files here, or click to select",
+    "dropHere": "Drop files here",
+    "constraints": "Max {maxSize}MB per file, up to {maxFiles} files",
+    "statusSuccess": "Uploaded",
+    "remove": "Remove file",
+    "errorTooLarge": "File exceeds {maxSize}MB limit",
+    "errorType": "Unsupported file type. Accepted: {types}",
+    "errorMaxFiles": "Maximum {max} files allowed",
+    "errorUpload": "Upload failed. Please try again."
   }
 }

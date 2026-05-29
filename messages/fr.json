@@ -197,5 +197,16 @@
       "title": "Paiement annulé",
       "message": "Vous avez annulé le paiement. Vous pouvez réessayer à tout moment."
     }
+  },
+  "upload": {
+    "dragOrClick": "Glissez-déposez des fichiers ici, ou cliquez pour sélectionner",
+    "dropHere": "Déposez les fichiers ici",
+    "constraints": "Max {maxSize}Mo par fichier, jusqu'à {maxFiles} fichiers",
+    "statusSuccess": "Téléchargé",
+    "remove": "Supprimer le fichier",
+    "errorTooLarge": "Le fichier dépasse la limite de {maxSize}Mo",
+    "errorType": "Type de fichier non supporté. Acceptés: {types}",
+    "errorMaxFiles": "Maximum {max} fichiers autorisés",
+    "errorUpload": "Échec du téléchargement. Veuillez réessayer."
   }
 }

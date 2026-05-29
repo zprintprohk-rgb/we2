@@ -197,5 +197,16 @@
       "title": "支払いをキャンセルしました",
       "message": "支払いがキャンセルされました。いつでも再試行できます。"
     }
+  },
+  "upload": {
+    "dragOrClick": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+    "dropHere": "ここにファイルをドロップ",
+    "constraints": "ファイルあたり最大 {maxSize}MB、最大 {maxFiles} ファイル",
+    "statusSuccess": "アップロード完了",
+    "remove": "ファイルを削除",
+    "errorTooLarge": "ファイルサイズが {maxSize}MB を超えています",
+    "errorType": "サポートされていないファイル形式です。許可：{types}",
+    "errorMaxFiles": "最大 {max} ファイルまで",
+    "errorUpload": "アップロードに失敗しました。再試行してください。"
   }
 }

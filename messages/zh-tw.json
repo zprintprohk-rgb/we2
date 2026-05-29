@@ -197,5 +197,16 @@
       "title": "付款已取消",
       "message": "您已取消付款，隨時可以重新嘗試。"
     }
+  },
+  "upload": {
+    "dragOrClick": "拖曳檔案到此處，或點擊選擇檔案",
+    "dropHere": "釋放檔案以上傳",
+    "constraints": "單檔案最大 {maxSize}MB，最多 {maxFiles} 個檔案",
+    "statusSuccess": "上傳成功",
+    "remove": "移除檔案",
+    "errorTooLarge": "檔案超過 {maxSize}MB 限制",
+    "errorType": "不支援的檔案類型。允許：{types}",
+    "errorMaxFiles": "最多允許 {max} 個檔案",
+    "errorUpload": "上傳失敗，請重試"
   }
 }

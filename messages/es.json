@@ -197,5 +197,16 @@
       "title": "Pago cancelado",
       "message": "Has cancelado el pago. Puedes intentarlo de nuevo cuando quieras."
     }
+  },
+  "upload": {
+    "dragOrClick": "Arrastra archivos aquí, o haz clic para seleccionar",
+    "dropHere": "Suelta los archivos aquí",
+    "constraints": "Máx. {maxSize}MB por archivo, hasta {maxFiles} archivos",
+    "statusSuccess": "Subido",
+    "remove": "Eliminar archivo",
+    "errorTooLarge": "El archivo supera el límite de {maxSize}MB",
+    "errorType": "Tipo de archivo no soportado. Aceptados: {types}",
+    "errorMaxFiles": "Máximo {max} archivos permitidos",
+    "errorUpload": "Carga fallida. Por favor, inténtalo de nuevo."
   }
 }
