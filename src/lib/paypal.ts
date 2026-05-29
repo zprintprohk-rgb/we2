@@ -1,8 +1,16 @@
-import { z } from 'zod'
-
 const PAYPAL_API_BASE = {
   sandbox: 'https://api-m.sandbox.paypal.com',
   production: 'https://api-m.paypal.com',
+}
+
+// ─── Fail‑fast: 空值或占位符直接拒绝 ───────────────────────────────
+function validateCredentials(clientId: string, clientSecret: string): void {
+  if (!clientId || clientId.startsWith('your-') || clientId.trim() === '') {
+    throw new Error('PAYPAL_CLIENT_ID is not configured')
+  }
+  if (!clientSecret || clientSecret.startsWith('your-') || clientSecret.trim() === '') {
+    throw new Error('PAYPAL_CLIENT_SECRET is not configured')
+  }
 }
 
 // ─── Types ──────────────────────────────────────────────────────────────
@@ -14,6 +22,7 @@ export interface PayPalOrderResponse {
   purchase_units: Array<{
     amount: { currency_code: string; value: string }
     custom_id?: string
+    description?: string
     payments?: {
       captures?: Array<{
         id: string
@@ -96,6 +105,7 @@ export async function createPayPalOrder(
     cancelUrl?: string
   },
 ): Promise<PayPalOrderResponse> {
+  validateCredentials(clientId, clientSecret)
   const base = PAYPAL_API_BASE[mode]
   const token = await getAccessToken(clientId, clientSecret, mode)
 
@@ -144,6 +154,7 @@ export async function capturePayPalOrder(
   mode: 'sandbox' | 'production',
   orderId: string,
 ): Promise<PayPalCaptureResponse> {
+  validateCredentials(clientId, clientSecret)
   const base = PAYPAL_API_BASE[mode]
   const token = await getAccessToken(clientId, clientSecret, mode)
 
@@ -170,6 +181,7 @@ export async function getPayPalOrder(
   mode: 'sandbox' | 'production',
   orderId: string,
 ): Promise<PayPalOrderResponse> {
+  validateCredentials(clientId, clientSecret)
   const base = PAYPAL_API_BASE[mode]
   const token = await getAccessToken(clientId, clientSecret, mode)
 

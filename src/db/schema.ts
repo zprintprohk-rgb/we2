@@ -7,6 +7,7 @@ import {
   integer,
   jsonb,
   primaryKey,
+  index,
 } from "drizzle-orm/pg-core"
 
 // ─── 用户资料（关联 Supabase Auth） ───
@@ -157,23 +158,31 @@ export const pushSubscriptions = pgTable("push_subscriptions", {
 })
 
 // ─── 支付订单 ───
-export const orders = pgTable("orders", {
-  id: text("id").primaryKey(), // out_trade_no or PayPal orderId
-  user_id: uuid("user_id")
-    .notNull()
-    .references(() => profiles.id),
-  user_email: text("user_email"),
-  gateway: text("gateway").notNull(), // paypal | alipay_cn | alipay_hk
-  payment_id: text("payment_id"), // PayPal capture id or Alipay trade_no
-  amount: integer("amount").notNull(), // 最小单位（分）
-  currency: text("currency").notNull(),
-  tier: text("tier").notNull(), // plus | premium | lifetime
-  period: text("period").notNull(), // monthly | quarterly | yearly
-  status: text("status").default("pending").notNull(), // pending | completed | failed
-  gateway_raw: jsonb("gateway_raw"),
-  created_at: timestamp("created_at").defaultNow().notNull(),
-  paid_at: timestamp("paid_at"),
-})
+export const orders = pgTable(
+  "orders",
+  {
+    id: text("id").primaryKey(), // out_trade_no or PayPal orderId
+    user_id: uuid("user_id")
+      .notNull()
+      .references(() => profiles.id),
+    user_email: text("user_email"),
+    gateway: text("gateway").notNull(), // paypal | alipay_cn | alipay_hk
+    payment_id: text("payment_id"), // PayPal capture id or Alipay trade_no
+    amount: integer("amount").notNull(), // 最小单位（分）
+    currency: text("currency").notNull(),
+    tier: text("tier").notNull(), // plus | premium | lifetime
+    period: text("period").notNull(), // monthly | quarterly | yearly
+    status: text("status").default("pending").notNull(), // pending | completed | failed
+    gateway_raw: jsonb("gateway_raw"),
+    created_at: timestamp("created_at").defaultNow().notNull(),
+    paid_at: timestamp("paid_at"),
+  },
+  (table) => ({
+    idx_user_id: index("orders_user_id_idx").on(table.user_id),
+    idx_payment_id: index("orders_payment_id_idx").on(table.payment_id),
+    idx_status: index("orders_status_idx").on(table.status),
+  }),
+)
 
 // ─── 会员订阅 ───
 export const memberships = pgTable("memberships", {
