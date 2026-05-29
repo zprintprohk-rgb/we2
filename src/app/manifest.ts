@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'We2 - Grow Together, Love Deeper',
     short_name: 'We2',
     description: 'The couple\'s app that turns everyday moments into lasting emotional habits.',
-    start_url: '/en',
+    start_url: '/',
     display: 'standalone',
     background_color: '#0f172a',
     theme_color: '#8b5cf6',
