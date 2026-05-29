@@ -3,6 +3,25 @@ const PAYPAL_API_BASE = {
   production: 'https://api-m.paypal.com',
 }
 
+// ─── CRC32 (用于 PayPal Webhook 签名验证) ────────────────────────────
+
+const CRC32_TABLE = new Int32Array(256)
+for (let n = 0; n < 256; n++) {
+  let c = n
+  for (let k = 0; k < 8; k++) {
+    c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1
+  }
+  CRC32_TABLE[n] = c
+}
+
+function crc32(str: string): string {
+  let crc = 0xffffffff
+  for (let i = 0; i < str.length; i++) {
+    crc = CRC32_TABLE[(crc ^ str.charCodeAt(i)) & 0xff]! ^ (crc >>> 8)
+  }
+  return ((crc ^ 0xffffffff) >>> 0).toString(16).toUpperCase()
+}
+
 // ─── Fail‑fast: 空值或占位符直接拒绝 ───────────────────────────────
 function validateCredentials(clientId: string, clientSecret: string): void {
   if (!clientId || clientId.startsWith('your-') || clientId.trim() === '') {
@@ -173,6 +192,69 @@ export async function capturePayPalOrder(
   }
 
   return res.json() as Promise<PayPalCaptureResponse>
+}
+
+/** 验证 PayPal Webhook 签名，防伪造请求。返回 true 表示签名有效。 */
+export async function verifyPayPalWebhook(
+  webhookId: string,
+  headers: Headers,
+  rawBody: string,
+): Promise<boolean> {
+  const transmissionId = headers.get("paypal-transmission-id")
+  const certUrl = headers.get("paypal-cert-url")
+  const authAlgo = headers.get("paypal-auth-algo")
+  const transmissionSig = headers.get("paypal-transmission-sig")
+  const transmissionTime = headers.get("paypal-transmission-time")
+
+  if (!transmissionId || !certUrl || !authAlgo || !transmissionSig || !transmissionTime) {
+    return false
+  }
+
+  // 仅接受来自 PayPal 官方域的证书 URL
+  const certOrigin = new URL(certUrl).origin
+  if (!certOrigin.endsWith(".paypal.com") && certOrigin !== "https://api.paypal.com") {
+    return false
+  }
+
+  try {
+    // 1. 下载 PayPal 公钥证书
+    const certRes = await fetch(certUrl)
+    if (!certRes.ok) return false
+    const pem = await certRes.text()
+
+    // 2. 解析 PEM → ArrayBuffer
+    const pemBody = pem
+      .replace("-----BEGIN CERTIFICATE-----", "")
+      .replace("-----END CERTIFICATE-----", "")
+      .replace(/\s/g, "")
+    const der = Uint8Array.from(atob(pemBody), (c) => c.charCodeAt(0)).buffer
+
+    // 3. 导入公钥
+    const publicKey = await crypto.subtle.importKey(
+      "spki",
+      der,
+      { name: "RSASSA-PKCS1-v1_5", hash: "SHA-256" },
+      false,
+      ["verify"],
+    )
+
+    // 4. 构建待验证字符串
+    const crc = crc32(rawBody)
+    const expectedSig = `${transmissionId}|${transmissionTime}|${webhookId}|${crc}`
+
+    // 5. 解码签名 (Base64 → ArrayBuffer)
+    const sigBytes = Uint8Array.from(atob(transmissionSig), (c) => c.charCodeAt(0))
+
+    // 6. 验证
+    return crypto.subtle.verify(
+      "RSASSA-PKCS1-v1_5",
+      publicKey,
+      sigBytes,
+      new TextEncoder().encode(expectedSig),
+    )
+  } catch {
+    return false
+  }
 }
 
 export async function getPayPalOrder(

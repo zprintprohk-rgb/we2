@@ -17,8 +17,18 @@ PAYPAL_CLIENT_ID = ""
 ALIPAY_APP_ID = ""
 ALIPAY_PUBLIC_KEY = ""
 VAPID_PUBLIC_KEY = ""
+CRON_SECRET = ""  # 用于保护 /api/cron/* 端点
+
+# Cron 触发器：每天 UTC 0:00 检查过期订阅
+[triggers]
+crons = ["0 0 * * *"]
 
 # 静态资源绑定 (OpenNext 自动生成的 assets 目录)
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
+
+# R2 文件存储桶（需先在 Cloudflare Dashboard 创建名为 we2-storage 的桶）
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "we2-storage"

@@ -1,15 +1,27 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { getPayPalOrder } from '@/lib/paypal'
+import { getPayPalOrder, verifyPayPalWebhook } from '@/lib/paypal'
 import { createClient } from '@supabase/supabase-js'
 
 const PAYPAL_CLIENT_ID = process.env.PAYPAL_CLIENT_ID!
 const PAYPAL_CLIENT_SECRET = process.env.PAYPAL_CLIENT_SECRET!
+const PAYPAL_WEBHOOK_ID = process.env.PAYPAL_WEBHOOK_ID ?? ''
 const PAYPAL_MODE = (process.env.PAYPAL_MODE ?? 'sandbox') as 'sandbox' | 'production'
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!
 const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY!
 
 export async function POST(req: NextRequest) {
-  const body = await req.json() as Record<string, unknown>
+  // 先读取原始 body 用于签名验证（后克隆用于 JSON 解析）
+  const rawBody = await req.text()
+
+  // Webhook 签名验证：防伪造请求
+  if (PAYPAL_WEBHOOK_ID) {
+    const valid = await verifyPayPalWebhook(PAYPAL_WEBHOOK_ID, req.headers, rawBody)
+    if (!valid) {
+      return NextResponse.json({ error: 'invalid signature' }, { status: 401 })
+    }
+  }
+
+  const body = JSON.parse(rawBody) as Record<string, unknown>
   const eventType = body.event_type as string | undefined
   const resource = body.resource as { id?: string; status?: string; custom_id?: string } | undefined
 
