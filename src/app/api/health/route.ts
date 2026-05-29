@@ -1,7 +1,5 @@
 import { createEdgeClient } from '@/lib/supabase'
 
-export const runtime = 'edge'
-
 export async function GET() {
   const checks: Record<string, { ok: boolean; latency_ms: number }> = {}
 

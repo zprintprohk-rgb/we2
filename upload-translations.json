@@ -1,0 +1,120 @@
+// 为 8 种语言添加 upload 翻译键
+// messages/en.json
+{
+  "upload": {
+    "dragOrClick": "Drag & drop files here, or click to select",
+    "dropHere": "Drop files here",
+    "constraints": "Max {maxSize}MB per file, up to {maxFiles} files",
+    "statusSuccess": "Uploaded",
+    "remove": "Remove file",
+    "errorTooLarge": "File exceeds {maxSize}MB limit",
+    "errorType": "Unsupported file type. Accepted: {types}",
+    "errorMaxFiles": "Maximum {max} files allowed",
+    "errorUpload": "Upload failed. Please try again."
+  }
+}
+
+// messages/zh-cn.json
+{
+  "upload": {
+    "dragOrClick": "拖拽文件到此处，或点击选择文件",
+    "dropHere": "释放文件以上传",
+    "constraints": "单文件最大 {maxSize}MB，最多 {maxFiles} 个文件",
+    "statusSuccess": "上传成功",
+    "remove": "移除文件",
+    "errorTooLarge": "文件超过 {maxSize}MB 限制",
+    "errorType": "不支持的文件类型。允许：{types}",
+    "errorMaxFiles": "最多允许 {max} 个文件",
+    "errorUpload": "上传失败，请重试"
+  }
+}
+
+// messages/zh-tw.json
+{
+  "upload": {
+    "dragOrClick": "拖曳檔案到此處，或點擊選擇檔案",
+    "dropHere": "釋放檔案以上傳",
+    "constraints": "單檔案最大 {maxSize}MB，最多 {maxFiles} 個檔案",
+    "statusSuccess": "上傳成功",
+    "remove": "移除檔案",
+    "errorTooLarge": "檔案超過 {maxSize}MB 限制",
+    "errorType": "不支援的檔案類型。允許：{types}",
+    "errorMaxFiles": "最多允許 {max} 個檔案",
+    "errorUpload": "上傳失敗，請重試"
+  }
+}
+
+// messages/ja.json
+{
+  "upload": {
+    "dragOrClick": "ファイルをここにドラッグ＆ドロップするか、クリックして選択",
+    "dropHere": "ここにファイルをドロップ",
+    "constraints": "ファイルあたり最大 {maxSize}MB、最大 {maxFiles} ファイル",
+    "statusSuccess": "アップロード完了",
+    "remove": "ファイルを削除",
+    "errorTooLarge": "ファイルサイズが {maxSize}MB を超えています",
+    "errorType": "サポートされていないファイル形式です。許可：{types}",
+    "errorMaxFiles": "最大 {max} ファイルまで",
+    "errorUpload": "アップロードに失敗しました。再試行してください。"
+  }
+}
+
+// messages/ko.json
+{
+  "upload": {
+    "dragOrClick": "파일을 여기로 드래그하거나 클릭하여 선택",
+    "dropHere": "파일을 놓으세요",
+    "constraints": "파일당 최대 {maxSize}MB, 최대 {maxFiles}개",
+    "statusSuccess": "업로드 완료",
+    "remove": "파일 제거",
+    "errorTooLarge": "파일이 {maxSize}MB 제한을 초과합니다",
+    "errorType": "지원되지 않는 파일 형식입니다. 허용: {types}",
+    "errorMaxFiles": "최대 {max}개 파일 허용",
+    "errorUpload": "업로드 실패. 다시 시도해 주세요."
+  }
+}
+
+// messages/de.json
+{
+  "upload": {
+    "dragOrClick": "Dateien hierher ziehen oder klicken, um auszuwählen",
+    "dropHere": "Dateien hier ablegen",
+    "constraints": "Max. {maxSize}MB pro Datei, bis zu {maxFiles} Dateien",
+    "statusSuccess": "Hochgeladen",
+    "remove": "Datei entfernen",
+    "errorTooLarge": "Datei überschreitet {maxSize}MB-Limit",
+    "errorType": "Nicht unterstützter Dateityp. Erlaubt: {types}",
+    "errorMaxFiles": "Maximal {max} Dateien erlaubt",
+    "errorUpload": "Upload fehlgeschlagen. Bitte erneut versuchen."
+  }
+}
+
+// messages/fr.json
+{
+  "upload": {
+    "dragOrClick": "Glissez-déposez des fichiers ici, ou cliquez pour sélectionner",
+    "dropHere": "Déposez les fichiers ici",
+    "constraints": "Max {maxSize}Mo par fichier, jusqu'à {maxFiles} fichiers",
+    "statusSuccess": "Téléchargé",
+    "remove": "Supprimer le fichier",
+    "errorTooLarge": "Le fichier dépasse la limite de {maxSize}Mo",
+    "errorType": "Type de fichier non supporté. Accepté : {types}",
+    "errorMaxFiles": "Maximum {max} fichiers autorisés",
+    "errorUpload": "Échec du téléchargement. Veuillez réessayer."
+  }
+}
+
+// messages/es.json
+{
+  "upload": {
+    "dragOrClick": "Arrastra y suelta archivos aquí, o haz clic para seleccionar",
+    "dropHere": "Suelta archivos aquí",
+    "constraints": "Máx. {maxSize}MB por archivo, hasta {maxFiles} archivos",
+    "statusSuccess": "Subido",
+    "remove": "Eliminar archivo",
+    "errorTooLarge": "El archivo excede el límite de {maxSize}MB",
+    "errorType": "Tipo de archivo no soportado. Permitido: {types}",
+    "errorMaxFiles": "Máximo {max} archivos permitidos",
+    "errorUpload": "Error al subir. Inténtalo de nuevo."
+  }
+}

@@ -1,6 +1,6 @@
 name = "we2-v3"
 main = ".open-next/worker.js"
-compatibility_date = "2025-05-29"
+compatibility_date = "2026-05-29"
 compatibility_flags = ["nodejs_compat"]
 
 # ─── 非敏感环境变量（生产环境） ───
