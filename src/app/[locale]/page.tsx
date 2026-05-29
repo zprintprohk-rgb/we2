@@ -91,6 +91,7 @@ export default async function HomePage({
       />
 
       <HomeClient
+        locale={locale}
         heroTitle={t('home.hero.title')}
         heroSubtitle={t('home.hero.subtitle')}
         heroCta={t('home.hero.cta')}

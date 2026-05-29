@@ -1,6 +1,7 @@
 'use client'
 
-import { Link, useRouter } from '@/i18n/routing'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 
 type Feature = {
@@ -11,6 +12,7 @@ type Feature = {
 }
 
 type Props = {
+  locale: string
   heroTitle: string
   heroSubtitle: string
   heroCta: string
@@ -37,6 +39,7 @@ const item = {
 } as const
 
 export function HomeClient({
+  locale,
   heroTitle,
   heroSubtitle,
   heroCta,
@@ -88,7 +91,7 @@ export function HomeClient({
               whileTap={{ scale: 0.97 }}
             >
               <Link
-                href="/register"
+                href={`/${locale}/register`}
                 className="inline-flex h-11 items-center rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-6 text-sm font-semibold text-white shadow-lg shadow-purple-500/25 hover:from-rose-600 hover:to-purple-700 transition-all duration-300"
               >
                 {heroCta}
@@ -100,7 +103,7 @@ export function HomeClient({
               whileTap={{ scale: 0.97 }}
             >
               <Link
-                href="/features"
+                href={`/${locale}/features`}
                 className="inline-flex h-11 items-center rounded-full border border-rose-200 bg-white/60 backdrop-blur px-6 text-sm font-medium text-rose-700 hover:bg-rose-50 dark:border-purple-800 dark:bg-purple-950/40 dark:text-purple-200 dark:hover:bg-purple-900/50 transition-all duration-300"
               >
                 {heroSecondary}
@@ -126,7 +129,7 @@ export function HomeClient({
                 boxShadow:
                   '0 12px 40px rgba(244,114,182,0.15), 0 0 0 1px rgba(168,85,247,0.2)',
               }}
-              onClick={() => router.push('/features')}
+              onClick={() => router.push(`/${locale}/features`)}
               className="rounded-2xl border border-rose-100 bg-white/70 backdrop-blur p-6 text-left shadow-sm transition-all duration-300 dark:border-purple-800/50 dark:bg-purple-950/30 dark:hover:shadow-purple-500/10 cursor-pointer"
             >
               <span className="text-3xl">{feature.icon}</span>
@@ -143,11 +146,11 @@ export function HomeClient({
         {/* Footer */}
         <footer className="pt-12 text-sm text-zinc-400 dark:text-zinc-500">
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/privacy">{footerPrivacy}</Link>
-            <Link href="/terms">{footerTerms}</Link>
-            <Link href="/cookies">{footerCookie}</Link>
-            <Link href="/help">{footerHelp}</Link>
-            <Link href="/contact">{footerContact}</Link>
+            <Link href={`/${locale}/privacy`}>{footerPrivacy}</Link>
+            <Link href={`/${locale}/terms`}>{footerTerms}</Link>
+            <Link href={`/${locale}/cookies`}>{footerCookie}</Link>
+            <Link href={`/${locale}/help`}>{footerHelp}</Link>
+            <Link href={`/${locale}/contact`}>{footerContact}</Link>
           </div>
           <p className="mt-4">
             © {new Date().getFullYear()} We2
