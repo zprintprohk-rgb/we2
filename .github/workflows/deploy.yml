@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22   # ← 这里必须是 22，不是 20
       - run: npm install
       - run: npm run cf-build
       - run: npx wrangler deploy
