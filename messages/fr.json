@@ -85,7 +85,7 @@
       }
     },
     "cta": "Commencer maintenant",
-    "garantie": "Garantie satisfait ou remboursé 30 jours"
+    "guarantee": "Garantie satisfait ou remboursé 30 jours"
   },
   "faq": {
     "title": "Questions fréquentes",
@@ -124,6 +124,38 @@
         "answer": "Oui ! Notre communauté anonyme vous permet de partager des histoires, demander des conseils et célébrer des étapes avec des couples du monde entier – anonymement ou avec votre profil de couple."
       }
     ]
+  },
+  "auth": {
+    "loginTitle": "Content de vous revoir",
+    "loginSubtitle": "Connectez-vous pour continuer votre voyage à deux",
+    "registerTitle": "Commencez votre voyage",
+    "registerSubtitle": "Créez votre compte et invitez votre partenaire",
+    "emailLabel": "Email",
+    "emailPlaceholder": "votre@exemple.com",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "displayNameLabel": "Pseudo",
+    "displayNamePlaceholder": "Votre nom",
+    "loginButton": "Se connecter",
+    "registerButton": "Créer un compte",
+    "noAccount": "Pas encore de compte ?",
+    "hasAccount": "Déjà un compte ?",
+    "registerLink": "S'inscrire",
+    "loginLink": "Se connecter",
+    "forgotPassword": "Mot de passe oublié ?",
+    "resetPasswordTitle": "Réinitialiser le mot de passe",
+    "resetPasswordSubtitle": "Entrez votre email pour recevoir un lien de réinitialisation",
+    "resetPasswordButton": "Envoyer le lien",
+    "updatePasswordTitle": "Définir un nouveau mot de passe",
+    "updatePasswordSubtitle": "Entrez votre nouveau mot de passe",
+    "updatePasswordButton": "Mettre à jour le mot de passe",
+    "orContinueWith": "Ou continuer avec",
+    "google": "Google",
+    "github": "GitHub",
+    "checkEmail": "Veuillez vérifier votre email pour le lien de confirmation.",
+    "passwordUpdated": "Mot de passe mis à jour. Vous pouvez maintenant vous connecter.",
+    "signOut": "Se déconnecter",
+    "dashboard": "Tableau de bord"
   },
   "footer": {
     "privacy": "Confidentialité",
