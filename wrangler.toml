@@ -29,6 +29,7 @@ directory = ".open-next/assets"
 binding = "ASSETS"
 
 # R2 文件存储桶（需先在 Cloudflare Dashboard 创建名为 we2-storage 的桶）
-[[r2_buckets]]
-binding = "R2"
-bucket_name = "we2-storage"
+# 临时注释：R2 桶未创建，文件上传功能暂时不可用
+# [[r2_buckets]]
+# binding = "R2"
+# bucket_name = "we2-storage"
