@@ -1,5 +1,4 @@
 import type { MetadataRoute } from 'next'
-import { routing } from '@/i18n/routing'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {

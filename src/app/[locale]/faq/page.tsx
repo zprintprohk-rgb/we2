@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { routing } from '@/i18n/routing'
-import { generateAlternateLinks, siteConfig, faqSchema, breadcrumbSchema } from '@/lib/seo'
+import { generateAlternateLinks, getCanonicalUrl, siteConfig, faqSchema, breadcrumbSchema } from '@/lib/seo'
+import type { Locale } from '@/i18n/routing'
 import { Link } from '@/i18n/routing'
 
 // ---------- slugify helper ----------
@@ -31,7 +32,7 @@ export async function generateMetadata({
     title: t('faq.title'),
     description: t('faq.subtitle'),
     alternates: {
-      canonical: `${siteConfig.url}/${locale}/faq`,
+      canonical: getCanonicalUrl(locale as Locale, '/faq'),
       languages: generateAlternateLinks('/faq'),
     },
     openGraph: {
@@ -58,7 +59,7 @@ export default async function FaqPage({
   const items = t.raw('faq.items') as FaqItem[]
 
   const faqTitle = t('faq.title')
-  const faqUrl = `${siteConfig.url}/${locale}/faq`
+  const faqUrl = getCanonicalUrl(locale as Locale, '/faq')
 
   return (
     <>
@@ -73,7 +74,7 @@ export default async function FaqPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(
           breadcrumbSchema([
-            { name: t('nav.home'), url: `${siteConfig.url}/${locale}` },
+            { name: t('nav.home'), url: getCanonicalUrl(locale as Locale) },
             { name: faqTitle, url: faqUrl },
           ])
         ) }}

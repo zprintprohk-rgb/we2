@@ -1,6 +1,5 @@
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
-import { Link } from '@/i18n/routing'
 import { StructuredData } from '@/components/StructuredData'
 import {
   siteConfig,

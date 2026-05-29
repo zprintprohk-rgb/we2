@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { routing } from '@/i18n/routing'
-import { generateAlternateLinks, siteConfig, breadcrumbSchema } from '@/lib/seo'
+import { generateAlternateLinks, getCanonicalUrl, siteConfig, breadcrumbSchema } from '@/lib/seo'
+import type { Locale } from '@/i18n/routing'
 import { Link } from '@/i18n/routing'
 
 // ---------- Guide section type ----------
@@ -47,7 +48,7 @@ export async function generateMetadata({
     title: t('guide.title'),
     description: t('guide.subtitle'),
     alternates: {
-      canonical: `${siteConfig.url}/${locale}/guide`,
+      canonical: getCanonicalUrl(locale as Locale, '/guide'),
       languages: generateAlternateLinks('/guide'),
     },
     openGraph: {
@@ -81,7 +82,7 @@ export default async function GuidePage({
   const guide = t.raw('guide') as GuideContent
 
   const guideTitle = guide.title
-  const guideUrl = `${siteConfig.url}/${locale}/guide`
+  const guideUrl = getCanonicalUrl(locale as Locale, '/guide')
 
   return (
     <>
@@ -91,7 +92,7 @@ export default async function GuidePage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             breadcrumbSchema([
-              { name: t('nav.home'), url: `${siteConfig.url}/${locale}` },
+            { name: t('nav.home'), url: getCanonicalUrl(locale as Locale) },
               { name: guideTitle, url: guideUrl },
             ])
           ),

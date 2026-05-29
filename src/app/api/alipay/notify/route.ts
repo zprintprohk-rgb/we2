@@ -23,7 +23,7 @@ async function pemToPublicCryptoKey(pem: string): Promise<CryptoKey> {
 
 /** Re-build sorted query string without sign & sign_type */
 function buildVerifyString(params: Record<string, string>): string {
-  const { sign, sign_type, ...rest } = params
+  const { sign: _sign, sign_type: _signType, ...rest } = params
   return Object.keys(rest)
     .sort()
     .map((k) => `${k}=${rest[k]}`)

@@ -2,7 +2,8 @@ import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { headers } from 'next/headers'
 import { routing } from '@/i18n/routing'
-import { generateAlternateLinks, siteConfig } from '@/lib/seo'
+import { generateAlternateLinks, getCanonicalUrl } from '@/lib/seo'
+import type { Locale } from '@/i18n/routing'
 import { Link } from '@/i18n/routing'
 import {
   getPricing,
@@ -33,7 +34,7 @@ export async function generateMetadata({
     title: t('pricing.title'),
     description: t('pricing.subtitle'),
     alternates: {
-      canonical: `${siteConfig.url}/${locale}/pricing`,
+      canonical: getCanonicalUrl(locale as Locale, '/pricing'),
       languages: generateAlternateLinks('/pricing'),
     },
     openGraph: {
@@ -68,7 +69,6 @@ export default async function PricingPage({
       monthly: 0,
       quarterly: 0,
       yearly: 0,
-      periodLabel: '',
     },
     {
       key: 'plus' as const,
@@ -76,7 +76,6 @@ export default async function PricingPage({
       monthly: getPrice(country, 'plus', 'monthly'),
       quarterly: pricing.tiers.plus.quarterly,
       yearly: pricing.tiers.plus.yearly,
-      periodLabel: t('pricing.tiers.plus.period') || '/mo',
     },
     {
       key: 'premium' as const,
@@ -84,7 +83,6 @@ export default async function PricingPage({
       monthly: 0,
       quarterly: 0,
       yearly: 0,
-      periodLabel: '',
     },
     {
       key: 'lifetime' as const,
@@ -92,7 +90,6 @@ export default async function PricingPage({
       monthly: 0,
       quarterly: 0,
       yearly: 0,
-      periodLabel: '',
     },
   ]
 
@@ -136,7 +133,7 @@ export default async function PricingPage({
 
       {/* Pricing cards */}
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {tiers.map(({ key, badge, monthly, quarterly, yearly, periodLabel }) => {
+        {tiers.map(({ key, badge, monthly, quarterly, yearly }) => {
           const name = t(`pricing.tiers.${key}.name`)
           const features = t.raw(`pricing.tiers.${key}.features`) as string[]
           const isActive = key === 'plus'

@@ -10,17 +10,22 @@ export const siteConfig = {
 } as const
 
 // --- Canonical & alternate links --------------------------------------------
+// as-needed 模式：默认语言(en)不显示前缀，其他语言显示 /zh-cn 等
 export function generateAlternateLinks(path: string = ''): Record<string, string> {
   const links: Record<string, string> = {}
   for (const locale of routing.locales) {
-    links[locale] = `${siteConfig.url}/${locale}${path}`
+    links[locale] = locale === routing.defaultLocale
+      ? `${siteConfig.url}${path}`          // en → /
+      : `${siteConfig.url}/${locale}${path}` // zh-cn → /zh-cn
   }
-  links['x-default'] = `${siteConfig.url}/${routing.defaultLocale}${path}`
+  links['x-default'] = `${siteConfig.url}${path}`  // x-default 指向根路径
   return links
 }
 
 export function getCanonicalUrl(locale: Locale, path: string = ''): string {
-  return `${siteConfig.url}/${locale}${path}`
+  return locale === routing.defaultLocale
+    ? `${siteConfig.url}${path}`
+    : `${siteConfig.url}/${locale}${path}`
 }
 
 // --- Structured data (JSON-LD) ----------------------------------------------
@@ -72,11 +77,14 @@ const softwareDescriptions: Partial<Record<Locale, string>> = {
 }
 
 export function generateSoftwareSchema(locale: Locale): Record<string, unknown> {
+  const url = locale === routing.defaultLocale
+    ? siteConfig.url
+    : `${siteConfig.url}/${locale}`
   return {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: 'We2',
-    url: `${siteConfig.url}/${locale}`,
+    url,
     applicationCategory: 'LifestyleApplication',
     operatingSystem: 'Any',
     description: softwareDescriptions[locale] ?? softwareDescriptions.en,
@@ -96,11 +104,14 @@ export function generateSoftwareSchema(locale: Locale): Record<string, unknown> 
 
 // Organization schema
 export function organizationSchema(locale: Locale): Record<string, unknown> {
+  const url = locale === routing.defaultLocale
+    ? siteConfig.url
+    : `${siteConfig.url}/${locale}`
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'We2',
-    url: `${siteConfig.url}/${locale}`,
+    url,
     logo: `${siteConfig.url}/logo.png`,
     sameAs: [
       'https://twitter.com/we2app',

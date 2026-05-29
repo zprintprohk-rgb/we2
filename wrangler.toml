@@ -1,3 +1,9 @@
 name = "we2-v3"
+main = ".open-next/worker.js"
 compatibility_date = "2025-05-29"
 compatibility_flags = ["nodejs_compat"]
+
+# 静态资源绑定 (OpenNext 自动生成的 assets 目录)
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
