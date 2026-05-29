@@ -78,7 +78,7 @@ export default async function GuidePage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const t = await getTranslations()
+  const t = await getTranslations({ locale })
   const guide = t.raw('guide') as GuideContent
 
   const guideTitle = guide.title

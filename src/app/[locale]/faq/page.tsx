@@ -55,7 +55,7 @@ export default async function FaqPage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const t = await getTranslations()
+  const t = await getTranslations({ locale })
   const items = t.raw('faq.items') as FaqItem[]
 
   const faqTitle = t('faq.title')
