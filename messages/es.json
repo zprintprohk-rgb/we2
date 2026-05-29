@@ -129,8 +129,13 @@
     "privacy": "Privacidad",
     "terms": "Términos",
     "cookie": "Configuración de cookies",
-    "help": "Centro de ayuda",
+    "help": "Ayuda",
     "contact": "Contacto",
     "copyright": "© {year} We2. Todos los derechos reservados."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "backHome": "Volver al inicio"
   }
 }

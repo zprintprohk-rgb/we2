@@ -131,6 +131,11 @@
     "cookie": "Cookie 設定",
     "help": "ヘルプセンター",
     "contact": "お問い合わせ",
-    "copyright": "© {year} We2. All rights reserved."
+    "copyright": "© {year} We2. 全著作権所有。"
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しないか、移動されました。",
+    "backHome": "ホームに戻る"
   }
 }

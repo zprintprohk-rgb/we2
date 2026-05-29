@@ -132,5 +132,10 @@
     "help": "幫助中心",
     "contact": "聯絡我們",
     "copyright": "© {year} We2. 保留所有權利。"
+  },
+  "notFound": {
+    "title": "頁面未找到",
+    "description": "您訪問的頁面不存在或已被移動。",
+    "backHome": "返回首頁"
   }
 }

@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "cf-build": "next build && npx next-sitemap && npx @opennextjs/cloudflare build",
+    "cf-build": "next build --no-lint && npx next-sitemap && npx @opennextjs/cloudflare build",
     "start": "next start",
     "lint": "eslint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",

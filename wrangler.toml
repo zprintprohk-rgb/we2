@@ -3,6 +3,14 @@ main = ".open-next/worker.js"
 compatibility_date = "2025-05-29"
 compatibility_flags = ["nodejs_compat"]
 
+# ─── 非敏感环境变量（生产环境） ───
+# 敏感变量（SUPABASE_SERVICE_ROLE_KEY、PAYPAL_CLIENT_SECRET 等）
+# 通过命令行设置：npx wrangler secret put <KEY>
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://we2.com"
+NEXTJS_ENV = "production"
+PAYPAL_MODE = "live"
+
 # 静态资源绑定 (OpenNext 自动生成的 assets 目录)
 [assets]
 directory = ".open-next/assets"

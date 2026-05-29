@@ -6,6 +6,12 @@ export default function proxy(request: NextRequest) {
   const handleI18n = createMiddleware(routing)
   const res = handleI18n(request)
 
+  // ─── 安全头 ───
+  res.headers.set('X-Frame-Options', 'DENY')
+  res.headers.set('X-Content-Type-Options', 'nosniff')
+  res.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
+  res.headers.set('X-XSS-Protection', '1; mode=block')
+
   // attach CF-IPCountry based geo header for server components
   const country = request.headers.get('cf-ipcountry') ?? ''
   const geoLocaleMap: Record<string, string> = {
