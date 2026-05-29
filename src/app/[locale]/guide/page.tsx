@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { routing } from '@/i18n/routing'
-import { generateAlternateLinks, getCanonicalUrl, siteConfig, breadcrumbSchema } from '@/lib/seo'
+import { generateAlternateLinks, getCanonicalUrl, breadcrumbSchema } from '@/lib/seo'
 import type { Locale } from '@/i18n/routing'
 import { Link } from '@/i18n/routing'
 
