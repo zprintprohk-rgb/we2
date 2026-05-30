@@ -86,6 +86,22 @@
       }
     },
     "cta": "Jetzt starten",
+    "ctaFree": "Kostenlos starten",
+    "free": "Kostenlos",
+    "period": {
+      "monthly": "Monat",
+      "quarterly": "Quartal",
+      "yearly": "Jahr"
+    },
+    "per": {
+      "monthly": "Monat",
+      "quarterly": "Quartal",
+      "yearly": "Jahr"
+    },
+    "promoPlaceholder": "Aktionscode eingeben",
+    "promoApply": "Anwenden",
+    "promoHint": "Aktionscodes kommen bald!",
+    "secure": "Geschützt durch PayPal",
     "guarantee": "30-Tage-Geld-zurück-Garantie"
   },
   "faq": {

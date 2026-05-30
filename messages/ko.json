@@ -86,6 +86,22 @@
       }
     },
     "cta": "지금 시작하기",
+    "ctaFree": "무료로 시작하기",
+    "free": "무료",
+    "period": {
+      "monthly": "개월",
+      "quarterly": "분기",
+      "yearly": "년"
+    },
+    "per": {
+      "monthly": "/월",
+      "quarterly": "/분기",
+      "yearly": "/년"
+    },
+    "promoPlaceholder": "프로모션 코드 입력",
+    "promoApply": "적용",
+    "promoHint": "프로모션 코드 곧 출시 예정!",
+    "secure": "PayPal 보안 결제",
     "guarantee": "30일 환불 보장"
   },
   "faq": {

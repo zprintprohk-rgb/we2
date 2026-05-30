@@ -86,6 +86,22 @@
       }
     },
     "cta": "Commencer maintenant",
+    "ctaFree": "Commencer gratuitement",
+    "free": "Gratuit",
+    "period": {
+      "monthly": "mois",
+      "quarterly": "trimestre",
+      "yearly": "an"
+    },
+    "per": {
+      "monthly": "mois",
+      "quarterly": "trim.",
+      "yearly": "an"
+    },
+    "promoPlaceholder": "Entrez le code promo",
+    "promoApply": "Appliquer",
+    "promoHint": "Codes promo bientôt disponibles !",
+    "secure": "Sécurisé par PayPal",
     "guarantee": "Garantie satisfait ou remboursé 30 jours"
   },
   "faq": {

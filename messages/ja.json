@@ -86,6 +86,22 @@
       }
     },
     "cta": "今すぐはじめる",
+    "ctaFree": "無料で始める",
+    "free": "無料",
+    "period": {
+      "monthly": "ヶ月",
+      "quarterly": "四半期",
+      "yearly": "年"
+    },
+    "per": {
+      "monthly": "/月",
+      "quarterly": "/四半期",
+      "yearly": "/年"
+    },
+    "promoPlaceholder": "プロモコードを入力",
+    "promoApply": "適用",
+    "promoHint": "プロモコードは近日公開予定！",
+    "secure": "PayPal による安全な決済",
     "guarantee": "30日間の返金保証付き"
   },
   "faq": {

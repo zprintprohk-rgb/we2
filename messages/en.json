@@ -86,6 +86,22 @@
       }
     },
     "cta": "Get Started",
+    "ctaFree": "Get Started Free",
+    "free": "Free",
+    "period": {
+      "monthly": "month",
+      "quarterly": "quarter",
+      "yearly": "year"
+    },
+    "per": {
+      "monthly": "mo",
+      "quarterly": "qtr",
+      "yearly": "yr"
+    },
+    "promoPlaceholder": "Enter promo code",
+    "promoApply": "Apply",
+    "promoHint": "Promo codes coming soon!",
+    "secure": "Secured by PayPal",
     "guarantee": "30-day money-back guarantee"
   },
   "faq": {

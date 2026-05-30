@@ -86,6 +86,22 @@
       }
     },
     "cta": "Comenzar ahora",
+    "ctaFree": "Comenzar gratis",
+    "free": "Gratis",
+    "period": {
+      "monthly": "mes",
+      "quarterly": "trimestre",
+      "yearly": "año"
+    },
+    "per": {
+      "monthly": "mes",
+      "quarterly": "trim.",
+      "yearly": "año"
+    },
+    "promoPlaceholder": "Ingresa código promocional",
+    "promoApply": "Aplicar",
+    "promoHint": "¡Códigos promocionales próximamente!",
+    "secure": "Asegurado por PayPal",
     "guarantee": "Garantía de devolución de 30 días"
   },
   "faq": {

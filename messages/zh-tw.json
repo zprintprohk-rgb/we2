@@ -86,6 +86,22 @@
       }
     },
     "cta": "立即加入",
+    "ctaFree": "免費開始",
+    "free": "免費",
+    "period": {
+      "monthly": "月",
+      "quarterly": "季",
+      "yearly": "年"
+    },
+    "per": {
+      "monthly": "/月",
+      "quarterly": "/季",
+      "yearly": "/年"
+    },
+    "promoPlaceholder": "輸入優惠碼",
+    "promoApply": "使用",
+    "promoHint": "優惠碼功能即將推出！",
+    "secure": "由 PayPal 安全支付",
     "guarantee": "30 天無條件退款保證"
   },
   "faq": {
