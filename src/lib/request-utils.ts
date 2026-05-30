@@ -11,10 +11,12 @@ export function getCustomerCountry(reqOrHeaders: Request | Headers): CountryCode
   ])
 
   let raw: string | null = null
-  if (reqOrHeaders instanceof Headers) {
-    raw = reqOrHeaders.get('CF-IPCountry')
-  } else {
-    raw = reqOrHeaders.headers.get('CF-IPCountry')
+  // Duck‑type check instead of `instanceof` because Cloudflare Workers
+  // may not expose the Headers constructor in the global scope.
+  if (reqOrHeaders && typeof (reqOrHeaders as Headers).get === 'function') {
+    raw = (reqOrHeaders as Headers).get('CF-IPCountry')
+  } else if (reqOrHeaders && 'headers' in (reqOrHeaders as Request)) {
+    raw = (reqOrHeaders as Request).headers.get('CF-IPCountry')
   }
 
   const code = raw?.trim().toUpperCase()
