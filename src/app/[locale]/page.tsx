@@ -96,6 +96,7 @@ export default async function HomePage({
         heroSubtitle={t('home.hero.subtitle')}
         heroCta={t('home.hero.cta')}
         heroSecondary={t('home.hero.secondary')}
+        heroSocialProof={t('home.hero.socialProof')}
         features={features}
         footerPrivacy={t('footer.privacy')}
         footerTerms={t('footer.terms')}
