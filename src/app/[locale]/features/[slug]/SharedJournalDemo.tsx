@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, type FC } from 'react';
+import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { PenLine, User } from 'lucide-react';
 import { storage } from '@/lib/storage';
@@ -52,6 +53,7 @@ const MOCK_ENTRIES: JournalEntry[] = [
 /* ── Component ── */
 
 export const SharedJournalDemo: FC<SharedJournalDemoProps> = () => {
+  const t = useTranslations('demo.sharedJournal');
   const prefersReduced = useReducedMotion();
   const [entries, setEntries] = useState<JournalEntry[]>([]);
   const [content, setContent] = useState('');
@@ -90,7 +92,7 @@ export const SharedJournalDemo: FC<SharedJournalDemoProps> = () => {
   return (
     <div className="space-y-4">
       <h3 className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wide">
-        Shared Journal
+        {t('title')}
       </h3>
 
       {/* Desktop: side-by-side, Mobile: stacked */}
@@ -107,7 +109,7 @@ export const SharedJournalDemo: FC<SharedJournalDemoProps> = () => {
           <textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            placeholder="Write today's entry..."
+            placeholder={t('placeholder')}
             rows={5}
             className="w-full rounded-xl bg-white/30 backdrop-blur-md border border-white/40 px-4 py-3 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-emerald-400/60 dark:focus:border-emerald-400/60 transition-colors resize-none"
           />
@@ -119,7 +121,7 @@ export const SharedJournalDemo: FC<SharedJournalDemoProps> = () => {
             disabled={!content.trim()}
             className="w-full h-11 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-sm font-semibold shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
           >
-            Write Entry
+            {t('writeEntry')}
           </motion.button>
         </div>
 
@@ -156,7 +158,7 @@ export const SharedJournalDemo: FC<SharedJournalDemoProps> = () => {
                       }`}
                     >
                       <User className="h-2.5 w-2.5" />
-                      {isYou ? 'You' : 'Partner'}
+                      {isYou ? t('you') : t('partner')}
                     </span>
                   </div>
 

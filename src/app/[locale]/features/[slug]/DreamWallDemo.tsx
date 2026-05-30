@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, type FC } from 'react';
+import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { Check, Plus } from 'lucide-react';
 import { storage } from '@/lib/storage';
@@ -30,6 +31,7 @@ function genId(): string {
 /* ── Component ── */
 
 export const DreamWallDemo: FC<DreamWallDemoProps> = () => {
+  const t = useTranslations('demo.dreamWall');
   const prefersReduced = useReducedMotion();
   const [dreams, setDreams] = useState<Dream[]>([]);
   const [mounted, setMounted] = useState(false);
@@ -81,7 +83,7 @@ export const DreamWallDemo: FC<DreamWallDemoProps> = () => {
   return (
     <div className="space-y-4">
       <h3 className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wide">
-        Dream Wall
+        {t('title')}
       </h3>
 
       {/* Pin area */}
@@ -110,7 +112,7 @@ export const DreamWallDemo: FC<DreamWallDemoProps> = () => {
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Our next big dream..."
+            placeholder={t('placeholder')}
             onKeyDown={(e) => e.key === 'Enter' && handlePin()}
             className="flex-1 h-11 rounded-xl bg-white/30 backdrop-blur-md border border-white/40 px-4 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-yellow-400/60 dark:focus:border-yellow-400/60 transition-colors"
           />
@@ -123,7 +125,7 @@ export const DreamWallDemo: FC<DreamWallDemoProps> = () => {
             className="h-11 px-5 rounded-xl bg-gradient-to-r from-yellow-400 to-amber-500 text-white text-sm font-semibold shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/40 disabled:opacity-40 disabled:cursor-not-allowed transition-all inline-flex items-center gap-1.5"
           >
             <Plus className="h-4 w-4" />
-            Pin
+            {t('pin')}
           </motion.button>
         </div>
       </div>
@@ -133,7 +135,7 @@ export const DreamWallDemo: FC<DreamWallDemoProps> = () => {
         <div className="rounded-2xl border border-dashed border-white/60 bg-white/20 backdrop-blur-sm p-10 dark:border-purple-800/30 dark:bg-purple-950/10 flex flex-col items-center justify-center gap-3">
           <span className="text-3xl opacity-50">✨</span>
           <p className="text-sm text-zinc-400 dark:text-zinc-500 text-center">
-            Pin your first dream to the wall
+            {t('empty')}
           </p>
         </div>
       ) : (

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, type FC } from 'react';
+import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { Heart } from 'lucide-react';
 import { storage } from '@/lib/storage';
@@ -60,6 +61,7 @@ function genId(): string {
 /* ── Component ── */
 
 export const PrivateCommunityDemo: FC<PrivateCommunityDemoProps> = () => {
+  const t = useTranslations('demo.privateCommunity');
   const prefersReduced = useReducedMotion();
   const [posts, setPosts] = useState<Post[]>([]);
   const [mounted, setMounted] = useState(false);
@@ -100,7 +102,7 @@ export const PrivateCommunityDemo: FC<PrivateCommunityDemoProps> = () => {
   return (
     <div className="space-y-4">
       <h3 className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wide">
-        Community Stories
+        {t('title')}
       </h3>
 
       <div className="rounded-2xl border border-white/40 bg-white/50 backdrop-blur-xl p-4 dark:border-purple-800/30 dark:bg-purple-950/30 shadow-sm space-y-3">

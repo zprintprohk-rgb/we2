@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, type FC } from 'react';
+import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, CheckCircle2 } from 'lucide-react';
 import { storage } from '@/lib/storage';
@@ -30,6 +31,7 @@ const STORAGE_KEY = 'checkin_answers';
 /* ── Component ── */
 
 export const DailyCheckInDemo: FC<DailyCheckInDemoProps> = () => {
+  const t = useTranslations('demo.dailyCheckIn');
   const prefersReduced = useReducedMotion();
   const [questionIndex, setQuestionIndex] = useState<number>(0);
   const [answer, setAnswer] = useState<string>('');
@@ -74,7 +76,7 @@ export const DailyCheckInDemo: FC<DailyCheckInDemoProps> = () => {
   return (
     <div className="space-y-4">
       <h3 className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wide">
-        {"Today's Question"}
+        {t('title')}
       </h3>
 
       {/* Question card */}
@@ -103,7 +105,7 @@ export const DailyCheckInDemo: FC<DailyCheckInDemoProps> = () => {
                 value={answer}
                 onChange={(e) => setAnswer(e.target.value)}
                 className="w-full h-24 px-4 py-3 rounded-xl bg-white/40 backdrop-blur-xl border-2 border-white/40 focus:border-pink-400/60 focus:shadow-[0_0_0_3px_rgba(244,63,94,0.15)] dark:bg-purple-950/40 dark:border-purple-800/30 dark:focus:border-pink-400/60 transition-all duration-200 resize-none text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500"
-                placeholder="Share your moment..."
+                placeholder={t('placeholder')}
               />
               <motion.button
                 whileHover={prefersReduced ? undefined : { scale: 1.02 }}
@@ -113,7 +115,7 @@ export const DailyCheckInDemo: FC<DailyCheckInDemoProps> = () => {
                 disabled={!answer.trim()}
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold shadow-lg shadow-pink-500/25 hover:from-rose-600 hover:to-pink-700 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200"
               >
-                Save Answer
+                {t('save')}
               </motion.button>
             </motion.div>
           ) : (
@@ -132,7 +134,7 @@ export const DailyCheckInDemo: FC<DailyCheckInDemoProps> = () => {
                 <CheckCircle2 className="w-12 h-12 text-emerald-500" />
               </motion.div>
               <p className="text-emerald-600 dark:text-emerald-400 font-medium">
-                Answer saved!
+                {t('saved')}
               </p>
               <motion.button
                 whileHover={prefersReduced ? undefined : { scale: 1.02 }}
@@ -140,7 +142,7 @@ export const DailyCheckInDemo: FC<DailyCheckInDemoProps> = () => {
                 onClick={handleNextQuestion}
                 className="text-sm text-pink-500 dark:text-pink-400 hover:underline transition-colors"
               >
-                Next question →
+                {t('nextQuestion')}
               </motion.button>
             </motion.div>
           )}
@@ -151,7 +153,7 @@ export const DailyCheckInDemo: FC<DailyCheckInDemoProps> = () => {
       {savedAnswers.length > 0 ? (
         <div className="space-y-3">
           <h3 className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wide">
-            Your Answers
+            {t('history')}
           </h3>
           <div className="space-y-2">
             {savedAnswers.slice(0, 5).map((item, i) => (
@@ -175,7 +177,7 @@ export const DailyCheckInDemo: FC<DailyCheckInDemoProps> = () => {
         <div className="flex flex-col items-center justify-center py-10 rounded-2xl border border-dashed border-zinc-300 dark:border-zinc-600 bg-white/20 dark:bg-zinc-800/20">
           <MessageCircle className="w-12 h-12 text-zinc-300 dark:text-zinc-600 mb-3" />
           <p className="text-sm text-zinc-400 dark:text-zinc-500">
-            Start your first check-in
+            {t('empty')}
           </p>
         </div>
       )}

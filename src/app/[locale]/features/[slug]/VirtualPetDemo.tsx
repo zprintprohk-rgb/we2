@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, type FC } from 'react';
+import { useTranslations } from 'next-intl';
 import { motion, useReducedMotion } from 'framer-motion';
 import { PawPrint, Heart, Play, Apple } from 'lucide-react';
 import { storage } from '@/lib/storage';
@@ -36,6 +37,7 @@ function clamp(value: number, min: number, max: number): number {
 /* ── Component ── */
 
 export const VirtualPetDemo: FC<VirtualPetDemoProps> = () => {
+  const t = useTranslations('demo.virtualPet');
   const prefersReduced = useReducedMotion();
   const [pet, setPet] = useState<PetState>(DEFAULT_PET);
   const [mounted, setMounted] = useState<boolean>(false);
@@ -85,7 +87,7 @@ export const VirtualPetDemo: FC<VirtualPetDemoProps> = () => {
   return (
     <div className="space-y-4">
       <h3 className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wide">
-        Your Pet
+        {t('title')}
       </h3>
 
       <div className="rounded-2xl border border-white/40 bg-white/50 backdrop-blur p-6 dark:border-purple-800/30 dark:bg-purple-950/30 shadow-sm text-center">
@@ -108,15 +110,15 @@ export const VirtualPetDemo: FC<VirtualPetDemoProps> = () => {
           <PawPrint className="h-10 w-10 text-white" />
         </motion.div>
 
-        <p className="mt-3 font-semibold text-lg text-zinc-800 dark:text-zinc-100">Luna</p>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">Level {pet.level} · Virtual Companion</p>
+        <p className="mt-3 font-semibold text-lg text-zinc-800 dark:text-zinc-100">{t('petName')}</p>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400">{t('level', { level: pet.level })} · {t('virtualCompanion')}</p>
 
         {/* Stats bars */}
         <div className="mt-5 space-y-3">
           {/* Hunger */}
           <div>
             <div className="flex justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-1">
-              <span>Hunger</span>
+              <span>{t('hunger')}</span>
               <span>{pet.hunger}%</span>
             </div>
             <div className="h-2.5 rounded-full bg-white/40 dark:bg-purple-950/40 overflow-hidden">
@@ -132,7 +134,7 @@ export const VirtualPetDemo: FC<VirtualPetDemoProps> = () => {
           {/* Happiness */}
           <div>
             <div className="flex justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-1">
-              <span>Happiness</span>
+              <span>{t('happiness')}</span>
               <span>{pet.happiness}%</span>
             </div>
             <div className="h-2.5 rounded-full bg-white/40 dark:bg-purple-950/40 overflow-hidden">
@@ -148,7 +150,7 @@ export const VirtualPetDemo: FC<VirtualPetDemoProps> = () => {
           {/* Intimacy */}
           <div>
             <div className="flex justify-between text-xs text-zinc-500 dark:text-zinc-400 mb-1">
-              <span>Intimacy</span>
+              <span>{t('intimacy')}</span>
               <span>{pet.intimacy}%</span>
             </div>
             <div className="h-2.5 rounded-full bg-white/40 dark:bg-purple-950/40 overflow-hidden">
@@ -170,7 +172,7 @@ export const VirtualPetDemo: FC<VirtualPetDemoProps> = () => {
             transition={{ duration: 0.15 }}
             onClick={handleFeed}
             className="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-400 to-rose-500 shadow-lg shadow-pink-500/25 flex items-center justify-center hover:shadow-pink-500/40 transition-shadow"
-            aria-label="Feed"
+            aria-label={t('feed')}
           >
             <Apple className="w-7 h-7 text-white" />
           </motion.button>
@@ -181,7 +183,7 @@ export const VirtualPetDemo: FC<VirtualPetDemoProps> = () => {
             transition={{ duration: 0.15 }}
             onClick={handlePlay}
             className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-400 to-violet-500 shadow-lg shadow-purple-500/25 flex items-center justify-center hover:shadow-purple-500/40 transition-shadow"
-            aria-label="Play"
+            aria-label={t('play')}
           >
             <Play className="w-7 h-7 text-white" />
           </motion.button>
@@ -192,7 +194,7 @@ export const VirtualPetDemo: FC<VirtualPetDemoProps> = () => {
             transition={{ duration: 0.15 }}
             onClick={handleCuddle}
             className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 shadow-lg shadow-amber-500/25 flex items-center justify-center hover:shadow-amber-500/40 transition-shadow"
-            aria-label="Cuddle"
+            aria-label={t('cuddle')}
           >
             <Heart className="w-7 h-7 text-white" />
           </motion.button>

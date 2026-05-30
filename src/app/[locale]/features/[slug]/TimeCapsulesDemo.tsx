@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, type FC } from 'react';
+import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { Package, Lock, LockOpen, Clock } from 'lucide-react';
 import { storage } from '@/lib/storage';
@@ -47,6 +48,7 @@ const TYPE_OPTIONS = [
 /* ── Component ── */
 
 export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
+  const t = useTranslations('demo.timeCapsules');
   const prefersReduced = useReducedMotion();
   const [capsules, setCapsules] = useState<Capsule[]>([]);
   const [mounted, setMounted] = useState(false);
@@ -95,7 +97,7 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
   return (
     <div className="space-y-4">
       <h3 className="text-sm font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wide">
-        Memory Capsules
+        {t('title')}
       </h3>
 
       {/* Create form */}
@@ -104,14 +106,14 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="给未来的我们..."
+          placeholder={t('titlePlaceholder')}
           className="w-full h-11 rounded-xl bg-white/30 backdrop-blur-md border border-white/40 px-4 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-purple-400/60 dark:focus:border-purple-400/60 transition-colors"
         />
 
         <textarea
           value={content}
           onChange={(e) => setContent(e.target.value)}
-          placeholder="写下此刻的心情..."
+          placeholder={t('contentPlaceholder')}
           rows={3}
           className="w-full rounded-xl bg-white/30 backdrop-blur-md border border-white/40 px-4 py-3 text-sm text-zinc-800 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 focus:outline-none focus:border-purple-400/60 dark:focus:border-purple-400/60 transition-colors resize-none"
         />
@@ -153,7 +155,7 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
           disabled={!title.trim() || !unlockDate}
           className="w-full h-11 rounded-xl bg-gradient-to-r from-purple-500 to-violet-600 text-white text-sm font-semibold shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
         >
-          Lock Capsule 🔒
+          {t('lockCapsule')}
         </motion.button>
       </div>
 
@@ -162,7 +164,7 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
         <div className="rounded-2xl border border-dashed border-white/60 bg-white/20 backdrop-blur-sm p-10 dark:border-purple-800/30 dark:bg-purple-950/10 flex flex-col items-center justify-center gap-3">
           <Package className="h-10 w-10 text-zinc-300 dark:text-zinc-600" />
           <p className="text-sm text-zinc-400 dark:text-zinc-500 text-center">
-            Create your first memory capsule
+            {t('empty')}
           </p>
         </div>
       ) : (
@@ -221,7 +223,7 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
                     <div className="flex items-center gap-3 mt-1.5">
                       <span className="inline-flex items-center gap-1 text-xs text-zinc-400 dark:text-zinc-500">
                         <Clock className="h-3 w-3" />
-                        {unlocked ? 'Unlocked' : `${Math.max(days, 0)} days left`}
+                        {unlocked ? t('unlocked') : t('daysLeft', { days: Math.max(days, 0) })}
                       </span>
                       <span className="text-xs px-2 py-0.5 rounded-full bg-purple-100/50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 border border-purple-200/50 dark:border-purple-700/30">
                         {capsule.type === 'text' ? '📝' : capsule.type === 'photo' ? '📷' : '🎤'}
@@ -240,7 +242,7 @@ export const TimeCapsulesDemo: FC<TimeCapsulesDemoProps> = () => {
                         >
                           <div className="mt-3 pt-3 border-t border-purple-200/30 dark:border-purple-700/20">
                             <p className="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed whitespace-pre-wrap">
-                              {capsule.content || '(No content)'}
+                              {capsule.content || t('noContent')}
                             </p>
                           </div>
                         </motion.div>

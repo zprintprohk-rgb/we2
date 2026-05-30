@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { motion, useReducedMotion } from 'framer-motion'
 import { ArrowLeft } from 'lucide-react'
 import { FEATURES, type FeatureMeta, type FeatureSlug } from '@/data/features'
@@ -65,6 +66,8 @@ export function FeatureDetailClient({
   steps: string[]
 }) {
   const prefersReduced = useReducedMotion()
+  const t = useTranslations('features')
+  const tCommon = useTranslations()
   const feature = FEATURES.find((f) => f.slug === slug)
   if (!feature) return null
 
@@ -90,7 +93,7 @@ export function FeatureDetailClient({
             className="inline-flex items-center gap-2 text-sm font-medium text-zinc-500 hover:text-rose-600 dark:text-zinc-400 dark:hover:text-purple-300 transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Features
+            {t('backToFeatures')}
           </Link>
         </motion.div>
 
@@ -128,7 +131,7 @@ export function FeatureDetailClient({
           transition={{ duration: 0.6, delay: 0.25, ease: 'easeOut' }}
           className="mt-10 space-y-3"
         >
-          <h2 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">How It Works</h2>
+          <h2 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">{t('howItWorks')}</h2>
           <div className={`rounded-2xl border border-white/40 bg-white/50 backdrop-blur p-5 dark:border-purple-800/30 dark:bg-purple-950/30 shadow-sm space-y-3`}>
             {steps.map((step, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -150,7 +153,7 @@ export function FeatureDetailClient({
           transition={{ duration: 0.6, delay: 0.4, ease: 'easeOut' }}
           className="mt-10"
         >
-          <h2 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-4">Try It Out</h2>
+          <h2 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100 mb-4">{t('tryItOut')}</h2>
           {renderDemo(feature.demoType, theme, locale)}
         </motion.div>
 
@@ -165,7 +168,7 @@ export function FeatureDetailClient({
             href={`/${locale}/pricing`}
             className="inline-flex h-12 items-center rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-8 text-sm font-semibold text-white shadow-lg shadow-purple-500/25 hover:from-rose-600 hover:to-purple-700 hover:shadow-purple-500/40 transition-all duration-300"
           >
-            Start Free — No Credit Card
+            {tCommon('home.hero.cta')}
           </Link>
         </motion.div>
       </div>
