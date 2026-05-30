@@ -160,7 +160,7 @@ function FloatingIcon({
       style={{ fontSize: size }}
       initial={{ opacity: 0, scale: 0.7 }}
       animate={{
-        opacity: [0.12, 0.25, 0.25, 0.12],
+        opacity: [0.22, 0.45, 0.45, 0.22],
         y: [0, -16, 0, 16],
         scale: [0.85, 1, 0.85],
       }}
@@ -175,14 +175,14 @@ function FloatingIcon({
   )
 }
 
-/** Sparkle particle — 更多更大更亮 */
+/** Sparkle particle — 更大更亮更明显 (amber + drop-shadow) */
 function SparkleParticle({
   top,
   left,
   delay,
   duration,
-  size = 10,
-  opacity = 0.5,
+  size = 22,
+  opacity = 0.85,
 }: {
   top: string
   left: string
@@ -197,12 +197,12 @@ function SparkleParticle({
 
   return (
     <motion.span
-      className="absolute select-none pointer-events-none text-pink-300 dark:text-pink-400"
-      style={{ fontSize: size, top, left }}
+      className="absolute select-none pointer-events-none z-[1] text-amber-300 dark:text-amber-200"
+      style={{ fontSize: size, top, left, filter: 'drop-shadow(0 0 6px rgba(251,191,36,0.6))' }}
       initial={{ opacity: 0, scale: 0 }}
       animate={{
-        opacity: [opacity * 0.4, opacity, opacity * 0.4],
-        scale: [0.6, 1, 0.6],
+        opacity: [opacity * 0.3, opacity, opacity * 0.3],
+        scale: [0.5, 1, 0.5],
       }}
       transition={{
         duration,
