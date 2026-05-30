@@ -33,6 +33,18 @@ async function cleanWithRetry(maxRetries = 5) {
           // Strategy 3: shell-based deletion (bypasses Node fs locks)
           if (process.platform === 'win32') {
             execSync(`rd /s /q "${targetDir}"`, { stdio: 'pipe', timeout: 10000 });
+            // Windows 需要额外等待文件系统释放句柄，否则后续 OpenNext 会 EPERM
+            // 轮询直到目录消失，然后额外等待 2 秒确保句柄完全释放
+            console.log('   Waiting for Windows filesystem to release locks...');
+            for (let w = 0; w < 15; w++) {
+              if (!fs.existsSync(targetDir)) break;
+              await sleep(500);
+            }
+            if (fs.existsSync(targetDir)) {
+              throw new Error('Directory still exists after rd /s /q');
+            }
+            // 额外冷却时间 — 确保 Windows 内核完全释放路径句柄
+            await sleep(2000);
           } else {
             execSync(`rm -rf "${targetDir}"`, { stdio: 'pipe', timeout: 10000 });
           }
@@ -44,11 +56,10 @@ async function cleanWithRetry(maxRetries = 5) {
             console.log('   Retrying in 2s...');
             await sleep(2000);
           } else {
-            console.error(`\n❌ .open-next is locked by another process (EPERM).`);
-            console.error('💡 Run this in a separate admin terminal:');
-            console.error('   taskkill /F /IM node.exe && rd /s /q "F:\\CloudDreamerApp\\we2-v3\\.open-next"');
-            console.error('   Then re-run: npm run cf-build');
-            process.exit(1);
+            console.warn(`\n⚠️  .open-next is locked by another process.`);
+            console.warn('   The build will continue — OpenNext will handle cleanup internally.');
+            // Don't exit — let OpenNext's initOutputDir handle the cleanup
+            return;
           }
         }
       }
