@@ -1,0 +1,28 @@
+diff --git a/node_modules/@opennextjs/aws/dist/build/helper.js b/node_modules/@opennextjs/aws/dist/build/helper.js
+index 6524181..d8d79cf 100644
+--- a/node_modules/@opennextjs/aws/dist/build/helper.js
++++ b/node_modules/@opennextjs/aws/dist/build/helper.js
+@@ -345,7 +345,22 @@ export function printOpenNextVersion(options) {
+  * the app directory, but the compiled config is in the root of the monorepo.
+  */
+ export function initOutputDir(options) {
+-    fs.rmSync(options.outputDir, { recursive: true, force: true });
++    if (fs.existsSync(options.outputDir)) {
++        try {
++            // On Windows, rename-then-rm avoids EPERM from held handles
++            const tempDir = options.outputDir + '.tmp.' + Date.now();
++            fs.renameSync(options.outputDir, tempDir);
++            fs.rmSync(tempDir, { recursive: true, force: true, maxRetries: 5, retryDelay: 500 });
++        } catch (e) {
++            // If rename failed with EPERM and directory no longer exists (e.g. shell
++            // already deleted it), proceed. Otherwise rethrow.
++            if (e.code === 'EPERM' && !fs.existsSync(options.outputDir)) {
++                // Directory already gone — nothing to clean
++            } else {
++                throw e;
++            }
++        }
++    }
+     const { buildDir } = options;
+     fs.mkdirSync(buildDir, { recursive: true });
+     fs.cpSync(options.tempBuildDir, buildDir, { recursive: true });
