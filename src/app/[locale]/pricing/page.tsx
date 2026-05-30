@@ -122,8 +122,8 @@ export default async function PricingPage({
             </span>
           ))}
 
-          {/* Show detected country for transparency (can remove in prod) */}
-          {process.env.NODE_ENV === 'development' && (
+          {/* Show detected country for transparency (disabled in Workers — no process.env) */}
+          {false && (
             <span className="rounded-full border border-green-200 bg-green-50 px-2 py-0.5 text-xs text-green-700 dark:border-green-800 dark:bg-green-950 dark:text-green-400">
               {pricing.country} · {currency}
             </span>
@@ -135,7 +135,7 @@ export default async function PricingPage({
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {tiers.map(({ key, badge, monthly, quarterly, yearly }) => {
           const name = t(`pricing.tiers.${key}.name`)
-          const features = t.raw(`pricing.tiers.${key}.features`) as string[]
+          const features = (t.raw(`pricing.tiers.${key}.features`) as string[]) ?? []
           const isActive = key === 'plus'
 
           // For plus tier, calculate discount savings
