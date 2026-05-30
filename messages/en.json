@@ -227,6 +227,9 @@
     "errorUpload": "Upload failed. Please try again."
   },
   "features": {
+    "backToFeatures": "Back to Features",
+    "howItWorks": "How It Works",
+    "tryItOut": "Try It Out",
     "dailyCheckIn": {
       "longDesc": "Start each day with a thoughtful question designed to deepen your emotional connection. Answer privately, then reveal and discuss with your partner. Our questions are crafted by relationship psychologists to build intimacy over time.",
       "step1": "Receive a daily question each morning",
@@ -268,6 +271,55 @@
       "step2": "Organize by category (travel, home, adventures, etc.)",
       "step3": "Set target dates and track progress together",
       "step4": "Celebrate each achievement with a special animation"
+    }
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "Today's Question",
+      "placeholder": "Share your moment...",
+      "save": "Save Answer",
+      "saved": "Answer saved!",
+      "nextQuestion": "Next question →",
+      "history": "Your Answers",
+      "empty": "Start your first check-in"
+    },
+    "timeCapsules": {
+      "title": "Memory Capsules",
+      "titlePlaceholder": "A title for our future...",
+      "contentPlaceholder": "Write down this moment...",
+      "lockCapsule": "Lock Capsule 🔒",
+      "empty": "Create your first memory capsule",
+      "unlocked": "Unlocked",
+      "daysLeft": "{days} days left",
+      "noContent": "(No content)"
+    },
+    "virtualPet": {
+      "title": "Your Pet",
+      "petName": "Luna",
+      "virtualCompanion": "Virtual Companion",
+      "level": "Level {level}",
+      "hunger": "Hunger",
+      "happiness": "Happiness",
+      "intimacy": "Intimacy",
+      "feed": "Feed",
+      "play": "Play",
+      "cuddle": "Cuddle"
+    },
+    "privateCommunity": {
+      "title": "Community Stories"
+    },
+    "sharedJournal": {
+      "title": "Shared Journal",
+      "placeholder": "Write today's entry...",
+      "writeEntry": "Write Entry",
+      "you": "You",
+      "partner": "Partner"
+    },
+    "dreamWall": {
+      "title": "Dream Wall",
+      "placeholder": "Our next big dream...",
+      "pin": "Pin",
+      "empty": "Pin your first dream to the wall"
     }
   }
 }

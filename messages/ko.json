@@ -64,25 +64,45 @@
       "free": {
         "name": "무료",
         "price": "₩0",
-        "features": ["매일 체크인", "타임캡슐 3개", "기본 펫", "커뮤니티 이용"]
+        "features": [
+          "매일 체크인",
+          "타임캡슐 3개",
+          "기본 펫",
+          "커뮤니티 이용"
+        ]
       },
       "plus": {
         "name": "We2 Plus",
         "price": "₩7,500",
         "period": "/월",
-        "features": ["무제한 캡슐", "프리미엄 펫 스킨", "비공개 앨범", "관계 인사이트"]
+        "features": [
+          "무제한 캡슐",
+          "프리미엄 펫 스킨",
+          "비공개 앨범",
+          "관계 인사이트"
+        ]
       },
       "premium": {
         "name": "We2 Premium",
         "price": "₩19,000",
         "period": "/분기",
-        "features": ["Plus 전 기능", "우선 지원", "펫 이름 커스텀", "추억 내보내기"]
+        "features": [
+          "Plus 전 기능",
+          "우선 지원",
+          "펫 이름 커스텀",
+          "추억 내보내기"
+        ]
       },
       "lifetime": {
         "name": "We2 Forever",
         "price": "₩55,000",
         "period": "/년",
-        "features": ["Premium 전 기능", "평생 업데이트", "독점 콘텐츠", "신기능 선행 체험"]
+        "features": [
+          "Premium 전 기능",
+          "평생 업데이트",
+          "독점 콘텐츠",
+          "신기능 선행 체험"
+        ]
       }
     },
     "cta": "지금 시작하기",
@@ -268,6 +288,58 @@
       "step2": "카테고리별로 정리 (여행, 집, 모험 등)",
       "step3": "목표 날짜를 설정하고 함께 진행 상황 추적하기",
       "step4": "각 성취를 특별한 애니메이션으로 축하하기"
+    },
+    "backToFeatures": "[ko] Back to Features",
+    "howItWorks": "[ko] How It Works",
+    "tryItOut": "[ko] Try It Out"
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "[ko] Today's Question",
+      "placeholder": "[ko] Share your moment...",
+      "save": "[ko] Save Answer",
+      "saved": "[ko] Answer saved!",
+      "nextQuestion": "[ko] Next question →",
+      "history": "[ko] Your Answers",
+      "empty": "[ko] Start your first check-in"
+    },
+    "timeCapsules": {
+      "title": "[ko] Memory Capsules",
+      "titlePlaceholder": "[ko] A title for our future...",
+      "contentPlaceholder": "[ko] Write down this moment...",
+      "lockCapsule": "[ko] Lock Capsule 🔒",
+      "empty": "[ko] Create your first memory capsule",
+      "unlocked": "[ko] Unlocked",
+      "daysLeft": "[ko] {days} days left",
+      "noContent": "[ko] (No content)"
+    },
+    "virtualPet": {
+      "title": "[ko] Your Pet",
+      "petName": "[ko] Luna",
+      "virtualCompanion": "[ko] Virtual Companion",
+      "level": "[ko] Level {level}",
+      "hunger": "[ko] Hunger",
+      "happiness": "[ko] Happiness",
+      "intimacy": "[ko] Intimacy",
+      "feed": "[ko] Feed",
+      "play": "[ko] Play",
+      "cuddle": "[ko] Cuddle"
+    },
+    "privateCommunity": {
+      "title": "[ko] Community Stories"
+    },
+    "sharedJournal": {
+      "title": "[ko] Shared Journal",
+      "placeholder": "[ko] Write today's entry...",
+      "writeEntry": "[ko] Write Entry",
+      "you": "[ko] You",
+      "partner": "[ko] Partner"
+    },
+    "dreamWall": {
+      "title": "[ko] Dream Wall",
+      "placeholder": "[ko] Our next big dream...",
+      "pin": "[ko] Pin",
+      "empty": "[ko] Pin your first dream to the wall"
     }
   }
 }

@@ -64,25 +64,45 @@
       "free": {
         "name": "Gratis",
         "price": "0€",
-        "features": ["Check-in diario", "3 cápsulas del tiempo", "Mascota básica", "Acceso a comunidad"]
+        "features": [
+          "Check-in diario",
+          "3 cápsulas del tiempo",
+          "Mascota básica",
+          "Acceso a comunidad"
+        ]
       },
       "plus": {
         "name": "We2 Plus",
         "price": "5,49€",
         "period": "/mes",
-        "features": ["Cápsulas ilimitadas", "Skins premium", "Álbum privado", "Insights de relación"]
+        "features": [
+          "Cápsulas ilimitadas",
+          "Skins premium",
+          "Álbum privado",
+          "Insights de relación"
+        ]
       },
       "premium": {
         "name": "We2 Premium",
         "price": "13,99€",
         "period": "/trimestre",
-        "features": ["Todo Plus", "Soporte prioritario", "Nombre personalizado", "Exportar recuerdos"]
+        "features": [
+          "Todo Plus",
+          "Soporte prioritario",
+          "Nombre personalizado",
+          "Exportar recuerdos"
+        ]
       },
       "lifetime": {
         "name": "We2 Forever",
         "price": "39,99€",
         "period": "/año",
-        "features": ["Todo Premium", "Actualizaciones de por vida", "Contenido exclusivo", "Acceso anticipado"]
+        "features": [
+          "Todo Premium",
+          "Actualizaciones de por vida",
+          "Contenido exclusivo",
+          "Acceso anticipado"
+        ]
       }
     },
     "cta": "Comenzar ahora",
@@ -268,6 +288,58 @@
       "step2": "Organizad por categoría (viajes, hogar, aventuras, etc.)",
       "step3": "Estableced fechas objetivo y seguid el progreso juntos",
       "step4": "Celebrad cada logro con una animación especial"
+    },
+    "backToFeatures": "[es] Back to Features",
+    "howItWorks": "[es] How It Works",
+    "tryItOut": "[es] Try It Out"
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "[es] Today's Question",
+      "placeholder": "[es] Share your moment...",
+      "save": "[es] Save Answer",
+      "saved": "[es] Answer saved!",
+      "nextQuestion": "[es] Next question →",
+      "history": "[es] Your Answers",
+      "empty": "[es] Start your first check-in"
+    },
+    "timeCapsules": {
+      "title": "[es] Memory Capsules",
+      "titlePlaceholder": "[es] A title for our future...",
+      "contentPlaceholder": "[es] Write down this moment...",
+      "lockCapsule": "[es] Lock Capsule 🔒",
+      "empty": "[es] Create your first memory capsule",
+      "unlocked": "[es] Unlocked",
+      "daysLeft": "[es] {days} days left",
+      "noContent": "[es] (No content)"
+    },
+    "virtualPet": {
+      "title": "[es] Your Pet",
+      "petName": "[es] Luna",
+      "virtualCompanion": "[es] Virtual Companion",
+      "level": "[es] Level {level}",
+      "hunger": "[es] Hunger",
+      "happiness": "[es] Happiness",
+      "intimacy": "[es] Intimacy",
+      "feed": "[es] Feed",
+      "play": "[es] Play",
+      "cuddle": "[es] Cuddle"
+    },
+    "privateCommunity": {
+      "title": "[es] Community Stories"
+    },
+    "sharedJournal": {
+      "title": "[es] Shared Journal",
+      "placeholder": "[es] Write today's entry...",
+      "writeEntry": "[es] Write Entry",
+      "you": "[es] You",
+      "partner": "[es] Partner"
+    },
+    "dreamWall": {
+      "title": "[es] Dream Wall",
+      "placeholder": "[es] Our next big dream...",
+      "pin": "[es] Pin",
+      "empty": "[es] Pin your first dream to the wall"
     }
   }
 }

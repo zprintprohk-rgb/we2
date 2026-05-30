@@ -227,6 +227,9 @@
     "errorUpload": "上传失败，请重试"
   },
   "features": {
+    "backToFeatures": "返回功能列表",
+    "howItWorks": "工作原理",
+    "tryItOut": "试用一下",
     "dailyCheckIn": {
       "longDesc": "每天以一个由关系心理学家精心设计的问题开始，旨在加深你们的情感连接。先私下回答，然后再与伴侣分享和讨论。我们的问题旨在通过日积月累的方式建立亲密感。",
       "step1": "每天早上收到一个每日问题",
@@ -268,6 +271,55 @@
       "step2": "按类别整理（旅行、家居、冒险等）",
       "step3": "设定目标日期并一起追踪进度",
       "step4": "用一个特别的动画庆祝每一个成就"
+    }
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "今日问题",
+      "placeholder": "写下今天的心情...",
+      "save": "保存回答",
+      "saved": "回答已保存！",
+      "nextQuestion": "下一题 →",
+      "history": "你的回答",
+      "empty": "开始你的第一次打卡"
+    },
+    "timeCapsules": {
+      "title": "记忆胶囊",
+      "titlePlaceholder": "给未来的我们起个标题...",
+      "contentPlaceholder": "写下这一刻的想法...",
+      "lockCapsule": "封存胶囊 🔒",
+      "empty": "创建你的第一个记忆胶囊",
+      "unlocked": "已解锁",
+      "daysLeft": "还有 {days} 天",
+      "noContent": "（暂无内容）"
+    },
+    "virtualPet": {
+      "title": "你的宠物",
+      "petName": "小月球",
+      "virtualCompanion": "虚拟伴侣",
+      "level": "{level} 级",
+      "hunger": "饱腹度",
+      "happiness": "快乐度",
+      "intimacy": "亲密度",
+      "feed": "喂食",
+      "play": "玩耍",
+      "cuddle": "抱抱"
+    },
+    "privateCommunity": {
+      "title": "社区故事"
+    },
+    "sharedJournal": {
+      "title": "共享日记",
+      "placeholder": "写下今天的日记...",
+      "writeEntry": "写日记",
+      "you": "你",
+      "partner": "另一半"
+    },
+    "dreamWall": {
+      "title": "梦想墙",
+      "placeholder": "我们下一个大梦想...",
+      "pin": "钉上",
+      "empty": "在墙上钉下你们的第一个梦想"
     }
   }
 }

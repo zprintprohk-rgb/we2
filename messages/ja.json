@@ -64,25 +64,45 @@
       "free": {
         "name": "無料",
         "price": "¥0",
-        "features": ["毎日チェックイン", "3 つのタイムカプセル", "基本ペット", "コミュニティ参加"]
+        "features": [
+          "毎日チェックイン",
+          "3 つのタイムカプセル",
+          "基本ペット",
+          "コミュニティ参加"
+        ]
       },
       "plus": {
         "name": "We2 Plus",
         "price": "¥780",
         "period": "/月",
-        "features": ["カプセル無制限", "プレミアムペットスキン", "プライベートアルバム", "関係性インサイト"]
+        "features": [
+          "カプセル無制限",
+          "プレミアムペットスキン",
+          "プライベートアルバム",
+          "関係性インサイト"
+        ]
       },
       "premium": {
         "name": "We2 Premium",
         "price": "¥1,980",
         "period": "/3ヶ月",
-        "features": ["Plus 全機能", "優先サポート", "ペットの名前カスタム", "思い出エクスポート"]
+        "features": [
+          "Plus 全機能",
+          "優先サポート",
+          "ペットの名前カスタム",
+          "思い出エクスポート"
+        ]
       },
       "lifetime": {
         "name": "We2 Forever",
         "price": "¥5,800",
         "period": "/年",
-        "features": ["Premium 全機能", "生涯アップデート", "限定コンテンツ", "新機能先行体験"]
+        "features": [
+          "Premium 全機能",
+          "生涯アップデート",
+          "限定コンテンツ",
+          "新機能先行体験"
+        ]
       }
     },
     "cta": "今すぐはじめる",
@@ -268,6 +288,58 @@
       "step2": "カテゴリー別に整理（旅行、家、冒険など）",
       "step3": "目標日を設定し、一緒に進捗を追跡",
       "step4": "各達成を特別なアニメーションでお祝い"
+    },
+    "backToFeatures": "[ja] Back to Features",
+    "howItWorks": "[ja] How It Works",
+    "tryItOut": "[ja] Try It Out"
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "[ja] Today's Question",
+      "placeholder": "[ja] Share your moment...",
+      "save": "[ja] Save Answer",
+      "saved": "[ja] Answer saved!",
+      "nextQuestion": "[ja] Next question →",
+      "history": "[ja] Your Answers",
+      "empty": "[ja] Start your first check-in"
+    },
+    "timeCapsules": {
+      "title": "[ja] Memory Capsules",
+      "titlePlaceholder": "[ja] A title for our future...",
+      "contentPlaceholder": "[ja] Write down this moment...",
+      "lockCapsule": "[ja] Lock Capsule 🔒",
+      "empty": "[ja] Create your first memory capsule",
+      "unlocked": "[ja] Unlocked",
+      "daysLeft": "[ja] {days} days left",
+      "noContent": "[ja] (No content)"
+    },
+    "virtualPet": {
+      "title": "[ja] Your Pet",
+      "petName": "[ja] Luna",
+      "virtualCompanion": "[ja] Virtual Companion",
+      "level": "[ja] Level {level}",
+      "hunger": "[ja] Hunger",
+      "happiness": "[ja] Happiness",
+      "intimacy": "[ja] Intimacy",
+      "feed": "[ja] Feed",
+      "play": "[ja] Play",
+      "cuddle": "[ja] Cuddle"
+    },
+    "privateCommunity": {
+      "title": "[ja] Community Stories"
+    },
+    "sharedJournal": {
+      "title": "[ja] Shared Journal",
+      "placeholder": "[ja] Write today's entry...",
+      "writeEntry": "[ja] Write Entry",
+      "you": "[ja] You",
+      "partner": "[ja] Partner"
+    },
+    "dreamWall": {
+      "title": "[ja] Dream Wall",
+      "placeholder": "[ja] Our next big dream...",
+      "pin": "[ja] Pin",
+      "empty": "[ja] Pin your first dream to the wall"
     }
   }
 }

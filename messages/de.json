@@ -227,6 +227,9 @@
     "errorUpload": "Upload fehlgeschlagen. Bitte erneut versuchen."
   },
   "features": {
+    "backToFeatures": "Zurück zu den Funktionen",
+    "howItWorks": "So funktioniert's",
+    "tryItOut": "Ausprobieren",
     "dailyCheckIn": {
       "longDesc": "Starte jeden Tag mit einer durchdachten Frage, die eure emotionale Verbindung vertieft. Antworte privat, bevor du sie mit deinem Partner teilst und besprichst.",
       "step1": "Erhalte jeden Morgen eine tägliche Frage",
@@ -268,6 +271,55 @@
       "step2": "Organisiert nach Kategorie (Reisen, Zuhause, Abenteuer, etc.)",
       "step3": "Setzt Zieldaten und verfolgt gemeinsam den Fortschritt",
       "step4": "Feiert jeden Erfolg mit einer besonderen Animation"
+    }
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "Heutige Frage",
+      "placeholder": "Teile deinen Moment...",
+      "save": "Antwort speichern",
+      "saved": "Antwort gespeichert!",
+      "nextQuestion": "Nächste Frage →",
+      "history": "Deine Antworten",
+      "empty": "Starte dein erstes Check-in"
+    },
+    "timeCapsules": {
+      "title": "Erinnerungskapseln",
+      "titlePlaceholder": "Ein Titel für unsere Zukunft...",
+      "contentPlaceholder": "Schreib diesen Moment auf...",
+      "lockCapsule": "Kapsel verschließen 🔒",
+      "empty": "Erstelle deine erste Erinnerungskapsel",
+      "unlocked": "Entsperrt",
+      "daysLeft": "Noch {days} Tage",
+      "noContent": "(Kein Inhalt)"
+    },
+    "virtualPet": {
+      "title": "Dein Haustier",
+      "petName": "Luna",
+      "virtualCompanion": "Virtueller Begleiter",
+      "level": "Level {level}",
+      "hunger": "Hunger",
+      "happiness": "Glück",
+      "intimacy": "Intimität",
+      "feed": "Füttern",
+      "play": "Spielen",
+      "cuddle": "Kuscheln"
+    },
+    "privateCommunity": {
+      "title": "Community-Geschichten"
+    },
+    "sharedJournal": {
+      "title": "Gemeinsames Tagebuch",
+      "placeholder": "Schreib den heutigen Eintrag...",
+      "writeEntry": "Eintrag schreiben",
+      "you": "Du",
+      "partner": "Partner"
+    },
+    "dreamWall": {
+      "title": "Traumwand",
+      "placeholder": "Unser nächster großer Traum...",
+      "pin": "Anheften",
+      "empty": "Hefte deinen ersten Traum an die Wand"
     }
   }
 }

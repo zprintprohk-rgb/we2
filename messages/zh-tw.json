@@ -64,25 +64,45 @@
       "free": {
         "name": "免費版",
         "price": "$0",
-        "features": ["每日打卡", "3 個時光膠囊", "基礎寵物", "社群存取"]
+        "features": [
+          "每日打卡",
+          "3 個時光膠囊",
+          "基礎寵物",
+          "社群存取"
+        ]
       },
       "plus": {
         "name": "We2 Plus",
         "price": "$5.49",
         "period": "/月",
-        "features": ["無限膠囊", "進階寵物造型", "私密相簿", "關係洞察報告"]
+        "features": [
+          "無限膠囊",
+          "進階寵物造型",
+          "私密相簿",
+          "關係洞察報告"
+        ]
       },
       "premium": {
         "name": "We2 Premium",
         "price": "$13.99",
         "period": "/季",
-        "features": ["Plus 所有功能", "優先客服", "自訂寵物名字", "匯出回憶"]
+        "features": [
+          "Plus 所有功能",
+          "優先客服",
+          "自訂寵物名字",
+          "匯出回憶"
+        ]
       },
       "lifetime": {
         "name": "We2 永久版",
         "price": "$39.99",
         "period": "/年",
-        "features": ["Premium 所有功能", "終身更新", "獨家內容", "提前體驗新功能"]
+        "features": [
+          "Premium 所有功能",
+          "終身更新",
+          "獨家內容",
+          "提前體驗新功能"
+        ]
       }
     },
     "cta": "立即加入",
@@ -268,6 +288,58 @@
       "step2": "按類別整理（旅行、家居、冒險等）",
       "step3": "設定目標日期並一起追蹤進度",
       "step4": "用特殊動畫慶祝每一項成就"
+    },
+    "backToFeatures": "[zh-tw] Back to Features",
+    "howItWorks": "[zh-tw] How It Works",
+    "tryItOut": "[zh-tw] Try It Out"
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "[zh-tw] Today's Question",
+      "placeholder": "[zh-tw] Share your moment...",
+      "save": "[zh-tw] Save Answer",
+      "saved": "[zh-tw] Answer saved!",
+      "nextQuestion": "[zh-tw] Next question →",
+      "history": "[zh-tw] Your Answers",
+      "empty": "[zh-tw] Start your first check-in"
+    },
+    "timeCapsules": {
+      "title": "[zh-tw] Memory Capsules",
+      "titlePlaceholder": "[zh-tw] A title for our future...",
+      "contentPlaceholder": "[zh-tw] Write down this moment...",
+      "lockCapsule": "[zh-tw] Lock Capsule 🔒",
+      "empty": "[zh-tw] Create your first memory capsule",
+      "unlocked": "[zh-tw] Unlocked",
+      "daysLeft": "[zh-tw] {days} days left",
+      "noContent": "[zh-tw] (No content)"
+    },
+    "virtualPet": {
+      "title": "[zh-tw] Your Pet",
+      "petName": "[zh-tw] Luna",
+      "virtualCompanion": "[zh-tw] Virtual Companion",
+      "level": "[zh-tw] Level {level}",
+      "hunger": "[zh-tw] Hunger",
+      "happiness": "[zh-tw] Happiness",
+      "intimacy": "[zh-tw] Intimacy",
+      "feed": "[zh-tw] Feed",
+      "play": "[zh-tw] Play",
+      "cuddle": "[zh-tw] Cuddle"
+    },
+    "privateCommunity": {
+      "title": "[zh-tw] Community Stories"
+    },
+    "sharedJournal": {
+      "title": "[zh-tw] Shared Journal",
+      "placeholder": "[zh-tw] Write today's entry...",
+      "writeEntry": "[zh-tw] Write Entry",
+      "you": "[zh-tw] You",
+      "partner": "[zh-tw] Partner"
+    },
+    "dreamWall": {
+      "title": "[zh-tw] Dream Wall",
+      "placeholder": "[zh-tw] Our next big dream...",
+      "pin": "[zh-tw] Pin",
+      "empty": "[zh-tw] Pin your first dream to the wall"
     }
   }
 }

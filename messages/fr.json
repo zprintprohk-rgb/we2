@@ -64,25 +64,45 @@
       "free": {
         "name": "Gratuit",
         "price": "0€",
-        "features": ["Check-in quotidien", "3 capsules temporelles", "Animal de base", "Accès communauté"]
+        "features": [
+          "Check-in quotidien",
+          "3 capsules temporelles",
+          "Animal de base",
+          "Accès communauté"
+        ]
       },
       "plus": {
         "name": "We2 Plus",
         "price": "5,49€",
         "period": "/mois",
-        "features": ["Capsules illimitées", "Skins d'animaux premium", "Album privé", "Insights relationnels"]
+        "features": [
+          "Capsules illimitées",
+          "Skins d'animaux premium",
+          "Album privé",
+          "Insights relationnels"
+        ]
       },
       "premium": {
         "name": "We2 Premium",
         "price": "13,99€",
         "period": "/trimestre",
-        "features": ["Tout Plus", "Support prioritaire", "Nom d'animal personnalisé", "Export des souvenirs"]
+        "features": [
+          "Tout Plus",
+          "Support prioritaire",
+          "Nom d'animal personnalisé",
+          "Export des souvenirs"
+        ]
       },
       "lifetime": {
         "name": "We2 Forever",
         "price": "39,99€",
         "period": "/an",
-        "features": ["Tout Premium", "Mises à jour à vie", "Contenu exclusif", "Accès anticipé aux nouveautés"]
+        "features": [
+          "Tout Premium",
+          "Mises à jour à vie",
+          "Contenu exclusif",
+          "Accès anticipé aux nouveautés"
+        ]
       }
     },
     "cta": "Commencer maintenant",
@@ -268,6 +288,58 @@
       "step2": "Organisez par catégorie (voyages, maison, aventures, etc.)",
       "step3": "Fixez des dates cibles et suivez les progrès ensemble",
       "step4": "Célébrez chaque réalisation avec une animation spéciale"
+    },
+    "backToFeatures": "[fr] Back to Features",
+    "howItWorks": "[fr] How It Works",
+    "tryItOut": "[fr] Try It Out"
+  },
+  "demo": {
+    "dailyCheckIn": {
+      "title": "[fr] Today's Question",
+      "placeholder": "[fr] Share your moment...",
+      "save": "[fr] Save Answer",
+      "saved": "[fr] Answer saved!",
+      "nextQuestion": "[fr] Next question →",
+      "history": "[fr] Your Answers",
+      "empty": "[fr] Start your first check-in"
+    },
+    "timeCapsules": {
+      "title": "[fr] Memory Capsules",
+      "titlePlaceholder": "[fr] A title for our future...",
+      "contentPlaceholder": "[fr] Write down this moment...",
+      "lockCapsule": "[fr] Lock Capsule 🔒",
+      "empty": "[fr] Create your first memory capsule",
+      "unlocked": "[fr] Unlocked",
+      "daysLeft": "[fr] {days} days left",
+      "noContent": "[fr] (No content)"
+    },
+    "virtualPet": {
+      "title": "[fr] Your Pet",
+      "petName": "[fr] Luna",
+      "virtualCompanion": "[fr] Virtual Companion",
+      "level": "[fr] Level {level}",
+      "hunger": "[fr] Hunger",
+      "happiness": "[fr] Happiness",
+      "intimacy": "[fr] Intimacy",
+      "feed": "[fr] Feed",
+      "play": "[fr] Play",
+      "cuddle": "[fr] Cuddle"
+    },
+    "privateCommunity": {
+      "title": "[fr] Community Stories"
+    },
+    "sharedJournal": {
+      "title": "[fr] Shared Journal",
+      "placeholder": "[fr] Write today's entry...",
+      "writeEntry": "[fr] Write Entry",
+      "you": "[fr] You",
+      "partner": "[fr] Partner"
+    },
+    "dreamWall": {
+      "title": "[fr] Dream Wall",
+      "placeholder": "[fr] Our next big dream...",
+      "pin": "[fr] Pin",
+      "empty": "[fr] Pin your first dream to the wall"
     }
   }
 }
