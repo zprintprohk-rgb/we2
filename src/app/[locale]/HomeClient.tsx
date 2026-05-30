@@ -50,14 +50,84 @@ const featureIcons: Record<string, React.ComponentType<{ className?: string }>> 
   timeCapsule: Sparkles,           // Dream Wall
 }
 
-/* ── Feature → gradient + glow mapping (by key) ── */
-const featureGradients: Record<string, { from: string; to: string; glow: string }> = {
-  sharedJournal:  { from: '#FB7185', to: '#EC4899', glow: 'rgba(251,113,133,0.18)' },
-  moodTracker:    { from: '#A78BFA', to: '#A855F7', glow: 'rgba(167,139,250,0.18)' },
-  dreamWall:      { from: '#60A5FA', to: '#6366F1', glow: 'rgba(96,165,250,0.18)' },
-  dailyGratitude: { from: '#FBBF24', to: '#F97316', glow: 'rgba(251,191,36,0.14)' },
-  petAdoption:    { from: '#34D399', to: '#14B8A6', glow: 'rgba(52,211,153,0.14)' },
-  timeCapsule:    { from: '#FACC15', to: '#F59E0B', glow: 'rgba(250,204,21,0.14)' },
+/* ── Feature → precise theme config (glassmorphism capsule) ── */
+const featureThemes: Record<
+  string,
+  {
+    /** Top gradient light bar */
+    barFrom: string
+    barVia: string
+    barTo: string
+    /** Icon container gradient */
+    iconFrom: string
+    iconTo: string
+    /** Hover shadow color */
+    shadowColor: string
+    /** Background glow orb gradient */
+    glowFrom: string
+    glowTo: string
+  }
+> = {
+  sharedJournal: {
+    barFrom: 'from-pink-400',
+    barVia: 'via-rose-400',
+    barTo: 'to-pink-500',
+    iconFrom: 'from-pink-500',
+    iconTo: 'to-rose-400',
+    shadowColor: 'rgba(236,72,153,0.25)',
+    glowFrom: 'from-pink-400',
+    glowTo: 'to-rose-300',
+  },
+  moodTracker: {
+    barFrom: 'from-violet-400',
+    barVia: 'via-purple-400',
+    barTo: 'to-indigo-500',
+    iconFrom: 'from-violet-500',
+    iconTo: 'to-purple-400',
+    shadowColor: 'rgba(168,85,247,0.25)',
+    glowFrom: 'from-violet-400',
+    glowTo: 'to-purple-300',
+  },
+  dreamWall: {
+    barFrom: 'from-blue-400',
+    barVia: 'via-indigo-400',
+    barTo: 'to-blue-500',
+    iconFrom: 'from-blue-500',
+    iconTo: 'to-indigo-400',
+    shadowColor: 'rgba(99,102,241,0.25)',
+    glowFrom: 'from-blue-400',
+    glowTo: 'to-indigo-300',
+  },
+  dailyGratitude: {
+    barFrom: 'from-amber-400',
+    barVia: 'via-orange-400',
+    barTo: 'to-amber-500',
+    iconFrom: 'from-amber-500',
+    iconTo: 'to-orange-400',
+    shadowColor: 'rgba(245,158,11,0.25)',
+    glowFrom: 'from-amber-400',
+    glowTo: 'to-orange-300',
+  },
+  petAdoption: {
+    barFrom: 'from-emerald-400',
+    barVia: 'via-teal-400',
+    barTo: 'to-emerald-500',
+    iconFrom: 'from-emerald-500',
+    iconTo: 'to-teal-400',
+    shadowColor: 'rgba(20,184,166,0.25)',
+    glowFrom: 'from-emerald-400',
+    glowTo: 'to-teal-300',
+  },
+  timeCapsule: {
+    barFrom: 'from-yellow-400',
+    barVia: 'via-amber-400',
+    barTo: 'to-yellow-500',
+    iconFrom: 'from-yellow-500',
+    iconTo: 'to-amber-400',
+    shadowColor: 'rgba(234,179,8,0.25)',
+    glowFrom: 'from-yellow-400',
+    glowTo: 'to-amber-300',
+  },
 }
 
 /* ── Sparkle positions (20 particles) ── */
@@ -86,7 +156,7 @@ const sparkles = [
 
 /* ── Sub-components ── */
 
-/** Glow orb — 增强 opacity 0.2-0.35 */
+/** Glow orb */
 function GlowOrb({
   className,
   color,
@@ -130,7 +200,7 @@ function GlowOrb({
   )
 }
 
-/** Floating Lucide icon — 替代 ♡，带 3D 景深 */
+/** Floating Lucide icon */
 function FloatingIcon({
   className,
   delay,
@@ -175,7 +245,7 @@ function FloatingIcon({
   )
 }
 
-/** Sparkle particle — 更大更亮更明显 (amber + drop-shadow) */
+/** Sparkle particle */
 function SparkleParticle({
   top,
   left,
@@ -216,46 +286,54 @@ function SparkleParticle({
   )
 }
 
-/** Feature Card — Lucide 图标 + 渐变色容器 + hover 光晕 */
+/** ── Glassmorphism Feature Card ── */
 function FeatureCard({
   feature,
   locale,
+  index,
 }: {
   feature: Feature
   locale: string
+  index: number
 }) {
   const router = useRouter()
   const prefersReduced = useReducedMotion()
-  const gradient = featureGradients[feature.key]
+  const theme = featureThemes[feature.key]
   const LucideIcon = featureIcons[feature.key] ?? Sparkles
 
-  const cardVariants: Variants = prefersReduced
+  /* Entry variants with stagger delay */
+  const cardEntry: Variants = prefersReduced
     ? { hidden: { opacity: 0 }, show: { opacity: 1 } }
     : {
-        hidden: { opacity: 0, y: 24, scale: 0.96 },
+        hidden: { opacity: 0, y: 30, scale: 0.96 },
         show: {
           opacity: 1,
           y: 0,
           scale: 1,
-          transition: { duration: 0.5, ease: 'easeOut' },
+          transition: {
+            duration: 0.6,
+            delay: index * 0.1,
+            ease: 'easeOut',
+          },
         },
       }
 
+  /* Hover state */
+  const hoverProps = prefersReduced
+    ? undefined
+    : {
+        y: -8,
+        scale: 1.02,
+        transition: { duration: 0.3, ease: 'easeOut' as const },
+      }
+
+  const tapProps = prefersReduced ? undefined : { scale: 0.97 }
+
   return (
     <motion.article
-      variants={cardVariants}
-      whileHover={
-        prefersReduced
-          ? undefined
-          : {
-              y: -6,
-              boxShadow: gradient
-                ? `0 12px 40px ${gradient.glow}, 0 0 0 1px rgba(168,85,247,0.15)`
-                : '0 12px 40px rgba(244,114,182,0.12)',
-              transition: { duration: 0.3, ease: 'easeOut' },
-            }
-      }
-      whileTap={prefersReduced ? undefined : { scale: 0.97 }}
+      variants={cardEntry}
+      whileHover={hoverProps}
+      whileTap={tapProps}
       onClick={() => router.push(`/${locale}/features`)}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') {
@@ -266,39 +344,87 @@ function FeatureCard({
       tabIndex={0}
       role="article"
       aria-label={feature.title}
-      className="group cursor-pointer rounded-2xl border border-rose-100/60 bg-white/70 backdrop-blur-md p-6 text-left shadow-sm transition-all duration-300 dark:border-purple-800/40 dark:bg-purple-950/30 dark:shadow-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/50"
+      className="group relative cursor-pointer overflow-hidden rounded-2xl border border-white/60 bg-white/40 backdrop-blur-xl shadow-lg transition-[box-shadow] duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/50 dark:border-purple-800/40 dark:bg-purple-950/30 hover:shadow-2xl focus-visible:shadow-2xl"
+      style={{
+        /* Hover shadow is applied via inline style for theme color */
+        ['--hover-shadow' as string]: theme
+          ? `0 25px 50px -12px ${theme.shadowColor}, 0 0 0 1px rgba(168,85,247,0.1)`
+          : undefined,
+      }}
+      onMouseEnter={(e) => {
+        if (!prefersReduced && theme) {
+          e.currentTarget.style.boxShadow = `0 25px 50px -12px ${theme.shadowColor}, 0 0 0 1px rgba(168,85,247,0.1)`
+        }
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.boxShadow = ''
+      }}
+      onFocus={(e) => {
+        if (!prefersReduced && theme) {
+          e.currentTarget.style.boxShadow = `0 25px 50px -12px ${theme.shadowColor}, 0 0 0 1px rgba(168,85,247,0.1)`
+        }
+      }}
+      onBlur={(e) => {
+        e.currentTarget.style.boxShadow = ''
+      }}
     >
-      {/* Icon container with gradient */}
-      <div
-        className="flex h-12 w-12 items-center justify-center rounded-xl shadow-sm transition-transform duration-300 group-hover:scale-110 group-hover:shadow-md"
-        style={{
-          background: gradient
-            ? `linear-gradient(135deg, ${gradient.from}, ${gradient.to})`
-            : 'linear-gradient(135deg, #FB7185, #EC4899)',
-        }}
-      >
-        <LucideIcon className="h-6 w-6 text-white" aria-hidden="true" />
-      </div>
+      {/* ── Top gradient light bar ── */}
+      {theme && (
+        <div
+          className={`h-[2px] w-full bg-gradient-to-r ${theme.barFrom} ${theme.barVia} ${theme.barTo} opacity-40 transition-opacity duration-500 group-hover:opacity-100 group-focus-visible:opacity-100`}
+        />
+      )}
 
-      <h3 className="mt-4 font-semibold text-base text-zinc-900 dark:text-zinc-100">
-        {feature.title}
-      </h3>
+      {/* ── Background glow orb (hover reveal) ── */}
+      {theme && (
+        <div
+          className={`pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-gradient-to-br ${theme.glowFrom} ${theme.glowTo} blur-3xl opacity-0 transition-opacity duration-700 group-hover:opacity-20 group-focus-visible:opacity-20`}
+        />
+      )}
 
-      <p className="mt-1.5 text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-        {feature.desc}
-      </p>
-
-      {/* Learn more link */}
-      <span className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-rose-600 dark:text-purple-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        Learn more
-        <motion.span
-          whileHover={prefersReduced ? undefined : { x: 4 }}
-          transition={{ duration: 0.2 }}
-          aria-hidden="true"
+      {/* ── Card content ── */}
+      <div className="relative p-6">
+        {/* Icon container with gradient */}
+        <motion.div
+          className={`flex h-12 w-12 items-center justify-center rounded-xl shadow-sm ${theme ? `bg-gradient-to-br ${theme.iconFrom} ${theme.iconTo}` : 'bg-gradient-to-br from-pink-500 to-rose-400'}`}
+          whileHover={
+            prefersReduced
+              ? undefined
+              : {
+                  scale: 1.15,
+                  rotate: [0, -5, 5, 0],
+                  transition: { type: 'spring', stiffness: 400, damping: 15 },
+                }
+          }
         >
-          →
-        </motion.span>
-      </span>
+          <LucideIcon className="h-6 w-6 text-white" aria-hidden="true" />
+        </motion.div>
+
+        {/* Title — gradient on hover */}
+        <h3 className="mt-4 font-semibold text-base text-zinc-900 transition-colors duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-600 group-hover:bg-clip-text group-hover:text-transparent dark:text-zinc-100 dark:group-hover:from-zinc-100 dark:group-hover:to-zinc-400">
+          {feature.title}
+        </h3>
+
+        {/* Description */}
+        <p className="mt-1.5 text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+          {feature.desc}
+        </p>
+
+        {/* Learn more link */}
+        <span
+          className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-rose-600 dark:text-purple-300 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300"
+          aria-label={`Learn more about ${feature.title}`}
+        >
+          Learn more
+          <motion.span
+            whileHover={prefersReduced ? undefined : { x: 4 }}
+            transition={{ duration: 0.2 }}
+            aria-hidden="true"
+          >
+            →
+          </motion.span>
+        </span>
+      </div>
     </motion.article>
   )
 }
@@ -320,7 +446,7 @@ export function HomeClient({
 }: Props) {
   const prefersReduced = useReducedMotion()
 
-  /* Animation variants */
+  /* Animation variants for card grid */
   const container: Variants = {
     hidden: prefersReduced ? {} : { opacity: 0 },
     show: prefersReduced
@@ -333,12 +459,12 @@ export function HomeClient({
 
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-rose-50 via-pink-50 to-white px-4 py-16 dark:from-rose-950/40 dark:via-purple-950/30 dark:to-zinc-950">
-      {/* ── Background glow orbs (enhanced) ── */}
+      {/* ── Background glow orbs ── */}
       <GlowOrb className="w-[450px] h-[450px] -top-24 -left-24" color="#EC4899" delay={0} duration={10} />
       <GlowOrb className="w-[380px] h-[380px] top-1/2 -right-20" color="#A855F7" delay={2} duration={12} />
       <GlowOrb className="w-[320px] h-[320px] top-1/4 right-1/3" color="#6366F1" delay={4} duration={9} />
 
-      {/* ── Floating Lucide icons (replace ♡) ── */}
+      {/* ── Floating Lucide icons ── */}
       <FloatingIcon
         className="left-[5%] top-[40%] text-rose-400 dark:text-rose-300"
         delay={0} duration={4} size={24} Icon={Calendar}
@@ -440,12 +566,12 @@ export function HomeClient({
           </motion.div>
         </motion.div>
 
-        {/* ════════ Feature Cards (completely rewritten) ════════ */}
+        {/* ════════ Feature Cards — Glassmorphism Capsules ════════ */}
         <section className="pb-16">
           <motion.h2
             initial={prefersReduced ? {} : { opacity: 0, y: 30 }}
             whileInView={prefersReduced ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.15 }}
+            viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="text-2xl font-bold tracking-tight sm:text-3xl bg-gradient-to-r from-rose-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
           >
@@ -455,7 +581,7 @@ export function HomeClient({
           <motion.p
             initial={prefersReduced ? {} : { opacity: 0, y: 20 }}
             whileInView={prefersReduced ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.15 }}
+            viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.5, delay: 0.15, ease: 'easeOut' }}
             className="mt-3 mb-10 text-base text-zinc-500 dark:text-zinc-400"
           >
@@ -466,11 +592,11 @@ export function HomeClient({
             variants={container}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.15 }}
+            viewport={{ once: true, margin: '-50px' }}
             className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
           >
-            {features.map((feature) => (
-              <FeatureCard key={feature.key} feature={feature} locale={locale} />
+            {features.map((feature, i) => (
+              <FeatureCard key={feature.key} feature={feature} locale={locale} index={i} />
             ))}
           </motion.div>
         </section>
