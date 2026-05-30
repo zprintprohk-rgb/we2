@@ -2,8 +2,22 @@
 
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
+import type { Variants } from 'framer-motion'
+import {
+  Calendar,
+  MessageCircle,
+  Camera,
+  Sparkles,
+  HeartHandshake,
+  Clock,
+  PawPrint,
+  Users,
+  BookOpen,
+  Star,
+} from 'lucide-react'
 
+/* ── Types ── */
 type Feature = {
   key: string
   icon: string
@@ -26,63 +40,85 @@ type Props = {
   footerContact: string
 }
 
-/* ── Animation variants ── */
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: { staggerChildren: 0.12 },
-  },
-} as const
-
-const item = {
-  hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' as const } },
-} as const
-
-/* ── Floating heart component ── */
-function FloatingHeart({ className, delay, duration, size }: {
-  className: string
-  delay: number
-  duration: number
-  size: number
-}) {
-  return (
-    <motion.span
-      className={`absolute select-none pointer-events-none ${className}`}
-      style={{ fontSize: size }}
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: [0, 0.18, 0.18, 0],
-        y: [0, -12, 0, 12],
-      }}
-      transition={{
-        opacity: { duration: duration * 2, repeat: Infinity, ease: 'easeInOut', delay },
-        y: { duration, repeat: Infinity, ease: 'easeInOut', delay },
-      }}
-    >
-      ♡
-    </motion.span>
-  )
+/* ── Feature → Lucide icon mapping (by key) ── */
+const featureIcons: Record<string, React.ComponentType<{ className?: string }>> = {
+  sharedJournal: HeartHandshake,   // Daily Check-in
+  moodTracker: Clock,              // Time Capsules
+  dreamWall: PawPrint,             // Virtual Pet
+  dailyGratitude: Users,           // Private Community
+  petAdoption: BookOpen,           // Shared Journal
+  timeCapsule: Sparkles,           // Dream Wall
 }
 
-/* ── Glow orb component ── */
-function GlowOrb({ className, color, delay, duration }: {
+/* ── Feature → gradient + glow mapping (by key) ── */
+const featureGradients: Record<string, { from: string; to: string; glow: string }> = {
+  sharedJournal:  { from: '#FB7185', to: '#EC4899', glow: 'rgba(251,113,133,0.18)' },
+  moodTracker:    { from: '#A78BFA', to: '#A855F7', glow: 'rgba(167,139,250,0.18)' },
+  dreamWall:      { from: '#60A5FA', to: '#6366F1', glow: 'rgba(96,165,250,0.18)' },
+  dailyGratitude: { from: '#FBBF24', to: '#F97316', glow: 'rgba(251,191,36,0.14)' },
+  petAdoption:    { from: '#34D399', to: '#14B8A6', glow: 'rgba(52,211,153,0.14)' },
+  timeCapsule:    { from: '#FACC15', to: '#F59E0B', glow: 'rgba(250,204,21,0.14)' },
+}
+
+/* ── Sparkle positions (20 particles) ── */
+const sparkles = [
+  { top: '5%',  left: '10%', delay: 0,    duration: 2.5 },
+  { top: '10%', left: '40%', delay: 0.4,  duration: 3.0 },
+  { top: '8%',  left: '70%', delay: 0.8,  duration: 2.8 },
+  { top: '18%', left: '25%', delay: 1.2,  duration: 2.3 },
+  { top: '15%', left: '85%', delay: 1.6,  duration: 3.2 },
+  { top: '25%', left: '8%',  delay: 0.2,  duration: 2.6 },
+  { top: '30%', left: '55%', delay: 1.0,  duration: 2.4 },
+  { top: '35%', left: '80%', delay: 0.6,  duration: 3.1 },
+  { top: '45%', left: '15%', delay: 1.8,  duration: 2.7 },
+  { top: '50%', left: '92%', delay: 0.3,  duration: 2.9 },
+  { top: '55%', left: '5%',  delay: 1.4,  duration: 2.2 },
+  { top: '60%', left: '45%', delay: 0.7,  duration: 3.0 },
+  { top: '65%', left: '75%', delay: 1.1,  duration: 2.5 },
+  { top: '70%', left: '20%', delay: 0.9,  duration: 3.3 },
+  { top: '72%', left: '60%', delay: 1.5,  duration: 2.6 },
+  { top: '80%', left: '88%', delay: 0.5,  duration: 2.8 },
+  { top: '85%', left: '35%', delay: 1.3,  duration: 2.1 },
+  { top: '88%', left: '12%', delay: 0.1,  duration: 3.0 },
+  { top: '92%', left: '50%', delay: 1.7,  duration: 2.7 },
+  { top: '95%', left: '78%', delay: 0.35, duration: 3.1 },
+]
+
+/* ── Sub-components ── */
+
+/** Glow orb — 增强 opacity 0.2-0.35 */
+function GlowOrb({
+  className,
+  color,
+  delay,
+  duration,
+}: {
   className: string
   color: string
   delay: number
   duration: number
 }) {
+  const prefersReduced = useReducedMotion()
+
+  if (prefersReduced) {
+    return (
+      <div
+        className={`absolute rounded-full blur-3xl pointer-events-none ${className}`}
+        style={{ background: color, opacity: 0.15 }}
+      />
+    )
+  }
+
   return (
     <motion.div
       className={`absolute rounded-full blur-3xl pointer-events-none ${className}`}
       style={{ background: color }}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{
-        opacity: [0.06, 0.1, 0.06],
-        scale: [0.8, 1, 0.8],
-        x: [0, 20, -15, 0],
-        y: [0, -15, 10, 0],
+        opacity: [0.22, 0.35, 0.22],
+        scale: [0.8, 1.05, 0.8],
+        x: [0, 25, -18, 0],
+        y: [0, -18, 14, 0],
       }}
       transition={{
         duration,
@@ -94,18 +130,80 @@ function GlowOrb({ className, color, delay, duration }: {
   )
 }
 
-/* ── Sparkle particle ── */
-function Sparkle({ className, delay, duration }: {
+/** Floating Lucide icon — 替代 ♡，带 3D 景深 */
+function FloatingIcon({
+  className,
+  delay,
+  duration,
+  size,
+  Icon,
+}: {
   className: string
   delay: number
   duration: number
+  size: number
+  Icon: React.ComponentType<{ className?: string }>
 }) {
+  const prefersReduced = useReducedMotion()
+
+  if (prefersReduced) {
+    return (
+      <span className={`absolute select-none pointer-events-none ${className}`}>
+        <Icon />
+      </span>
+    )
+  }
+
   return (
     <motion.span
-      className={`absolute select-none pointer-events-none text-pink-300 dark:text-pink-400 ${className}`}
-      style={{ fontSize: 6 }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: [0.3, 0.8, 0.3] }}
+      className={`absolute select-none pointer-events-none ${className}`}
+      style={{ fontSize: size }}
+      initial={{ opacity: 0, scale: 0.7 }}
+      animate={{
+        opacity: [0.12, 0.25, 0.25, 0.12],
+        y: [0, -16, 0, 16],
+        scale: [0.85, 1, 0.85],
+      }}
+      transition={{
+        opacity: { duration: duration * 2, repeat: Infinity, ease: 'easeInOut', delay },
+        y: { duration, repeat: Infinity, ease: 'easeInOut', delay },
+        scale: { duration, repeat: Infinity, ease: 'easeInOut', delay },
+      }}
+    >
+      <Icon />
+    </motion.span>
+  )
+}
+
+/** Sparkle particle — 更多更大更亮 */
+function SparkleParticle({
+  top,
+  left,
+  delay,
+  duration,
+  size = 10,
+  opacity = 0.5,
+}: {
+  top: string
+  left: string
+  delay: number
+  duration: number
+  size?: number
+  opacity?: number
+}) {
+  const prefersReduced = useReducedMotion()
+
+  if (prefersReduced) return null
+
+  return (
+    <motion.span
+      className="absolute select-none pointer-events-none text-pink-300 dark:text-pink-400"
+      style={{ fontSize: size, top, left }}
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{
+        opacity: [opacity * 0.4, opacity, opacity * 0.4],
+        scale: [0.6, 1, 0.6],
+      }}
       transition={{
         duration,
         repeat: Infinity,
@@ -115,6 +213,93 @@ function Sparkle({ className, delay, duration }: {
     >
       ✦
     </motion.span>
+  )
+}
+
+/** Feature Card — Lucide 图标 + 渐变色容器 + hover 光晕 */
+function FeatureCard({
+  feature,
+  locale,
+}: {
+  feature: Feature
+  locale: string
+}) {
+  const router = useRouter()
+  const prefersReduced = useReducedMotion()
+  const gradient = featureGradients[feature.key]
+  const LucideIcon = featureIcons[feature.key] ?? Sparkles
+
+  const cardVariants: Variants = prefersReduced
+    ? { hidden: { opacity: 0 }, show: { opacity: 1 } }
+    : {
+        hidden: { opacity: 0, y: 24, scale: 0.96 },
+        show: {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          transition: { duration: 0.5, ease: 'easeOut' },
+        },
+      }
+
+  return (
+    <motion.article
+      variants={cardVariants}
+      whileHover={
+        prefersReduced
+          ? undefined
+          : {
+              y: -6,
+              boxShadow: gradient
+                ? `0 12px 40px ${gradient.glow}, 0 0 0 1px rgba(168,85,247,0.15)`
+                : '0 12px 40px rgba(244,114,182,0.12)',
+              transition: { duration: 0.3, ease: 'easeOut' },
+            }
+      }
+      whileTap={prefersReduced ? undefined : { scale: 0.97 }}
+      onClick={() => router.push(`/${locale}/features`)}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          router.push(`/${locale}/features`)
+        }
+      }}
+      tabIndex={0}
+      role="article"
+      aria-label={feature.title}
+      className="group cursor-pointer rounded-2xl border border-rose-100/60 bg-white/70 backdrop-blur-md p-6 text-left shadow-sm transition-all duration-300 dark:border-purple-800/40 dark:bg-purple-950/30 dark:shadow-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/50"
+    >
+      {/* Icon container with gradient */}
+      <div
+        className="flex h-12 w-12 items-center justify-center rounded-xl shadow-sm transition-transform duration-300 group-hover:scale-110 group-hover:shadow-md"
+        style={{
+          background: gradient
+            ? `linear-gradient(135deg, ${gradient.from}, ${gradient.to})`
+            : 'linear-gradient(135deg, #FB7185, #EC4899)',
+        }}
+      >
+        <LucideIcon className="h-6 w-6 text-white" aria-hidden="true" />
+      </div>
+
+      <h3 className="mt-4 font-semibold text-base text-zinc-900 dark:text-zinc-100">
+        {feature.title}
+      </h3>
+
+      <p className="mt-1.5 text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
+        {feature.desc}
+      </p>
+
+      {/* Learn more link */}
+      <span className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-rose-600 dark:text-purple-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        Learn more
+        <motion.span
+          whileHover={prefersReduced ? undefined : { x: 4 }}
+          transition={{ duration: 0.2 }}
+          aria-hidden="true"
+        >
+          →
+        </motion.span>
+      </span>
+    </motion.article>
   )
 }
 
@@ -133,37 +318,66 @@ export function HomeClient({
   footerHelp,
   footerContact,
 }: Props) {
-  const router = useRouter()
+  const prefersReduced = useReducedMotion()
+
+  /* Animation variants */
+  const container: Variants = {
+    hidden: prefersReduced ? {} : { opacity: 0 },
+    show: prefersReduced
+      ? {}
+      : {
+          opacity: 1,
+          transition: { staggerChildren: 0.1 },
+        },
+  }
 
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-rose-50 via-pink-50 to-white px-4 py-16 dark:from-rose-950/40 dark:via-purple-950/30 dark:to-zinc-950">
-      {/* ── Background decorations ── */}
-      <GlowOrb className="w-[400px] h-[400px] -top-20 -left-20" color="#EC4899" delay={0} duration={10} />
-      <GlowOrb className="w-[350px] h-[350px] top-1/2 -right-16" color="#A855F7" delay={2} duration={12} />
-      <GlowOrb className="w-[300px] h-[300px] top-1/4 right-1/4" color="#6366F1" delay={4} duration={9} />
+      {/* ── Background glow orbs (enhanced) ── */}
+      <GlowOrb className="w-[450px] h-[450px] -top-24 -left-24" color="#EC4899" delay={0} duration={10} />
+      <GlowOrb className="w-[380px] h-[380px] top-1/2 -right-20" color="#A855F7" delay={2} duration={12} />
+      <GlowOrb className="w-[320px] h-[320px] top-1/4 right-1/3" color="#6366F1" delay={4} duration={9} />
 
-      <FloatingHeart className="left-[5%] top-[40%] text-rose-500 dark:text-rose-400" delay={0} duration={4} size={24} />
-      <FloatingHeart className="right-[8%] top-[28%] text-rose-500 dark:text-rose-400" delay={1.5} duration={3.5} size={18} />
-      <FloatingHeart className="left-[12%] bottom-[20%] text-rose-500 dark:text-rose-400" delay={3} duration={5} size={20} />
+      {/* ── Floating Lucide icons (replace ♡) ── */}
+      <FloatingIcon
+        className="left-[5%] top-[40%] text-rose-400 dark:text-rose-300"
+        delay={0} duration={4} size={24} Icon={Calendar}
+      />
+      <FloatingIcon
+        className="right-[8%] top-[28%] text-purple-400 dark:text-purple-300"
+        delay={1.5} duration={3.5} size={18} Icon={MessageCircle}
+      />
+      <FloatingIcon
+        className="left-[12%] bottom-[22%] text-indigo-400 dark:text-indigo-300"
+        delay={3} duration={5} size={20} Icon={Camera}
+      />
+      <FloatingIcon
+        className="right-[15%] bottom-[30%] text-pink-400 dark:text-pink-300"
+        delay={2} duration={4.5} size={16} Icon={Sparkles}
+      />
 
-      <Sparkle className="left-[15%] top-[18%]" delay={0} duration={2.5} />
-      <Sparkle className="right-[20%] top-[15%]" delay={0.8} duration={3} />
-      <Sparkle className="left-[30%] top-[60%]" delay={1.5} duration={2} />
-      <Sparkle className="right-[35%] bottom-[25%]" delay={2} duration={2.8} />
-      <Sparkle className="left-[60%] top-[10%]" delay={0.5} duration={3.2} />
-      <Sparkle className="right-[10%] bottom-[35%]" delay={1.2} duration={2.3} />
+      {/* ── Sparkle particles (20) ── */}
+      {sparkles.map((sp, i) => (
+        <SparkleParticle
+          key={i}
+          top={sp.top}
+          left={sp.left}
+          delay={sp.delay}
+          duration={sp.duration}
+        />
+      ))}
 
-      <main className="relative z-10 w-full max-w-3xl text-center">
-        {/* ── Hero ── */}
+      <main className="relative z-10 w-full max-w-4xl text-center">
+        {/* ════════ Hero ════════ */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={prefersReduced ? {} : { opacity: 0, y: 40 }}
+          animate={prefersReduced ? {} : { opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="space-y-6 pb-12"
         >
           <motion.h1
-            initial={{ scale: 0.95 }}
-            animate={{ scale: 1 }}
+            initial={prefersReduced ? {} : { scale: 0.95 }}
+            animate={prefersReduced ? {} : { scale: 1 }}
             transition={{ duration: 0.8, delay: 0.1, ease: 'easeOut' }}
             className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl bg-gradient-to-r from-rose-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
           >
@@ -171,8 +385,8 @@ export function HomeClient({
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={prefersReduced ? {} : { opacity: 0 }}
+            animate={prefersReduced ? {} : { opacity: 1 }}
             transition={{ delay: 0.35, duration: 0.6 }}
             className="mx-auto max-w-2xl text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed"
           >
@@ -180,14 +394,14 @@ export function HomeClient({
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={prefersReduced ? {} : { opacity: 0, y: 16 }}
+            animate={prefersReduced ? {} : { opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
             className="flex flex-wrap items-center justify-center gap-3"
           >
             <motion.span
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
+              whileHover={prefersReduced ? undefined : { scale: 1.03 }}
+              whileTap={prefersReduced ? undefined : { scale: 0.97 }}
             >
               <Link
                 href={`/${locale}/register`}
@@ -198,8 +412,8 @@ export function HomeClient({
             </motion.span>
 
             <motion.span
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
+              whileHover={prefersReduced ? undefined : { scale: 1.03 }}
+              whileTap={prefersReduced ? undefined : { scale: 0.97 }}
             >
               <Link
                 href={`/${locale}/features`}
@@ -210,58 +424,77 @@ export function HomeClient({
             </motion.span>
           </motion.div>
 
-          {/* ── Social proof ── */}
-          <motion.p
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
+          {/* Social proof — 5 stars + text */}
+          <motion.div
+            initial={prefersReduced ? {} : { opacity: 0, y: 8 }}
+            animate={prefersReduced ? {} : { opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.4 }}
-            className="text-sm text-zinc-400 dark:text-zinc-500"
+            className="flex flex-col items-center gap-2"
           >
-            {heroSocialProof}
+            <span className="flex items-center gap-0.5" aria-label="5 out of 5 stars">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" aria-hidden="true" />
+              ))}
+            </span>
+            <p className="text-sm text-zinc-400 dark:text-zinc-500">{heroSocialProof}</p>
+          </motion.div>
+        </motion.div>
+
+        {/* ════════ Feature Cards (completely rewritten) ════════ */}
+        <section className="pb-16">
+          <motion.h2
+            initial={prefersReduced ? {} : { opacity: 0, y: 30 }}
+            whileInView={prefersReduced ? {} : { opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="text-2xl font-bold tracking-tight sm:text-3xl bg-gradient-to-r from-rose-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
+          >
+            Built for Real Couples
+          </motion.h2>
+
+          <motion.p
+            initial={prefersReduced ? {} : { opacity: 0, y: 20 }}
+            whileInView={prefersReduced ? {} : { opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.5, delay: 0.15, ease: 'easeOut' }}
+            className="mt-3 mb-10 text-base text-zinc-500 dark:text-zinc-400"
+          >
+            Every feature designed to bring you closer, no matter the distance.
           </motion.p>
-        </motion.div>
 
-        {/* ── Feature grid with stagger animation ── */}
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.15 }}
-          className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 pb-16"
-        >
-          {features.map((feature) => (
-            <motion.div
-              key={feature.key}
-              variants={item}
-              whileHover={{
-                y: -4,
-                boxShadow:
-                  '0 12px 40px rgba(244,114,182,0.15), 0 0 0 1px rgba(168,85,247,0.2)',
-              }}
-              onClick={() => router.push(`/${locale}/features`)}
-              className="rounded-2xl border border-rose-100 bg-white/70 backdrop-blur p-6 text-left shadow-sm transition-all duration-300 dark:border-purple-800/50 dark:bg-purple-950/30 dark:hover:shadow-purple-500/10 cursor-pointer"
-            >
-              <span className="text-3xl">{feature.icon}</span>
-              <h3 className="mt-3 font-semibold text-zinc-900 dark:text-zinc-100">
-                {feature.title}
-              </h3>
-              <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
-                {feature.desc}
-              </p>
-            </motion.div>
-          ))}
-        </motion.div>
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.15 }}
+            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            {features.map((feature) => (
+              <FeatureCard key={feature.key} feature={feature} locale={locale} />
+            ))}
+          </motion.div>
+        </section>
 
-        {/* ── Footer ── */}
-        <footer className="pt-12 text-sm text-zinc-400 dark:text-zinc-500">
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href={`/${locale}/privacy`}>{footerPrivacy}</Link>
-            <Link href={`/${locale}/terms`}>{footerTerms}</Link>
-            <Link href={`/${locale}/cookies`}>{footerCookie}</Link>
-            <Link href={`/${locale}/help`}>{footerHelp}</Link>
-            <Link href={`/${locale}/contact`}>{footerContact}</Link>
+        {/* ════════ Footer ════════ */}
+        <footer className="border-t border-rose-100/50 pt-10 dark:border-purple-800/30">
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-400 dark:text-zinc-500">
+            <Link href={`/${locale}/privacy`} className="hover:text-rose-600 dark:hover:text-purple-300 transition-colors">
+              {footerPrivacy}
+            </Link>
+            <Link href={`/${locale}/terms`} className="hover:text-rose-600 dark:hover:text-purple-300 transition-colors">
+              {footerTerms}
+            </Link>
+            <Link href={`/${locale}/cookies`} className="hover:text-rose-600 dark:hover:text-purple-300 transition-colors">
+              {footerCookie}
+            </Link>
+            <Link href={`/${locale}/help`} className="hover:text-rose-600 dark:hover:text-purple-300 transition-colors">
+              {footerHelp}
+            </Link>
+            <Link href={`/${locale}/contact`} className="hover:text-rose-600 dark:hover:text-purple-300 transition-colors">
+              {footerContact}
+            </Link>
           </div>
-          <p className="mt-4">
+          <p className="mt-4 text-sm text-zinc-400 dark:text-zinc-600">
             © {new Date().getFullYear()} We2
           </p>
         </footer>
