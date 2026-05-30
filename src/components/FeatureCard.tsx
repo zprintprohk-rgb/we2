@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { motion, useReducedMotion } from 'framer-motion'
 import type { Variants } from 'framer-motion'
 import {
@@ -11,6 +11,7 @@ import {
   BookOpen,
   Sparkles,
 } from 'lucide-react'
+import { KEY_TO_SLUG } from '@/data/features'
 
 /* ── Types ── */
 export type Feature = {
@@ -124,10 +125,10 @@ export function FeatureCard({
   locale: string
   index: number
 }) {
-  const router = useRouter()
   const prefersReduced = useReducedMotion()
   const theme = featureThemes[feature.key]
   const LucideIcon = featureIcons[feature.key] ?? Sparkles
+  const slug = KEY_TO_SLUG[feature.key]
 
   /* Entry variants with stagger delay */
   const cardEntry: Variants = prefersReduced
@@ -157,22 +158,14 @@ export function FeatureCard({
 
   const tapProps = prefersReduced ? undefined : { scale: 0.97 }
 
+  const detailHref = slug ? `/${locale}/features/${slug}` : `/${locale}/features`
+
   return (
     <motion.article
       variants={cardEntry}
       whileHover={hoverProps}
       whileTap={tapProps}
-      onClick={() => router.push(`/${locale}/features`)}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault()
-          router.push(`/${locale}/features`)
-        }
-      }}
-      tabIndex={0}
-      role="article"
-      aria-label={feature.title}
-      className="group relative cursor-pointer overflow-hidden rounded-2xl border border-white/60 bg-white/40 backdrop-blur-xl shadow-lg transition-[box-shadow] duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400/50 dark:border-purple-800/40 dark:bg-purple-950/30 hover:shadow-2xl focus-visible:shadow-2xl"
+      className="group relative overflow-hidden rounded-2xl border border-white/60 bg-white/40 backdrop-blur-xl shadow-lg transition-[box-shadow] duration-500 focus-within:ring-2 focus-within:ring-purple-400/50 dark:border-purple-800/40 dark:bg-purple-950/30 hover:shadow-2xl focus-within:shadow-2xl"
       onMouseEnter={(e) => {
         if (!prefersReduced && theme) {
           e.currentTarget.style.boxShadow = `0 25px 50px -12px ${theme.shadowColor}, 0 0 0 1px rgba(168,85,247,0.1)`
@@ -190,66 +183,71 @@ export function FeatureCard({
         e.currentTarget.style.boxShadow = ''
       }}
     >
-      {/* ── Top gradient light bar ── */}
-      {theme && (
-        <div
-          className={`h-[2px] w-full bg-gradient-to-r ${theme.barFrom} ${theme.barVia} ${theme.barTo} opacity-40 transition-opacity duration-500 group-hover:opacity-100 group-focus-visible:opacity-100`}
-        />
-      )}
+      <Link
+        href={detailHref}
+        className="block focus:outline-none"
+        aria-label={feature.title}
+      >
+        {/* ── Top gradient light bar ── */}
+        {theme && (
+          <div
+            className={`h-[2px] w-full bg-gradient-to-r ${theme.barFrom} ${theme.barVia} ${theme.barTo} opacity-40 transition-opacity duration-500 group-hover:opacity-100 group-focus-visible:opacity-100`}
+          />
+        )}
 
-      {/* ── Background glow orb (hover reveal) ── */}
-      {theme && (
-        <div
-          className={`pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-gradient-to-br ${theme.glowFrom} ${theme.glowTo} blur-3xl opacity-0 transition-opacity duration-700 group-hover:opacity-20 group-focus-visible:opacity-20`}
-        />
-      )}
+        {/* ── Background glow orb (hover reveal) ── */}
+        {theme && (
+          <div
+            className={`pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-gradient-to-br ${theme.glowFrom} ${theme.glowTo} blur-3xl opacity-0 transition-opacity duration-700 group-hover:opacity-20 group-focus-visible:opacity-20`}
+          />
+        )}
 
-      {/* ── Bottom gradient reflection (glass thickness) ── */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[30%] rounded-b-2xl bg-gradient-to-t from-white/20 to-transparent dark:from-purple-400/5" />
+        {/* ── Bottom gradient reflection (glass thickness) ── */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[30%] rounded-b-2xl bg-gradient-to-t from-white/20 to-transparent dark:from-purple-400/5" />
 
-      {/* ── Card content ── */}
-      <div className="relative p-7 text-left">
-        {/* Icon container with gradient — w-14 h-14 */}
-        <motion.div
-          className={`flex h-14 w-14 items-center justify-center rounded-xl shadow-sm ${theme ? `bg-gradient-to-br ${theme.iconFrom} ${theme.iconTo}` : 'bg-gradient-to-br from-pink-500 to-rose-400'}`}
-          whileHover={
-            prefersReduced
-              ? undefined
-              : {
-                  scale: 1.15,
-                  rotate: [0, -5, 5, 0],
-                  transition: { type: 'spring', stiffness: 400, damping: 15 },
-                }
-          }
-        >
-          <LucideIcon className="h-7 w-7 text-white" aria-hidden="true" />
-        </motion.div>
+        {/* ── Card content ── */}
+        <div className="relative p-7 text-left">
+          {/* Icon container with gradient — w-14 h-14 */}
+          <motion.div
+            className={`flex h-14 w-14 items-center justify-center rounded-xl shadow-sm ${theme ? `bg-gradient-to-br ${theme.iconFrom} ${theme.iconTo}` : 'bg-gradient-to-br from-pink-500 to-rose-400'}`}
+            whileHover={
+              prefersReduced
+                ? undefined
+                : {
+                    scale: 1.15,
+                    rotate: [0, -5, 5, 0],
+                    transition: { type: 'spring', stiffness: 400, damping: 15 },
+                  }
+            }
+          >
+            <LucideIcon className="h-7 w-7 text-white" aria-hidden="true" />
+          </motion.div>
 
-        {/* Title — gradient on hover */}
-        <h3 className="mt-4 font-semibold text-base text-zinc-900 transition-colors duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-600 group-hover:bg-clip-text group-hover:text-transparent dark:text-zinc-100 dark:group-hover:from-zinc-100 dark:group-hover:to-zinc-400">
-          {feature.title}
-        </h3>
+          {/* Title — gradient on hover */}
+          <h3 className="mt-4 font-semibold text-base text-zinc-900 transition-colors duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-600 group-hover:bg-clip-text group-hover:text-transparent dark:text-zinc-100 dark:group-hover:from-zinc-100 dark:group-hover:to-zinc-400">
+            {feature.title}
+          </h3>
 
-        {/* Description — theme-tinted color */}
-        <p className={`mt-1.5 text-sm leading-relaxed ${theme ? theme.descColor : 'text-zinc-500 dark:text-zinc-400'}`}>
-          {feature.desc}
-        </p>
+          {/* Description — theme-tinted color */}
+          <p className={`mt-1.5 text-sm leading-relaxed ${theme ? theme.descColor : 'text-zinc-500 dark:text-zinc-400'}`}>
+            {feature.desc}
+          </p>
 
-        {/* Learn more link */}
-        <span
-          className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-rose-600 dark:text-purple-300 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300"
-          aria-label={`Learn more about ${feature.title}`}
-        >
-          Learn more
-          <motion.span
-            whileHover={prefersReduced ? undefined : { x: 4 }}
-            transition={{ duration: 0.2 }}
+          {/* Learn more link */}
+          <span
+            className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-rose-600 dark:text-purple-300 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-300"
             aria-hidden="true"
           >
-            →
-          </motion.span>
-        </span>
-      </div>
+            Learn more
+            <motion.span
+              whileHover={prefersReduced ? undefined : { x: 4 }}
+              transition={{ duration: 0.2 }}
+            >
+              →
+            </motion.span>
+          </span>
+        </div>
+      </Link>
     </motion.article>
   )
 }

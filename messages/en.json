@@ -209,5 +209,49 @@
     "errorType": "Unsupported file type. Accepted: {types}",
     "errorMaxFiles": "Maximum {max} files allowed",
     "errorUpload": "Upload failed. Please try again."
+  },
+  "features": {
+    "dailyCheckIn": {
+      "longDesc": "Start each day with a thoughtful question designed to deepen your emotional connection. Answer privately, then reveal and discuss with your partner. Our questions are crafted by relationship psychologists to build intimacy over time.",
+      "step1": "Receive a daily question each morning",
+      "step2": "Answer privately before seeing your partner's response",
+      "step3": "Reveal both answers simultaneously",
+      "step4": "Discuss and earn love points for your virtual pet"
+    },
+    "timeCapsules": {
+      "longDesc": "Create digital time capsules filled with photos, voice memos, and love letters. Lock them away and set a future unlock date — perfect for anniversaries, milestones, or just a surprise on a random Tuesday.",
+      "step1": "Create a capsule with photos, notes, or voice memos",
+      "step2": "Set a future unlock date (anniversary, birthday, etc.)",
+      "step3": "Both partners can add content until the capsule is sealed",
+      "step4": "Receive a notification when it's time to unlock together"
+    },
+    "virtualPet": {
+      "longDesc": "Meet your shared virtual pet — a cute companion that grows as your relationship grows. Complete daily check-ins and challenges to earn love points, unlock new skins, and watch your pet evolve.",
+      "step1": "Choose and name your pet together",
+      "step2": "Earn love points by completing daily check-ins",
+      "step3": "Feed, play, and care for your pet as a team",
+      "step4": "Unlock new skins and evolutions at relationship milestones"
+    },
+    "privateCommunity": {
+      "longDesc": "Join an anonymous, supportive community of couples from around the world. Share your stories, ask for advice, and celebrate milestones — all in a safe, private space.",
+      "step1": "Create your anonymous couple profile",
+      "step2": "Post stories, questions, or milestones",
+      "step3": "Engage with posts from other couples",
+      "step4": "Build connections in a supportive, moderated space"
+    },
+    "sharedJournal": {
+      "longDesc": "Write your story together — literally. A shared journal where both partners can add entries, reflect on memories, and build a timeline of your relationship's most precious moments.",
+      "step1": "Create a new journal entry anytime",
+      "step2": "Both partners can view, edit, and comment",
+      "step3": "Add photos and location tags to entries",
+      "step4": "Scroll through your relationship timeline together"
+    },
+    "dreamWall": {
+      "longDesc": "Pin your shared dreams, goals, and bucket list items on a visual board. Plan your future together — from your next vacation to your dream home — and check them off as you achieve them.",
+      "step1": "Add dreams and goals to your shared board",
+      "step2": "Organize by category (travel, home, adventures, etc.)",
+      "step3": "Set target dates and track progress together",
+      "step4": "Celebrate each achievement with a special animation"
+    }
   }
 }

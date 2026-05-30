@@ -209,5 +209,49 @@
     "errorType": "Type de fichier non supporté. Acceptés: {types}",
     "errorMaxFiles": "Maximum {max} fichiers autorisés",
     "errorUpload": "Échec du téléchargement. Veuillez réessayer."
+  },
+  "features": {
+    "dailyCheckIn": {
+      "longDesc": "Commencez chaque jour par une question réfléchie conçue pour approfondir votre connexion émotionnelle. Répondez en privé, puis révélez et discutez avec votre partenaire.",
+      "step1": "Recevez une question quotidienne chaque matin",
+      "step2": "Répondez en privé avant de voir la réponse de votre partenaire",
+      "step3": "Révélez les deux réponses simultanément",
+      "step4": "Discutez et gagnez des points d'amour pour votre animal virtuel"
+    },
+    "timeCapsules": {
+      "longDesc": "Créez des capsules temporelles numériques avec des photos, des messages vocaux et des lettres d'amour. Verrouillez-les et fixez une date d'ouverture future — parfait pour les anniversaires ou les surprises.",
+      "step1": "Créez une capsule avec des photos, des notes ou des messages vocaux",
+      "step2": "Fixez une date d'ouverture future (anniversaire, etc.)",
+      "step3": "Les deux partenaires peuvent ajouter du contenu jusqu'à ce que la capsule soit scellée",
+      "step4": "Recevez une notification quand il est temps de l'ouvrir ensemble"
+    },
+    "virtualPet": {
+      "longDesc": "Rencontrez votre animal de compagnie virtuel partagé — un compagnon adorable qui grandit avec votre relation. Relevez des check-ins quotidiens pour gagner des points d'amour.",
+      "step1": "Choisissez et nommez votre animal ensemble",
+      "step2": "Gagnez des points d'amour en complétant des check-ins quotidiens",
+      "step3": "Nourrissez, jouez et prenez soin de votre animal en équipe",
+      "step4": "Débloquez de nouveaux skins et évolutions aux étapes clés de votre relation"
+    },
+    "privateCommunity": {
+      "longDesc": "Rejoignez une communauté anonyme et solidaire de couples du monde entier. Partagez vos histoires, demandez conseil et célébrez vos étapes importantes.",
+      "step1": "Créez votre profil de couple anonyme",
+      "step2": "Publiez des histoires, des questions ou des étapes importantes",
+      "step3": "Interagissez avec les publications d'autres couples",
+      "step4": "Créez des liens dans un espace solidaire et modéré"
+    },
+    "sharedJournal": {
+      "longDesc": "Écrivez votre histoire ensemble — littéralement. Un journal partagé où les deux partenaires peuvent ajouter des entrées et construire une chronologie de vos moments les plus précieux.",
+      "step1": "Créez une nouvelle entrée à tout moment",
+      "step2": "Les deux partenaires peuvent voir, modifier et commenter",
+      "step3": "Ajoutez des photos et des balises de lieu aux entrées",
+      "step4": "Parcourez votre chronologie de relation ensemble"
+    },
+    "dreamWall": {
+      "longDesc": "Épinglez vos rêves, objectifs et liste de souhaits sur un tableau visuel. Planifiez votre avenir ensemble et cochez-les au fur et à mesure que vous les réalisez.",
+      "step1": "Ajoutez des rêves et des objectifs à votre tableau partagé",
+      "step2": "Organisez par catégorie (voyages, maison, aventures, etc.)",
+      "step3": "Fixez des dates cibles et suivez les progrès ensemble",
+      "step4": "Célébrez chaque réalisation avec une animation spéciale"
+    }
   }
 }

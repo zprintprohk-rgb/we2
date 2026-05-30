@@ -209,5 +209,49 @@
     "errorType": "Tipo de archivo no soportado. Aceptados: {types}",
     "errorMaxFiles": "Máximo {max} archivos permitidos",
     "errorUpload": "Carga fallida. Por favor, inténtalo de nuevo."
+  },
+  "features": {
+    "dailyCheckIn": {
+      "longDesc": "Empieza cada día con una pregunta reflexiva diseñada para profundizar vuestra conexión emocional. Responde en privado, luego revelad y comentad con tu pareja.",
+      "step1": "Recibe una pregunta diaria cada mañana",
+      "step2": "Responde en privado antes de ver la respuesta de tu pareja",
+      "step3": "Revelad ambas respuestas simultáneamente",
+      "step4": "Comentad y ganad puntos de amor para vuestra mascota virtual"
+    },
+    "timeCapsules": {
+      "longDesc": "Crea cápsulas del tiempo digitales con fotos, notas de voz y cartas de amor. Ciérralas y elige una fecha futura para abrirlas — perfecto para aniversarios o sorpresas.",
+      "step1": "Crea una cápsula con fotos, notas o mensajes de voz",
+      "step2": "Establece una fecha futura de apertura (aniversario, cumpleaños, etc.)",
+      "step3": "Ambos podéis añadir contenido hasta que la cápsula se selle",
+      "step4": "Recibe una notificación cuando sea el momento de abrirla juntos"
+    },
+    "virtualPet": {
+      "longDesc": "Conoce a vuestra mascota virtual compartida — un compañero adorable que crece con vuestra relación. Completad check-ins diarios para ganar puntos de amor y desbloquear skins.",
+      "step1": "Elegid y poned nombre a vuestra mascota juntos",
+      "step2": "Ganad puntos de amor completando check-ins diarios",
+      "step3": "Alimentad, jugad y cuidad a vuestra mascota en equipo",
+      "step4": "Desbloquead nuevas skins y evoluciones en hitos de relación"
+    },
+    "privateCommunity": {
+      "longDesc": "Únete a una comunidad anónima y solidaria de parejas de todo el mundo. Compartid vuestras historias, pedid consejo y celebrad hitos.",
+      "step1": "Cread vuestro perfil de pareja anónimo",
+      "step2": "Publicad historias, preguntas o hitos",
+      "step3": "Interactuad con publicaciones de otras parejas",
+      "step4": "Construid conexiones en un espacio solidario y moderado"
+    },
+    "sharedJournal": {
+      "longDesc": "Escribid vuestra historia juntos — literalmente. Un diario compartido donde ambos podéis añadir entradas y construir una línea de tiempo de vuestros momentos más preciosos.",
+      "step1": "Cread una nueva entrada en cualquier momento",
+      "step2": "Ambos podéis ver, editar y comentar",
+      "step3": "Añadid fotos y etiquetas de ubicación a las entradas",
+      "step4": "Desplazaos por vuestra línea de tiempo de relación juntos"
+    },
+    "dreamWall": {
+      "longDesc": "Fijad vuestros sueños, metas y lista de deseos compartidos en un tablero visual. Planead vuestro futuro juntos y marcadlos cuando los logréis.",
+      "step1": "Añadid sueños y metas a vuestro tablero compartido",
+      "step2": "Organizad por categoría (viajes, hogar, aventuras, etc.)",
+      "step3": "Estableced fechas objetivo y seguid el progreso juntos",
+      "step4": "Celebrad cada logro con una animación especial"
+    }
   }
 }

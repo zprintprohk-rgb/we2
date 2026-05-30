@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "next build --no-lint && npx next-sitemap",
     "dev": "next dev",
-    "cf-build": "next build --no-lint && npx next-sitemap && npx @opennextjs/cloudflare build",
+    "cf-build": "npm run build && node scripts/clean-open-next.js && npx @opennextjs/cloudflare build --skipNextBuild",
     "start": "next start",
     "lint": "eslint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",

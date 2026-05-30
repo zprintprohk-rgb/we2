@@ -209,5 +209,49 @@
     "errorType": "Nicht unterstützter Dateityp. Erlaubt: {types}",
     "errorMaxFiles": "Maximal {max} Dateien erlaubt",
     "errorUpload": "Upload fehlgeschlagen. Bitte erneut versuchen."
+  },
+  "features": {
+    "dailyCheckIn": {
+      "longDesc": "Starte jeden Tag mit einer durchdachten Frage, die eure emotionale Verbindung vertieft. Antworte privat, bevor du sie mit deinem Partner teilst und besprichst.",
+      "step1": "Erhalte jeden Morgen eine tägliche Frage",
+      "step2": "Antworte privat, bevor du die Antwort deines Partners siehst",
+      "step3": "Enthüllt beide Antworten gleichzeitig",
+      "step4": "Diskutiert und sammelt Liebespunkte für euer virtuelles Haustier"
+    },
+    "timeCapsules": {
+      "longDesc": "Erstelle digitale Zeitkapseln mit Fotos, Sprachnachrichten und Liebesbriefen. Verschließe sie und lege ein zukünftiges Öffnungsdatum fest – perfekt für Jubiläen oder Überraschungen.",
+      "step1": "Erstelle eine Kapsel mit Fotos, Notizen oder Sprachnachrichten",
+      "step2": "Lege ein zukünftiges Öffnungsdatum fest (Jubiläum, Geburtstag, etc.)",
+      "step3": "Beide Partner können Inhalte hinzufügen, bis die Kapsel versiegelt wird",
+      "step4": "Erhalte eine Benachrichtigung, wenn es Zeit ist, sie gemeinsam zu öffnen"
+    },
+    "virtualPet": {
+      "longDesc": "Lerne euer gemeinsames virtuelles Haustier kennen – einen niedlichen Begleiter, der mit eurer Beziehung wächst. Schließt tägliche Check-ins und Herausforderungen ab, um Liebespunkte zu sammeln.",
+      "step1": "Wählt und benennt euer Haustier gemeinsam",
+      "step2": "Verdient Liebespunkte durch tägliche Check-ins",
+      "step3": "Füttert, spielt und kümmert euch als Team um euer Haustier",
+      "step4": "Schaltet neue Skins und Entwicklungen bei Beziehungsmeilensteinen frei"
+    },
+    "privateCommunity": {
+      "longDesc": "Tritt einer anonymen, unterstützenden Community von Paaren aus aller Welt bei. Teilt eure Geschichten, holt euch Rat und feiert Meilensteine.",
+      "step1": "Erstellt euer anonymes Paar-Profil",
+      "step2": "Postet Geschichten, Fragen oder Meilensteine",
+      "step3": "Interagiert mit Beiträgen anderer Paare",
+      "step4": "Knüpft Verbindungen in einem unterstützenden, moderierten Raum"
+    },
+    "sharedJournal": {
+      "longDesc": "Schreibt eure Geschichte zusammen – wortwörtlich. Ein gemeinsames Tagebuch, in dem beide Partner Einträge hinzufügen und eine Zeitlinie eurer kostbarsten Momente erstellen können.",
+      "step1": "Erstelle jederzeit einen neuen Tagebucheintrag",
+      "step2": "Beide Partner können ansehen, bearbeiten und kommentieren",
+      "step3": "Füge Fotos und Ortsmarken zu Einträgen hinzu",
+      "step4": "Scrollt gemeinsam durch eure Beziehungszeitlinie"
+    },
+    "dreamWall": {
+      "longDesc": "Pinnt eure gemeinsamen Träume, Ziele und Wunschlisten an eine visuelle Tafel. Plant gemeinsam eure Zukunft und hakt sie ab, wenn ihr sie erreicht.",
+      "step1": "Fügt Träume und Ziele zu eurer gemeinsamen Tafel hinzu",
+      "step2": "Organisiert nach Kategorie (Reisen, Zuhause, Abenteuer, etc.)",
+      "step3": "Setzt Zieldaten und verfolgt gemeinsam den Fortschritt",
+      "step4": "Feiert jeden Erfolg mit einer besonderen Animation"
+    }
   }
 }
