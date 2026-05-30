@@ -280,41 +280,42 @@ export function getDiscountedPrice(base: number, discount: number): number {
 
 /** Format a monetary amount for a given currency. */
 export function getDisplayPrice(amount: number, currency: CurrencyCode): string {
+  if (typeof amount !== 'number' || isNaN(amount)) return '—'
+  if (!currency) currency = 'USD'
+
   const localeMap: Record<CurrencyCode, string> = {
-    CNY: 'zh-CN',
-    HKD: 'zh-HK',
-    TWD: 'zh-TW',
-    JPY: 'ja-JP',
-    KRW: 'ko-KR',
-    USD: 'en-US',
-    GBP: 'en-GB',
-    AUD: 'en-AU',
-    CAD: 'en-CA',
-    SGD: 'en-SG',
-    EUR: 'de-DE',
+    CNY: 'zh-CN', HKD: 'zh-HK', TWD: 'zh-TW', JPY: 'ja-JP', KRW: 'ko-KR',
+    USD: 'en-US', GBP: 'en-GB', AUD: 'en-AU', CAD: 'en-CA', SGD: 'en-SG', EUR: 'de-DE',
   }
 
-  const fmt = new Intl.NumberFormat(localeMap[currency] ?? 'en-US', {
-    style: 'currency',
-    currency,
-    minimumFractionDigits: ['JPY', 'KRW'].includes(currency) ? 0 : 2,
-    maximumFractionDigits: ['JPY', 'KRW'].includes(currency) ? 0 : 2,
-  })
+  const locale = localeMap[currency] ?? 'en-US'
 
-  return fmt.format(amount)
+  try {
+    return new Intl.NumberFormat(locale, {
+      style: 'currency',
+      currency,
+      minimumFractionDigits: ['JPY', 'KRW'].includes(currency) ? 0 : 2,
+      maximumFractionDigits: ['JPY', 'KRW'].includes(currency) ? 0 : 2,
+    }).format(amount)
+  } catch {
+    return `${amount.toFixed(2)} ${currency}`
+  }
 }
 
 /** Resolve a CountryCode from a request. Reads CF-IPCountry header, falls back to 'US'. */
 export function getCountryFromRequest(requestOrHeaders: Request | Headers): CountryCode {
-  const COUNTRY_SET: Set<string> = new Set([
+  const COUNTRY_SET = new Set([
     'CN', 'HK', 'TW', 'US', 'GB', 'AU', 'CA', 'SG',
     'DE', 'FR', 'ES', 'JP', 'KR',
   ])
 
   let headerValue: string | null = null
-  if (requestOrHeaders instanceof Headers) {
-    headerValue = requestOrHeaders.get('CF-IPCountry')
-  } else {
+
+  if ('get' in requestOrHeaders && typeof (requestOrHeaders as any).get === 'function') {
+    // Headers-like object (Next.js headers(), Web Headers, Workers Headers)
+    headerValue = (requestOrHeaders as Headers).get('CF-IPCountry')
+  } else if ('headers' in requestOrHeaders && requestOrHeaders.headers) {
+    // Standard Request object
     headerValue = requestOrHeaders.headers.get('CF-IPCountry')
   }
 
