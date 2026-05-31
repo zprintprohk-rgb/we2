@@ -15,10 +15,10 @@ type Props = {
 
 // -------- dynamic metadata ------------------------------------------------
 export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params
+  const locale = params.locale as Locale
+  setRequestLocale(locale)
   try {
-    const params = await props.params
-    const locale = params.locale as Locale
-    setRequestLocale(locale)
     const t = await getTranslations({ locale, namespace: 'seo' })
     const meta = marketMeta[locale]
 
@@ -57,13 +57,12 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
 // -------- layout ----------------------------------------------------------
 export default async function LocaleLayout({ children, params }: Props) {
+  const { locale } = await params
+  if (!hasLocale(routing.locales, locale)) {
+    notFound()
+  }
+  setRequestLocale(locale)
   try {
-    const { locale } = await params
-    if (!hasLocale(routing.locales, locale)) {
-      notFound()
-    }
-    setRequestLocale(locale)
-
     const messages = await getMessages()
     const t = await getTranslations({ locale })
     const nav = { home: t('nav.home'), features: t('nav.features'), pricing: t('nav.pricing'), community: t('nav.community'), login: t('nav.login') }
