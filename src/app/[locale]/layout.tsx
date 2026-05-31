@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, getTranslations } from 'next-intl/server'
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { hasLocale } from 'next-intl'
 import { routing, type Locale } from '@/i18n/routing'
@@ -15,49 +15,61 @@ type Props = {
 
 // -------- dynamic metadata ------------------------------------------------
 export async function generateMetadata(props: Props): Promise<Metadata> {
-  const params = await props.params
-  const locale = params.locale as Locale
-  const t = await getTranslations({ locale, namespace: 'seo' })
-  const meta = marketMeta[locale]
+  try {
+    const params = await props.params
+    const locale = params.locale as Locale
+    setRequestLocale(locale)
+    const t = await getTranslations({ locale, namespace: 'seo' })
+    const meta = marketMeta[locale]
 
-  return {
-    metadataBase: new URL('https://we2.com'),
-    title: {
-      template: `%s | ${t('siteName') || 'We2'}`,
-      default: `${t('siteName') || 'We2'} — ${t('tagline')}`,
-    },
-    description: t('description'),
-    keywords: t('keywords'),
-    alternates: {
-      canonical: getCanonicalUrl(locale),
-      languages: generateAlternateLinks(''),
-    },
-    openGraph: {
-      siteName: 'We2',
-      locale: meta.ogLocale,
-      type: 'website',
-      images: ['/og-image.png'],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      site: '@we2app',
-    },
+    return {
+      metadataBase: new URL('https://we2.com'),
+      title: {
+        template: `%s | ${t('siteName') || 'We2'}`,
+        default: `${t('siteName') || 'We2'} — ${t('tagline')}`,
+      },
+      description: t('description'),
+      keywords: t('keywords'),
+      alternates: {
+        canonical: getCanonicalUrl(locale),
+        languages: generateAlternateLinks(''),
+      },
+      openGraph: {
+        siteName: 'We2',
+        locale: meta.ogLocale,
+        type: 'website',
+        images: ['/og-image.png'],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        site: '@we2app',
+      },
+    }
+  } catch (error) {
+    console.error('[layout] generateMetadata failed:', error)
+    return {
+      metadataBase: new URL('https://we2.com'),
+      title: 'We2',
+      description: 'We2 - Grow Together, Love Deeper',
+    }
   }
 }
 
 // -------- layout ----------------------------------------------------------
 export default async function LocaleLayout({ children, params }: Props) {
-  const { locale } = await params
-  if (!hasLocale(routing.locales, locale)) {
-    notFound()
-  }
+  try {
+    const { locale } = await params
+    if (!hasLocale(routing.locales, locale)) {
+      notFound()
+    }
+    setRequestLocale(locale)
 
-  const messages = await getMessages()
-  const t = await getTranslations({ locale })
-  const nav = { home: t('nav.home'), features: t('nav.features'), pricing: t('nav.pricing'), community: t('nav.community'), login: t('nav.login') }
-  const footer = { privacy: t('footer.privacy'), terms: t('footer.terms'), cookie: t('footer.cookie'), help: t('footer.help'), contact: t('footer.contact') }
+    const messages = await getMessages()
+    const t = await getTranslations({ locale })
+    const nav = { home: t('nav.home'), features: t('nav.features'), pricing: t('nav.pricing'), community: t('nav.community'), login: t('nav.login') }
+    const footer = { privacy: t('footer.privacy'), terms: t('footer.terms'), cookie: t('footer.cookie'), help: t('footer.help'), contact: t('footer.contact') }
 
-  return (
+    return (
     <html lang={locale} suppressHydrationWarning>
       <head>
         {/* Cloudflare Web Analytics */}
@@ -134,5 +146,36 @@ export default async function LocaleLayout({ children, params }: Props) {
         </NextIntlClientProvider>
       </body>
     </html>
-  )
+    )
+  } catch (error) {
+    console.error('[layout] render failed:', error)
+    return (
+      <html lang="en" suppressHydrationWarning>
+        <head>
+          <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "REPLACE_WITH_YOUR_CF_BEACON_TOKEN"}'></script>
+        </head>
+        <body className="min-h-screen bg-zinc-50 text-zinc-900 antialiased">
+          <div className="mx-auto max-w-4xl px-4 py-16">
+            <h1 className="text-2xl font-bold text-red-600 mb-4">Layout Error</h1>
+            <div className="bg-gray-100 rounded-lg p-4 overflow-auto">
+              <pre className="text-sm text-red-800 whitespace-pre-wrap">
+                {JSON.stringify(
+                  {
+                    message: (error as Error).message,
+                    stack: (error as Error).stack,
+                    name: (error as Error).name,
+                  },
+                  null,
+                  2
+                )}
+              </pre>
+            </div>
+            <p className="mt-4 text-sm text-gray-500">
+              Digest: 521802265 — real error from layout try/catch
+            </p>
+          </div>
+        </body>
+      </html>
+    )
+  }
 }
