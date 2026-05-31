@@ -27,20 +27,28 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getTranslations({ locale })
+  try {
+    const { locale } = await params
+    const t = await getTranslations({ locale })
 
-  return {
-    title: t('pricing.title'),
-    description: t('pricing.subtitle'),
-    alternates: {
-      canonical: getCanonicalUrl(locale as Locale, '/pricing'),
-      languages: generateAlternateLinks('/pricing'),
-    },
-    openGraph: {
+    return {
       title: t('pricing.title'),
       description: t('pricing.subtitle'),
-    },
+      alternates: {
+        canonical: getCanonicalUrl(locale as Locale, '/pricing'),
+        languages: generateAlternateLinks('/pricing'),
+      },
+      openGraph: {
+        title: t('pricing.title'),
+        description: t('pricing.subtitle'),
+      },
+    }
+  } catch (error) {
+    console.error('[pricing] generateMetadata failed:', error)
+    return {
+      title: 'Pricing',
+      description: 'Pricing page error',
+    }
   }
 }
 
