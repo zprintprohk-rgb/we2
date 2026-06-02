@@ -7,7 +7,7 @@ compatibility_flags = ["nodejs_compat"]
 # 敏感变量（SUPABASE_SERVICE_ROLE_KEY、PAYPAL_CLIENT_SECRET 等）
 # 通过命令行设置：npx wrangler secret put <KEY>
 [vars]
-NEXT_PUBLIC_SITE_URL = "https://we2.com"
+NEXT_PUBLIC_SITE_URL = "https://we2-v3.zprintprohk.workers.dev"
 NEXTJS_ENV = "production"
 PAYPAL_MODE = "live"
 # ⚠️ 以下为必填 — 请在部署前替换为真实值，或留空并通过 wrangler secret 设置

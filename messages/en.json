@@ -64,25 +64,45 @@
       "free": {
         "name": "Free",
         "price": "$0",
-        "features": ["Daily check-in", "3 time capsules", "Basic pet", "Community access"]
+        "features": [
+          "Daily check-in",
+          "3 time capsules",
+          "Basic pet",
+          "Community access"
+        ]
       },
       "plus": {
         "name": "We2 Plus",
         "price": "$5.49",
         "period": "/month",
-        "features": ["Unlimited capsules", "Advanced pet skins", "Private album", "Relationship insights"]
+        "features": [
+          "Unlimited capsules",
+          "Advanced pet skins",
+          "Private album",
+          "Relationship insights"
+        ]
       },
       "premium": {
         "name": "We2 Premium",
         "price": "$13.99",
         "period": "/quarter",
-        "features": ["Everything in Plus", "Priority support", "Custom pet names", "Export memories"]
+        "features": [
+          "Everything in Plus",
+          "Priority support",
+          "Custom pet names",
+          "Export memories"
+        ]
       },
       "lifetime": {
         "name": "We2 Forever",
         "price": "$39.99",
         "period": "/year",
-        "features": ["Everything in Premium", "Lifetime updates", "Exclusive content", "Early features"]
+        "features": [
+          "Everything in Premium",
+          "Lifetime updates",
+          "Exclusive content",
+          "Early features"
+        ]
       }
     },
     "cta": "Get Started",
@@ -320,6 +340,135 @@
       "placeholder": "Our next big dream...",
       "pin": "Pin",
       "empty": "Pin your first dream to the wall"
+    }
+  },
+  "legal": {
+    "lastUpdated": "Last updated: June 1, 2026",
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "Your privacy matters. This page explains what data we collect, how we use it, and the rights you have over your information.",
+      "sections": [
+        {
+          "heading": "1. Information We Collect",
+          "body": "We collect only the information needed to provide We2's couple-wellness services: account email, encrypted password, profile details (nickname, avatar, anniversary date), and the content you create in the app (check-in answers, journal entries, time capsules, photos). We never sell your data to third parties."
+        },
+        {
+          "heading": "2. How We Use Your Data",
+          "body": "Your data is used to: (a) sync content between you and your partner, (b) deliver push notifications and daily reminders you have opted into, (c) generate aggregated, anonymized insights, and (d) provide customer support when you contact us. We do not use your private content for advertising or AI training."
+        },
+        {
+          "heading": "3. Data Storage & Security",
+          "body": "All data is stored encrypted at rest (AES-256) and in transit (TLS 1.3) on Supabase and Cloudflare infrastructure. Time capsules remain end-to-end encrypted and cannot be read by We2 staff. We perform quarterly security audits and notify affected users of any breach within 72 hours."
+        },
+        {
+          "heading": "4. Your Rights",
+          "body": "You can export, edit, or delete your data at any time from Settings > Privacy. Account deletion permanently removes all personal data within 30 days. You may also request a full data export by emailing privacy@we2.com. EU and UK users have additional rights under GDPR, including data portability and the right to lodge a complaint with a supervisory authority."
+        },
+        {
+          "heading": "5. Contact",
+          "body": "For any privacy-related question, email privacy@we2.com. We respond within 7 business days."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "subtitle": "By using We2 you agree to the following terms. Please read them carefully — they protect both you and us.",
+      "sections": [
+        {
+          "heading": "1. Eligibility",
+          "body": "You must be at least 16 years old (18 in some jurisdictions) to create a We2 account. By signing up you confirm that you meet this requirement and that all information you provide is accurate."
+        },
+        {
+          "heading": "2. Account & Pairing",
+          "body": "We2 works as a couple: you create a private pair by inviting your partner via email. Each pair shares a private space. You are responsible for keeping your login credentials secure. Sharing your account with non-parties is not permitted."
+        },
+        {
+          "heading": "3. Subscriptions & Payments",
+          "body": "We2 Plus subscriptions are billed via PayPal, Alipay, or Stripe. Prices are shown in your local currency. You can cancel at any time; access remains active until the end of the current billing period. Refunds follow the policy in section 4."
+        },
+        {
+          "heading": "4. Refund Policy",
+          "body": "If you are not satisfied within 14 days of your first Plus purchase, contact support@we2.com for a full refund. Refunds are not available for renewals or for accounts that have violated these terms."
+        },
+        {
+          "heading": "5. Acceptable Use",
+          "body": "You agree not to: upload illegal, hateful, or sexually explicit content; harass or threaten other users; attempt to reverse-engineer the app; use We2 for commercial spam; or impersonate any person or entity. Violations may result in account suspension."
+        },
+        {
+          "heading": "6. Limitation of Liability",
+          "body": "We2 is provided 'as is' without warranties. To the maximum extent permitted by law, our liability is limited to the amount you paid us in the past 12 months. We are not liable for indirect, incidental, or consequential damages."
+        },
+        {
+          "heading": "7. Changes",
+          "body": "We may update these terms from time to time. Material changes will be announced by email at least 30 days in advance. Continued use after the effective date constitutes acceptance."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "subtitle": "We use a minimal set of cookies to keep We2 running smoothly. Here's exactly what we set and why.",
+      "sections": [
+        {
+          "heading": "1. Essential Cookies",
+          "body": "These cookies are required for the site to work. They keep you logged in, remember your locale, and protect against CSRF attacks. They cannot be disabled because the site would not function without them."
+        },
+        {
+          "heading": "2. Analytics Cookies",
+          "body": "We use Cloudflare Web Analytics (privacy-first, no cross-site tracking) to understand which features are popular and where users get stuck. Analytics data is aggregated and does not identify you personally. You can opt out by enabling 'Do Not Track' in your browser."
+        },
+        {
+          "heading": "3. Payment Cookies",
+          "body": "When you complete a PayPal or Alipay payment, the payment provider may set its own cookies to process the transaction securely and prevent fraud. These cookies are governed by the payment provider's privacy policy, not ours."
+        },
+        {
+          "heading": "4. Managing Cookies",
+          "body": "You can clear or block cookies in your browser settings. Note that blocking essential cookies will prevent login from working. We do not use advertising or cross-site tracking cookies of any kind."
+        }
+      ]
+    },
+    "help": {
+      "title": "Help Center",
+      "subtitle": "Find quick answers to the most common questions. Can't find what you need? Reach out and we'll be happy to help.",
+      "sections": [
+        {
+          "heading": "Getting Started",
+          "body": "Create your free account, invite your partner by email, and complete your first daily check-in together. The whole process takes less than three minutes. We2 Plus is optional — every core feature works on the free plan, including the shared journal, time capsules, and virtual pet."
+        },
+        {
+          "heading": "Subscription & Billing",
+          "body": "Manage your Plus subscription from Settings > Billing. You can switch between monthly, quarterly, and yearly plans at any time. Cancellations take effect at the end of the current billing period. Refund requests submitted within 14 days of your first Plus purchase are processed within 5 business days."
+        },
+        {
+          "heading": "Privacy & Security",
+          "body": "Your private content (time capsules, journal entries, photos) is end-to-end encrypted. We2 staff cannot read it. Enable two-factor authentication from Settings > Security for an extra layer of protection. To delete your account permanently, go to Settings > Privacy > Delete Account."
+        },
+        {
+          "heading": "Report a Bug",
+          "body": "Found something broken? Email bugs@we2.com with your device model, OS version, a short description of what happened, and a screenshot if possible. We triage bug reports every business day and aim to fix critical issues within 48 hours."
+        },
+        {
+          "heading": "International Support",
+          "body": "We2 is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "We'd love to hear from you. Choose the channel that best fits your question.",
+      "sections": [
+        {
+          "heading": "General Support",
+          "body": "Questions, feedback, or feature requests. Email support@we2.com. We typically respond within 24 hours on business days."
+        },
+        {
+          "heading": "Privacy & Data",
+          "body": "Data export, deletion requests, and GDPR inquiries. Email privacy@we2.com. We respond within 7 business days."
+        },
+        {
+          "heading": "Bug Reports",
+          "body": "Technical issues, crashes, or unexpected behaviour. Email bugs@we2.com with your device model and OS version. We respond within 48 hours."
+        }
+      ]
     }
   }
 }

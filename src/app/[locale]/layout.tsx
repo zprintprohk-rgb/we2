@@ -8,6 +8,10 @@ import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+// Cloudflare Web Analytics token
+// 留空表示暂不启用 Analytics；后续在 Cloudflare Dashboard 拿到真实 token 后填入
+const CF_BEACON_TOKEN = process.env.NEXT_PUBLIC_CF_BEACON_TOKEN || ''
+
 type Props = {
   children: React.ReactNode
   params: Promise<{ locale: string }>
@@ -71,8 +75,13 @@ export default async function LocaleLayout({ children, params }: Props) {
     return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        {/* Cloudflare Web Analytics */}
-        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "REPLACE_WITH_YOUR_CF_BEACON_TOKEN"}'></script>
+        {CF_BEACON_TOKEN && (
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={JSON.stringify({ token: CF_BEACON_TOKEN })}
+          />
+        )}
       </head>
       <body className="min-h-screen bg-zinc-50 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100">
         <NextIntlClientProvider locale={locale} messages={messages}>
@@ -150,9 +159,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     console.error('[layout] render failed:', error)
     return (
       <html lang="en" suppressHydrationWarning>
-        <head>
-          <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "REPLACE_WITH_YOUR_CF_BEACON_TOKEN"}'></script>
-        </head>
+        <head />
         <body className="min-h-screen bg-zinc-50 text-zinc-900 antialiased">
           <div className="mx-auto max-w-4xl px-4 py-16">
             <h1 className="text-2xl font-bold text-red-600 mb-4">Layout Error</h1>

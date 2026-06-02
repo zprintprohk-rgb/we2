@@ -1,7 +1,8 @@
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { getCanonicalUrl } from '@/lib/seo'
 import { routing, type Locale } from '@/i18n/routing'
+import LegalPage from '@/components/legal/LegalPage'
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -14,24 +15,20 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale })
+  const tLegal = await getTranslations({ locale, namespace: 'legal.cookies' })
   return {
-    title: `${t('footer.cookie')} — ${t('siteName')}`,
+    title: `${tLegal('title')} — ${t('siteName')}`,
+    description: tLegal('subtitle'),
     alternates: { canonical: getCanonicalUrl(locale as Locale, '/cookies') },
   }
 }
 
-export default async function CookiePage({
+export default async function Page({
   params,
 }: {
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const t = await getTranslations({ locale })
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-rose-50 via-pink-50 to-white px-4 py-16 dark:from-rose-950/40 dark:via-purple-950/30 dark:to-zinc-950">
-      <h1 className="text-4xl font-bold tracking-tight sm:text-5xl bg-gradient-to-r from-rose-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
-        {t('footer.cookie')}
-      </h1>
-    </div>
-  )
+  setRequestLocale(locale)
+  return <LegalPage page="cookies" />
 }
