@@ -122,7 +122,7 @@ jobs:
       # wrangler never pushed to Cloudflare; without this artifact we
       # had no way to see why. Path is narrowed to just the log files
       # (not .next/ or .open-next/) to keep artifact size < 100MB.
-      - name: Post-deploy: query Cloudflare API for actual deployed version
+      - name: Post-deploy (CF API verification)
         # This is the DEFINITIVE check. If wrangler deploy reported
         # success but the API says the latest deployment is still
         # 4393fac1 (3 hours old), then the push really did not reach
