@@ -15,6 +15,7 @@ import {
   getPrice,
 } from '@/lib/pricing'
 import type { CountryCode } from '@/lib/types'
+import { ts, ta } from '@/lib/safe-t'
 
 // ─── Static params ────────────────────────────────────────────────────────
 export function generateStaticParams() {
@@ -144,7 +145,7 @@ export default async function PricingPage({
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {tiers.map(({ key, badge, monthly, quarterly, yearly }) => {
             const name = t(`pricing.tiers.${key}.name`)
-            const features = (t.raw(`pricing.tiers.${key}.features`) as string[]) ?? []
+            const features = ta(t, `pricing.tiers.${key}.features`, [])
             const isActive = key === 'plus'
 
             // For plus tier, calculate discount savings
