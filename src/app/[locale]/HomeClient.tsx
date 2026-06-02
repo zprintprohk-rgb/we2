@@ -21,11 +21,9 @@ type Props = {
   heroSecondary: string
   heroSocialProof: string
   features: Feature[]
-  footerPrivacy: string
-  footerTerms: string
-  footerCookie: string
-  footerHelp: string
-  footerContact: string
+  // Note: footer links live in src/app/[locale]/layout.tsx so they
+  // appear on every page (not just the home page). The home page no
+  // longer passes footer props — see Bug 4 fix.
 }
 
 /* ── Sparkle positions (20 particles) ── */
@@ -193,11 +191,7 @@ export function HomeClient({
   heroSecondary,
   heroSocialProof,
   features,
-  footerPrivacy,
-  footerTerms,
-  footerCookie,
-  footerHelp,
-  footerContact,
+  // footer* props removed: footer is rendered by [locale]/layout.tsx (Bug 4)
 }: Props) {
   const prefersReduced = useReducedMotion()
 
@@ -356,29 +350,7 @@ export function HomeClient({
           </motion.div>
         </section>
 
-        {/* ════════ Footer ════════ */}
-        <footer className="border-t border-rose-100/50 pt-10 dark:border-purple-800/30">
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-400 dark:text-zinc-500">
-            <Link href={`/${locale}/privacy`} className="hover:text-rose-600 dark:hover:text-purple-300 transition-colors">
-              {footerPrivacy}
-            </Link>
-            <Link href={`/${locale}/terms`} className="hover:text-rose-600 dark:hover:text-purple-300 transition-colors">
-              {footerTerms}
-            </Link>
-            <Link href={`/${locale}/cookies`} className="hover:text-rose-600 dark:hover:text-purple-300 transition-colors">
-              {footerCookie}
-            </Link>
-            <Link href={`/${locale}/help`} className="hover:text-rose-600 dark:hover:text-purple-300 transition-colors">
-              {footerHelp}
-            </Link>
-            <Link href={`/${locale}/contact`} className="hover:text-rose-600 dark:hover:text-purple-300 transition-colors">
-              {footerContact}
-            </Link>
-          </div>
-          <p className="mt-4 text-sm text-zinc-400 dark:text-zinc-600">
-            © {new Date().getFullYear()} We2
-          </p>
-        </footer>
+        {/* ════════ Footer (intentionally omitted here; the global footer lives in [locale]/layout.tsx — Bug 4) ════════ */}
       </main>
     </div>
   )

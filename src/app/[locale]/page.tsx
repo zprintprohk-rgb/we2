@@ -98,11 +98,8 @@ export default async function HomePage({
         heroSecondary={t('home.hero.secondary')}
         heroSocialProof={t('home.hero.socialProof')}
         features={features}
-        footerPrivacy={t('footer.privacy')}
-        footerTerms={t('footer.terms')}
-        footerCookie={t('footer.cookie')}
-        footerHelp={t('footer.help')}
-        footerContact={t('footer.contact')}
+        // footerPrivacy/Terms/Cookie/Help/Contact removed: the footer
+        // now lives in [locale]/layout.tsx so every page has it (Bug 4 fix).
       />
     </>
   )
