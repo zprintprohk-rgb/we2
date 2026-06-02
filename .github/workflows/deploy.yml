@@ -12,6 +12,6 @@ jobs:
           node-version: 22   # ← 这里必须是 22，不是 20
       - run: npm install
       - run: npm run cf-build
-      - run: npx wrangler deploy
+      - run: npx wrangler deploy --force
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
