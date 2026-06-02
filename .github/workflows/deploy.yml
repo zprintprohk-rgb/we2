@@ -12,7 +12,13 @@ on:
 # Cancel any in-flight run for the same branch to avoid double-deploy
 concurrency:
   group: deploy-${{ github.ref }}
-  cancel-in-progress: true
+  # Was 'true' but we discovered it was masking a real bug: when #36
+  # (f52af6f) pushed, an in-flight run could be cancelled mid-wrangler-deploy
+  # and wrangler still reported exit 0 to GitHub, leaving the run as a
+  # false-positive green. Cloudflare's Deployments tab then shows no new
+  # version. 'false' means concurrent pushes will just both run — slower
+  # but honest, and we'll see the real Cloudflare response in the log.
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -89,8 +95,18 @@ jobs:
           fi
           echo ""
           echo "==== wrangler.toml validation ===="
-          npx wrangler types --dry-run 2>&1 || true
           npx wrangler --version
+          echo ""
+          echo "==== wrangler whoami (token identity check) ===="
+          # If CLOUDFLARE_API_TOKEN is valid, wrangler whoami prints the
+          # account email and account ID. If it is invalid/expired/insufficient
+          # scope, wrangler prints an error and EXITS NON-ZERO. This is the
+          # most reliable way to detect a token that 'looks set' in GitHub
+          # secrets but is actually rejected by Cloudflare.
+          npx wrangler whoami 2>&1 || {
+            echo "::error::wrangler whoami failed — CLOUDFLARE_API_TOKEN is invalid, expired, or missing required scopes (needs Workers Scripts:Edit + Account Settings:Read)"
+            exit 1
+          }
 
       - name: Deploy to Cloudflare Workers (force overwrite, debug-level)
         # --log-level=debug makes wrangler print every network call + the
@@ -100,18 +116,20 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
-      # On failure, upload debug artifacts so we can see exactly where
-      # the build broke without re-running the whole pipeline.
-      - name: Upload debug artifacts on failure
-        if: failure()
+      # ALWAYS upload wrangler-deploy.log (not just on failure) so we
+      # can verify the actual Cloudflare response — even when the run
+      # reports success. We discovered run #36 reported green but
+      # wrangler never pushed to Cloudflare; without this artifact we
+      # had no way to see why. Path is narrowed to just the log files
+      # (not .next/ or .open-next/) to keep artifact size < 100MB.
+      - name: Upload deploy logs
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: deploy-debug-logs
           path: |
-            .next/
-            .open-next/
+            wrangler-deploy.log
             npm-debug.log
             build-error.log
-            wrangler-deploy.log   # full wrangler output captured via 'tee'
           if-no-files-found: ignore
           retention-days: 7
