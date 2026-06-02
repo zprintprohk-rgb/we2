@@ -51,10 +51,13 @@ jobs:
           npm ci --no-audit --no-fund
 
       - name: Build (Next + OpenNext for Cloudflare)
-        run: npm run cf-build
+        run: set -euo pipefail && npm run cf-build
 
-      - name: Deploy to Cloudflare Workers (force overwrite)
-        run: npx wrangler deploy --force
+      - name: Deploy to Cloudflare Workers (force overwrite, debug-level)
+        # --log-level=debug makes wrangler print every network call + the
+        # exact error from Cloudflare's API, so we can finally see the
+        # real 'Exit Code 1' reason instead of guessing.
+        run: npx wrangler deploy --force --log-level=debug
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
