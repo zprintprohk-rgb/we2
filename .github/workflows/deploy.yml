@@ -112,7 +112,17 @@ jobs:
         # --log-level=debug makes wrangler print every network call + the
         # exact error from Cloudflare's API, so we can finally see the
         # real 'Exit Code 1' reason instead of guessing.
-        run: npx wrangler deploy --force --log-level=debug 2>&1 | tee wrangler-deploy.log
+        #
+        # ⚠️  set -euo pipefail is MANDATORY here. Without pipefail,
+        # bash uses tee's exit code (always 0) as the pipeline's exit
+        # code, so wrangler deploy failing with 403/10000/Insufficient
+        # permissions shows as a green tick while the real error sits
+        # silent in wrangler-deploy.log. This is the root cause of the
+        # 9-run 'false success' mystery — wrangler NEVER actually
+        # pushed; CI just couldn't see it fail.
+        run: |
+          set -euo pipefail
+          npx wrangler deploy --force --log-level=debug 2>&1 | tee wrangler-deploy.log
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
@@ -132,15 +142,21 @@ jobs:
         if: always()
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        # ⚠️  set -euo pipefail + '|| true' on every grep is mandatory.
+        # Without these, a missing match silently aborts the step
+        # (with -e) or tee's exit code masks failures (without pipefail),
+        # the same trap that hid wrangler's true failure for 9 runs.
         run: |
+          set -euo pipefail
           echo "==== wrangler deployments list we2-v3 (latest 5) ===="
           npx wrangler deployments list we2-v3 2>&1 | tee wrangler-deployments.log | head -60 || echo "wrangler deployments list command failed"
           echo ""
           echo "==== Direct Cloudflare REST API query ===="
-          # Get account ID via wrangler whoami
-          ACCOUNT_ID=$(npx wrangler whoami 2>&1 | grep -oE 'Account ID:[[:space:]]*[a-f0-9]+' | grep -oE '[a-f0-9]{32}' | head -1)
+          # Get account ID via wrangler whoami (|| true on each grep so a
+          # missing 'Account ID:' line does not abort the step).
+          ACCOUNT_ID=$( (npx wrangler whoami 2>&1 || true) | grep -oE 'Account ID:[[:space:]]*[a-f0-9]+' | grep -oE '[a-f0-9]{32}' | head -1 || true)
           echo "Account ID: ${ACCOUNT_ID:-<not detected>}"
-          if [ -n "$ACCOUNT_ID" ]; then
+          if [ -n "${ACCOUNT_ID:-}" ]; then
             HTTP_CODE=$(curl -sS "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/workers/scripts/we2-v3/deployments?per_page=5" \
               -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
               -H "Content-Type: application/json" \
@@ -154,9 +170,22 @@ jobs:
             fi
             echo ""
             echo "---- Extracted deployment IDs (top 5) ----"
-            grep -oE '"id"[[:space:]]*:[[:space:]]*"[a-f0-9-]+"' cloudflare-api-deployments.json | head -5
+            grep -oE '"id"[[:space:]]*:[[:space:]]*"[a-f0-9-]+"' cloudflare-api-deployments.json | head -5 || true
             echo "---- Extracted created_on timestamps (top 5) ----"
-            grep -oE '"created_on"[[:space:]]*:[[:space:]]*"[^"]+"' cloudflare-api-deployments.json | head -5
+            grep -oE '"created_on"[[:space:]]*:[[:space:]]*"[^"]+"' cloudflare-api-deployments.json | head -5 || true
+            echo ""
+            # DEFINITIVE check: if the latest deployment is still 4393fac1
+            # (3+ hours old), the push did NOT actually land. The wrangler
+            # deploy step (above) reported success but Cloudflare never
+            # received a new version. Compare only the first 8 hex chars
+            # because Cloudflare returns full UUIDs while the dashboard
+            # shows short IDs.
+            LATEST_ID=$(grep -oE '"id"[[:space:]]*:[[:space:]]*"[a-f0-9-]+"' cloudflare-api-deployments.json | head -1 | sed -E 's/.*"([a-f0-9-]+)".*/\1/' || true)
+            echo "Latest deployment ID (parsed): ${LATEST_ID:-<none>}"
+            if [ -n "${LATEST_ID:-}" ] && echo "${LATEST_ID}" | grep -qiE '^4393fac1'; then
+              echo "::error::Latest deployment is still 4393fac1 (3+ hours old). wrangler deploy reported success but the push did NOT reach Cloudflare. Most likely cause: CLOUDFLARE_API_TOKEN is missing the 'Workers Scripts:Edit' scope. Fix: https://dash.cloudflare.com/profile/api-tokens \u2192 edit the token \u2192 enable 'Workers Scripts:Edit' + 'Account Settings:Read' + 'Workers KV Storage:Edit'."
+              exit 1
+            fi
           fi
 
       - name: Upload deploy logs
