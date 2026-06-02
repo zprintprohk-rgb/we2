@@ -108,23 +108,23 @@ jobs:
             exit 1
           }
 
-      - name: Deploy to Cloudflare Workers (force overwrite, debug-level)
-        # --log-level=debug makes wrangler print every network call + the
-        # exact error from Cloudflare's API, so we can finally see the
-        # real 'Exit Code 1' reason instead of guessing.
+      - name: Deploy to Cloudflare Workers
+        # wrangler 4.x changes from earlier workflow versions:
+        #   * --force  flag was REMOVED (deploys overwrite by default in 4.x)
+        #   * --log-level=debug  flag was REMOVED; replaced by WRANGLER_LOG env var
+        # Both were inherited from the wrangler 3.x days (commits a080b88 +
+        # be23f7b) and only surfaced as a real error after f7fd794 added
+        # `set -o pipefail` (the | tee pipe was swallowing wrangler's exit 1).
         #
-        # ⚠️  set -euo pipefail is MANDATORY here. Without pipefail,
-        # bash uses tee's exit code (always 0) as the pipeline's exit
-        # code, so wrangler deploy failing with 403/10000/Insufficient
-        # permissions shows as a green tick while the real error sits
-        # silent in wrangler-deploy.log. This is the root cause of the
-        # 9-run 'false success' mystery — wrangler NEVER actually
-        # pushed; CI just couldn't see it fail.
+        # ⚠️  set -euo pipefail is still MANDATORY — without pipefail the
+        # pipeline's exit code = tee's (always 0), so any wrangler failure
+        # (auth, network, bundle, etc.) would silently present as green.
         run: |
           set -euo pipefail
-          npx wrangler deploy --force --log-level=debug 2>&1 | tee wrangler-deploy.log
+          npx wrangler deploy 2>&1 | tee wrangler-deploy.log
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          WRANGLER_LOG: debug
 
       # ALWAYS upload wrangler-deploy.log (not just on failure) so we
       # can verify the actual Cloudflare response — even when the run
