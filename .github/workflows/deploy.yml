@@ -37,8 +37,18 @@ jobs:
           echo "Node: $(node --version)"
           echo "npm:  $(npm --version)"
 
-      - name: Install dependencies
-        run: npm install --no-audit --no-fund
+      - name: Install dependencies (strict, lockfile-exact)
+        # Use 'npm ci' instead of 'npm install' so we get the EXACT versions
+        # in package-lock.json. If lockfile is missing/corrupt, npm ci fails
+        # immediately (Exit 1) with a clear message, instead of npm install
+        # silently installing whatever semver satisfies and producing a
+        # different tree on every run.
+        run: |
+          if [ ! -f package-lock.json ]; then
+            echo "::error::package-lock.json missing — run 'npm install' locally first to generate it, then commit."
+            exit 1
+          fi
+          npm ci --no-audit --no-fund
 
       - name: Build (Next + OpenNext for Cloudflare)
         run: npm run cf-build
@@ -47,3 +57,18 @@ jobs:
         run: npx wrangler deploy --force
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      # On failure, upload debug artifacts so we can see exactly where
+      # the build broke without re-running the whole pipeline.
+      - name: Upload debug artifacts on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deploy-debug-logs
+          path: |
+            .next/
+            .open-next/
+            npm-debug.log
+            build-error.log
+          if-no-files-found: ignore
+          retention-days: 7
