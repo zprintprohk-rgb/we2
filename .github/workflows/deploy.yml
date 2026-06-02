@@ -54,6 +54,11 @@ jobs:
         run: set -euo pipefail && npm run cf-build
 
       - name: Pre-deploy diagnostics (artifact + secret + config check)
+        # MUST pass the env: here too, otherwise the script sees
+        # CLOUDFLARE_API_TOKEN as unset and the secret check
+        # false-positives even when the secret IS set in GitHub.
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         # This step fails fast with a clear error if anything is missing,
         # so the actual wrangler error is never lost in a 1m10s deploy
         # attempt. Prints artifact sizes + verifies secret presence
