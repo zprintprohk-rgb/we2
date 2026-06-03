@@ -289,57 +289,57 @@
       "step3": "設定目標日期並一起追蹤進度",
       "step4": "用特殊動畫慶祝每一項成就"
     },
-    "backToFeatures": "[zh-tw] Back to Features",
-    "howItWorks": "[zh-tw] How It Works",
-    "tryItOut": "[zh-tw] Try It Out"
+    "backToFeatures": "Back to Features",
+    "howItWorks": "How It Works",
+    "tryItOut": "Try It Out"
   },
   "demo": {
     "dailyCheckIn": {
-      "title": "[zh-tw] Today's Question",
-      "placeholder": "[zh-tw] Share your moment...",
-      "save": "[zh-tw] Save Answer",
-      "saved": "[zh-tw] Answer saved!",
-      "nextQuestion": "[zh-tw] Next question →",
-      "history": "[zh-tw] Your Answers",
-      "empty": "[zh-tw] Start your first check-in"
+      "title": "Today's Question",
+      "placeholder": "Share your moment...",
+      "save": "Save Answer",
+      "saved": "Answer saved!",
+      "nextQuestion": "Next question →",
+      "history": "Your Answers",
+      "empty": "Start your first check-in"
     },
     "timeCapsules": {
-      "title": "[zh-tw] Memory Capsules",
-      "titlePlaceholder": "[zh-tw] A title for our future...",
-      "contentPlaceholder": "[zh-tw] Write down this moment...",
-      "lockCapsule": "[zh-tw] Lock Capsule 🔒",
-      "empty": "[zh-tw] Create your first memory capsule",
-      "unlocked": "[zh-tw] Unlocked",
-      "daysLeft": "[zh-tw] {days} days left",
-      "noContent": "[zh-tw] (No content)"
+      "title": "Memory Capsules",
+      "titlePlaceholder": "A title for our future...",
+      "contentPlaceholder": "Write down this moment...",
+      "lockCapsule": "Lock Capsule 🔒",
+      "empty": "Create your first memory capsule",
+      "unlocked": "Unlocked",
+      "daysLeft": "{days} days left",
+      "noContent": "(No content)"
     },
     "virtualPet": {
-      "title": "[zh-tw] Your Pet",
-      "petName": "[zh-tw] Luna",
-      "virtualCompanion": "[zh-tw] Virtual Companion",
-      "level": "[zh-tw] Level {level}",
-      "hunger": "[zh-tw] Hunger",
-      "happiness": "[zh-tw] Happiness",
-      "intimacy": "[zh-tw] Intimacy",
-      "feed": "[zh-tw] Feed",
-      "play": "[zh-tw] Play",
-      "cuddle": "[zh-tw] Cuddle"
+      "title": "Your Pet",
+      "petName": "Luna",
+      "virtualCompanion": "Virtual Companion",
+      "level": "Level {level}",
+      "hunger": "Hunger",
+      "happiness": "Happiness",
+      "intimacy": "Intimacy",
+      "feed": "Feed",
+      "play": "Play",
+      "cuddle": "Cuddle"
     },
     "privateCommunity": {
-      "title": "[zh-tw] Community Stories"
+      "title": "Community Stories"
     },
     "sharedJournal": {
-      "title": "[zh-tw] Shared Journal",
-      "placeholder": "[zh-tw] Write today's entry...",
-      "writeEntry": "[zh-tw] Write Entry",
-      "you": "[zh-tw] You",
-      "partner": "[zh-tw] Partner"
+      "title": "Shared Journal",
+      "placeholder": "Write today's entry...",
+      "writeEntry": "Write Entry",
+      "you": "You",
+      "partner": "Partner"
     },
     "dreamWall": {
-      "title": "[zh-tw] Dream Wall",
-      "placeholder": "[zh-tw] Our next big dream...",
-      "pin": "[zh-tw] Pin",
-      "empty": "[zh-tw] Pin your first dream to the wall"
+      "title": "Dream Wall",
+      "placeholder": "Our next big dream...",
+      "pin": "Pin",
+      "empty": "Pin your first dream to the wall"
     }
   },
   "legal": {

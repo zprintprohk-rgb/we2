@@ -289,57 +289,57 @@
       "step3": "목표 날짜를 설정하고 함께 진행 상황 추적하기",
       "step4": "각 성취를 특별한 애니메이션으로 축하하기"
     },
-    "backToFeatures": "[ko] Back to Features",
-    "howItWorks": "[ko] How It Works",
-    "tryItOut": "[ko] Try It Out"
+    "backToFeatures": "Back to Features",
+    "howItWorks": "How It Works",
+    "tryItOut": "Try It Out"
   },
   "demo": {
     "dailyCheckIn": {
-      "title": "[ko] Today's Question",
-      "placeholder": "[ko] Share your moment...",
-      "save": "[ko] Save Answer",
-      "saved": "[ko] Answer saved!",
-      "nextQuestion": "[ko] Next question →",
-      "history": "[ko] Your Answers",
-      "empty": "[ko] Start your first check-in"
+      "title": "Today's Question",
+      "placeholder": "Share your moment...",
+      "save": "Save Answer",
+      "saved": "Answer saved!",
+      "nextQuestion": "Next question →",
+      "history": "Your Answers",
+      "empty": "Start your first check-in"
     },
     "timeCapsules": {
-      "title": "[ko] Memory Capsules",
-      "titlePlaceholder": "[ko] A title for our future...",
-      "contentPlaceholder": "[ko] Write down this moment...",
-      "lockCapsule": "[ko] Lock Capsule 🔒",
-      "empty": "[ko] Create your first memory capsule",
-      "unlocked": "[ko] Unlocked",
-      "daysLeft": "[ko] {days} days left",
-      "noContent": "[ko] (No content)"
+      "title": "Memory Capsules",
+      "titlePlaceholder": "A title for our future...",
+      "contentPlaceholder": "Write down this moment...",
+      "lockCapsule": "Lock Capsule 🔒",
+      "empty": "Create your first memory capsule",
+      "unlocked": "Unlocked",
+      "daysLeft": "{days} days left",
+      "noContent": "(No content)"
     },
     "virtualPet": {
-      "title": "[ko] Your Pet",
-      "petName": "[ko] Luna",
-      "virtualCompanion": "[ko] Virtual Companion",
-      "level": "[ko] Level {level}",
-      "hunger": "[ko] Hunger",
-      "happiness": "[ko] Happiness",
-      "intimacy": "[ko] Intimacy",
-      "feed": "[ko] Feed",
-      "play": "[ko] Play",
-      "cuddle": "[ko] Cuddle"
+      "title": "Your Pet",
+      "petName": "Luna",
+      "virtualCompanion": "Virtual Companion",
+      "level": "Level {level}",
+      "hunger": "Hunger",
+      "happiness": "Happiness",
+      "intimacy": "Intimacy",
+      "feed": "Feed",
+      "play": "Play",
+      "cuddle": "Cuddle"
     },
     "privateCommunity": {
-      "title": "[ko] Community Stories"
+      "title": "Community Stories"
     },
     "sharedJournal": {
-      "title": "[ko] Shared Journal",
-      "placeholder": "[ko] Write today's entry...",
-      "writeEntry": "[ko] Write Entry",
-      "you": "[ko] You",
-      "partner": "[ko] Partner"
+      "title": "Shared Journal",
+      "placeholder": "Write today's entry...",
+      "writeEntry": "Write Entry",
+      "you": "You",
+      "partner": "Partner"
     },
     "dreamWall": {
-      "title": "[ko] Dream Wall",
-      "placeholder": "[ko] Our next big dream...",
-      "pin": "[ko] Pin",
-      "empty": "[ko] Pin your first dream to the wall"
+      "title": "Dream Wall",
+      "placeholder": "Our next big dream...",
+      "pin": "Pin",
+      "empty": "Pin your first dream to the wall"
     }
   },
   "legal": {

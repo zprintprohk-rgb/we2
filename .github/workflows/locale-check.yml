@@ -1,0 +1,117 @@
+name: Locale Quality Gates
+
+on:
+  pull_request:
+    paths:
+      - "messages/**"
+      - "scripts/check-*.js"
+      - "scripts/scan-*.js"
+      - "scripts/fix-*.js"
+      - "scripts/sync-*.js"
+      - ".github/workflows/locale-check.yml"
+  push:
+    branches: [main, master, develop]
+    paths:
+      - "messages/**"
+      - "scripts/check-*.js"
+      - "scripts/scan-*.js"
+      - "scripts/fix-*.js"
+      - "scripts/sync-*.js"
+      - ".github/workflows/locale-check.yml"
+
+# Prevent duplicate runs when a push happens inside a PR
+concurrency:
+  group: locale-check-${{ github.ref }}
+  cancel-in-progress: true
+
+# Minimal required permissions (GitHub recommends explicit declarations)
+permissions:
+  contents: read
+  pull-requests: write # needed for failure comment
+
+jobs:
+  quality:
+    name: Locale Quality Gates
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci --no-audit --prefer-offline
+
+      # ── P0-1: JSON Syntax + control characters ──
+      - name: P0-1 — JSON Syntax Check
+        id: syntax
+        continue-on-error: false
+        run: node scripts/check-locale-syntax.js
+
+      # ── P0-2: Locale Pollution Scan ──
+      - name: P0-2 — Locale Pollution Scan
+        id: pollution
+        continue-on-error: false
+        run: node scripts/scan-locale-prefix.js "$PWD/messages"
+
+      # ── P0-3: Translation Completeness ──
+      - name: P0-3 — Translation Completeness
+        id: completeness
+        continue-on-error: false
+        run: node scripts/check-translation-completeness.js
+
+      # ── P0-4: Placeholder / ICU Consistency ──
+      - name: P0-4 — Placeholder Consistency
+        id: placeholder
+        continue-on-error: false
+        run: node scripts/check-locale-placeholders.js
+
+      # ── PR comment on failure (only for pull_request events) ──
+      - name: PR comment on failure
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const steps = {
+              syntax:    '${{ steps.syntax.outcome }}',
+              pollution: '${{ steps.pollution.outcome }}',
+              completeness: '${{ steps.completeness.outcome }}',
+              placeholder: '${{ steps.placeholder.outcome }}',
+            };
+
+            const statusIcon = (v) => v === 'success' ? '✅' : v === 'failure' ? '🔴' : '⚪';
+            const lines = [
+              '## 🚨 Locale Quality Gate Failed',
+              '',
+              '| Gate | Result |',
+              '|------|--------|',
+            ];
+            for (const [name, result] of Object.entries(steps)) {
+              lines.push(`| ${name} | ${statusIcon(result)} ${result} |`);
+            }
+            lines.push('');
+            lines.push('See [job logs](' +
+              `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}` +
+              `/actions/runs/${context.runId}) for details.`);
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: lines.join('\n'),
+            });
+
+      # ── Upload diff artifacts (always, for postmortem) ──
+      - name: Upload locale artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: locale-check-artifacts
+          path: |
+            locale-fix-preview.diff
+          if-no-files-found: ignore
+          retention-days: 7

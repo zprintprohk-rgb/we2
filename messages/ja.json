@@ -289,57 +289,57 @@
       "step3": "目標日を設定し、一緒に進捗を追跡",
       "step4": "各達成を特別なアニメーションでお祝い"
     },
-    "backToFeatures": "[ja] Back to Features",
-    "howItWorks": "[ja] How It Works",
-    "tryItOut": "[ja] Try It Out"
+    "backToFeatures": "Back to Features",
+    "howItWorks": "How It Works",
+    "tryItOut": "Try It Out"
   },
   "demo": {
     "dailyCheckIn": {
-      "title": "[ja] Today's Question",
-      "placeholder": "[ja] Share your moment...",
-      "save": "[ja] Save Answer",
-      "saved": "[ja] Answer saved!",
-      "nextQuestion": "[ja] Next question →",
-      "history": "[ja] Your Answers",
-      "empty": "[ja] Start your first check-in"
+      "title": "Today's Question",
+      "placeholder": "Share your moment...",
+      "save": "Save Answer",
+      "saved": "Answer saved!",
+      "nextQuestion": "Next question →",
+      "history": "Your Answers",
+      "empty": "Start your first check-in"
     },
     "timeCapsules": {
-      "title": "[ja] Memory Capsules",
-      "titlePlaceholder": "[ja] A title for our future...",
-      "contentPlaceholder": "[ja] Write down this moment...",
-      "lockCapsule": "[ja] Lock Capsule 🔒",
-      "empty": "[ja] Create your first memory capsule",
-      "unlocked": "[ja] Unlocked",
-      "daysLeft": "[ja] {days} days left",
-      "noContent": "[ja] (No content)"
+      "title": "Memory Capsules",
+      "titlePlaceholder": "A title for our future...",
+      "contentPlaceholder": "Write down this moment...",
+      "lockCapsule": "Lock Capsule 🔒",
+      "empty": "Create your first memory capsule",
+      "unlocked": "Unlocked",
+      "daysLeft": "{days} days left",
+      "noContent": "(No content)"
     },
     "virtualPet": {
-      "title": "[ja] Your Pet",
-      "petName": "[ja] Luna",
-      "virtualCompanion": "[ja] Virtual Companion",
-      "level": "[ja] Level {level}",
-      "hunger": "[ja] Hunger",
-      "happiness": "[ja] Happiness",
-      "intimacy": "[ja] Intimacy",
-      "feed": "[ja] Feed",
-      "play": "[ja] Play",
-      "cuddle": "[ja] Cuddle"
+      "title": "Your Pet",
+      "petName": "Luna",
+      "virtualCompanion": "Virtual Companion",
+      "level": "Level {level}",
+      "hunger": "Hunger",
+      "happiness": "Happiness",
+      "intimacy": "Intimacy",
+      "feed": "Feed",
+      "play": "Play",
+      "cuddle": "Cuddle"
     },
     "privateCommunity": {
-      "title": "[ja] Community Stories"
+      "title": "Community Stories"
     },
     "sharedJournal": {
-      "title": "[ja] Shared Journal",
-      "placeholder": "[ja] Write today's entry...",
-      "writeEntry": "[ja] Write Entry",
-      "you": "[ja] You",
-      "partner": "[ja] Partner"
+      "title": "Shared Journal",
+      "placeholder": "Write today's entry...",
+      "writeEntry": "Write Entry",
+      "you": "You",
+      "partner": "Partner"
     },
     "dreamWall": {
-      "title": "[ja] Dream Wall",
-      "placeholder": "[ja] Our next big dream...",
-      "pin": "[ja] Pin",
-      "empty": "[ja] Pin your first dream to the wall"
+      "title": "Dream Wall",
+      "placeholder": "Our next big dream...",
+      "pin": "Pin",
+      "empty": "Pin your first dream to the wall"
     }
   },
   "legal": {
