@@ -113,5 +113,6 @@ jobs:
           name: locale-check-artifacts
           path: |
             locale-fix-preview.diff
+            locale-report.json
           if-no-files-found: ignore
           retention-days: 7

@@ -127,12 +127,21 @@ let totalMissing = 0;
 let totalOrphan = 0;
 let totalValuePollution = 0;
 
+// Machine-readable report for V5 dashboard consumption
+const report = {
+  timestamp: new Date().toISOString(),
+  source: SOURCE,
+  sourceKeyCount: Object.keys(sourceFlat).length,
+  locales: {},
+};
+
 for (const locale of TARGETS) {
   let flat;
   try {
     flat = flatten(load(locale));
   } catch (e) {
     console.log(`## ${locale}: PARSE ERROR — ${e.message}\n`);
+    report.locales[locale] = { syntax: 'PARSE_ERROR', error: e.message };
     continue;
   }
 
@@ -190,7 +199,29 @@ for (const locale of TARGETS) {
   totalMissing += missing.length;
   totalOrphan += orphan.length;
   totalValuePollution += valuePollution.length;
+
+  // Machine-readable per-locale score
+  const keyCount = Object.keys(flat).length;
+  const completeness = keyCount > 0 ? keyCount / Object.keys(sourceFlat).length : 0;
+  const hasIssues = keyPrefixBugs.length > 0 || valuePollution.length > 0 || missing.length > 0 || orphan.length > 0;
+  report.locales[locale] = {
+    syntax: 'ok',
+    keyCount,
+    sourceKeyCount: Object.keys(sourceFlat).length,
+    completeness: Math.round(completeness * 1000) / 1000,
+    keyPrefixBugs: keyPrefixBugs.length,
+    valuePollution: valuePollution.length,
+    missing: missing.length,
+    orphan: orphan.length,
+    score: hasIssues ? 'MEDIUM' : 'HIGH',
+    dirtyKeys: valuePollution.slice(0, 50).map((e) => ({ line: e.line, key: e.key, value: e.value })),
+  };
 }
+
+// Write machine-readable report for V5 dashboard
+const reportPath = path.join(__dirname, '..', 'locale-report.json');
+fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf8');
+console.log(`\n📊 Machine-readable report written to: locale-report.json`);
 
 console.log(`# Totals`);
 console.log(`   key-name prefix bugs : ${totalKeyPrefixBugs}`);
