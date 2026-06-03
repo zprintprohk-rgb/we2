@@ -16,7 +16,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { parseTree } = require('jsonc-parser');
+// No external dependencies — pure Node.js (zero install for CI)
 
 // Accept optional directory argument for CI (e.g. `node scan-locale-prefix.js "$PWD/messages"`)
 const userDir = process.argv[2] && !process.argv[2].startsWith("-") ? process.argv[2] : null;
@@ -52,68 +52,63 @@ const LOCALE_TAG_RE = /\[[a-z]{2}(?:[-_][a-zA-Z0-9]{2,4})?\]/;
 const VALUE_POLLUTION_RE = /^\s*\[[a-z]{2}(?:[-_][a-zA-Z0-9]{2,4})?\]\s+/;
 
 // ---------------------------------------------------------------------------
-// VALUE pollution scan with LINE NUMBERS (uses jsonc-parser CST)
+// VALUE pollution scan with LINE NUMBERS (zero external deps)
 // ---------------------------------------------------------------------------
 
 /**
- * Walk the jsonc-parser CST to find all string values that match
- * VALUE_POLLUTION_RE.  Reports { line, key, value } for each.
+ * Scan a JSON file line-by-line for values that match VALUE_POLLUTION_RE.
+ * Tracks the current key path by watching "key": nesting depth.
+ * Reports { line, key, value } for each polluted value.
  */
 function scanValuePollution(filePath) {
   const content = fs.readFileSync(filePath, 'utf8');
-  const tree = parseTree(content, [], {
-    allowTrailingComma: true,
-  });
-  if (!tree) return [];
-
+  const lines = content.split('\n');
   const errors = [];
 
-  function walk(node, keyPathParts) {
-    if (!node) return;
+  // Stack tracking: at depth N, what is the most recent key?
+  const keyStack = [];
+  let depth = 0;
 
-    if (node.type === 'property') {
-      // node.children[0] → key, node.children[1] → value
-      const keyNode = node.children?.[0];
-      const valueNode = node.children?.[1];
+  for (let i = 0; i < lines.length; i++) {
+    const raw = lines[i];
+    const line = i + 1;
+    // Remove leading/trailing whitespace for pattern matching
+    const trimmed = raw.trim();
 
-      if (!keyNode || !valueNode) return;
+    // Skip empty lines and comments
+    if (!trimmed || trimmed.startsWith('//')) continue;
 
-      // Extract the key text (strip surrounding quotes)
-      let keyText = '';
-      if (keyNode.type === 'string') {
-        keyText = content.substring(keyNode.offset + 1, keyNode.offset + keyNode.length - 1);
-      }
-
-      const currentPath = keyPathParts.concat(keyText);
-      const fullKey = currentPath.join('.');
-
-      if (valueNode.type === 'string') {
-        // Value text (strip surrounding quotes handled by jsonc-parser length)
-        const valueOffset = valueNode.offset + 1; // skip opening quote
-        const valueEnd = valueNode.offset + valueNode.length - 1; // skip closing quote
-        const rawValue = content.substring(valueOffset, valueEnd);
-
-        if (VALUE_POLLUTION_RE.test(rawValue)) {
-          errors.push({
-            key: fullKey,
-            value: rawValue,
-            line: valueNode.start?.line ?? (valueNode.offset ? content.substring(0, valueNode.offset).split('\n').length : 0),
-          });
-        }
-      } else if (valueNode.type === 'object') {
-        // Recurse into nested object
-        if (valueNode.children) {
-          for (const child of valueNode.children) {
-            walk(child, currentPath);
-          }
+    // Track braces depth
+    for (const ch of raw) {
+      if (ch === '{' || ch === '[') depth++;
+      if (ch === '}' || ch === ']') {
+        depth--;
+        // Pop keys that belong to the exiting depth
+        while (keyStack.length > 0 && keyStack[keyStack.length - 1].depth >= depth) {
+          keyStack.pop();
         }
       }
     }
-  }
 
-  if (tree.children) {
-    for (const child of tree.children) {
-      walk(child, []);
+    // Match JSON key-value pairs with string values
+    // Pattern: "key": "value" (handles escaping inside value)
+    const m = trimmed.match(/^"((?:[^"\\]|\\.)*)"\s*:\s*"((?:[^"\\]|\\.)*)"\s*,?\s*$/);
+    if (!m) continue;
+
+    const rawKey = m[1].replace(/\\"/g, '"');
+    const rawValue = m[2].replace(/\\"/g, '"');
+
+    // Remove any stale keys at deeper depths from the stack
+    while (keyStack.length > 0 && keyStack[keyStack.length - 1].depth >= depth) {
+      keyStack.pop();
+    }
+    keyStack.push({ key: rawKey, depth });
+
+    // Build full dotted path from stack
+    const fullKey = keyStack.map((e) => e.key).join('.');
+
+    if (VALUE_POLLUTION_RE.test(rawValue)) {
+      errors.push({ key: fullKey, value: rawValue, line });
     }
   }
 
