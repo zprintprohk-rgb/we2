@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>We2 翻译进度面板</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #e2e8f0; padding: 24px; }
+  h1 { font-size: 24px; margin-bottom: 4px; }
+  .sub { color: #94a3b8; font-size: 14px; margin-bottom: 24px; }
+  table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 12px; overflow: hidden; }
+  th { background: #334155; padding: 12px 16px; text-align: left; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .5px; color: #94a3b8; }
+  td { padding: 12px 16px; border-top: 1px solid #334155; font-size: 14px; }
+  .score-HIGH { color: #22c55e; font-weight: 700; }
+  .score-MED { color: #f59e0b; font-weight: 700; }
+  .score-LOW { color: #ef4444; font-weight: 700; }
+  .bar-bg { background: #334155; border-radius: 4px; height: 8px; width: 100%; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; transition: width .4s; }
+  .bar-HIGH { background: #22c55e; }
+  .bar-MED { background: #f59e0b; }
+  .bar-LOW { background: #ef4444; }
+  .last-update { margin-top: 24px; color: #64748b; font-size: 12px; }
+  .legend { display: flex; gap: 16px; margin-top: 16px; font-size: 12px; color: #94a3b8; }
+  .legend span { display: flex; align-items: center; gap: 6px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+</style>
+</head>
+<body>
+<h1>🌐 We2 翻译进度面板</h1>
+<p class="sub">基线: messages/en.json (222 keys) · 实时数据源自 locale-report.json</p>
+<table id="table">
+<thead><tr>
+  <th>语言</th><th>Locale</th><th>覆盖率</th><th>翻译率</th><th>未翻译</th><th>评分</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+<div class="legend">
+  <span><span class="dot" style="background:#22c55e"></span> HIGH: >90%</span>
+  <span><span class="dot" style="background:#f59e0b"></span> MED: 70–90%</span>
+  <span><span class="dot" style="background:#ef4444"></span> LOW: <70%</span>
+</div>
+<p class="last-update" id="updateTime"></p>
+<script>
+(async () => {
+  const res = await fetch('locale-report.json');
+  const data = await res.json();
+  const { locales } = data;
+  const tbody = document.querySelector('#table tbody');
+  // Exclude en from display
+  const displayLocales = (locales || []).filter(l => l.locale !== 'en');
+  displayLocales.forEach(l => {
+    const pct = l.coverage ? (l.coverage * 100).toFixed(1) : '0.0';
+    const translated = l.translated || (l.totalKeys - l.untranslated);
+    const score = l.score || (parseFloat(pct) >= 90 ? 'HIGH' : parseFloat(pct) >= 70 ? 'MED' : 'LOW');
+    const tr = `<tr>
+      <td>${l.name || l.locale}</td>
+      <td><code>${l.locale}</code></td>
+      <td>
+        <div class="bar-bg"><div class="bar-fill bar-${score}" style="width:${pct}%"></div></div>
+      </td>
+      <td>${pct}%</td>
+      <td>${l.untranslated || 0}</td>
+      <td class="score-${score}">${score}</td>
+    </tr>`;
+    tbody.insertAdjacentHTML('beforeend', tr);
+  });
+  document.getElementById('updateTime').textContent = `最后更新: ${new Date(data.timestamp).toLocaleString('zh-CN')}`;
+})();
+</script>
+</body>
+</html>
