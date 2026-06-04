@@ -1,0 +1,24 @@
+﻿{
+    "requests":  [
+                     {
+                         "prompt":  "Cute robot with round head, pixel art style, pastel purple and pink color scheme, charging expression with green battery icon glowing on chest, plugged-in USB cable, white background, isolated single character, sprite frame for kawaii game, soft cute plus tech",
+                         "aspect_ratio":  "1:1",
+                         "resolution":  "1024x1024"
+                     },
+                     {
+                         "prompt":  "Cute robot with round head, pixel art style, pastel purple and pink color scheme, programmer working pose with hoodie, glasses, typing on laptop, headphones around neck, white background, isolated single character, sprite frame for kawaii game, soft cute plus tech",
+                         "aspect_ratio":  "1:1",
+                         "resolution":  "1024x1024"
+                     },
+                     {
+                         "prompt":  "Cute robot with round head, pixel art style, pastel purple and pink color scheme, student with backpack, books in hand, school uniform, cute round glasses, white background, isolated single character, sprite frame for kawaii game, soft cute plus tech",
+                         "aspect_ratio":  "1:1",
+                         "resolution":  "1024x1024"
+                     },
+                     {
+                         "prompt":  "Cute robot with round head, pixel art style, pastel purple and pink color scheme, doctor with white coat, stethoscope, medical cross on hat, friendly smile, white background, isolated single character, sprite frame for kawaii game, soft cute plus tech",
+                         "aspect_ratio":  "1:1",
+                         "resolution":  "1024x1024"
+                     }
+                 ]
+}

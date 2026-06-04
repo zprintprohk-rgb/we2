@@ -1,0 +1,104 @@
+{
+  "requests": [
+    {
+      "prompt": "A cute pixel art robot character, lavender body, antenna with glowing tip, big round eyes, standing idle pose, slight breathing, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute pixel art robot character, lavender body, antenna with glowing tip, big round eyes, standing idle pose, arms slightly relaxed, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute pixel art robot character, lavender body, antenna with glowing tip, big round eyes, working pose, arms raised typing, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute pixel art robot character, lavender body, antenna with glowing tip, big round eyes, working pose, arms up, slight bounce, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute pixel art robot character, lavender body, antenna glowing red, big round eyes looking up, thinking pose, head tilted, hand on chin, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute pixel art robot character, lavender body, antenna glowing red, big round eyes looking sideways, thinking pose, hand near mouth, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute pixel art robot character, lavender body, antenna sparkling, big happy eyes, success celebration pose, both arms up, jumping, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute pixel art robot character, lavender body, antenna sparkling stars, big happy eyes, success pose, jumping with arms waving, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art kitten, white and orange, round head, big sparkly eyes, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art baby dragon, mint green color, small wings, big round eyes, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art baby panda, black and white, bamboo leaf in mouth, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art green slime creature, simple round blob with happy face, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style, retro RPG slime",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art baby fox, orange and white, fluffy tail, big sparkly eyes, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art round bird, sky blue, fluffy, big eyes, sitting on ground, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art baby bear, brown color, round ears, big sparkly eyes, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art baby octopus, pink and purple, eight small tentacles, big round eyes, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art friendly ghost, white with blue tint, big sparkly eyes, tiny smile, floating, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art mushroom creature, red cap with white dots, blue glowing stem, big eyes, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art crystal golem, purple and cyan translucent body, big sparkly eyes, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art friendly alien, green and cyan, big antennae, large eyes, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, no other elements, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    }
+  ]
+}

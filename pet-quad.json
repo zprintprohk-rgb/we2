@@ -1,0 +1,24 @@
+{
+  "requests": [
+    {
+      "prompt": "A cute small pixel art green slime creature, simple round blob with happy face, white background, 16-bit color palette, clean pixel lines, isolated single character, sprite frame for kawaii game, kawaii style, retro RPG slime",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art baby fox, orange and white, fluffy tail, big sparkly eyes, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art round bird, sky blue, fluffy, big eyes, sitting on ground, white background, 16-bit color palette, clean pixel lines, isolated single character, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art baby bear, brown color, round ears, big sparkly eyes, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    }
+  ]
+}

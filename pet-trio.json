@@ -1,0 +1,19 @@
+{
+  "requests": [
+    {
+      "prompt": "A cute small pixel art kitten, white and orange, round head, big sparkly eyes, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art baby dragon, mint green color, small wings, big round eyes, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "A cute small pixel art baby panda, black and white, bamboo leaf in mouth, sitting pose, white background, 16-bit color palette, clean pixel lines, isolated single character, sprite frame for kawaii game, kawaii style",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "requests": [
+    {
+      "prompt": "Character sheet of a cute robot with round head, pixel art style, pastel purple and pink color scheme, white background, showing three views in a single image: front view, side view, back view, labeled, game asset reference, soft cute plus tech aesthetic, consistent design across all views, clean pixel lines, 16-bit color palette, isolated character, kawaii style",
+      "aspect_ratio": "16:9",
+      "resolution": "1536x1024"
+    },
+    {
+      "prompt": "Cute robot with round head, pixel art style, pastel purple and pink color scheme, happy expression with sparkly eyes and big open smile, cheeks blushing pink, white background, isolated single character, no other elements, sprite frame for kawaii game, soft cute plus tech",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "Cute robot with round head, pixel art style, pastel purple and pink color scheme, angry expression with furrowed brow, crossed arms, puffed cheeks, white background, isolated single character, no other elements, sprite frame for kawaii game, soft cute plus tech",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "prompt": "Cute robot with round head, pixel art style, pastel purple and pink color scheme, sleeping expression with closed eyes, soft smile, Zzz floating, white background, isolated single character, no other elements, sprite frame for kawaii game, soft cute plus tech",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    }
+  ]
+}

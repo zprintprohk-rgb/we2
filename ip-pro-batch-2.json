@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute round robot character, pixel art style, pastel purple and pink color scheme, soft lighting, cel shading, 16-bit pixel art, sharp edges no anti-aliasing, limited color palette, sprite sheet style. Front view standing pose, wearing a hoodie, glasses on face, typing on a laptop held in hands, headphones around neck, white background, isolated, orthographic projection, consistent proportions, Game Boy Advance inspired, kawaii design, candy colors, lavender and pink accents. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute round robot character, pixel art style, pastel purple and pink color scheme, soft lighting, cel shading, 16-bit pixel art, sharp edges no anti-aliasing, limited color palette, sprite sheet style. Front view standing pose, wearing a chef hat and apron, holding a wooden cooking spoon in one hand, small mustache under face, white background, isolated, orthographic projection, consistent proportions, Game Boy Advance inspired, kawaii design, candy colors, lavender and pink accents. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute round robot character, pixel art style, special limited edition golden color scheme, gold and champagne and cream color scheme, soft lighting, cel shading, 16-bit pixel art, sharp edges no anti-aliasing, limited color palette, sprite sheet style. Front view standing pose with sparkles and stars around, all golden colors, white background, isolated, orthographic projection, consistent proportions, Game Boy Advance inspired, kawaii design, candy colors, hidden golden version, extremely rare collectible. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, multiple colors",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute round robot character, pixel art style, pastel purple and pink color scheme, soft lighting, cel shading, 16-bit pixel art, sharp edges no anti-aliasing, limited color palette, sprite sheet style. Front view standing pose, idle, calm friendly expression with simple smile, antenna with glowing tip, both arms relaxed at sides, white background, isolated, orthographic projection, consistent proportions, Game Boy Advance inspired, kawaii design, candy colors, lavender and pink and cyan accents. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    }
+  ]
+}

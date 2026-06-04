@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute small kawaii robot character, pixel art style, Gameboy retro game aesthetic, 16-bit color palette, clean pixel lines, white background, front view standing pose with a friendly happy smile, soft pastel colors with lavender and pink and cyan accents, oversized round head with big expressive eyes, antenna with glowing tip, chubby round body, simple cute smile, single static pose, isolated on pure white, sprite sheet style center, high contrast, Game Boy Advance inspired, kawaii expression",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute small kawaii robot character, pixel art style, Gameboy retro game aesthetic, 16-bit color palette, clean pixel lines, white background, three-quarter side view angle standing pose, soft pastel colors with lavender and pink and cyan accents, oversized round head with big expressive eyes, antenna with glowing tip, chubby round body, single static pose, isolated on pure white, sprite sheet style center, high contrast, Game Boy Advance inspired, kawaii expression, profile view showing depth",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute small kawaii robot character, pixel art style, Gameboy retro game aesthetic, 16-bit color palette, clean pixel lines, white background, back view standing pose showing the back of the robot, soft pastel colors with lavender and pink and cyan accents, antenna with glowing tip on top, chubby round body, single static pose, isolated on pure white, sprite sheet style center, high contrast, Game Boy Advance inspired, kawaii expression, rear view",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute small kawaii robot character, pixel art style, Gameboy retro game aesthetic, 16-bit color palette, clean pixel lines, white background, front view standing pose with a HUGE joyful smile, eyes squinting happily, soft pastel colors with lavender and pink and cyan accents, oversized round head, antenna with glowing tip with sparkles, chubby round body, both arms raised in celebration, single static pose, isolated on pure white, sprite sheet style center, high contrast, Game Boy Advance inspired, kawaii expression, super happy mood",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    }
+  ]
+}
