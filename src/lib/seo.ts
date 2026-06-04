@@ -1,12 +1,12 @@
-import { routing, type Locale } from '@/i18n/routing'
+﻿import { routing, type Locale } from '@/i18n/routing'
 
 // --- Site-wide config -------------------------------------------------------
 export const siteConfig = {
-  name: 'We2',
+  name: 'Togthr',
   taglineKey: 'seo.tagline',
-  url: 'https://we2.com',
+  url: 'https://Togthr.com',
   ogImage: '/og-image.png',
-  twitterHandle: '@we2app',
+  twitterHandle: '@Togthrapp',
 } as const
 
 // --- Canonical & alternate links --------------------------------------------
@@ -83,7 +83,7 @@ export function generateSoftwareSchema(locale: Locale): Record<string, unknown> 
   return {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'We2',
+    name: 'Togthr',
     url,
     applicationCategory: 'LifestyleApplication',
     operatingSystem: 'Any',
@@ -110,17 +110,17 @@ export function organizationSchema(locale: Locale): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'We2',
+    name: 'Togthr',
     url,
     logo: `${siteConfig.url}/logo.png`,
     sameAs: [
-      'https://twitter.com/we2app',
-      'https://github.com/we2app',
+      'https://twitter.com/Togthrapp',
+      'https://github.com/Togthrapp',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'support@we2.com',
+      email: 'support@Togthr.com',
       availableLanguage: routing.locales,
     },
   }

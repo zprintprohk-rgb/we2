@@ -1,9 +1,9 @@
-import type { MetadataRoute } from 'next'
+﻿import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'We2 - Grow Together, Love Deeper',
-    short_name: 'We2',
+    name: 'Togthr - Grow Together, Love Deeper',
+    short_name: 'Togthr',
     description: 'The couple\'s app that turns everyday moments into lasting emotional habits.',
     start_url: '/',
     display: 'standalone',

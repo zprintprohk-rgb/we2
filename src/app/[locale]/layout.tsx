@@ -1,4 +1,4 @@
-import { NextIntlClientProvider } from 'next-intl'
+﻿import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { hasLocale } from 'next-intl'
@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 // Cloudflare Web Analytics token
-// 留空表示暂不启用 Analytics；后续在 Cloudflare Dashboard 拿到真实 token 后填入
+// 鐣欑┖琛ㄧず鏆備笉鍚敤 Analytics锛涘悗缁湪 Cloudflare Dashboard 鎷垮埌鐪熷疄 token 鍚庡～鍏?
 const CF_BEACON_TOKEN = process.env.NEXT_PUBLIC_CF_BEACON_TOKEN || ''
 
 type Props = {
@@ -27,10 +27,10 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     const meta = marketMeta[locale]
 
     return {
-      metadataBase: new URL('https://we2.com'),
+      metadataBase: new URL('https://Togthr.com'),
       title: {
-        template: `%s | ${t('siteName') || 'We2'}`,
-        default: `${t('siteName') || 'We2'} — ${t('tagline')}`,
+        template: `%s | ${t('siteName') || 'Togthr'}`,
+        default: `${t('siteName') || 'Togthr'} 鈥?${t('tagline')}`,
       },
       description: t('description'),
       keywords: t('keywords'),
@@ -39,22 +39,22 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
         languages: generateAlternateLinks(''),
       },
       openGraph: {
-        siteName: 'We2',
+        siteName: 'Togthr',
         locale: meta.ogLocale,
         type: 'website',
         images: ['/og-image.png'],
       },
       twitter: {
         card: 'summary_large_image',
-        site: '@we2app',
+        site: '@Togthrapp',
       },
     }
   } catch (error) {
     console.error('[layout] generateMetadata failed:', error)
     return {
-      metadataBase: new URL('https://we2.com'),
-      title: 'We2',
-      description: 'We2 - Grow Together, Love Deeper',
+      metadataBase: new URL('https://Togthr.com'),
+      title: 'Togthr',
+      description: 'Togthr - Grow Together, Love Deeper',
     }
   }
 }
@@ -114,7 +114,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                 href={`/${locale}`}
                 className="text-xl font-bold tracking-tight bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
               >
-                We2
+                Togthr
               </Link>
               <div className="hidden sm:flex items-center gap-4">
                 <Link
@@ -165,7 +165,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <div className="mx-auto max-w-6xl px-4 py-8">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                © {new Date().getFullYear()} We2. All rights reserved.
+                漏 {new Date().getFullYear()} Togthr. All rights reserved.
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-zinc-500 dark:text-zinc-400">
                 <Link
@@ -222,7 +222,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             )}
           </pre>
         </div>
-        <p className="mt-4 text-sm text-gray-500">Digest: 521802265 — real error from layout try/catch</p>
+        <p className="mt-4 text-sm text-gray-500">Digest: 521802265 鈥?real error from layout try/catch</p>
       </div>
     )
   }

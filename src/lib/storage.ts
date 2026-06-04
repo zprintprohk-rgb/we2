@@ -1,6 +1,6 @@
-/* ── Safe localStorage wrapper with `window` guard ── */
+﻿/* ── Safe localStorage wrapper with `window` guard ── */
 
-const STORAGE_PREFIX = 'we2_';
+const STORAGE_PREFIX = 'Togthr_';
 
 export const storage = {
   get: (key: string): unknown => {

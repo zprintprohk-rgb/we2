@@ -1,4 +1,4 @@
-import type { NextRequest } from 'next/server'
+﻿import type { NextRequest } from 'next/server'
 
 const locales: string[] = ['en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'de', 'fr', 'es']
 
@@ -33,7 +33,7 @@ function wrapText(text: string, maxChars: number): string[] {
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url)
-  const title = searchParams.get('title') ?? 'We2'
+  const title = searchParams.get('title') ?? 'Togthr'
   const locale = isLocale(searchParams.get('locale')) ? searchParams.get('locale')! : 'en'
 
   const titleLines = wrapText(escapeXml(title), 30)
@@ -56,9 +56,9 @@ export async function GET(request: NextRequest) {
     '    </linearGradient>',
     '  </defs>',
     '  <rect width="1200" height="630" fill="url(#bg)"/>',
-    '  <text x="600" y="140" text-anchor="middle" font-family="sans-serif" font-size="72" font-weight="900" fill="#38bdf8" letter-spacing="-2">We2</text>',
+    '  <text x="600" y="140" text-anchor="middle" font-family="sans-serif" font-size="72" font-weight="900" fill="#38bdf8" letter-spacing="-2">Togthr</text>',
     `  ${titleElements}`,
-    '  <text x="1120" y="590" text-anchor="end" font-family="sans-serif" font-size="28" fill="#64748b" font-weight="500">we2.com</text>',
+    '  <text x="1120" y="590" text-anchor="end" font-family="sans-serif" font-size="28" fill="#64748b" font-weight="500">Togthr.com</text>',
     `  <text x="80" y="590" text-anchor="start" font-family="sans-serif" font-size="24" fill="#475569">${escapeXml(locale)}</text>`,
     '</svg>',
   ].join('\n')
