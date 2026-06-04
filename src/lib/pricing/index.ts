@@ -16,4 +16,4 @@
  * price table.
  */
 
-export * from '../pricing_old'
+export * from '../pricing-impl'
