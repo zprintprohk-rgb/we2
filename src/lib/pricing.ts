@@ -15,7 +15,7 @@
  * ⚠️ 不要把这里改成纯 USD-base 转换。13 国实价是产品已确认的数据。
  */
 
-export * from './pricing_old'
+export * from './pricing-impl'
 
 // 显式 re-export 主要 API（提高 IDE 跳转体验）
 export {
@@ -27,4 +27,4 @@ export {
   getCountryFromRequest,
   getOriginalPrice,
   getDiscountPercent,
-} from './pricing_old'
+} from './pricing-impl'
