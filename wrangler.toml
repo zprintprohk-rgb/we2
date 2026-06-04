@@ -1,4 +1,5 @@
-name = "we2-v3"
+name = "togthr-life"
+account_id = "32c174efaa22353f357c0fdff9d61b86"
 main = ".open-next/worker.js"
 compatibility_date = "2026-05-29"
 compatibility_flags = ["nodejs_compat"]
