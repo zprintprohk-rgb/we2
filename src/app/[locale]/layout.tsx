@@ -5,6 +5,7 @@ import { hasLocale } from 'next-intl'
 import { routing, type Locale } from '@/i18n/routing'
 import { generateAlternateLinks, getCanonicalUrl, websiteSchema, marketMeta } from '@/lib/seo'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
+import { DesktopPet } from '@/components/DesktopPet'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
@@ -159,6 +160,9 @@ export default async function LocaleLayout({ children, params }: Props) {
 
         {/* ---------- Main Content ---------- */}
         <main>{children}</main>
+
+        {/* 桌面宠物 — 全站悬浮 */}
+        <DesktopPet />
 
         {/* ---------- Footer ---------- */}
         <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
