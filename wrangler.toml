@@ -33,4 +33,4 @@ binding = "ASSETS"
 # 临时注释：R2 桶未创建，文件上传功能暂时不可用
 [[r2_buckets]]
 binding = "R2"
-bucket_name = "my-we2-images"
+bucket_name = "togthr-images"
