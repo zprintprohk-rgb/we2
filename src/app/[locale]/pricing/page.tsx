@@ -72,6 +72,17 @@ export default async function PricingPage({
     const currency = pricing.currency
 
     // Build tier data from the pricing engine
+    // Pre-resolve all i18n strings on the server (RSC cannot serialise
+    // the t() function across the RSC→Client boundary).
+    const saveTemplate = ts(t, 'pricing.save', 'Save {discount}%', { discount: 60 })
+    const labels = {
+      monthly: ts(t, 'pricing.period.monthly', 'Monthly'),
+      quarterly: ts(t, 'pricing.period.quarterly', 'Quarterly'),
+      yearly: ts(t, 'pricing.period.yearly', 'Yearly'),
+      saveTemplate,
+      cta: ts(t, 'pricing.cta', 'Get Started'),
+    }
+
     const tiers = [
       {
         key: 'free' as const,
@@ -82,7 +93,7 @@ export default async function PricingPage({
       },
       {
         key: 'plus' as const,
-        badge: t('pricing.popular'),
+        badge: ts(t, 'pricing.popular', 'Most Popular'),
         monthly: getPrice(country, 'plus', 'monthly'),
         quarterly: pricing.tiers.plus.quarterly,
         yearly: pricing.tiers.plus.yearly,
@@ -96,7 +107,7 @@ export default async function PricingPage({
       },
       {
         key: 'lifetime' as const,
-        badge: t('pricing.save').replace('{discount}', '60'),
+        badge: saveTemplate,
         monthly: 0,
         quarterly: 0,
         yearly: 0,
@@ -187,7 +198,7 @@ export default async function PricingPage({
                           <span className="line-through text-zinc-400">
                             {getDisplayPrice(originalYearly, currency)}
                           </span>{' '}
-                          {t('pricing.save').replace('{discount}', String(yearlyDiscountPct))}
+                          {saveTemplate.replace('{discount}', String(yearlyDiscountPct))}
                         </div>
                       )}
                     </div>
@@ -221,9 +232,12 @@ export default async function PricingPage({
                 </ul>
 
                 {isActive ? (
-                  // Interactive pricing card with period selector
+                  // Interactive pricing card with period selector.
+                  // Pre-translated `labels` are resolved in this RSC and
+                  // passed as plain strings — t() cannot cross the
+                  // RSC→Client boundary (serialisation error).
                   <PricingCard
-                    t={t}
+                    labels={labels}
                     locale={locale}
                     country={country}
                     currency={currency}

@@ -56,3 +56,21 @@ next-env.d.ts
 
 # locale CI artifacts (machine-generated)
 locale-report.json
+
+# ── Local debug artifacts (cleanup 2026-06-04) ──
+# npm / build / dev logs
+*.log
+!scripts/**/*.log
+!*.log.example
+
+# CI gate reports (machine-generated, one-off)
+gate*.txt
+
+# Locale-fix preview diff (transient; regenerate via fix-locale-pollution.js)
+locale-fix-preview.diff
+
+# Dev server page snapshots (debug only)
+pricing-*.html
+
+# Old / refactored source backups (delete after refactor verified)
+*_old.ts
