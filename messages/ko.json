@@ -492,5 +492,21 @@
     "perma": "영구 해제",
     "checkoutNote": "PayPal 테스트 모드 · 첫 주문 50% 할인",
     "checkoutNote2": "구독 없음 · 일회 결제 · 영구 소유"
+  },
+  "daily": {
+    "title": "오늘의 밥주기",
+    "q": "오늘 TA가 곁에 있나요?",
+    "withBtn": "💕 함께",
+    "apartBtn": "🌙 떨어져",
+    "hunger": "포만감",
+    "streak": "🔥 연속 {n}일",
+    "bubbleIdle": "헤헤, 잠깐~",
+    "bubbleWith": "같이!",
+    "bubbleApart": "보고 싶어...",
+    "bubbleFeed": "먹여줘!",
+    "bubbleFull": "배불러!",
+    "bubbleMore": "더 줘~",
+    "again": "다시 하기",
+    "dragHint": "펫에게 드래그"
   }
 }

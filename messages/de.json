@@ -492,5 +492,21 @@
     "perma": "Dauerhaft freischalten",
     "checkoutNote": "PayPal Test-Modus · 50% Erstkäufer-Rabatt",
     "checkoutNote2": "Kein Abo · Einmalzahlung · Für immer"
+  },
+  "daily": {
+    "title": "Tägliche Fütterung",
+    "q": "Ist der andere heute bei dir?",
+    "withBtn": "💕 Zusammen",
+    "apartBtn": "🌙 Getrennt",
+    "hunger": "Sättigung",
+    "streak": "🔥 {n} Tage in Folge",
+    "bubbleIdle": "Hehe, warte~",
+    "bubbleWith": "Zusammen!",
+    "bubbleApart": "Vermisse sie...",
+    "bubbleFeed": "Füttere mich!",
+    "bubbleFull": "Ich bin satt!",
+    "bubbleMore": "Mehr bitte~",
+    "again": "Nochmal",
+    "dragHint": "Zum Haustier ziehen"
   }
 }

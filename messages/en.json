@@ -492,5 +492,21 @@
     "perma": "Permanent unlock",
     "checkoutNote": "PayPal sandbox · 50% off first order",
     "checkoutNote2": "No subscription · Pay once · Yours forever"
+  },
+  "daily": {
+    "title": "Daily Feeding Time",
+    "q": "Is the other one with you today?",
+    "withBtn": "💕 Together",
+    "apartBtn": "🌙 Apart",
+    "hunger": "Hunger",
+    "streak": "🔥 {n} day streak",
+    "bubbleIdle": "Hehe, wait~",
+    "bubbleWith": "Yay!",
+    "bubbleApart": "Missing them...",
+    "bubbleFeed": "Feed me!",
+    "bubbleFull": "I am full!",
+    "bubbleMore": "More please~",
+    "again": "Do it again",
+    "dragHint": "Drag to the pet"
   }
 }

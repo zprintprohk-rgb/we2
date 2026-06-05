@@ -492,5 +492,21 @@
     "perma": "Desbloqueo permanente",
     "checkoutNote": "PayPal sandbox · 50% primera compra",
     "checkoutNote2": "Sin suscripción · Pago único · Para siempre"
+  },
+  "daily": {
+    "title": "Alimentación diaria",
+    "q": "¿Está contigo hoy?",
+    "withBtn": "💕 Juntos",
+    "apartBtn": "🌙 Lejos",
+    "hunger": "Hambre",
+    "streak": "🔥 {n} días seguidos",
+    "bubbleIdle": "Jeje, espera~",
+    "bubbleWith": "¡Juntos!",
+    "bubbleApart": "Te extraño...",
+    "bubbleFeed": "¡Dame de comer!",
+    "bubbleFull": "¡Estoy lleno!",
+    "bubbleMore": "Quiero más~",
+    "again": "Otra vez",
+    "dragHint": "Arrastra a la mascota"
   }
 }

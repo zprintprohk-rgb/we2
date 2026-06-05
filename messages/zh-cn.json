@@ -492,5 +492,21 @@
     "perma": "永久解锁",
     "checkoutNote": "PayPal 测试模式 · 首单 5 折",
     "checkoutNote2": "无订阅 · 一次购买 · 永久拥有"
+  },
+  "daily": {
+    "title": "每日喂食",
+    "q": "今天，TA 在你身边吗？",
+    "withBtn": "💕 在一起",
+    "apartBtn": "🌙 异地",
+    "hunger": "饱腹度",
+    "streak": "🔥 连续 {n} 天投喂",
+    "bubbleIdle": "嘿嘿，等我一下~",
+    "bubbleWith": "一起呀！",
+    "bubbleApart": "想 TA 了...",
+    "bubbleFeed": "喂我！",
+    "bubbleFull": "吃饱啦！",
+    "bubbleMore": "嗯嗯~ 还想要！",
+    "again": "再来一次",
+    "dragHint": "拖到宠物嘴边"
   }
 }

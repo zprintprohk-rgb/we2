@@ -492,5 +492,21 @@
     "perma": "永久アンロック",
     "checkoutNote": "PayPal テストモード · 初回50%オフ",
     "checkoutNote2": "サブスクなし · 一度だけ · 永久"
+  },
+  "daily": {
+    "title": "今日のえさやり",
+    "q": "今日、TA はそばにいる？",
+    "withBtn": "💕 一緒",
+    "apartBtn": "🌙 離れ",
+    "hunger": "満腹度",
+    "streak": "🔥 連続 {n} 日",
+    "bubbleIdle": "えへへ、待って~",
+    "bubbleWith": "一緒！",
+    "bubbleApart": "会いたいな...",
+    "bubbleFeed": "ごはんちょうだい！",
+    "bubbleFull": "満腹！",
+    "bubbleMore": "もっとちょうだい~",
+    "again": "もう一度",
+    "dragHint": "ペットにドラッグ"
   }
 }

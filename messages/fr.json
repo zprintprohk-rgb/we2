@@ -492,5 +492,21 @@
     "perma": "Déverrouillage permanent",
     "checkoutNote": "PayPal sandbox · 50% première commande",
     "checkoutNote2": "Sans abonnement · Paiement unique · Pour toujours"
+  },
+  "daily": {
+    "title": "Repas quotidien",
+    "q": "Est-il/elle avec toi aujourd'hui ?",
+    "withBtn": "💕 Ensemble",
+    "apartBtn": "🌙 Séparés",
+    "hunger": "Faim",
+    "streak": "🔥 {n} jours d'affilée",
+    "bubbleIdle": "Héhé, attends~",
+    "bubbleWith": "Ensemble !",
+    "bubbleApart": "Il/elle me manque...",
+    "bubbleFeed": "Donne-moi !",
+    "bubbleFull": "J'ai assez mangé !",
+    "bubbleMore": "Encore~",
+    "again": "Refaire",
+    "dragHint": "Glisse vers le compagnon"
   }
 }
