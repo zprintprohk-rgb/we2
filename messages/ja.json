@@ -227,9 +227,12 @@
     "copyright": "© {year} We2. 全著作権所有。"
   },
   "notFound": {
-    "title": "ページが見つかりません",
-    "description": "お探しのページは存在しないか、移動されました。",
-    "backHome": "ホームに戻る"
+    "title": "迷子になっちゃった？",
+    "description": "このページはどっかへ行っちゃった。ペットも探してるよ。",
+    "backHome": "ホーム",
+    "feedPet": "えさ",
+    "sayHi": "こんにちは",
+    "pixelHint": "ピクセルな瞬間"
   },
   "payment": {
     "title": "購入手続き",

@@ -227,9 +227,12 @@
     "copyright": "© {year} We2. 保留所有权利。"
   },
   "notFound": {
-    "title": "页面未找到",
-    "description": "您访问的页面不存在或已被移动。",
-    "backHome": "返回首页"
+    "title": "走丢了？",
+    "description": "这个页面不知道跑哪去了。你的宠物也在找它。",
+    "backHome": "回家",
+    "feedPet": "喂宠物",
+    "sayHi": "打个招呼",
+    "pixelHint": "像素时刻"
   },
   "payment": {
     "title": "完成购买",

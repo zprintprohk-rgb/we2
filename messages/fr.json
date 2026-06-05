@@ -227,9 +227,12 @@
     "copyright": "© {year} We2. Tous droits réservés."
   },
   "notFound": {
-    "title": "Page introuvable",
-    "description": "La page que vous cherchez n'existe pas ou a été déplacée.",
-    "backHome": "Retour à l'accueil"
+    "title": "Égaré ?",
+    "description": "Cette page s'est perdue. Ton animal la cherche aussi.",
+    "backHome": "Accueil",
+    "feedPet": "Nourrir",
+    "sayHi": "Dire bonjour",
+    "pixelHint": "Moment 8-bit"
   },
   "payment": {
     "title": "Finaliser l'achat",

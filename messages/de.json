@@ -227,9 +227,12 @@
     "copyright": "© {year} We2. Alle Rechte vorbehalten."
   },
   "notFound": {
-    "title": "Seite nicht gefunden",
-    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
-    "backHome": "Zur Startseite"
+    "title": "Verlaufen?",
+    "description": "Diese Seite ist weggelaufen. Dein Haustier sucht sie auch.",
+    "backHome": "Start",
+    "feedPet": "Füttern",
+    "sayHi": "Sag hallo",
+    "pixelHint": "8-Bit-Moment"
   },
   "payment": {
     "title": "Kauf abschließen",

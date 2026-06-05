@@ -227,9 +227,12 @@
     "copyright": "© {year} We2. All rights reserved."
   },
   "notFound": {
-    "title": "Page Not Found",
-    "description": "The page you're looking for doesn't exist or has been moved.",
-    "backHome": "Back to Home"
+    "title": "Where am I?",
+    "description": "This page wandered off. Your pet is looking for it too.",
+    "backHome": "Home",
+    "feedPet": "Feed pet",
+    "sayHi": "Say hi",
+    "pixelHint": "8-bit moment"
   },
   "payment": {
     "title": "Complete Your Purchase",
