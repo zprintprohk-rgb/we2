@@ -1,6 +1,6 @@
 {
-  "siteName": "We2",
-  "tagline": "Crecer juntos, amar más profundo",
+  "siteName": "Togthr",
+  "tagline": "Siempre aquí",
   "nav": {
     "home": "Inicio",
     "features": "Funciones",
@@ -15,18 +15,18 @@
     "store": "Tienda"
   },
   "seo": {
-    "siteName": "We2",
-    "description": "We2 es la app de crecimiento emocional para parejas. Checks diarios, cápsulas del tiempo y mascota virtual – crea rituales diarios que fortalezcan su vínculo. Más de 10,000 parejas ya confían en nosotros.",
-    "keywords": "app parejas, seguimiento relación, diario amor, recordatorio aniversario, metas pareja, intimidad emocional, relación a distancia, conexión emocional, rituales diarios",
-    "tagline": "Crecer juntos, amar más profundo"
+    "siteName": "Togthr",
+    "description": "Un pequeño robot en tu dispositivo, que te acompaña y representa al otro. Construye rituales diarios, guarda recuerdos y cultiva un compañero virtual.",
+    "keywords": "compañero mascota virtual recuerdos cápsula del tiempo ritual diario apoyo emocional alma gemela larga distancia mascota pixel compañero IA",
+    "tagline": "Siempre aquí"
   },
   "home": {
     "hero": {
-      "title": "Nuestro espacio, solo nosotros dos",
-      "subtitle": "Más allá de LINE, un lugar solo para ustedes. Checks diarios, cápsulas del tiempo, mascota virtual – que la rutina se vuelva el mejor depósito de amor.",
-      "cta": "Empieza gratis – sin tarjeta",
-      "secondary": "Cómo funciona",
-      "socialProof": "Más de 10,000 parejas confían en nosotros ❤️"
+      "title": "Siempre aquí",
+      "subtitle": "Un pequeño robot en tu dispositivo, que te acompaña y representa al otro.",
+      "cta": "Empezar gratis",
+      "secondary": "Ver cómo funciona",
+      "socialProof": "Más de 10 000 usuarios en todo el mundo"
     },
     "features": {
       "title": "Diseñado para parejas reales",

@@ -1,6 +1,6 @@
 {
-  "siteName": "We2",
-  "tagline": "Grandir ensemble, s'aimer plus fort",
+  "siteName": "Togthr",
+  "tagline": "Toujours là",
   "nav": {
     "home": "Accueil",
     "features": "Fonctionnalités",
@@ -15,18 +15,18 @@
     "store": "Boutique"
   },
   "seo": {
-    "siteName": "We2",
-    "description": "We2 est l'application de croissance émotionnelle pour couples. Check-ins quotidiens, capsules temporelles et animal virtuel – créez des rituels quotidiens qui renforcent votre lien. Déjà adopté par 10 000+ couples.",
-    "keywords": "app couple, suivi relation, journal d'amour, rappel anniversaire, objectifs couple, intimité émotionnelle, relation à distance, connexion émotionnelle, rituels quotidiens",
-    "tagline": "Grandir ensemble, s'aimer plus fort"
+    "siteName": "Togthr",
+    "description": "Un petit robot dans ton appareil, qui t'accompagne et représente l'autre. Construis des rituels quotidiens, garde des souvenirs et fais grandir un compagnon virtuel.",
+    "keywords": "compagnon animal virtuel souvenirs capsule temporelle rituel quotidien soutien émotionnel âme sœur longue distance animal pixel compagnon IA",
+    "tagline": "Toujours là"
   },
   "home": {
     "hero": {
-      "title": "Votre espace intime, à deux",
-      "subtitle": "Loin du bruit de LINE, un endroit rien qu'à vous. Check-ins quotidiens, capsules temporelles, animal virtuel – transformez les moments ordinaires en souvenirs inoubliables.",
-      "cta": "Commencer gratuitement – sans carte",
-      "secondary": "Comment ça marche",
-      "socialProof": "Plus de 10 000 couples nous font confiance ❤️"
+      "title": "Toujours là",
+      "subtitle": "Un petit robot dans ton appareil, qui t'accompagne et représente l'autre.",
+      "cta": "Commencer gratuitement",
+      "secondary": "Voir comment",
+      "socialProof": "Choisi par plus de 10 000 utilisateurs"
     },
     "features": {
       "title": "Conçu pour les vrais couples",

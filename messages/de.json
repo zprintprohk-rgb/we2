@@ -1,6 +1,6 @@
 {
-  "siteName": "We2",
-  "tagline": "Gemeinsam wachsen, tiefer lieben",
+  "siteName": "Togthr",
+  "tagline": "Immer da",
   "nav": {
     "home": "Start",
     "features": "Funktionen",
@@ -15,18 +15,18 @@
     "store": "Shop"
   },
   "seo": {
-    "siteName": "We2",
-    "description": "We2 ist die App für emotionales Wachstum als Paar. Tägliche Check-ins, Zeitkapseln und ein virtuelles Haustier – schafft tägliche Rituale, die eure Beziehung stärken. Bereits 10.000+ Paare weltweit vertrauen darauf.",
-    "keywords": "Paar App, Beziehungstracker, Liebestagebuch, Jahrestag Erinnerung, Paarziele, emotionale Intimität, Fernbeziehung, Beziehungsarbeit, tägliche Rituale",
-    "tagline": "Gemeinsam wachsen, tiefer lieben"
+    "siteName": "Togthr",
+    "description": "Ein kleiner Roboter in deinem Gerät, der bei dir ist und den anderen vertritt. Baue tägliche Rituale auf, bewahre Erinnerungen und züchte einen virtuellen Begleiter.",
+    "keywords": "Begleiter virtuelles Haustier Erinnerungen Zeitkapsel tägliches Ritual emotionale Unterstützung Seelenverwandter Fernbeziehung Pixel-Haustier KI-Begleiter",
+    "tagline": "Immer da"
   },
   "home": {
     "hero": {
-      "title": "Gemeinsam wachsen, tiefer lieben",
-      "subtitle": "Die App, die aus Alltagsmomenten bleibende emotionale Gewohnheiten macht. Tägliche Check-ins, Zeitkapseln und ein virtuelles Haustier, das mit eurer Liebe wächst.",
-      "cta": "Kostenlos starten – ohne Kreditkarte",
-      "secondary": "So funktioniert's",
-      "socialProof": "Über 10.000 Paare vertrauen uns ❤️"
+      "title": "Immer da",
+      "subtitle": "Ein kleiner Roboter in deinem Gerät, der bei dir ist und den anderen vertritt.",
+      "cta": "Kostenlos starten",
+      "secondary": "So funktioniert es",
+      "socialProof": "Über 10.000 Nutzer weltweit vertrauen uns"
     },
     "features": {
       "title": "Für echte Paare entwickelt",

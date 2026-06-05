@@ -1,6 +1,6 @@
 {
-  "siteName": "We2",
-  "tagline": "Grow Together, Love Deeper",
+  "siteName": "Togthr",
+  "tagline": "Always Here",
   "nav": {
     "home": "Home",
     "features": "Features",
@@ -15,18 +15,18 @@
     "store": "Store"
   },
   "seo": {
-    "siteName": "We2",
-    "description": "We2 is the couple's app for emotional growth. Build daily rituals, save memories in time capsules, and grow your virtual pet together. Trusted by 10,000+ couples worldwide.",
-    "keywords": "couple app, relationship tracker, love journal, anniversary reminder, couple goals, emotional intimacy, long distance relationship",
-    "tagline": "Grow Together, Love Deeper"
+    "siteName": "Togthr",
+    "description": "A small robot in your device, accompanying you and representing the one you care about. Build daily rituals, save memories, and grow a virtual companion together. Universal, private, and pixel-cute.",
+    "keywords": "companion app, virtual pet, memory keeper, time capsule, daily ritual, emotional support, soulmate, long distance, pixel pet, AI companion",
+    "tagline": "Always Here"
   },
   "home": {
     "hero": {
-      "title": "Grow Together, Love Deeper",
-      "subtitle": "The couple's app that turns everyday moments into lasting emotional habits. Daily check-ins, time capsules, and a virtual pet that grows with your love.",
+      "title": "Always Here",
+      "subtitle": "A small robot in your device, accompanying you and representing the one you care about. Daily rituals, memory capsules, and a virtual companion that grows with you.",
       "cta": "Start Free — No Credit Card",
       "secondary": "See How It Works",
-      "socialProof": "Trusted by 10,000+ couples worldwide ❤️"
+      "socialProof": "Trusted by 10,000+ users worldwide"
     },
     "features": {
       "title": "Built for Real Couples",
