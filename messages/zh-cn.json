@@ -508,5 +508,18 @@
     "bubbleMore": "嗯嗯~ 还想要！",
     "again": "再来一次",
     "dragHint": "拖到宠物嘴边"
+  },
+  "capsule": {
+    "title": "时光胶囊 · 挖宝",
+    "subtitle": "点击埋着的格子，宠物走过去帮你挖开。",
+    "buried": "待挖",
+    "opened": "已开",
+    "openedOn": "埋藏于:",
+    "close": "收下啦",
+    "cancel": "取消",
+    "write": "埋一个胶囊",
+    "writeTitle": "胶囊标题",
+    "writePlaceholder": "写给未来的你...",
+    "save": "埋下"
   }
 }

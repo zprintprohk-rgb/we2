@@ -508,5 +508,18 @@
     "bubbleMore": "Mehr bitte~",
     "again": "Nochmal",
     "dragHint": "Zum Haustier ziehen"
+  },
+  "capsule": {
+    "title": "Zeitkapsel · Schatzsuche",
+    "subtitle": "Tippe auf ein vergrabenes Feld — dein Haustier geht hin und gräbt es aus.",
+    "buried": "vergraben",
+    "opened": "geöffnet",
+    "openedOn": "Vergraben am:",
+    "close": "Schatz!",
+    "cancel": "Abbrechen",
+    "write": "Neue Kapsel vergraben",
+    "writeTitle": "Titel",
+    "writePlaceholder": "Eine Nachricht für die Zukunft...",
+    "save": "Vergraben"
   }
 }

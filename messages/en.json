@@ -508,5 +508,18 @@
     "bubbleMore": "More please~",
     "again": "Do it again",
     "dragHint": "Drag to the pet"
+  },
+  "capsule": {
+    "title": "Treasure Hunt",
+    "subtitle": "Tap a buried patch — your pet walks over and digs it up.",
+    "buried": "buried",
+    "opened": "opened",
+    "openedOn": "Bury date:",
+    "close": "Treasure!",
+    "cancel": "Cancel",
+    "write": "Bury a new capsule",
+    "writeTitle": "Capsule title",
+    "writePlaceholder": "A message for future you...",
+    "save": "Bury it"
   }
 }

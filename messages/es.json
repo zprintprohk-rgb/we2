@@ -508,5 +508,18 @@
     "bubbleMore": "Quiero más~",
     "again": "Otra vez",
     "dragHint": "Arrastra a la mascota"
+  },
+  "capsule": {
+    "title": "Cápsula del tiempo · Búsqueda del tesoro",
+    "subtitle": "Toca una casilla enterrada — tu mascota va y la desentierra.",
+    "buried": "enterradas",
+    "opened": "abiertas",
+    "openedOn": "Enterrada:",
+    "close": "¡Tesoro!",
+    "cancel": "Cancelar",
+    "write": "Enterrar una cápsula",
+    "writeTitle": "Título",
+    "writePlaceholder": "Un mensaje para tu yo futuro...",
+    "save": "Enterrar"
   }
 }

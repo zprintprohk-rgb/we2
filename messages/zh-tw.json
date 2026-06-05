@@ -508,5 +508,18 @@
     "bubbleMore": "嗯嗯~ 還想要！",
     "again": "再來一次",
     "dragHint": "拖到寵物嘴邊"
+  },
+  "capsule": {
+    "title": "時光膠囊 · 挖寶",
+    "subtitle": "點擊埋著的格子，寵物走過去幫你挖開。",
+    "buried": "待挖",
+    "opened": "已開",
+    "openedOn": "埋藏於:",
+    "close": "收下啦",
+    "cancel": "取消",
+    "write": "埋一個膠囊",
+    "writeTitle": "膠囊標題",
+    "writePlaceholder": "寫給未來的你...",
+    "save": "埋下"
   }
 }

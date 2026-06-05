@@ -508,5 +508,18 @@
     "bubbleMore": "더 줘~",
     "again": "다시 하기",
     "dragHint": "펫에게 드래그"
+  },
+  "capsule": {
+    "title": "타임캡슐 · 보물찾기",
+    "subtitle": "埋まっている칸을 탭하면 펫이 걸어가서 파줄 거예요.",
+    "buried": "埋",
+    "opened": "開",
+    "openedOn": "埋めた日:",
+    "close": "宝箱!",
+    "cancel": "キャンセル",
+    "write": "新しいカプセルを埋める",
+    "writeTitle": "タイトル",
+    "writePlaceholder": "未来のあなたへ...",
+    "save": "埋める"
   }
 }

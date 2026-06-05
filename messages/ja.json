@@ -508,5 +508,18 @@
     "bubbleMore": "もっとちょうだい~",
     "again": "もう一度",
     "dragHint": "ペットにドラッグ"
+  },
+  "capsule": {
+    "title": "タイムカプセル · 宝探し",
+    "subtitle": "埋まっているマスをタップ。ペットが歩いて掘り出します。",
+    "buried": "埋",
+    "opened": "開",
+    "openedOn": "埋めた日:",
+    "close": "宝箱!",
+    "cancel": "キャンセル",
+    "write": "新しいカプセルを埋める",
+    "writeTitle": "タイトル",
+    "writePlaceholder": "未来のあなたへ...",
+    "save": "埋める"
   }
 }

@@ -508,5 +508,18 @@
     "bubbleMore": "Encore~",
     "again": "Refaire",
     "dragHint": "Glisse vers le compagnon"
+  },
+  "capsule": {
+    "title": "Capsule temporelle · Chasse au trésor",
+    "subtitle": "Tape sur une case enterrée — ton compagnon va la creuser.",
+    "buried": "enterrées",
+    "opened": "ouvertes",
+    "openedOn": "Enterrée le :",
+    "close": "Trésor !",
+    "cancel": "Annuler",
+    "write": "Enterrer une capsule",
+    "writeTitle": "Titre",
+    "writePlaceholder": "Un message pour toi plus tard...",
+    "save": "Enterrer"
   }
 }
