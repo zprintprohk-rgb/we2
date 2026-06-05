@@ -50,6 +50,11 @@
         "title": "Traumwand",
         "desc": "Pinnt eure Träume, Ziele und Wünsche an die Wand – baut gemeinsam eure Zukunft."
       }
+    },
+    "companions": {
+      "title": "Togthr Begleiter",
+      "subtitle": "Süße Sticker mit einem Tipp an deine Liebe",
+      "cta": "Demnächst im Chat"
     }
   },
   "pricing": {

@@ -50,6 +50,11 @@
         "title": "Muro de sueños",
         "desc": "Fijen sus sueños, metas y deseos en el muro – construyan su futuro juntos."
       }
+    },
+    "companions": {
+      "title": "Compañeros Togthr",
+      "subtitle": "Envía stickers adorables con 1 toque",
+      "cta": "Próximamente en el chat"
     }
   },
   "pricing": {

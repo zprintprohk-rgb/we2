@@ -50,6 +50,11 @@
         "title": "Mur des rêves",
         "desc": "Épinglez vos rêves, objectifs et souhaits au mur – construisez votre avenir ensemble."
       }
+    },
+    "companions": {
+      "title": "Compagnons Togthr",
+      "subtitle": "Envoie des stickers adorables en 1 clic",
+      "cta": "Bientôt dans le chat"
     }
   },
   "pricing": {

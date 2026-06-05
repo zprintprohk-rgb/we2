@@ -50,6 +50,11 @@
         "title": "夢想牆",
         "desc": "把你們的夢想、目標、心願釘在牆上——一起規劃未來的藍圖。"
       }
+    },
+    "companions": {
+      "title": "Togthr 萌寵",
+      "subtitle": "一鍵發送萌系表情給 TA",
+      "cta": "即將上線到聊天"
     }
   },
   "pricing": {

@@ -50,6 +50,11 @@
         "title": "Dream Wall",
         "desc": "Pin your dreams, goals, and wishes — build your future together."
       }
+    },
+    "companions": {
+      "title": "Togthr Companions",
+      "subtitle": "Send cute Togthr stickers to your love, in 1 tap",
+      "cta": "Coming soon to chat"
     }
   },
   "pricing": {

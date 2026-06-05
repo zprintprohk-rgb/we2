@@ -62,7 +62,7 @@ export default async function HomePage({
     { key: 'dreamWall', icon: '馃専' },
     { key: 'dailyGratitude', icon: '馃檹' },
     { key: 'petAdoption', icon: '馃惥' },
-    { key: 'timeCapsule', icon: '鈴? },
+    { key: 'timeCapsule', icon: '⏰' },
   ].map(({ key, icon }) => ({
     key,
     icon,

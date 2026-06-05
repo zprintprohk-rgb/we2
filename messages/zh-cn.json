@@ -50,6 +50,11 @@
         "title": "梦想墙",
         "desc": "把你们的梦想、目标、心愿钉在墙上——一起规划你们的未来。"
       }
+    },
+    "companions": {
+      "title": "Togthr 萌宠",
+      "subtitle": "一键发送萌系表情给 TA",
+      "cta": "即将上线到聊天"
     }
   },
   "pricing": {

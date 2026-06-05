@@ -10,7 +10,51 @@ import {
   Sparkles,
   Star,
 } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { FeatureCard, type Feature } from '@/components/FeatureCard'
+
+/* ── Holiday skin auto-detect (date-based, client-side) ── */
+type HolidaySkin = 'default' | 'christmas' | 'valentine' | 'halloween'
+function detectHolidaySkin(): HolidaySkin {
+  // Render-time only — server renders default, client hydrates with date
+  const m = new Date().getMonth() + 1
+  const d = new Date().getDate()
+  // Christmas: Dec 20-26
+  if (m === 12 && d >= 20 && d <= 26) return 'christmas'
+  // Valentine: Feb 13-15
+  if (m === 2 && d >= 13 && d <= 15) return 'valentine'
+  // Halloween: Oct 28-31
+  if (m === 10 && d >= 28 && d <= 31) return 'halloween'
+  return 'default'
+}
+const HOLIDAY_BG: Record<HolidaySkin, string> = {
+  default:
+    'bg-gradient-to-b from-rose-50 via-pink-50 to-white dark:from-rose-950/40 dark:via-purple-950/30 dark:to-zinc-950',
+  christmas:
+    'bg-gradient-to-b from-red-50 via-emerald-50 to-white dark:from-red-950/40 dark:via-emerald-950/30 dark:to-zinc-950',
+  valentine:
+    'bg-gradient-to-b from-pink-50 via-rose-50 to-white dark:from-pink-950/40 dark:via-rose-950/30 dark:to-zinc-950',
+  halloween:
+    'bg-gradient-to-b from-orange-50 via-purple-50 to-white dark:from-orange-950/40 dark:via-purple-950/30 dark:to-zinc-950',
+}
+const HOLIDAY_ICON: Record<HolidaySkin, string> = {
+  default: '🎁', // placeholder
+  christmas: '🎄',
+  valentine: '💝',
+  halloween: '🎃',
+}
+
+/* ── Sticker pack (8 WeChat-style Togthr Companions) ── */
+const STICKERS: Array<{ src: string; label: string }> = [
+  { src: '/pets/sticker-surprised.png', label: '😲' },
+  { src: '/pets/sticker-loveyou.png',   label: '😍' },
+  { src: '/pets/sticker-crying.png',    label: '😭' },
+  { src: '/pets/sticker-sleepy.png',    label: '😴' },
+  { src: '/pets/sticker-wink.png',      label: '😉' },
+  { src: '/pets/sticker-fighting.png',  label: '💪' },
+  { src: '/pets/sticker-shy.png',       label: '😊' },
+  { src: '/pets/sticker-thumbsup.png',  label: '👍' },
+]
 
 /* ── Types ── */
 type Props = {
@@ -194,6 +238,9 @@ export function HomeClient({
   // footer* props removed: footer is rendered by [locale]/layout.tsx (Bug 4)
 }: Props) {
   const prefersReduced = useReducedMotion()
+  const t = useTranslations('home.companions')
+  const skin = detectHolidaySkin()
+  const isHoliday = skin !== 'default'
 
   /* Animation variants for card grid */
   const container: Variants = {
@@ -207,7 +254,7 @@ export function HomeClient({
   }
 
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-rose-50 via-pink-50 to-white px-4 py-16 dark:from-rose-950/40 dark:via-purple-950/30 dark:to-zinc-950">
+    <div className={`relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 py-16 ${HOLIDAY_BG[skin]}`}>
       {/* ── Background glow orbs ── */}
       <GlowOrb className="w-[450px] h-[450px] -top-24 -left-24" color="#EC4899" delay={0} duration={10} />
       <GlowOrb className="w-[380px] h-[380px] top-1/2 -right-20" color="#A855F7" delay={2} duration={12} />
@@ -258,6 +305,23 @@ export function HomeClient({
           >
             {heroTitle}
           </motion.h1>
+
+          {/* Holiday skin badge — auto-detect */}
+          {isHoliday && (
+            <motion.div
+              initial={prefersReduced ? {} : { opacity: 0, y: -8 }}
+              animate={prefersReduced ? {} : { opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white/70 px-3 py-1 text-xs font-medium text-rose-700 backdrop-blur dark:border-purple-700 dark:bg-purple-950/50 dark:text-purple-200"
+            >
+              <span className="text-base" aria-hidden="true">{HOLIDAY_ICON[skin]}</span>
+              <span>
+                {skin === 'christmas' && 'Holiday skin active'}
+                {skin === 'valentine' && "Valentine's skin active"}
+                {skin === 'halloween' && 'Halloween skin active'}
+              </span>
+            </motion.div>
+          )}
 
           <motion.p
             initial={prefersReduced ? {} : { opacity: 0 }}
@@ -348,6 +412,63 @@ export function HomeClient({
               <FeatureCard key={feature.key} feature={feature} locale={locale} index={i} />
             ))}
           </motion.div>
+        </section>
+
+        {/* ════════ Togthr Companions — Sticker Pack (8 WeChat-style) ════════ */}
+        <section className="w-full pb-16">
+          <motion.div
+            initial={prefersReduced ? {} : { opacity: 0, y: 30 }}
+            whileInView={prefersReduced ? {} : { opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="text-center"
+          >
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl bg-gradient-to-r from-rose-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
+              {t('title')}
+            </h2>
+            <p className="mt-3 text-base text-zinc-500 dark:text-zinc-400">
+              {t('subtitle')}
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={prefersReduced ? {} : { opacity: 0, y: 20 }}
+            whileInView={prefersReduced ? {} : { opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
+            className="mt-10 grid grid-cols-4 gap-4 sm:grid-cols-8"
+          >
+            {STICKERS.map((s, i) => (
+              <motion.div
+                key={s.src}
+                whileHover={prefersReduced ? undefined : { scale: 1.08, y: -4 }}
+                whileTap={prefersReduced ? undefined : { scale: 0.95 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                className="group relative aspect-square overflow-hidden rounded-2xl border border-rose-100 bg-white/60 shadow-sm backdrop-blur dark:border-purple-800 dark:bg-purple-950/30"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={s.src}
+                  alt={s.label}
+                  className="h-full w-full object-contain p-2 transition-transform duration-300 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <span className="pointer-events-none absolute bottom-1 right-1 text-xs opacity-60">
+                  {s.label}
+                </span>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.p
+            initial={prefersReduced ? {} : { opacity: 0 }}
+            whileInView={prefersReduced ? {} : { opacity: 1 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="mt-8 text-center text-sm text-zinc-400 dark:text-zinc-500"
+          >
+            ✨ {t('cta')} ✨
+          </motion.p>
         </section>
 
         {/* ════════ Footer (intentionally omitted here; the global footer lives in [locale]/layout.tsx — Bug 4) ════════ */}
