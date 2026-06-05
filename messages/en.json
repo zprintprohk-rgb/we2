@@ -12,7 +12,8 @@
     "capsule": "Capsule",
     "pet": "Pet",
     "journal": "Nest",
-    "store": "Store"
+    "store": "Store",
+    "chat": "Chat"
   },
   "seo": {
     "siteName": "Togthr",
@@ -574,5 +575,11 @@
       "tree": "Tree",
       "full-nest": "Full nest"
     }
+  },
+  "chat": {
+    "title": "Soulmate",
+    "online": "Always here",
+    "placeholder": "Say something...",
+    "mockNotice": "Day 1 mock — wired to real AI in Day 2"
   }
 }

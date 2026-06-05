@@ -12,7 +12,8 @@
     "capsule": "膠囊",
     "pet": "寵物",
     "journal": "築巢",
-    "store": "商店"
+    "store": "商店",
+    "chat": "聊天"
   },
   "seo": {
     "siteName": "Togthr",
@@ -574,5 +575,11 @@
       "tree": "小樹",
       "full-nest": "滿巢"
     }
+  },
+  "chat": {
+    "title": "靈魂伴侶",
+    "online": "一直都在",
+    "placeholder": "說點什麼吧...",
+    "mockNotice": "Day 1 mock 模式 — 真實 AI Day 2 接入"
   }
 }

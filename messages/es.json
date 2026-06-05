@@ -12,7 +12,8 @@
     "capsule": "Cápsula",
     "pet": "Mascota",
     "journal": "Nido",
-    "store": "Tienda"
+    "store": "Tienda",
+    "chat": "Chat"
   },
   "seo": {
     "siteName": "Togthr",
@@ -574,5 +575,11 @@
       "tree": "Árbol",
       "full-nest": "Nido lleno"
     }
+  },
+  "chat": {
+    "title": "Alma gemela",
+    "online": "Siempre aquí",
+    "placeholder": "Di algo...",
+    "mockNotice": "Mock Día 1 — IA real Día 2"
   }
 }

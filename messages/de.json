@@ -12,7 +12,8 @@
     "capsule": "Kapsel",
     "pet": "Tier",
     "journal": "Nest",
-    "store": "Shop"
+    "store": "Shop",
+    "chat": "Chat"
   },
   "seo": {
     "siteName": "Togthr",
@@ -574,5 +575,11 @@
       "tree": "Baum",
       "full-nest": "Volles Nest"
     }
+  },
+  "chat": {
+    "title": "Seelenverwandter",
+    "online": "Immer da",
+    "placeholder": "Sag etwas...",
+    "mockNotice": "Day 1 Mock — Echte KI in Tag 2"
   }
 }

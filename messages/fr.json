@@ -12,7 +12,8 @@
     "capsule": "Capsule",
     "pet": "Animal",
     "journal": "Nid",
-    "store": "Boutique"
+    "store": "Boutique",
+    "chat": "Chat"
   },
   "seo": {
     "siteName": "Togthr",
@@ -574,5 +575,11 @@
       "tree": "Arbre",
       "full-nest": "Nid plein"
     }
+  },
+  "chat": {
+    "title": "Âme sœur",
+    "online": "Toujours là",
+    "placeholder": "Dis quelque chose...",
+    "mockNotice": "Maquette Day 1 — IA réelle Day 2"
   }
 }

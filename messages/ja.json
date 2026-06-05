@@ -12,7 +12,8 @@
     "capsule": "カプセル",
     "pet": "ペット",
     "journal": "巣",
-    "store": "ショップ"
+    "store": "ショップ",
+    "chat": "チャット"
   },
   "seo": {
     "siteName": "Togthr",
@@ -574,5 +575,11 @@
       "tree": "木",
       "full-nest": "巣完成"
     }
+  },
+  "chat": {
+    "title": "ソウルメイト",
+    "online": "ずっとそばに",
+    "placeholder": "何か話しかけて...",
+    "mockNotice": "Day 1 モック — 実際のAIはDay 2"
   }
 }

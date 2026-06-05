@@ -12,7 +12,8 @@
     "capsule": "캡슐",
     "pet": "펫",
     "journal": "둥지",
-    "store": "상점"
+    "store": "상점",
+    "chat": "채팅"
   },
   "seo": {
     "siteName": "Togthr",
@@ -574,5 +575,11 @@
       "tree": "나무",
       "full-nest": "둥지 완성"
     }
+  },
+  "chat": {
+    "title": "소울메이트",
+    "online": "항상 함께",
+    "placeholder": "뭐든 말해보세요...",
+    "mockNotice": "Day 1 목업 — 실제 AI는 Day 2"
   }
 }
