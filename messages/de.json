@@ -534,5 +534,27 @@
       "thinking": "Denkend",
       "sleeping": "Schlafend"
     }
+  },
+  "journal": {
+    "title": "Unser Nest",
+    "subtitle": "Jeder Tagebuch-Eintrag erweitert euer gemeinsames Nest. Sieh es wachsen.",
+    "stage": "Stufe",
+    "nextStage": "Nächste: {next}",
+    "complete": "Nest vollendet!",
+    "entriesCount": "{n} Einträge",
+    "writePlaceholder": "Schreibe etwas über heute...",
+    "save": "Zum Nest",
+    "mood": {
+      "warm": "Warm",
+      "cool": "Kühl",
+      "festive": "Festlich"
+    },
+    "stageName": {
+      "empty": "Leeres Feld",
+      "seed": "Samen",
+      "sprout": "Spross",
+      "tree": "Baum",
+      "full-nest": "Volles Nest"
+    }
   }
 }

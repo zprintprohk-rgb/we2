@@ -534,5 +534,27 @@
       "thinking": "考え中",
       "sleeping": "睡眠"
     }
+  },
+  "journal": {
+    "title": "私たちの巣",
+    "subtitle": "日記を書くと、共有の巣に何かが加わる。成長を見守ろう。",
+    "stage": "ステージ",
+    "nextStage": "次：{next}",
+    "complete": "巣完成！",
+    "entriesCount": "{n} 件の日記",
+    "writePlaceholder": "今日の小さな出来事を...",
+    "save": "巣に追加",
+    "mood": {
+      "warm": "暖かい",
+      "cool": "涼しい",
+      "festive": "お祝い"
+    },
+    "stageName": {
+      "empty": "空き地",
+      "seed": "種",
+      "sprout": "芽",
+      "tree": "木",
+      "full-nest": "巣完成"
+    }
   }
 }

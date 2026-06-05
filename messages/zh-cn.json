@@ -534,5 +534,27 @@
       "thinking": "思考",
       "sleeping": "睡觉"
     }
+  },
+  "journal": {
+    "title": "我们的筑巢",
+    "subtitle": "每条日记都在为你们的共同小窝添砖加瓦。看它慢慢长大。",
+    "stage": "阶段",
+    "nextStage": "下一阶段：{next}",
+    "complete": "筑巢完成！",
+    "entriesCount": "共 {n} 条",
+    "writePlaceholder": "写下今天的小事...",
+    "save": "放入小窝",
+    "mood": {
+      "warm": "温暖",
+      "cool": "清凉",
+      "festive": "节日"
+    },
+    "stageName": {
+      "empty": "空地",
+      "seed": "种子",
+      "sprout": "嫩芽",
+      "tree": "小树",
+      "full-nest": "满巢"
+    }
   }
 }

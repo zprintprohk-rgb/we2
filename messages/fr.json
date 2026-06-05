@@ -534,5 +534,27 @@
       "thinking": "Pensif",
       "sleeping": "Dormant"
     }
+  },
+  "journal": {
+    "title": "Notre nid",
+    "subtitle": "Chaque entrée de journal agrandit votre nid commun. Regarde-le grandir.",
+    "stage": "Étape",
+    "nextStage": "Prochaine : {next}",
+    "complete": "Nid complet !",
+    "entriesCount": "{n} entrées",
+    "writePlaceholder": "Écris quelque chose sur aujourd'hui...",
+    "save": "Ajouter au nid",
+    "mood": {
+      "warm": "Chaleureux",
+      "cool": "Frais",
+      "festive": "Festif"
+    },
+    "stageName": {
+      "empty": "Terrain vide",
+      "seed": "Graine",
+      "sprout": "Pousse",
+      "tree": "Arbre",
+      "full-nest": "Nid plein"
+    }
   }
 }

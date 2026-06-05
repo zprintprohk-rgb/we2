@@ -534,5 +534,27 @@
       "thinking": "思考",
       "sleeping": "睡覺"
     }
+  },
+  "journal": {
+    "title": "我們的築巢",
+    "subtitle": "每條日記都在為你們的共同小窩添磚加瓦。看它慢慢長大。",
+    "stage": "階段",
+    "nextStage": "下一階段：{next}",
+    "complete": "築巢完成！",
+    "entriesCount": "共 {n} 條",
+    "writePlaceholder": "寫下今天的小事...",
+    "save": "放入小窩",
+    "mood": {
+      "warm": "溫暖",
+      "cool": "清涼",
+      "festive": "節日"
+    },
+    "stageName": {
+      "empty": "空地",
+      "seed": "種子",
+      "sprout": "嫩芽",
+      "tree": "小樹",
+      "full-nest": "滿巢"
+    }
   }
 }

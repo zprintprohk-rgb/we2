@@ -534,5 +534,27 @@
       "thinking": "생각중",
       "sleeping": "잠자는중"
     }
+  },
+  "journal": {
+    "title": "우리 둥지",
+    "subtitle": "일기를 쓸 때마다 우리 둥지에 무언가가 더해져요. 자라는 걸 지켜보세요.",
+    "stage": "단계",
+    "nextStage": "다음: {next}",
+    "complete": "둥지 완성!",
+    "entriesCount": "{n}개의 일기",
+    "writePlaceholder": "오늘의 작은 일을...",
+    "save": "둥지에 추가",
+    "mood": {
+      "warm": "따뜻",
+      "cool": "시원",
+      "festive": "경사"
+    },
+    "stageName": {
+      "empty": "빈 땅",
+      "seed": "씨앗",
+      "sprout": "새싹",
+      "tree": "나무",
+      "full-nest": "둥지 완성"
+    }
   }
 }

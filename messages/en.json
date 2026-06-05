@@ -534,5 +534,27 @@
       "thinking": "Thinking",
       "sleeping": "Sleeping"
     }
+  },
+  "journal": {
+    "title": "Our Nest",
+    "subtitle": "Every journal entry adds to your shared nest. Watch it grow.",
+    "stage": "Stage",
+    "nextStage": "Next: {next}",
+    "complete": "Nest complete!",
+    "entriesCount": "{n} entries",
+    "writePlaceholder": "Write something about today...",
+    "save": "Add to nest",
+    "mood": {
+      "warm": "Warm",
+      "cool": "Cool",
+      "festive": "Festive"
+    },
+    "stageName": {
+      "empty": "Empty lot",
+      "seed": "Seed",
+      "sprout": "Sprout",
+      "tree": "Tree",
+      "full-nest": "Full nest"
+    }
   }
 }

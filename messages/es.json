@@ -534,5 +534,27 @@
       "thinking": "Pensando",
       "sleeping": "Durmiendo"
     }
+  },
+  "journal": {
+    "title": "Nuestro nido",
+    "subtitle": "Cada entrada del diario añade a vuestro nido compartido. Míralo crecer.",
+    "stage": "Etapa",
+    "nextStage": "Siguiente: {next}",
+    "complete": "¡Nido completo!",
+    "entriesCount": "{n} entradas",
+    "writePlaceholder": "Escribe algo sobre hoy...",
+    "save": "Añadir al nido",
+    "mood": {
+      "warm": "Cálido",
+      "cool": "Fresco",
+      "festive": "Festivo"
+    },
+    "stageName": {
+      "empty": "Solar vacío",
+      "seed": "Semilla",
+      "sprout": "Brote",
+      "tree": "Árbol",
+      "full-nest": "Nido lleno"
+    }
   }
 }
