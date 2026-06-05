@@ -521,5 +521,18 @@
     "writeTitle": "タイトル",
     "writePlaceholder": "未来のあなたへ...",
     "save": "埋める"
+  },
+  "pet": {
+    "title": "マイペット",
+    "subtitle": "ペットは関係を映す鏡。気分を選んで変身を見よう。",
+    "pickMood": "今日の気分は？",
+    "status": "Togthr は今",
+    "day": "一緒 {n} 日目",
+    "mood": {
+      "happy": "甘い",
+      "sad": "喧嘩",
+      "thinking": "考え中",
+      "sleeping": "睡眠"
+    }
   }
 }

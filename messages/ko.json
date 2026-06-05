@@ -521,5 +521,18 @@
     "writeTitle": "タイトル",
     "writePlaceholder": "未来のあなたへ...",
     "save": "埋める"
+  },
+  "pet": {
+    "title": "내 펫",
+    "subtitle": "펫은 관계를 비춥니다. 기분을 골라 변신을 보세요.",
+    "pickMood": "오늘 기분은?",
+    "status": "Togthr 지금",
+    "day": "함께한 지 {n}일",
+    "mood": {
+      "happy": "달콤",
+      "sad": "싸움",
+      "thinking": "생각중",
+      "sleeping": "잠자는중"
+    }
   }
 }

@@ -521,5 +521,18 @@
     "writeTitle": "膠囊標題",
     "writePlaceholder": "寫給未來的你...",
     "save": "埋下"
+  },
+  "pet": {
+    "title": "我的寵物",
+    "subtitle": "寵物會反映你們的關係。挑一個心情看它變化。",
+    "pickMood": "今天 TA 心情如何？",
+    "status": "Togthr 現在",
+    "day": "在一起 {n} 天",
+    "mood": {
+      "happy": "甜蜜",
+      "sad": "吵架",
+      "thinking": "思考",
+      "sleeping": "睡覺"
+    }
   }
 }

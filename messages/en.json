@@ -521,5 +521,18 @@
     "writeTitle": "Capsule title",
     "writePlaceholder": "A message for future you...",
     "save": "Bury it"
+  },
+  "pet": {
+    "title": "My Pet",
+    "subtitle": "The pet mirrors your relationship. Pick a mood to see it transform.",
+    "pickMood": "How is your pet feeling today?",
+    "status": "Togthr is",
+    "day": "Day {n} together",
+    "mood": {
+      "happy": "Sweet",
+      "sad": "Fighting",
+      "thinking": "Thinking",
+      "sleeping": "Sleeping"
+    }
   }
 }

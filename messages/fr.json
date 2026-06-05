@@ -521,5 +521,18 @@
     "writeTitle": "Titre",
     "writePlaceholder": "Un message pour toi plus tard...",
     "save": "Enterrer"
+  },
+  "pet": {
+    "title": "Mon compagnon",
+    "subtitle": "Le compagnon reflète votre relation. Choisis une humeur.",
+    "pickMood": "Comment se sent ton compagnon ?",
+    "status": "Togthr est",
+    "day": "Jour {n} ensemble",
+    "mood": {
+      "happy": "Douce",
+      "sad": "Dispute",
+      "thinking": "Pensif",
+      "sleeping": "Dormant"
+    }
   }
 }

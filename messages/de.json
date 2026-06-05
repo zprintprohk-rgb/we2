@@ -521,5 +521,18 @@
     "writeTitle": "Titel",
     "writePlaceholder": "Eine Nachricht für die Zukunft...",
     "save": "Vergraben"
+  },
+  "pet": {
+    "title": "Mein Haustier",
+    "subtitle": "Das Haustier spiegelt eure Beziehung. Wähle eine Stimmung.",
+    "pickMood": "Wie fühlt sich dein Haustier heute?",
+    "status": "Togthr ist",
+    "day": "Tag {n} zusammen",
+    "mood": {
+      "happy": "Süß",
+      "sad": "Streit",
+      "thinking": "Denkend",
+      "sleeping": "Schlafend"
+    }
   }
 }

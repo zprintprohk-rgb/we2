@@ -521,5 +521,18 @@
     "writeTitle": "胶囊标题",
     "writePlaceholder": "写给未来的你...",
     "save": "埋下"
+  },
+  "pet": {
+    "title": "我的宠物",
+    "subtitle": "宠物会反映你们的关系。挑一个心情看它变化。",
+    "pickMood": "今天 TA 心情如何？",
+    "status": "Togthr 现在",
+    "day": "在一起 {n} 天",
+    "mood": {
+      "happy": "甜蜜",
+      "sad": "吵架",
+      "thinking": "思考",
+      "sleeping": "睡觉"
+    }
   }
 }

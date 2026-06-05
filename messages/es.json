@@ -521,5 +521,18 @@
     "writeTitle": "Título",
     "writePlaceholder": "Un mensaje para tu yo futuro...",
     "save": "Enterrar"
+  },
+  "pet": {
+    "title": "Mi mascota",
+    "subtitle": "La mascota refleja tu relación. Elige un estado de ánimo.",
+    "pickMood": "¿Cómo se siente tu mascota hoy?",
+    "status": "Togthr está",
+    "day": "Día {n} juntos",
+    "mood": {
+      "happy": "Dulce",
+      "sad": "Pelea",
+      "thinking": "Pensando",
+      "sleeping": "Durmiendo"
+    }
   }
 }
