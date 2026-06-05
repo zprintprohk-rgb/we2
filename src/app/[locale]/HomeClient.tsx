@@ -297,6 +297,40 @@ export function HomeClient({
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="space-y-6 pb-12"
         >
+          {/* Golden Togthr hero illustration — the wow centerpiece (PRD §3) */}
+          <motion.div
+            initial={prefersReduced ? {} : { opacity: 0, scale: 0.7, y: 20 }}
+            animate={prefersReduced ? {} : { opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 1, ease: 'easeOut' }}
+            className="relative mx-auto h-44 w-44 sm:h-56 sm:w-56"
+            aria-hidden="true"
+          >
+            {/* Soft golden glow ring */}
+            <motion.div
+              animate={
+                prefersReduced
+                  ? {}
+                  : { scale: [1, 1.12, 1], opacity: [0.4, 0.6, 0.4] }
+              }
+              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+              className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/40 via-rose-300/30 to-purple-400/40 blur-2xl"
+            />
+            {/* Floating motion */}
+            <motion.div
+              animate={prefersReduced ? {} : { y: [0, -8, 0], rotate: [0, -2, 2, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+              className="relative h-full w-full"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/pets/hero-golden.png"
+                alt=""
+                className="h-full w-full object-contain drop-shadow-[0_8px_24px_rgba(251,191,36,0.35)]"
+                loading="eager"
+              />
+            </motion.div>
+          </motion.div>
+
           <motion.h1
             initial={prefersReduced ? {} : { scale: 0.95 }}
             animate={prefersReduced ? {} : { scale: 1 }}
