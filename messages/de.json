@@ -586,5 +586,40 @@
     "online": "Immer da",
     "placeholder": "Sag etwas...",
     "mockNotice": "Day 1 Mock — Echte KI in Tag 2"
+  },
+  "onboarding": {
+    "back": "Zurück",
+    "next": "Weiter",
+    "finish": "Fertig",
+    "welcome": {
+      "title": "Immer da",
+      "subtitle": "Dein kleiner Roboter ist da - ein Begleiter, der mit dir wächst.",
+      "cta": "Starten"
+    },
+    "name": {
+      "title": "Nenne deinen Togthr",
+      "subtitle": "Ein Name für den kleinen Roboter, der bei dir sein wird.",
+      "placeholder": "z.B. Pixel, Mimi, Beibei..."
+    },
+    "mode": {
+      "title": "Wie willst du reisen?",
+      "subtitle": "Du kannst dies jederzeit ändern.",
+      "solo": {
+        "title": "Allein",
+        "desc": "Ein Begleiter für dich, mit KI-Chat."
+      },
+      "together": {
+        "title": "Mit jemandem",
+        "desc": "Geteilte Rituale, Kapseln, ein gemeinsames Tier."
+      }
+    },
+    "done": {
+      "title": "{name} ist bereit!",
+      "soloNote": "Dein Haustier ist da. Füttere es, chatte, schicke Sticker.",
+      "togetherNote": "Dein Haustier ist da. Sende die erste Kapsel.",
+      "feedPet": "{name} füttern",
+      "sayHi": "Sag hallo",
+      "startOver": "Neu starten"
+    }
   }
 }

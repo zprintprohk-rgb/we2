@@ -586,5 +586,40 @@
     "online": "一直都在",
     "placeholder": "说点什么吧...",
     "mockNotice": "Day 1 mock 模式 — 真实 AI Day 2 接入"
+  },
+  "onboarding": {
+    "back": "上一步",
+    "next": "下一步",
+    "finish": "完成",
+    "welcome": {
+      "title": "一直都在",
+      "subtitle": "你的小机器人来了 - 一个陪你一起长大的伙伴。",
+      "cta": "开始"
+    },
+    "name": {
+      "title": "给 TA 起个名字",
+      "subtitle": "为这只陪你左右的小机器人取名。",
+      "placeholder": "比如：皮蛋、米米、北北..."
+    },
+    "mode": {
+      "title": "想怎么用？",
+      "subtitle": "随时可以改。",
+      "solo": {
+        "title": "自己一个人",
+        "desc": "一只陪伴你的宠物 + AI 聊天支持。"
+      },
+      "together": {
+        "title": "和 TA 一起",
+        "desc": "分享日常、胶囊、共同养一只宠物。"
+      }
+    },
+    "done": {
+      "title": "{name} 准备好啦！",
+      "soloNote": "你的宠物来了。喂它、跟它聊天、发贴纸。",
+      "togetherNote": "你的宠物来了。发第一个胶囊，开始你们的故事。",
+      "feedPet": "喂 {name}",
+      "sayHi": "打个招呼",
+      "startOver": "重新开始"
+    }
   }
 }

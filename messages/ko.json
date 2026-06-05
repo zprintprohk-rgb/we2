@@ -586,5 +586,40 @@
     "online": "항상 함께",
     "placeholder": "뭐든 말해보세요...",
     "mockNotice": "Day 1 목업 — 실제 AI는 Day 2"
+  },
+  "onboarding": {
+    "back": "뒤로",
+    "next": "다음",
+    "finish": "완료",
+    "welcome": {
+      "title": "항상 함께",
+      "subtitle": "당신의 작은 로봇이 왔어요 - 함께 자라나는 동반자.",
+      "cta": "시작"
+    },
+    "name": {
+      "title": "이름을 지어주세요",
+      "subtitle": "곁에 있을 작은 로봇의 이름.",
+      "placeholder": "예: 픽셀, 미미, 베이베이..."
+    },
+    "mode": {
+      "title": "어떻게 사용하실 건가요?",
+      "subtitle": "언제든 바꿀 수 있어요.",
+      "solo": {
+        "title": "혼자서",
+        "desc": "반려동물 + AI 채팅."
+      },
+      "together": {
+        "title": "누군가와",
+        "desc": "일상, 캡슐, 반려동물을 함께."
+      }
+    },
+    "done": {
+      "title": "{name} 준비 완료!",
+      "soloNote": "펫이 왔어요. 밥 주고, 대화하고, 스티커 보내기.",
+      "togetherNote": "펫이 왔어요. 첫 캡슐을 보내서 이야기를 시작하세요.",
+      "feedPet": "{name} 밥주기",
+      "sayHi": "인사하기",
+      "startOver": "다시 시작"
+    }
   }
 }

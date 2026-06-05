@@ -586,5 +586,40 @@
     "online": "Always here",
     "placeholder": "Say something...",
     "mockNotice": "Day 1 mock — wired to real AI in Day 2"
+  },
+  "onboarding": {
+    "back": "Back",
+    "next": "Next",
+    "finish": "All set",
+    "welcome": {
+      "title": "Always Here",
+      "subtitle": "Your small robot is here - a companion that grows with you.",
+      "cta": "Begin"
+    },
+    "name": {
+      "title": "Name your Togthr",
+      "subtitle": "A name for the small robot that will be with you.",
+      "placeholder": "e.g. Pixel, Mimi, Beibei..."
+    },
+    "mode": {
+      "title": "How will you journey?",
+      "subtitle": "You can change this anytime.",
+      "solo": {
+        "title": "On my own",
+        "desc": "A pet companion for you, with AI chat support."
+      },
+      "together": {
+        "title": "With someone",
+        "desc": "Share rituals, capsules, and a pet together."
+      }
+    },
+    "done": {
+      "title": "{name} is ready!",
+      "soloNote": "Your pet is here. Feed it, chat with it, send stickers.",
+      "togetherNote": "Your pet is here. Send the first capsule to start your shared story.",
+      "feedPet": "Feed {name}",
+      "sayHi": "Say hi",
+      "startOver": "Start over"
+    }
   }
 }

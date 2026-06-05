@@ -586,5 +586,40 @@
     "online": "Siempre aquí",
     "placeholder": "Di algo...",
     "mockNotice": "Mock Día 1 — IA real Día 2"
+  },
+  "onboarding": {
+    "back": "Atrás",
+    "next": "Siguiente",
+    "finish": "Listo",
+    "welcome": {
+      "title": "Siempre aquí",
+      "subtitle": "Tu pequeño robot está aquí - un compañero que crece contigo.",
+      "cta": "Empezar"
+    },
+    "name": {
+      "title": "Nombra a tu Togthr",
+      "subtitle": "Un nombre para el pequeño robot que estará contigo.",
+      "placeholder": "ej. Pixel, Mimi, Beibei..."
+    },
+    "mode": {
+      "title": "¿Cómo viajarás?",
+      "subtitle": "Puedes cambiar esto en cualquier momento.",
+      "solo": {
+        "title": "Solo",
+        "desc": "Un compañero para ti, con chat IA."
+      },
+      "together": {
+        "title": "Con alguien",
+        "desc": "Rituales compartidos, cápsulas, una mascota común."
+      }
+    },
+    "done": {
+      "title": "¡{name} está listo!",
+      "soloNote": "Tu mascota está aquí. Aliméntala, chatea, envía stickers.",
+      "togetherNote": "Tu mascota está aquí. Envía la primera cápsula.",
+      "feedPet": "Alimentar a {name}",
+      "sayHi": "Saludar",
+      "startOver": "Empezar de nuevo"
+    }
   }
 }

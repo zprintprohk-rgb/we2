@@ -586,5 +586,40 @@
     "online": "ずっとそばに",
     "placeholder": "何か話しかけて...",
     "mockNotice": "Day 1 モック — 実際のAIはDay 2"
+  },
+  "onboarding": {
+    "back": "戻る",
+    "next": "次へ",
+    "finish": "完了",
+    "welcome": {
+      "title": "ずっとそばに",
+      "subtitle": "あなたの小さなロボットが来ました - 一緒に成長する相棒。",
+      "cta": "はじめる"
+    },
+    "name": {
+      "title": "Togthrに名前を",
+      "subtitle": "そばにいる小さなロボットの名前。",
+      "placeholder": "例：ピクセル、みみ、べいべい..."
+    },
+    "mode": {
+      "title": "どんな旅を？",
+      "subtitle": "いつでも変更できます。",
+      "solo": {
+        "title": "ひとりで",
+        "desc": "あなたを見守るペット + AI チャット。"
+      },
+      "together": {
+        "title": "誰かと",
+        "desc": "日常、カプセル、ペットを分かち合う。"
+      }
+    },
+    "done": {
+      "title": "{name} の準備完了！",
+      "soloNote": "ペットが来ました。エサをあげて、話して、スタンプを送ろう。",
+      "togetherNote": "ペットが来ました。最初のカプセルを送って、物語を始めよう。",
+      "feedPet": "{name} にえさ",
+      "sayHi": "こんにちは",
+      "startOver": "やり直す"
+    }
   }
 }
