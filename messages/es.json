@@ -13,7 +13,8 @@
     "pet": "Mascota",
     "journal": "Nido",
     "store": "Tienda",
-    "chat": "Chat"
+    "chat": "Chat",
+    "faq": "[es] FAQ"
   },
   "seo": {
     "siteName": "Togthr",
@@ -28,7 +29,15 @@
       "cta": "Empezar gratis",
       "secondary": "Ver cómo funciona",
       "socialProof": "Más de 10 000 usuarios en todo el mundo",
-      "eyebrow": "Siempre aquí · Siempre atento"
+      "eyebrow": "Siempre aquí · Siempre atento",
+      "welcomeFirst": "[es] Hi — I just woke up. I will be here, always.",
+      "welcomeBack": "[es] You came back! I have been waiting for you.",
+      "sleepyGreeting": "[es] Shhh… it is late. Stay with me for a moment.",
+      "statusHello": "[es] Hi! Nice to meet you.",
+      "statusMiss": "[es] You came back!",
+      "statusSleepy": "[es] Shhh… sleepy now.",
+      "relationsEyebrow": "[es] Choose your companion",
+      "relationsHint": "[es] Each mode changes how your pet looks and glows."
     },
     "features": {
       "title": "Diseñado para parejas reales",
@@ -127,6 +136,11 @@
           "Sugerencias inteligentes de recuerdos",
           "Soporte prioritario"
         ]
+      },
+      "eternal": {
+        "name": "[es] Togthr Eternal",
+        "tagline": "[es] All access + exclusive",
+        "features": "[es] Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
     "cta": "Comenzar ahora",
@@ -147,7 +161,62 @@
     "promoHint": "¡Códigos promocionales próximamente!",
     "secure": "Asegurado por PayPal",
     "guarantee": "Garantía de devolución de 30 días",
-    "new": "Nuevo"
+    "new": "Nuevo",
+    "theater": {
+      "eyebrow": "[es] Choose your journey",
+      "headline": "[es] Unlock a life that grows with you",
+      "tagline": "[es] Three tiers. One promise: every pet you unlock stays with you forever.",
+      "guarantee": "[es] 30-day money-back guarantee",
+      "secure": "[es] Secured by PayPal · Alipay · AlipayHK"
+    },
+    "tierMeta": {
+      "free": {
+        "eyebrow": "[es] Seedling",
+        "tagline": "[es] Begin your journey",
+        "peeking": "[es] pets hiding"
+      },
+      "plus": {
+        "eyebrow": "[es] Companion",
+        "tagline": "[es] Choose your soul",
+        "peeking": "[es] pets excited"
+      },
+      "eternal": {
+        "eyebrow": "[es] Stardust",
+        "tagline": "[es] Become timeless",
+        "peeking": "[es] pets ascended"
+      }
+    },
+    "petMatrix": {
+      "free": {
+        "label": "[es] 3 Basic Companions",
+        "sub": "[es] Buds, sprouts, starters"
+      },
+      "plus": {
+        "label": "[es] Unlock 50+ Suits",
+        "sub": "[es] Career · Festival · Emotion · Fantasy"
+      },
+      "eternal": {
+        "label": "[es] All Access + Exclusive",
+        "sub": "[es] Including Golden Legendary"
+      }
+    },
+    "legendary": {
+      "label": "[es] Golden Legendary",
+      "odds": "[es] 1 in 72",
+      "hint": "[es] Random drop from Eternal box"
+    },
+    "countdown": {
+      "label": "[es] Spring Festival Limited",
+      "endsIn": "[es] Ends in",
+      "days": "[es] d",
+      "hours": "[es] h",
+      "minutes": "[es] m",
+      "seconds": "[es] s"
+    },
+    "ctaSubscribe": "[es] Subscribe Now",
+    "ctaStartFree": "[es] Start Free",
+    "ctaPopular": "[es] Choose Companion",
+    "ctaEternal": "[es] Become Eternal"
   },
   "faq": {
     "title": "Preguntas frecuentes",
@@ -560,7 +629,85 @@
       "happy": "Dulce",
       "sad": "Pelea",
       "thinking": "Pensando",
-      "sleeping": "Durmiendo"
+      "sleeping": "Durmiendo",
+      "sweet": "[es] Sweet",
+      "fight": "[es] Fighting",
+      "think": "[es] Thinking",
+      "sleep": "[es] Sleeping"
+    },
+    "rarity": {
+      "common": "[es] Common",
+      "rare": "[es] Rare",
+      "epic": "[es] Epic",
+      "legendary": "[es] Legendary"
+    },
+    "series": {
+      "basic": "[es] Basic",
+      "career": "[es] Career",
+      "festival": "[es] Festival",
+      "emotion": "[es] Emotion",
+      "fantasy": "[es] Fantasy",
+      "legendary": "[es] Legendary"
+    },
+    "tier": {
+      "free": "[es] Free",
+      "plus": "[es] Togthr Plus",
+      "eternal": "[es] Togthr Eternal"
+    },
+    "card": {
+      "current": "[es] Current"
+    },
+    "altar": {
+      "title": "[es] Summon Your Soul Companion",
+      "back": "[es] Back",
+      "close": "[es] Close",
+      "hint": "[es] Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
+      "summon": "[es] Summon",
+      "summoned": "[es] has arrived",
+      "current": "[es] In Use"
+    },
+    "petting": "[es] Pet me~",
+    "statusHello": "[es] Hi there!",
+    "statusSleepy": "[es] Zzz...",
+    "statusMiss": "[es] Miss you",
+    "changePet": "[es] Change Appearance",
+    "changePetBadge": "[es] Summon Altar",
+    "lockHint": "[es] Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "info": {
+      "days": "[es] Days Together",
+      "interactions": "[es] Interactions",
+      "growth": "[es] Growth"
+    },
+    "actions": {
+      "journal": "[es] Journal",
+      "history": "[es] History",
+      "share": "[es] Share"
+    },
+    "festival": {
+      "newyear": "[es] New Year",
+      "easter": "[es] Easter",
+      "thanksgiving": "[es] Thanksgiving",
+      "mothersday": "[es] Mother's Day",
+      "fathersday": "[es] Father's Day",
+      "qixi": "[es] Qixi Festival",
+      "dragonboat": "[es] Dragon Boat Festival",
+      "lantern": "[es] Lantern Festival",
+      "qingming": "[es] Qingming Festival",
+      "chongyang": "[es] Chongyang Festival",
+      "blackfriday": "[es] Black Friday",
+      "cybermonday": "[es] Cyber Monday",
+      "arborday": "[es] Arbor Day",
+      "earthday": "[es] Earth Day",
+      "environment": "[es] World Environment Day",
+      "aprilfool": "[es] April Fool's Day",
+      "graduation": "[es] Graduation",
+      "wedding": "[es] Wedding",
+      "babyshower": "[es] Baby Shower",
+      "birthday": "[es] Birthday",
+      "anniversary": "[es] Anniversary",
+      "pride": "[es] Pride Month",
+      "diwali": "[es] Diwali",
+      "carnival": "[es] Carnival"
     }
   },
   "journal": {
@@ -589,7 +736,17 @@
     "title": "Alma gemela",
     "online": "Siempre aquí",
     "placeholder": "Di algo...",
-    "mockNotice": "Mock Día 1 — IA real Día 2"
+    "mockNotice": "Mock Día 1 — IA real Día 2",
+    "typing": "[es] Companion is typing...",
+    "nightMode": "[es] Night mode",
+    "anniversary": "[es] 100 messages — a chapter complete",
+    "mood": {
+      "sweet": "[es] Sweet",
+      "calm": "[es] Calm",
+      "think": "[es] Think",
+      "sleepy": "[es] Sleepy",
+      "fight": "[es] Fight"
+    }
   },
   "onboarding": {
     "back": "Atrás",

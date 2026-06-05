@@ -13,7 +13,8 @@
     "pet": "ペット",
     "journal": "巣",
     "store": "ショップ",
-    "chat": "チャット"
+    "chat": "チャット",
+    "faq": "[ja] FAQ"
   },
   "seo": {
     "siteName": "Togthr",
@@ -28,7 +29,15 @@
       "cta": "無料で始める",
       "secondary": "使い方を見る",
       "socialProof": "10,000人以上のユーザーに信頼されています",
-      "eyebrow": "ずっとそばに · ずっと気にかけて"
+      "eyebrow": "ずっとそばに · ずっと気にかけて",
+      "welcomeFirst": "[ja] Hi — I just woke up. I will be here, always.",
+      "welcomeBack": "[ja] You came back! I have been waiting for you.",
+      "sleepyGreeting": "[ja] Shhh… it is late. Stay with me for a moment.",
+      "statusHello": "[ja] Hi! Nice to meet you.",
+      "statusMiss": "[ja] You came back!",
+      "statusSleepy": "[ja] Shhh… sleepy now.",
+      "relationsEyebrow": "[ja] Choose your companion",
+      "relationsHint": "[ja] Each mode changes how your pet looks and glows."
     },
     "features": {
       "title": "本物のカップルのために",
@@ -127,6 +136,11 @@
           "スマート記憶提案",
           "優先サポート"
         ]
+      },
+      "eternal": {
+        "name": "[ja] Togthr Eternal",
+        "tagline": "[ja] All access + exclusive",
+        "features": "[ja] Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
     "cta": "今すぐはじめる",
@@ -147,7 +161,62 @@
     "promoHint": "プロモコードは近日公開予定！",
     "secure": "PayPal による安全な決済",
     "guarantee": "30日間の返金保証付き",
-    "new": "新登場"
+    "new": "新登場",
+    "theater": {
+      "eyebrow": "[ja] Choose your journey",
+      "headline": "[ja] Unlock a life that grows with you",
+      "tagline": "[ja] Three tiers. One promise: every pet you unlock stays with you forever.",
+      "guarantee": "[ja] 30-day money-back guarantee",
+      "secure": "[ja] Secured by PayPal · Alipay · AlipayHK"
+    },
+    "tierMeta": {
+      "free": {
+        "eyebrow": "[ja] Seedling",
+        "tagline": "[ja] Begin your journey",
+        "peeking": "[ja] pets hiding"
+      },
+      "plus": {
+        "eyebrow": "[ja] Companion",
+        "tagline": "[ja] Choose your soul",
+        "peeking": "[ja] pets excited"
+      },
+      "eternal": {
+        "eyebrow": "[ja] Stardust",
+        "tagline": "[ja] Become timeless",
+        "peeking": "[ja] pets ascended"
+      }
+    },
+    "petMatrix": {
+      "free": {
+        "label": "[ja] 3 Basic Companions",
+        "sub": "[ja] Buds, sprouts, starters"
+      },
+      "plus": {
+        "label": "[ja] Unlock 50+ Suits",
+        "sub": "[ja] Career · Festival · Emotion · Fantasy"
+      },
+      "eternal": {
+        "label": "[ja] All Access + Exclusive",
+        "sub": "[ja] Including Golden Legendary"
+      }
+    },
+    "legendary": {
+      "label": "[ja] Golden Legendary",
+      "odds": "[ja] 1 in 72",
+      "hint": "[ja] Random drop from Eternal box"
+    },
+    "countdown": {
+      "label": "[ja] Spring Festival Limited",
+      "endsIn": "[ja] Ends in",
+      "days": "[ja] d",
+      "hours": "[ja] h",
+      "minutes": "[ja] m",
+      "seconds": "[ja] s"
+    },
+    "ctaSubscribe": "[ja] Subscribe Now",
+    "ctaStartFree": "[ja] Start Free",
+    "ctaPopular": "[ja] Choose Companion",
+    "ctaEternal": "[ja] Become Eternal"
   },
   "faq": {
     "title": "よくある質問",
@@ -560,7 +629,85 @@
       "happy": "甘い",
       "sad": "喧嘩",
       "thinking": "考え中",
-      "sleeping": "睡眠"
+      "sleeping": "睡眠",
+      "sweet": "[ja] Sweet",
+      "fight": "[ja] Fighting",
+      "think": "[ja] Thinking",
+      "sleep": "[ja] Sleeping"
+    },
+    "rarity": {
+      "common": "[ja] Common",
+      "rare": "[ja] Rare",
+      "epic": "[ja] Epic",
+      "legendary": "[ja] Legendary"
+    },
+    "series": {
+      "basic": "[ja] Basic",
+      "career": "[ja] Career",
+      "festival": "[ja] Festival",
+      "emotion": "[ja] Emotion",
+      "fantasy": "[ja] Fantasy",
+      "legendary": "[ja] Legendary"
+    },
+    "tier": {
+      "free": "[ja] Free",
+      "plus": "[ja] Togthr Plus",
+      "eternal": "[ja] Togthr Eternal"
+    },
+    "card": {
+      "current": "[ja] Current"
+    },
+    "altar": {
+      "title": "[ja] Summon Your Soul Companion",
+      "back": "[ja] Back",
+      "close": "[ja] Close",
+      "hint": "[ja] Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
+      "summon": "[ja] Summon",
+      "summoned": "[ja] has arrived",
+      "current": "[ja] In Use"
+    },
+    "petting": "[ja] Pet me~",
+    "statusHello": "[ja] Hi there!",
+    "statusSleepy": "[ja] Zzz...",
+    "statusMiss": "[ja] Miss you",
+    "changePet": "[ja] Change Appearance",
+    "changePetBadge": "[ja] Summon Altar",
+    "lockHint": "[ja] Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "info": {
+      "days": "[ja] Days Together",
+      "interactions": "[ja] Interactions",
+      "growth": "[ja] Growth"
+    },
+    "actions": {
+      "journal": "[ja] Journal",
+      "history": "[ja] History",
+      "share": "[ja] Share"
+    },
+    "festival": {
+      "newyear": "[ja] New Year",
+      "easter": "[ja] Easter",
+      "thanksgiving": "[ja] Thanksgiving",
+      "mothersday": "[ja] Mother's Day",
+      "fathersday": "[ja] Father's Day",
+      "qixi": "[ja] Qixi Festival",
+      "dragonboat": "[ja] Dragon Boat Festival",
+      "lantern": "[ja] Lantern Festival",
+      "qingming": "[ja] Qingming Festival",
+      "chongyang": "[ja] Chongyang Festival",
+      "blackfriday": "[ja] Black Friday",
+      "cybermonday": "[ja] Cyber Monday",
+      "arborday": "[ja] Arbor Day",
+      "earthday": "[ja] Earth Day",
+      "environment": "[ja] World Environment Day",
+      "aprilfool": "[ja] April Fool's Day",
+      "graduation": "[ja] Graduation",
+      "wedding": "[ja] Wedding",
+      "babyshower": "[ja] Baby Shower",
+      "birthday": "[ja] Birthday",
+      "anniversary": "[ja] Anniversary",
+      "pride": "[ja] Pride Month",
+      "diwali": "[ja] Diwali",
+      "carnival": "[ja] Carnival"
     }
   },
   "journal": {
@@ -589,7 +736,17 @@
     "title": "ソウルメイト",
     "online": "ずっとそばに",
     "placeholder": "何か話しかけて...",
-    "mockNotice": "Day 1 モック — 実際のAIはDay 2"
+    "mockNotice": "Day 1 モック — 実際のAIはDay 2",
+    "typing": "[ja] Companion is typing...",
+    "nightMode": "[ja] Night mode",
+    "anniversary": "[ja] 100 messages — a chapter complete",
+    "mood": {
+      "sweet": "[ja] Sweet",
+      "calm": "[ja] Calm",
+      "think": "[ja] Think",
+      "sleepy": "[ja] Sleepy",
+      "fight": "[ja] Fight"
+    }
   },
   "onboarding": {
     "back": "戻る",

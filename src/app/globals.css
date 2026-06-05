@@ -1,26 +1,160 @@
+/* ==========================================================================
+   Togthr.life — Global Design Tokens (Fusion v2 — 赛博治愈系数字共生体)
+   --------------------------------------------------------------------------
+   这个文件是 4 个核心页面（首页/定价/聊天/宠物）的共享设计系统源。
+   Worker 不应该修改这个文件 — 只读。修改需要 Mavis 协调。
+   --------------------------------------------------------------------------
+   战略定位：赛博治愈系（GLM风格标签）+ 数字共生体（Kimi战略定位）
+   ========================================================================== */
+
 @import "tailwindcss";
 
+/* ── Core palette ───────────────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* 基底色 — 深空紫黑，方案要求 #0B0B1A（不要纯黑） */
+  --bg-cosmic:        #0B0B1A;
+  --bg-cosmic-soft:   #110A20;
+  --bg-cosmic-deep:   #06030F;
+
+  /* 情绪色板（5 种情感 + 关系模式） */
+  --mood-sweet:       rgba(244, 114, 182, 0.30);  /* 甜蜜粉 */
+  --mood-fight:       rgba(96, 165, 250, 0.30);   /* 冷战蓝 */
+  --mood-calm:        rgba(45, 212, 191, 0.20);   /* 静谧青 */
+  --mood-sleepy:      rgba(76, 29, 149, 0.40);    /* 深夜紫 */
+  --mood-think:       rgba(168, 85, 247, 0.25);   /* 思考紫 */
+  --mood-golden:      rgba(251, 191, 36, 0.30);   /* 传说金 */
+
+  /* 关系模式色 */
+  --mode-couple:      linear-gradient(135deg, #7C3AED, #F472B6);
+  --mode-bff:         linear-gradient(135deg, #F472B6, #FBBF24);
+  --mode-bros:        linear-gradient(135deg, #60A5FA, #34D399);
+  --mode-self:        linear-gradient(135deg, #A78BFA, #2DD4BF);
+
+  /* Glassmorphism 基础 */
+  --glass-bg:         rgba(255, 255, 255, 0.05);
+  --glass-border:     rgba(255, 255, 255, 0.10);
+  --glass-border-emph: rgba(255, 255, 255, 0.18);
+  --glass-blur:       16px;
+
+  /* 文本色（深空背景上） */
+  --text-primary:     #F4F4F5;
+  --text-secondary:   rgba(244, 244, 245, 0.72);
+  --text-muted:       rgba(244, 244, 245, 0.48);
+  --text-faint:       rgba(244, 244, 245, 0.32);
+
+  /* 间距 — 全屏沉浸剧场专用 */
+  --section-h:        100vh;
+  --section-min:      min-h-screen;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* ── Default body — 永远深色（私密、避风港感） ──────────────────────────── */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-cosmic);
+  color: var(--text-primary);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── 共享 keyframes（情感粒子/呼吸/光标闪烁） ─────────────────────────── */
+@keyframes breath {
+  0%, 100% { transform: scale(1);   opacity: 0.95; }
+  50%      { transform: scale(1.02); opacity: 1; }
+}
+
+@keyframes arc-drift {
+  0%, 100% { transform: translate(0, 0)        scale(1);   opacity: 0.30; }
+  50%      { transform: translate(20px, -15px) scale(1.08); opacity: 0.45; }
+}
+
+@keyframes cursor-blink {
+  0%, 49%  { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 12px rgba(244, 114, 182, 0.30); }
+  50%      { box-shadow: 0 0 32px rgba(244, 114, 182, 0.60); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+/* ── Tailwind v4 主题 token 暴露（让 utility class 可用） ─────────────── */
+@theme inline {
+  --color-cosmic:         var(--bg-cosmic);
+  --color-cosmic-soft:    var(--bg-cosmic-soft);
+  --color-cosmic-deep:    var(--bg-cosmic-deep);
+  --color-text-primary:   var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted:     var(--text-muted);
+  --color-text-faint:     var(--text-faint);
+  --color-mode-couple-a:  #7C3AED;
+  --color-mode-couple-b:  #F472B6;
+  --color-mode-bff-a:     #F472B6;
+  --color-mode-bff-b:     #FBBF24;
+  --color-mode-bros-a:    #60A5FA;
+  --color-mode-bros-b:    #34D399;
+  --color-mode-self-a:    #A78BFA;
+  --color-mode-self-b:    #2DD4BF;
+  --color-mood-sweet:     #F472B6;
+  --color-mood-fight:     #60A5FA;
+  --color-mood-calm:      #2DD4BF;
+  --color-mood-sleepy:    #4C1D95;
+  --color-mood-think:     #A855F7;
+  --color-mood-golden:    #FBBF24;
+
+  --animate-breath:       breath 3s ease-in-out infinite;
+  --animate-arc-drift:    arc-drift 8s ease-in-out infinite;
+  --animate-cursor-blink: cursor-blink 1s steps(1) infinite;
+  --animate-float-y:      float-y 4s ease-in-out infinite;
+  --animate-pulse-glow:   pulse-glow 2.5s ease-in-out infinite;
+  --animate-shimmer:      shimmer 3s linear infinite;
+}
+
+/* ── Utility shortcuts ─────────────────────────────────────────────────── */
+@utility glass-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+}
+
+@utility glass-card-emph {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border-emph);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+}
+
+@utility text-gradient-sweet {
+  background: linear-gradient(135deg, #F472B6, #A78BFA, #60A5FA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility text-gradient-golden {
+  background: linear-gradient(135deg, #FBBF24, #F472B6, #A78BFA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ── 减少动画偏好（prefers-reduced-motion）── 默认禁用大动画 ─────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

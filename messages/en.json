@@ -5,6 +5,7 @@
     "home": "Home",
     "features": "Features",
     "pricing": "Pricing",
+    "faq": "FAQ",
     "community": "Community",
     "login": "Log In",
     "dashboard": "Dashboard",
@@ -25,10 +26,18 @@
     "hero": {
       "title": "Always Here",
       "subtitle": "A small robot in your device, accompanying you and representing the one you care about. Daily rituals, memory capsules, and a virtual companion that grows with you.",
+      "welcomeFirst": "Hi — I just woke up. I will be here, always.",
+      "welcomeBack": "You came back! I have been waiting for you.",
+      "sleepyGreeting": "Shhh… it is late. Stay with me for a moment.",
       "cta": "Start Free — No Credit Card",
       "secondary": "See How It Works",
       "socialProof": "Trusted by 10,000+ users worldwide",
-      "eyebrow": "Always Here · Always Caring"
+      "eyebrow": "Always Here · Always Caring",
+      "statusHello": "Hi! Nice to meet you.",
+      "statusMiss": "You came back!",
+      "statusSleepy": "Shhh… sleepy now.",
+      "relationsEyebrow": "Choose your companion",
+      "relationsHint": "Each mode changes how your pet looks and glows."
     },
     "features": {
       "title": "Built for Real Couples",
@@ -127,6 +136,17 @@
           "Smart memory suggestions",
           "Priority support"
         ]
+      },
+      "eternal": {
+        "name": "Togthr Eternal",
+        "tagline": "All access + exclusive",
+        "features": [
+          "Everything in Plus",
+          "All 50+ pet suits unlocked",
+          "Golden legendary pets",
+          "Priority support",
+          "Early access to new features"
+        ]
       }
     },
     "cta": "Get Started",
@@ -147,7 +167,62 @@
     "promoHint": "Promo codes coming soon!",
     "secure": "Secured by PayPal",
     "guarantee": "30-day money-back guarantee",
-    "new": "New"
+    "new": "New",
+    "theater": {
+      "eyebrow": "Choose your journey",
+      "headline": "Unlock a life that grows with you",
+      "tagline": "Three tiers. One promise: every pet you unlock stays with you forever.",
+      "guarantee": "30-day money-back guarantee",
+      "secure": "Secured by PayPal · Alipay · AlipayHK"
+    },
+    "tierMeta": {
+      "free": {
+        "eyebrow": "Seedling",
+        "tagline": "Begin your journey",
+        "peeking": "pets hiding"
+      },
+      "plus": {
+        "eyebrow": "Companion",
+        "tagline": "Choose your soul",
+        "peeking": "pets excited"
+      },
+      "eternal": {
+        "eyebrow": "Stardust",
+        "tagline": "Become timeless",
+        "peeking": "pets ascended"
+      }
+    },
+    "petMatrix": {
+      "free": {
+        "label": "3 Basic Companions",
+        "sub": "Buds, sprouts, starters"
+      },
+      "plus": {
+        "label": "Unlock 50+ Suits",
+        "sub": "Career · Festival · Emotion · Fantasy"
+      },
+      "eternal": {
+        "label": "All Access + Exclusive",
+        "sub": "Including Golden Legendary"
+      }
+    },
+    "legendary": {
+      "label": "Golden Legendary",
+      "odds": "1 in 72",
+      "hint": "Random drop from Eternal box"
+    },
+    "countdown": {
+      "label": "Spring Festival Limited",
+      "endsIn": "Ends in",
+      "days": "d",
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
+    },
+    "ctaSubscribe": "Subscribe Now",
+    "ctaStartFree": "Start Free",
+    "ctaPopular": "Choose Companion",
+    "ctaEternal": "Become Eternal"
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -560,7 +635,85 @@
       "happy": "Sweet",
       "sad": "Fighting",
       "thinking": "Thinking",
-      "sleeping": "Sleeping"
+      "sleeping": "Sleeping",
+      "sweet": "Sweet",
+      "fight": "Fighting",
+      "think": "Thinking",
+      "sleep": "Sleeping"
+    },
+    "rarity": {
+      "common": "Common",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary"
+    },
+    "series": {
+      "basic": "Basic",
+      "career": "Career",
+      "festival": "Festival",
+      "emotion": "Emotion",
+      "fantasy": "Fantasy",
+      "legendary": "Legendary"
+    },
+    "tier": {
+      "free": "Free",
+      "plus": "Togthr Plus",
+      "eternal": "Togthr Eternal"
+    },
+    "card": {
+      "current": "Current"
+    },
+    "festival": {
+      "newyear": "New Year",
+      "easter": "Easter",
+      "thanksgiving": "Thanksgiving",
+      "mothersday": "Mother's Day",
+      "fathersday": "Father's Day",
+      "qixi": "Qixi Festival",
+      "dragonboat": "Dragon Boat Festival",
+      "lantern": "Lantern Festival",
+      "qingming": "Qingming Festival",
+      "chongyang": "Chongyang Festival",
+      "blackfriday": "Black Friday",
+      "cybermonday": "Cyber Monday",
+      "arborday": "Arbor Day",
+      "earthday": "Earth Day",
+      "environment": "World Environment Day",
+      "aprilfool": "April Fool's Day",
+      "graduation": "Graduation",
+      "wedding": "Wedding",
+      "babyshower": "Baby Shower",
+      "birthday": "Birthday",
+      "anniversary": "Anniversary",
+      "pride": "Pride Month",
+      "diwali": "Diwali",
+      "carnival": "Carnival"
+    },
+    "altar": {
+      "title": "Summon Your Soul Companion",
+      "back": "Back",
+      "close": "Close",
+      "hint": "Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
+      "summon": "Summon",
+      "summoned": "has arrived",
+      "current": "In Use"
+    },
+    "petting": "Pet me~",
+    "statusHello": "Hi there!",
+    "statusSleepy": "Zzz...",
+    "statusMiss": "Miss you",
+    "changePet": "Change Appearance",
+    "changePetBadge": "Summon Altar",
+    "lockHint": "Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "info": {
+      "days": "Days Together",
+      "interactions": "Interactions",
+      "growth": "Growth"
+    },
+    "actions": {
+      "journal": "Journal",
+      "history": "History",
+      "share": "Share"
     }
   },
   "journal": {
@@ -588,8 +741,18 @@
   "chat": {
     "title": "Soulmate",
     "online": "Always here",
+    "typing": "Companion is typing...",
     "placeholder": "Say something...",
-    "mockNotice": "Day 1 mock — wired to real AI in Day 2"
+    "mockNotice": "Day 1 mock — wired to real AI in Day 2",
+    "nightMode": "Night mode",
+    "anniversary": "100 messages — a chapter complete",
+    "mood": {
+      "sweet": "Sweet",
+      "calm": "Calm",
+      "think": "Think",
+      "sleepy": "Sleepy",
+      "fight": "Fight"
+    }
   },
   "onboarding": {
     "back": "Back",

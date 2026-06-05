@@ -1,0 +1,155 @@
+﻿
+> togthr-life@0.1.0 prebuild
+> npm run sync-messages
+
+
+> togthr-life@0.1.0 sync-messages
+> tsx scripts/sync-messages.ts
+
+鉁?All message files are in sync!
+
+> togthr-life@0.1.0 build
+> next build --no-lint && npx next-sitemap
+
+node.exe :  鈿?Linting is disabled.
+所在位置 行:1 字符: 1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( 鈿?Linting is disabled.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Using secrets defined in .dev.vars
+   鈻?Next.js 15.5.18
+   - Environments: .env.production
+
+   Creating an optimized production build ...
+ 鉁?Compiled successfully in 2.6s
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/163) ...
+   Generating static pages (40/163) 
+   Generating static pages (81/163) 
+   Generating static pages (122/163) 
+ 鉁?Generating static pages (163/163)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+鈹?鈼?/                                      171 B         103 kB
+鈹?鈼?/_not-found                             1 kB         103 kB
+鈹?鈼?/[locale]                            6.94 kB         179 kB
+鈹?  鈹?/en
+鈹?  鈹?/zh-cn
+鈹?  鈹?/zh-tw
+鈹?  鈹?[+5 more paths]
+鈹?茠 /[locale]/capsule                    4.96 kB         159 kB
+鈹?茠 /[locale]/chat                       10.8 kB         173 kB
+鈹?茠 /[locale]/community                  5.07 kB         159 kB
+鈹?鈼?/[locale]/contact                      310 B         120 kB
+鈹?  鈹?/en/contact
+鈹?  鈹?/zh-cn/contact
+鈹?  鈹?/zh-tw/contact
+鈹?  鈹?[+5 more paths]
+鈹?鈼?/[locale]/cookies                      310 B         120 kB
+鈹?  鈹?/en/cookies
+鈹?  鈹?/zh-cn/cookies
+鈹?  鈹?/zh-tw/cookies
+鈹?  鈹?[+5 more paths]
+鈹?茠 /[locale]/daily                      4.26 kB         158 kB
+鈹?鈼?/[locale]/faq                          310 B         120 kB
+鈹?  鈹?/en/faq
+鈹?  鈹?/zh-cn/faq
+鈹?  鈹?/zh-tw/faq
+鈹?  鈹?[+5 more paths]
+鈹?鈼?/[locale]/features                   4.29 kB         163 kB
+鈹?  鈹?/en/features
+鈹?  鈹?/zh-cn/features
+鈹?  鈹?/zh-tw/features
+鈹?  鈹?[+5 more paths]
+鈹?鈼?/[locale]/features/[slug]            16.1 kB         175 kB
+鈹?  鈹?/en/features/daily-check-in
+鈹?  鈹?/en/features/time-capsules
+鈹?  鈹?/en/features/virtual-pet
+鈹?  鈹?[+45 more paths]
+鈹?鈼?/[locale]/guide                        310 B         120 kB
+鈹?  鈹?/en/guide
+鈹?  鈹?/zh-cn/guide
+鈹?  鈹?/zh-tw/guide
+鈹?  鈹?[+5 more paths]
+鈹?鈼?/[locale]/help                         310 B         120 kB
+鈹?  鈹?/en/help
+鈹?  鈹?/zh-cn/help
+鈹?  鈹?/zh-tw/help
+鈹?  鈹?[+5 more paths]
+鈹?茠 /[locale]/journal                    4.81 kB         159 kB
+鈹?茠 /[locale]/login                      2.47 kB         122 kB
+鈹?茠 /[locale]/onboarding                  5.7 kB         165 kB
+鈹?茠 /[locale]/pet                        10.3 kB         182 kB
+鈹?鈼?/[locale]/pricing                    13.3 kB         181 kB
+鈹?  鈹?/en/pricing
+鈹?  鈹?/zh-cn/pricing
+鈹?  鈹?/zh-tw/pricing
+鈹?  鈹?[+5 more paths]
+鈹?鈼?/[locale]/privacy                      310 B         120 kB
+鈹?  鈹?/en/privacy
+鈹?  鈹?/zh-cn/privacy
+鈹?  鈹?/zh-tw/privacy
+鈹?  鈹?[+5 more paths]
+鈹?茠 /[locale]/register                   2.53 kB         122 kB
+鈹?茠 /[locale]/reset-password               984 B         120 kB
+鈹?鈼?/[locale]/store                      1.12 kB         120 kB
+鈹?  鈹?/en/store
+鈹?  鈹?/zh-cn/store
+鈹?  鈹?/zh-tw/store
+鈹?  鈹?[+5 more paths]
+鈹?鈼?/[locale]/store/success                310 B         120 kB
+鈹?  鈹?/en/store/success
+鈹?  鈹?/zh-cn/store/success
+鈹?  鈹?/zh-tw/store/success
+鈹?  鈹?[+5 more paths]
+鈹?鈼?/[locale]/terms                        310 B         120 kB
+鈹?  鈹?/en/terms
+鈹?  鈹?/zh-cn/terms
+鈹?  鈹?/zh-tw/terms
+鈹?  鈹?[+5 more paths]
+鈹?茠 /api/alipay/create-order               171 B         103 kB
+鈹?茠 /api/alipay/notify                     171 B         103 kB
+鈹?茠 /api/auth/callback                     171 B         103 kB
+鈹?茠 /api/cron/check-subscriptions          171 B         103 kB
+鈹?茠 /api/files/[...path]                   171 B         103 kB
+鈹?茠 /api/files/upload                      171 B         103 kB
+鈹?茠 /api/health                            171 B         103 kB
+鈹?茠 /api/og                                171 B         103 kB
+鈹?茠 /api/paypal/capture-order              171 B         103 kB
+鈹?茠 /api/paypal/create-order               171 B         103 kB
+鈹?茠 /api/paypal/webhook                    171 B         103 kB
+鈹?茠 /api/store/checkout                    171 B         103 kB
+鈹?鈼?/manifest.webmanifest                  171 B         103 kB
+鈹?鈼?/robots.txt                            171 B         103 kB
+鈹?鈼?/sitemap.xml                           171 B         103 kB
++ First Load JS shared by all             102 kB
+  鈹?chunks/1255-b28ea36bf0cdbd65.js      46.2 kB
+  鈹?chunks/4bd1b696-f785427dddbba9fb.js  54.2 kB
+  鈹?other shared chunks (total)          2.02 kB
+
+
+鈼? (Static)   prerendered as static content
+鈼? (SSG)      prerendered as static HTML (uses generateStaticParams)
+茠  (Dynamic)  server-rendered on demand
+
+鉁?[next-sitemap] Loading next-sitemap config: file:///F:/CloudDreamerApp/togthr/next-sitemap.config.js
+鉁?[next-sitemap] Generation completed
+鈹屸攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?(index)       鈹?Values 鈹?鈹溾攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?indexSitemaps 鈹?1      鈹?鈹?sitemaps      鈹?1      鈹?鈹斺攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹粹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?-----------------------------------------------------
+ SITEMAP INDICES 
+-----------------------------------------------------
+
+   鈼?https://we2.com/sitemap.xml
+
+
+-----------------------------------------------------
+ SITEMAPS 
+-----------------------------------------------------
+
+   鈼?https://we2.com/sitemap-0.xml
+
+

@@ -24,7 +24,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale })
 
   return {
-    title: `${t('seo.siteName')} 鈥?${t('seo.tagline')}`,
+    title: `${t('seo.siteName')} — ${t('seo.tagline')}`,
     description: t('seo.description'),
     keywords: t('seo.keywords'),
     alternates: {
@@ -32,7 +32,7 @@ export async function generateMetadata({
       languages: generateAlternateLinks(),
     },
     openGraph: {
-      title: `${t('seo.siteName')} 鈥?${t('seo.tagline')}`,
+      title: `${t('seo.siteName')} — ${t('seo.tagline')}`,
       description: t('seo.description'),
       url: getCanonicalUrl(locale as Locale),
       siteName: t('seo.siteName'),
@@ -41,7 +41,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${t('seo.siteName')} 鈥?${t('seo.tagline')}`,
+      title: `${t('seo.siteName')} — ${t('seo.tagline')}`,
       description: t('seo.description'),
     },
   }
@@ -57,11 +57,11 @@ export default async function HomePage({
   const t = await getTranslations({ locale })
 
   const features = [
-    { key: 'sharedJournal', icon: '馃摉' },
-    { key: 'moodTracker', icon: '馃挱' },
-    { key: 'dreamWall', icon: '馃専' },
-    { key: 'dailyGratitude', icon: '馃檹' },
-    { key: 'petAdoption', icon: '馃惥' },
+    { key: 'sharedJournal', icon: '💌' },
+    { key: 'moodTracker', icon: '🌡️' },
+    { key: 'dreamWall', icon: '🌠' },
+    { key: 'dailyGratitude', icon: '🪴' },
+    { key: 'petAdoption', icon: '🐥' },
     { key: 'timeCapsule', icon: '⏰' },
   ].map(({ key, icon }) => ({
     key,
@@ -94,12 +94,19 @@ export default async function HomePage({
         locale={locale}
         heroTitle={t('home.hero.title')}
         heroSubtitle={t('home.hero.subtitle')}
+        heroWelcomeFirst={t('home.hero.welcomeFirst')}
+        heroWelcomeBack={t('home.hero.welcomeBack')}
+        heroSleepyGreeting={t('home.hero.sleepyGreeting')}
         heroCta={t('home.hero.cta')}
         heroSecondary={t('home.hero.secondary')}
         heroSocialProof={t('home.hero.socialProof')}
+        heroEyebrow={t('home.hero.eyebrow')}
+        heroStatusHello={t('home.hero.statusHello')}
+        heroStatusMiss={t('home.hero.statusMiss')}
+        heroStatusSleepy={t('home.hero.statusSleepy')}
+        heroRelationsEyebrow={t('home.hero.relationsEyebrow')}
+        heroRelationsHint={t('home.hero.relationsHint')}
         features={features}
-        // footerPrivacy/Terms/Cookie/Help/Contact removed: the footer
-        // now lives in [locale]/layout.tsx so every page has it (Bug 4 fix).
       />
     </>
   )

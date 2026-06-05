@@ -13,7 +13,8 @@
     "pet": "寵物",
     "journal": "築巢",
     "store": "商店",
-    "chat": "聊天"
+    "chat": "聊天",
+    "faq": "[zh-tw] FAQ"
   },
   "seo": {
     "siteName": "Togthr",
@@ -28,7 +29,15 @@
       "cta": "免費開始 — 無需信用卡",
       "secondary": "看看怎麼用",
       "socialProof": "全球 10,000+ 用戶信賴",
-      "eyebrow": "一直都在 · 一直都在意"
+      "eyebrow": "一直都在 · 一直都在意",
+      "welcomeFirst": "[zh-tw] Hi — I just woke up. I will be here, always.",
+      "welcomeBack": "[zh-tw] You came back! I have been waiting for you.",
+      "sleepyGreeting": "[zh-tw] Shhh… it is late. Stay with me for a moment.",
+      "statusHello": "[zh-tw] Hi! Nice to meet you.",
+      "statusMiss": "[zh-tw] You came back!",
+      "statusSleepy": "[zh-tw] Shhh… sleepy now.",
+      "relationsEyebrow": "[zh-tw] Choose your companion",
+      "relationsHint": "[zh-tw] Each mode changes how your pet looks and glows."
     },
     "features": {
       "title": "為真實的情侶關係設計",
@@ -127,6 +136,11 @@
           "智能回憶推薦",
           "優先客服"
         ]
+      },
+      "eternal": {
+        "name": "[zh-tw] Togthr Eternal",
+        "tagline": "[zh-tw] All access + exclusive",
+        "features": "[zh-tw] Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
     "cta": "立即加入",
@@ -147,7 +161,62 @@
     "promoHint": "優惠碼功能即將推出！",
     "secure": "由 PayPal 安全支付",
     "guarantee": "30 天無條件退款保證",
-    "new": "新上線"
+    "new": "新上線",
+    "theater": {
+      "eyebrow": "[zh-tw] Choose your journey",
+      "headline": "[zh-tw] Unlock a life that grows with you",
+      "tagline": "[zh-tw] Three tiers. One promise: every pet you unlock stays with you forever.",
+      "guarantee": "[zh-tw] 30-day money-back guarantee",
+      "secure": "[zh-tw] Secured by PayPal · Alipay · AlipayHK"
+    },
+    "tierMeta": {
+      "free": {
+        "eyebrow": "[zh-tw] Seedling",
+        "tagline": "[zh-tw] Begin your journey",
+        "peeking": "[zh-tw] pets hiding"
+      },
+      "plus": {
+        "eyebrow": "[zh-tw] Companion",
+        "tagline": "[zh-tw] Choose your soul",
+        "peeking": "[zh-tw] pets excited"
+      },
+      "eternal": {
+        "eyebrow": "[zh-tw] Stardust",
+        "tagline": "[zh-tw] Become timeless",
+        "peeking": "[zh-tw] pets ascended"
+      }
+    },
+    "petMatrix": {
+      "free": {
+        "label": "[zh-tw] 3 Basic Companions",
+        "sub": "[zh-tw] Buds, sprouts, starters"
+      },
+      "plus": {
+        "label": "[zh-tw] Unlock 50+ Suits",
+        "sub": "[zh-tw] Career · Festival · Emotion · Fantasy"
+      },
+      "eternal": {
+        "label": "[zh-tw] All Access + Exclusive",
+        "sub": "[zh-tw] Including Golden Legendary"
+      }
+    },
+    "legendary": {
+      "label": "[zh-tw] Golden Legendary",
+      "odds": "[zh-tw] 1 in 72",
+      "hint": "[zh-tw] Random drop from Eternal box"
+    },
+    "countdown": {
+      "label": "[zh-tw] Spring Festival Limited",
+      "endsIn": "[zh-tw] Ends in",
+      "days": "[zh-tw] d",
+      "hours": "[zh-tw] h",
+      "minutes": "[zh-tw] m",
+      "seconds": "[zh-tw] s"
+    },
+    "ctaSubscribe": "[zh-tw] Subscribe Now",
+    "ctaStartFree": "[zh-tw] Start Free",
+    "ctaPopular": "[zh-tw] Choose Companion",
+    "ctaEternal": "[zh-tw] Become Eternal"
   },
   "faq": {
     "title": "常見問題",
@@ -560,7 +629,85 @@
       "happy": "甜蜜",
       "sad": "吵架",
       "thinking": "思考",
-      "sleeping": "睡覺"
+      "sleeping": "睡覺",
+      "sweet": "[zh-tw] Sweet",
+      "fight": "[zh-tw] Fighting",
+      "think": "[zh-tw] Thinking",
+      "sleep": "[zh-tw] Sleeping"
+    },
+    "rarity": {
+      "common": "[zh-tw] Common",
+      "rare": "[zh-tw] Rare",
+      "epic": "[zh-tw] Epic",
+      "legendary": "[zh-tw] Legendary"
+    },
+    "series": {
+      "basic": "[zh-tw] Basic",
+      "career": "[zh-tw] Career",
+      "festival": "[zh-tw] Festival",
+      "emotion": "[zh-tw] Emotion",
+      "fantasy": "[zh-tw] Fantasy",
+      "legendary": "[zh-tw] Legendary"
+    },
+    "tier": {
+      "free": "[zh-tw] Free",
+      "plus": "[zh-tw] Togthr Plus",
+      "eternal": "[zh-tw] Togthr Eternal"
+    },
+    "card": {
+      "current": "[zh-tw] Current"
+    },
+    "altar": {
+      "title": "[zh-tw] Summon Your Soul Companion",
+      "back": "[zh-tw] Back",
+      "close": "[zh-tw] Close",
+      "hint": "[zh-tw] Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
+      "summon": "[zh-tw] Summon",
+      "summoned": "[zh-tw] has arrived",
+      "current": "[zh-tw] In Use"
+    },
+    "petting": "[zh-tw] Pet me~",
+    "statusHello": "[zh-tw] Hi there!",
+    "statusSleepy": "[zh-tw] Zzz...",
+    "statusMiss": "[zh-tw] Miss you",
+    "changePet": "[zh-tw] Change Appearance",
+    "changePetBadge": "[zh-tw] Summon Altar",
+    "lockHint": "[zh-tw] Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "info": {
+      "days": "[zh-tw] Days Together",
+      "interactions": "[zh-tw] Interactions",
+      "growth": "[zh-tw] Growth"
+    },
+    "actions": {
+      "journal": "[zh-tw] Journal",
+      "history": "[zh-tw] History",
+      "share": "[zh-tw] Share"
+    },
+    "festival": {
+      "newyear": "[zh-tw] New Year",
+      "easter": "[zh-tw] Easter",
+      "thanksgiving": "[zh-tw] Thanksgiving",
+      "mothersday": "[zh-tw] Mother's Day",
+      "fathersday": "[zh-tw] Father's Day",
+      "qixi": "[zh-tw] Qixi Festival",
+      "dragonboat": "[zh-tw] Dragon Boat Festival",
+      "lantern": "[zh-tw] Lantern Festival",
+      "qingming": "[zh-tw] Qingming Festival",
+      "chongyang": "[zh-tw] Chongyang Festival",
+      "blackfriday": "[zh-tw] Black Friday",
+      "cybermonday": "[zh-tw] Cyber Monday",
+      "arborday": "[zh-tw] Arbor Day",
+      "earthday": "[zh-tw] Earth Day",
+      "environment": "[zh-tw] World Environment Day",
+      "aprilfool": "[zh-tw] April Fool's Day",
+      "graduation": "[zh-tw] Graduation",
+      "wedding": "[zh-tw] Wedding",
+      "babyshower": "[zh-tw] Baby Shower",
+      "birthday": "[zh-tw] Birthday",
+      "anniversary": "[zh-tw] Anniversary",
+      "pride": "[zh-tw] Pride Month",
+      "diwali": "[zh-tw] Diwali",
+      "carnival": "[zh-tw] Carnival"
     }
   },
   "journal": {
@@ -589,7 +736,17 @@
     "title": "靈魂伴侶",
     "online": "一直都在",
     "placeholder": "說點什麼吧...",
-    "mockNotice": "Day 1 mock 模式 — 真實 AI Day 2 接入"
+    "mockNotice": "Day 1 mock 模式 — 真實 AI Day 2 接入",
+    "typing": "[zh-tw] Companion is typing...",
+    "nightMode": "[zh-tw] Night mode",
+    "anniversary": "[zh-tw] 100 messages — a chapter complete",
+    "mood": {
+      "sweet": "[zh-tw] Sweet",
+      "calm": "[zh-tw] Calm",
+      "think": "[zh-tw] Think",
+      "sleepy": "[zh-tw] Sleepy",
+      "fight": "[zh-tw] Fight"
+    }
   },
   "onboarding": {
     "back": "上一步",

@@ -13,7 +13,8 @@
     "pet": "Animal",
     "journal": "Nid",
     "store": "Boutique",
-    "chat": "Chat"
+    "chat": "Chat",
+    "faq": "[fr] FAQ"
   },
   "seo": {
     "siteName": "Togthr",
@@ -28,7 +29,15 @@
       "cta": "Commencer gratuitement",
       "secondary": "Voir comment",
       "socialProof": "Choisi par plus de 10 000 utilisateurs",
-      "eyebrow": "Toujours là · Toujours attentionné"
+      "eyebrow": "Toujours là · Toujours attentionné",
+      "welcomeFirst": "[fr] Hi — I just woke up. I will be here, always.",
+      "welcomeBack": "[fr] You came back! I have been waiting for you.",
+      "sleepyGreeting": "[fr] Shhh… it is late. Stay with me for a moment.",
+      "statusHello": "[fr] Hi! Nice to meet you.",
+      "statusMiss": "[fr] You came back!",
+      "statusSleepy": "[fr] Shhh… sleepy now.",
+      "relationsEyebrow": "[fr] Choose your companion",
+      "relationsHint": "[fr] Each mode changes how your pet looks and glows."
     },
     "features": {
       "title": "Conçu pour les vrais couples",
@@ -127,6 +136,11 @@
           "Suggestions de souvenirs intelligentes",
           "Support prioritaire"
         ]
+      },
+      "eternal": {
+        "name": "[fr] Togthr Eternal",
+        "tagline": "[fr] All access + exclusive",
+        "features": "[fr] Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
     "cta": "Commencer maintenant",
@@ -147,7 +161,62 @@
     "promoHint": "Codes promo bientôt disponibles !",
     "secure": "Sécurisé par PayPal",
     "guarantee": "Garantie satisfait ou remboursé 30 jours",
-    "new": "Nouveau"
+    "new": "Nouveau",
+    "theater": {
+      "eyebrow": "[fr] Choose your journey",
+      "headline": "[fr] Unlock a life that grows with you",
+      "tagline": "[fr] Three tiers. One promise: every pet you unlock stays with you forever.",
+      "guarantee": "[fr] 30-day money-back guarantee",
+      "secure": "[fr] Secured by PayPal · Alipay · AlipayHK"
+    },
+    "tierMeta": {
+      "free": {
+        "eyebrow": "[fr] Seedling",
+        "tagline": "[fr] Begin your journey",
+        "peeking": "[fr] pets hiding"
+      },
+      "plus": {
+        "eyebrow": "[fr] Companion",
+        "tagline": "[fr] Choose your soul",
+        "peeking": "[fr] pets excited"
+      },
+      "eternal": {
+        "eyebrow": "[fr] Stardust",
+        "tagline": "[fr] Become timeless",
+        "peeking": "[fr] pets ascended"
+      }
+    },
+    "petMatrix": {
+      "free": {
+        "label": "[fr] 3 Basic Companions",
+        "sub": "[fr] Buds, sprouts, starters"
+      },
+      "plus": {
+        "label": "[fr] Unlock 50+ Suits",
+        "sub": "[fr] Career · Festival · Emotion · Fantasy"
+      },
+      "eternal": {
+        "label": "[fr] All Access + Exclusive",
+        "sub": "[fr] Including Golden Legendary"
+      }
+    },
+    "legendary": {
+      "label": "[fr] Golden Legendary",
+      "odds": "[fr] 1 in 72",
+      "hint": "[fr] Random drop from Eternal box"
+    },
+    "countdown": {
+      "label": "[fr] Spring Festival Limited",
+      "endsIn": "[fr] Ends in",
+      "days": "[fr] d",
+      "hours": "[fr] h",
+      "minutes": "[fr] m",
+      "seconds": "[fr] s"
+    },
+    "ctaSubscribe": "[fr] Subscribe Now",
+    "ctaStartFree": "[fr] Start Free",
+    "ctaPopular": "[fr] Choose Companion",
+    "ctaEternal": "[fr] Become Eternal"
   },
   "faq": {
     "title": "Questions fréquentes",
@@ -560,7 +629,85 @@
       "happy": "Douce",
       "sad": "Dispute",
       "thinking": "Pensif",
-      "sleeping": "Dormant"
+      "sleeping": "Dormant",
+      "sweet": "[fr] Sweet",
+      "fight": "[fr] Fighting",
+      "think": "[fr] Thinking",
+      "sleep": "[fr] Sleeping"
+    },
+    "rarity": {
+      "common": "[fr] Common",
+      "rare": "[fr] Rare",
+      "epic": "[fr] Epic",
+      "legendary": "[fr] Legendary"
+    },
+    "series": {
+      "basic": "[fr] Basic",
+      "career": "[fr] Career",
+      "festival": "[fr] Festival",
+      "emotion": "[fr] Emotion",
+      "fantasy": "[fr] Fantasy",
+      "legendary": "[fr] Legendary"
+    },
+    "tier": {
+      "free": "[fr] Free",
+      "plus": "[fr] Togthr Plus",
+      "eternal": "[fr] Togthr Eternal"
+    },
+    "card": {
+      "current": "[fr] Current"
+    },
+    "altar": {
+      "title": "[fr] Summon Your Soul Companion",
+      "back": "[fr] Back",
+      "close": "[fr] Close",
+      "hint": "[fr] Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
+      "summon": "[fr] Summon",
+      "summoned": "[fr] has arrived",
+      "current": "[fr] In Use"
+    },
+    "petting": "[fr] Pet me~",
+    "statusHello": "[fr] Hi there!",
+    "statusSleepy": "[fr] Zzz...",
+    "statusMiss": "[fr] Miss you",
+    "changePet": "[fr] Change Appearance",
+    "changePetBadge": "[fr] Summon Altar",
+    "lockHint": "[fr] Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "info": {
+      "days": "[fr] Days Together",
+      "interactions": "[fr] Interactions",
+      "growth": "[fr] Growth"
+    },
+    "actions": {
+      "journal": "[fr] Journal",
+      "history": "[fr] History",
+      "share": "[fr] Share"
+    },
+    "festival": {
+      "newyear": "[fr] New Year",
+      "easter": "[fr] Easter",
+      "thanksgiving": "[fr] Thanksgiving",
+      "mothersday": "[fr] Mother's Day",
+      "fathersday": "[fr] Father's Day",
+      "qixi": "[fr] Qixi Festival",
+      "dragonboat": "[fr] Dragon Boat Festival",
+      "lantern": "[fr] Lantern Festival",
+      "qingming": "[fr] Qingming Festival",
+      "chongyang": "[fr] Chongyang Festival",
+      "blackfriday": "[fr] Black Friday",
+      "cybermonday": "[fr] Cyber Monday",
+      "arborday": "[fr] Arbor Day",
+      "earthday": "[fr] Earth Day",
+      "environment": "[fr] World Environment Day",
+      "aprilfool": "[fr] April Fool's Day",
+      "graduation": "[fr] Graduation",
+      "wedding": "[fr] Wedding",
+      "babyshower": "[fr] Baby Shower",
+      "birthday": "[fr] Birthday",
+      "anniversary": "[fr] Anniversary",
+      "pride": "[fr] Pride Month",
+      "diwali": "[fr] Diwali",
+      "carnival": "[fr] Carnival"
     }
   },
   "journal": {
@@ -589,7 +736,17 @@
     "title": "Âme sœur",
     "online": "Toujours là",
     "placeholder": "Dis quelque chose...",
-    "mockNotice": "Maquette Day 1 — IA réelle Day 2"
+    "mockNotice": "Maquette Day 1 — IA réelle Day 2",
+    "typing": "[fr] Companion is typing...",
+    "nightMode": "[fr] Night mode",
+    "anniversary": "[fr] 100 messages — a chapter complete",
+    "mood": {
+      "sweet": "[fr] Sweet",
+      "calm": "[fr] Calm",
+      "think": "[fr] Think",
+      "sleepy": "[fr] Sleepy",
+      "fight": "[fr] Fight"
+    }
   },
   "onboarding": {
     "back": "Retour",
