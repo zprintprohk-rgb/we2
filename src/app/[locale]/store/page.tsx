@@ -74,7 +74,37 @@ export default async function StorePage({
   const regularPrice = 399
 
   return (
-    <div className="relative mx-auto max-w-6xl px-4 py-12 sm:py-20">
+    <div className="relative mx-auto max-w-6xl overflow-hidden bg-gradient-to-b from-[#1a0b2e] via-[#0f0524] to-[#0a0118] px-4 py-12 text-zinc-100 sm:py-20">
+      {/* ── Cinematic atmosphere ── */}
+      <div className="pointer-events-none absolute inset-0">
+        {Array.from({ length: 30 }).map((_, i) => (
+          <span
+            key={i}
+            className="absolute rounded-full bg-zinc-200"
+            style={{
+              top: `${(i * 47) % 100}%`,
+              left: `${(i * 79) % 100}%`,
+              width: (i % 4) + 1,
+              height: (i % 4) + 1,
+              opacity: 0.3,
+            }}
+          />
+        ))}
+        {Array.from({ length: 4 }).map((_, i) => (
+          <span
+            key={i}
+            className="absolute rounded-full blur-3xl"
+            style={{
+              top: `${20 + (i * 41) % 65}%`,
+              left: `${(i * 47) % 100}%`,
+              width: 80 + (i * 17) % 70,
+              height: 80 + (i * 17) % 70,
+              background: `radial-gradient(circle, hsla(${280 + (i * 27) % 60}, 70%, 50%, 0.12) 0%, transparent 70%)`,
+            }}
+          />
+        ))}
+      </div>
+
       {/* ── Hero ── */}
       <div className="text-center space-y-4">
         <p className="text-sm font-semibold uppercase tracking-wider text-rose-500 dark:text-rose-400">
@@ -179,6 +209,16 @@ export default async function StorePage({
             ← {t('pricing.title')}
           </Link>
         </p>
+      </div>
+
+      {/* Floating mascot (CSS-only on server component) */}
+      <div className="pointer-events-none fixed bottom-6 right-6 z-40 hidden md:block">
+        <div className="relative h-20 w-20">
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
+          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+        </div>
       </div>
     </div>
   )
