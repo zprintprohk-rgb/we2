@@ -4,16 +4,15 @@ import { useState } from 'react'
 import type { CountryCode, CurrencyCode } from '@/lib/types'
 
 /**
- * StoreBuyButton — MVP Day 1 of skin-store.
+ * StoreBuyButton — MVP Day 2 of skin-store.
  *
- * For now: a single click handler that POSTs to a stub /api/store/checkout
- * endpoint. Once that endpoint exists (Day 2), it will:
- *   1. Create a Supabase order record
- *   2. Redirect to PayPal sandbox approval URL
- *   3. Webhook confirms → unlock skin in Supabase
+ * POSTs to /api/store/checkout which:
+ *   1. Returns 200 + redirectUrl → redirect to PayPal sandbox approval
+ *   2. Returns 503 (awaiting_paypal_config) → show "configure PayPal" hint
+ *   3. Returns 5xx → show generic error
  *
- * The ¥199 first-order price is HARDCODED for MVP. Day 2 will
- * wire the dynamic CNY→USD conversion via the pricing engine.
+ * The ¥199 first-order price is passed from the parent (matches V2.5.1
+ * pricing — first order 5折 of ¥399 regular).
  */
 interface Props {
   country: CountryCode
@@ -25,28 +24,40 @@ interface Props {
 export function StoreBuyButton({ country, currency, price, label }: Props) {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [hint, setHint] = useState<string | null>(null)
 
   async function handleClick() {
     setLoading(true)
     setError(null)
+    setHint(null)
     try {
-      // MVP: post to stub endpoint. Real PayPal sandbox URL wired in Day 2.
       const res = await fetch('/api/store/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ country, currency, price, sku: 'blindbox_6plus1' }),
       })
-      if (!res.ok) {
-        // MVP: endpoint may not exist yet — show a friendly message
-        setError('Checkout is wired in Day 2. For now, the layout/UI is live. Stay tuned!')
+      const data = await res.json().catch(() => ({} as Record<string, unknown>))
+
+      // 200 + redirectUrl → PayPal approval page
+      if (res.ok && data?.redirectUrl) {
+        window.location.href = data.redirectUrl as string
         return
       }
-      const data = await res.json()
-      if (data?.redirectUrl) {
-        window.location.href = data.redirectUrl
-      } else {
-        setError('Unexpected response from checkout. Please try again.')
+
+      // 503 / awaiting_paypal_config → friendly "configure PayPal" hint
+      if (res.status === 503 && data?.stage === 'awaiting_paypal_config') {
+        setHint(
+          (data.message as string) ??
+            'Checkout is wired. PayPal sandbox credentials are needed to go live.',
+        )
+        return
       }
+
+      // 5xx / other error
+      setError(
+        (data?.error as string) ??
+          `Checkout error (${res.status}). Please try again in a moment.`,
+      )
     } catch (err) {
       setError('Network error. Please try again in a moment.')
     } finally {
@@ -62,10 +73,15 @@ export function StoreBuyButton({ country, currency, price, label }: Props) {
         disabled={loading}
         className="w-full rounded-full bg-gradient-to-r from-rose-500 to-purple-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-purple-500/30 transition-all hover:from-rose-600 hover:to-purple-700 hover:shadow-purple-500/50 disabled:cursor-wait disabled:opacity-70"
       >
-        {loading ? '⏳ ...' : `🛒 ${label}`}
+        {loading ? '⏳ Connecting to PayPal...' : `🛒 ${label}`}
       </button>
+      {hint && (
+        <p className="mt-3 rounded-lg bg-amber-50 px-3 py-2 text-xs text-amber-800 dark:bg-amber-950/30 dark:text-amber-300">
+          💡 {hint}
+        </p>
+      )}
       {error && (
-        <p className="mt-3 text-xs text-amber-700 dark:text-amber-400">
+        <p className="mt-3 rounded-lg bg-rose-50 px-3 py-2 text-xs text-rose-700 dark:bg-rose-950/30 dark:text-rose-300">
           ⚠️ {error}
         </p>
       )}
