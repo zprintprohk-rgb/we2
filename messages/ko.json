@@ -510,7 +510,12 @@
     "oddsCommon": "71 / 72",
     "perma": "영구 해제",
     "checkoutNote": "PayPal 테스트 모드 · 첫 주문 50% 할인",
-    "checkoutNote2": "구독 없음 · 일회 결제 · 영구 소유"
+    "checkoutNote2": "구독 없음 · 일회 결제 · 영구 소유",
+    "successTitle": "주문 완료!",
+    "successSubtitle": "Toghr 동반자가 곧 도착합니다. PayPal이 결제를 처리 중입니다 — 이메일로 영수증을 받으실 거예요.",
+    "successNote": "PayPal 결제 확인 후 몇 분 내에 스킨이 해제됩니다.",
+    "successHint": "10분 내에 스킨이 나타나지 않으면 주문 ID와 함께 문의해 주세요.",
+    "secureNotice": "결제는 PayPal로 보호됩니다. 카드 정보는 당사가 보지 않습니다."
   },
   "daily": {
     "title": "오늘의 밥주기",

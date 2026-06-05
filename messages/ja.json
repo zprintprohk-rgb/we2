@@ -510,7 +510,12 @@
     "oddsCommon": "71 / 72",
     "perma": "永久アンロック",
     "checkoutNote": "PayPal テストモード · 初回50%オフ",
-    "checkoutNote2": "サブスクなし · 一度だけ · 永久"
+    "checkoutNote2": "サブスクなし · 一度だけ · 永久",
+    "successTitle": "注文完了！",
+    "successSubtitle": "Togthr コンパニオンはまもなく到着します。PayPal が決済処理中です — メールが届きます。",
+    "successNote": "PayPal の決済確認後、数分でスキンがアンロックされます。",
+    "successHint": "10分以内にスキンが表示されない場合は、注文IDを添えてお問い合わせください。",
+    "secureNotice": "決済はPayPalで保護されています。当社はカード情報を確認しません。"
   },
   "daily": {
     "title": "今日のえさやり",

@@ -510,7 +510,12 @@
     "oddsCommon": "71 / 72",
     "perma": "Dauerhaft freischalten",
     "checkoutNote": "PayPal Test-Modus · 50% Erstkäufer-Rabatt",
-    "checkoutNote2": "Kein Abo · Einmalzahlung · Für immer"
+    "checkoutNote2": "Kein Abo · Einmalzahlung · Für immer",
+    "successTitle": "Bestellung erhalten!",
+    "successSubtitle": "Dein Togthr Begleiter ist unterwegs. PayPal verarbeitet deine Zahlung — du erhältst gleich eine E-Mail-Quittung.",
+    "successNote": "Dein Skin wird innerhalb weniger Minuten freigeschaltet, sobald PayPal die Zahlung bestätigt.",
+    "successHint": "Wenn dein Skin nach 10 Minuten nicht erscheint, kontaktiere uns bitte mit deiner Bestellnummer.",
+    "secureNotice": "Zahlungen durch PayPal gesichert. Wir sehen nie deine Kartendaten."
   },
   "daily": {
     "title": "Tägliche Fütterung",

@@ -510,7 +510,12 @@
     "oddsCommon": "71 / 72",
     "perma": "Permanent unlock",
     "checkoutNote": "PayPal sandbox · 50% off first order",
-    "checkoutNote2": "No subscription · Pay once · Yours forever"
+    "checkoutNote2": "No subscription · Pay once · Yours forever",
+    "successTitle": "Order received!",
+    "successSubtitle": "Your Togthr Companion is on its way. PayPal is processing your payment — you will receive an email receipt shortly.",
+    "successNote": "Your skin unlocks within a few minutes once PayPal confirms the payment.",
+    "successHint": "If your skin does not appear within 10 minutes, please contact us with your order ID.",
+    "secureNotice": "Payments secured by PayPal. We never see your card details."
   },
   "daily": {
     "title": "Daily Feeding Time",

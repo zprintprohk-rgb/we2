@@ -510,7 +510,12 @@
     "oddsCommon": "71 / 72",
     "perma": "Desbloqueo permanente",
     "checkoutNote": "PayPal sandbox · 50% primera compra",
-    "checkoutNote2": "Sin suscripción · Pago único · Para siempre"
+    "checkoutNote2": "Sin suscripción · Pago único · Para siempre",
+    "successTitle": "¡Pedido recibido!",
+    "successSubtitle": "Tu Compañero Togthr está en camino. PayPal está procesando tu pago — recibirás un recibo por correo.",
+    "successNote": "Tu skin se desbloqueará en unos minutos una vez PayPal confirme el pago.",
+    "successHint": "Si tu skin no aparece en 10 minutos, contáctanos con tu número de pedido.",
+    "secureNotice": "Pagos seguros con PayPal. Nunca vemos los datos de tu tarjeta."
   },
   "daily": {
     "title": "Alimentación diaria",

@@ -510,7 +510,12 @@
     "oddsCommon": "71 / 72",
     "perma": "永久解鎖",
     "checkoutNote": "PayPal 測試模式 · 首單 5 折",
-    "checkoutNote2": "無訂閱 · 一次購買 · 永久擁有"
+    "checkoutNote2": "無訂閱 · 一次購買 · 永久擁有",
+    "successTitle": "下單成功！",
+    "successSubtitle": "你的 Togthr 萌寵正在路上。PayPal 正在處理你的支付 — 稍後會收到郵件回執。",
+    "successNote": "皮膚會在 PayPal 確認支付後幾分鐘內自動解鎖。",
+    "successHint": "如果 10 分鐘內皮膚未出現，請聯繫我們並提供訂單號。",
+    "secureNotice": "支付由 PayPal 保障，我們不會看到你的銀行卡資訊。"
   },
   "daily": {
     "title": "每日餵食",
