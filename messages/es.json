@@ -621,5 +621,26 @@
       "sayHi": "Saludar",
       "startOver": "Empezar de nuevo"
     }
+  },
+  "community": {
+    "title": "El Hoyo del Árbol",
+    "subtitle": "Notas anónimas. Abrazos en lugar de likes. Sin nombres, sin juicios.",
+    "rule1": "Sin nombres reales",
+    "rule2": "Abrazos en lugar de likes",
+    "rule3": "Auto-borrado 24h",
+    "composer": {
+      "placeholder": "Escribe algo. Lo que sea. ~280 caracteres.",
+      "send": "Soltar en el hoyo"
+    },
+    "mood": {
+      "calm": "Calma",
+      "warm": "Cálido",
+      "reflect": "Reflexivo",
+      "light": "Ligero"
+    },
+    "hug": "Abrazo",
+    "autoPurgeHint": "desaparece en {hours}h",
+    "empty": "Aún no hay notas. Sé el primero.",
+    "mockNotice": "Mock Día 1 — auto-borrado en Día 2."
   }
 }

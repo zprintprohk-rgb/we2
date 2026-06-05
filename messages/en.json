@@ -621,5 +621,26 @@
       "sayHi": "Say hi",
       "startOver": "Start over"
     }
+  },
+  "community": {
+    "title": "The Tree Hole",
+    "subtitle": "Anonymous notes. Hugs instead of likes. No names, no judgment.",
+    "rule1": "No real names",
+    "rule2": "Hugs replace likes",
+    "rule3": "24h auto-purge",
+    "composer": {
+      "placeholder": "Write something. Anything. ~280 chars.",
+      "send": "Drop into the hole"
+    },
+    "mood": {
+      "calm": "Calm",
+      "warm": "Warm",
+      "reflect": "Reflect",
+      "light": "Light"
+    },
+    "hug": "Hug",
+    "autoPurgeHint": "vanishes in {hours}h",
+    "empty": "No notes yet. Be the first to drop one.",
+    "mockNotice": "Day 1 client mock — server-purge in Day 2."
   }
 }

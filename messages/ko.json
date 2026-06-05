@@ -621,5 +621,26 @@
       "sayHi": "인사하기",
       "startOver": "다시 시작"
     }
+  },
+  "community": {
+    "title": "나무 구멍",
+    "subtitle": "익명 메모. 좋아요 대신 포옹. 이름도, 판단도 없음.",
+    "rule1": "실명 없음",
+    "rule2": "포옹이 좋아요 대체",
+    "rule3": "24h 자동 삭제",
+    "composer": {
+      "placeholder": "뭐든 적어보세요. ~280자.",
+      "send": "구멍에 떨어뜨리기"
+    },
+    "mood": {
+      "calm": "차분",
+      "warm": "따뜻",
+      "reflect": "성찰",
+      "light": "가벼움"
+    },
+    "hug": "포옹",
+    "autoPurgeHint": "{hours}시간 후 사라짐",
+    "empty": "아직 메모가 없어요. 가장 먼저 하나 남겨보세요.",
+    "mockNotice": "Day 1 클라이언트 목업 — 자동 삭제는 Day 2."
   }
 }

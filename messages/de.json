@@ -621,5 +621,26 @@
       "sayHi": "Sag hallo",
       "startOver": "Neu starten"
     }
+  },
+  "community": {
+    "title": "Das Baumloch",
+    "subtitle": "Anonyme Notizen. Umarmungen statt Likes. Keine Namen, kein Urteil.",
+    "rule1": "Keine echten Namen",
+    "rule2": "Umarmungen statt Likes",
+    "rule3": "24h Auto-Löschung",
+    "composer": {
+      "placeholder": "Schreib etwas. Irgendetwas. ~280 Zeichen.",
+      "send": "Ins Loch werfen"
+    },
+    "mood": {
+      "calm": "Ruhig",
+      "warm": "Warm",
+      "reflect": "Nachdenklich",
+      "light": "Leicht"
+    },
+    "hug": "Umarmen",
+    "autoPurgeHint": "verschwindet in {hours}h",
+    "empty": "Noch keine Notizen. Sei die erste.",
+    "mockNotice": "Day 1 Client-Mock — Auto-Löschung in Day 2."
   }
 }

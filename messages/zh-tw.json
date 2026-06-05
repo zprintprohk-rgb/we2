@@ -621,5 +621,26 @@
       "sayHi": "打個招呼",
       "startOver": "重新開始"
     }
+  },
+  "community": {
+    "title": "樹洞",
+    "subtitle": "匿名留言。用抱抱代替點讚。沒有名字，沒有評判。",
+    "rule1": "不用真名",
+    "rule2": "抱抱代替點讚",
+    "rule3": "24h 自動消失",
+    "composer": {
+      "placeholder": "寫點什麼吧。任何事。~280 字。",
+      "send": "丟進樹洞"
+    },
+    "mood": {
+      "calm": "平靜",
+      "warm": "溫暖",
+      "reflect": "沉思",
+      "light": "輕盈"
+    },
+    "hug": "抱抱",
+    "autoPurgeHint": "{hours}小時後消失",
+    "empty": "還沒有留言。第一個來留個腳印。",
+    "mockNotice": "Day 1 客戶端 mock — 服務端自動清理 Day 2 上線。"
   }
 }

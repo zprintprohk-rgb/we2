@@ -621,5 +621,26 @@
       "sayHi": "Dire bonjour",
       "startOver": "Recommencer"
     }
+  },
+  "community": {
+    "title": "Le Trou d'Arbre",
+    "subtitle": "Notes anonymes. Câlins au lieu de likes. Pas de noms, pas de jugement.",
+    "rule1": "Pas de vrais noms",
+    "rule2": "Câlins au lieu de likes",
+    "rule3": "Auto-suppression 24h",
+    "composer": {
+      "placeholder": "Écris quelque chose. N'importe quoi. ~280 caractères.",
+      "send": "Jeter dans le trou"
+    },
+    "mood": {
+      "calm": "Calme",
+      "warm": "Chaleureux",
+      "reflect": "Pensif",
+      "light": "Léger"
+    },
+    "hug": "Câlin",
+    "autoPurgeHint": "disparaît dans {hours}h",
+    "empty": "Pas encore de notes. Sois le premier.",
+    "mockNotice": "Maquette Day 1 — suppression auto en Day 2."
   }
 }

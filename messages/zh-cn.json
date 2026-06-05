@@ -621,5 +621,26 @@
       "sayHi": "打个招呼",
       "startOver": "重新开始"
     }
+  },
+  "community": {
+    "title": "树洞",
+    "subtitle": "匿名留言。用抱抱代替点赞。没有名字，没有评判。",
+    "rule1": "不用真名",
+    "rule2": "抱抱代替点赞",
+    "rule3": "24h 自动消失",
+    "composer": {
+      "placeholder": "写点什么吧。任何事。~280 字。",
+      "send": "丢进树洞"
+    },
+    "mood": {
+      "calm": "平静",
+      "warm": "温暖",
+      "reflect": "沉思",
+      "light": "轻盈"
+    },
+    "hug": "抱抱",
+    "autoPurgeHint": "{hours}小时后消失",
+    "empty": "还没有留言。第一个来留个脚印。",
+    "mockNotice": "Day 1 客户端 mock — 服务端自动清理 Day 2 上线。"
   }
 }

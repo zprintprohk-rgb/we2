@@ -621,5 +621,26 @@
       "sayHi": "こんにちは",
       "startOver": "やり直す"
     }
+  },
+  "community": {
+    "title": "木の洞",
+    "subtitle": "匿名のメモ。いいねの代わりにハグ。名前なし、批判なし。",
+    "rule1": "実名なし",
+    "rule2": "ハグがいいねの代わり",
+    "rule3": "24hで自動消去",
+    "composer": {
+      "placeholder": "何か書いてください。~280文字。",
+      "send": "洞に落とす"
+    },
+    "mood": {
+      "calm": "穏やか",
+      "warm": "温かい",
+      "reflect": "思索",
+      "light": "軽やか"
+    },
+    "hug": "ハグ",
+    "autoPurgeHint": "{hours}時間後に消えます",
+    "empty": "まだメモがありません。最初に一つ落としましょう。",
+    "mockNotice": "Day 1 クライアントモック — 自動消去は Day 2。"
   }
 }
