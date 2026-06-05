@@ -14,7 +14,7 @@
     "journal": "Nest",
     "store": "Shop",
     "chat": "Chat",
-    "faq": "[de] FAQ"
+    "faq": "FAQ"
   },
   "seo": {
     "siteName": "Togthr",
@@ -30,14 +30,14 @@
       "secondary": "So funktioniert es",
       "socialProof": "Über 10.000 Nutzer weltweit vertrauen uns",
       "eyebrow": "Immer da · Immer fürsorglich",
-      "welcomeFirst": "[de] Hi — I just woke up. I will be here, always.",
-      "welcomeBack": "[de] You came back! I have been waiting for you.",
-      "sleepyGreeting": "[de] Shhh… it is late. Stay with me for a moment.",
-      "statusHello": "[de] Hi! Nice to meet you.",
-      "statusMiss": "[de] You came back!",
-      "statusSleepy": "[de] Shhh… sleepy now.",
-      "relationsEyebrow": "[de] Choose your companion",
-      "relationsHint": "[de] Each mode changes how your pet looks and glows."
+      "welcomeFirst": "Hi — I just woke up. I will be here, always.",
+      "welcomeBack": "You came back! I have been waiting for you.",
+      "sleepyGreeting": "Shhh… it is late. Stay with me for a moment.",
+      "statusHello": "Hi! Nice to meet you.",
+      "statusMiss": "You came back!",
+      "statusSleepy": "Shhh… sleepy now.",
+      "relationsEyebrow": "Choose your companion",
+      "relationsHint": "Each mode changes how your pet looks and glows."
     },
     "features": {
       "title": "Für echte Paare entwickelt",
@@ -138,9 +138,9 @@
         ]
       },
       "eternal": {
-        "name": "[de] Togthr Eternal",
-        "tagline": "[de] All access + exclusive",
-        "features": "[de] Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
+        "name": "Togthr Eternal",
+        "tagline": "All access + exclusive",
+        "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
     "cta": "Jetzt starten",
@@ -163,60 +163,60 @@
     "guarantee": "30-Tage-Geld-zurück-Garantie",
     "new": "Neu",
     "theater": {
-      "eyebrow": "[de] Choose your journey",
-      "headline": "[de] Unlock a life that grows with you",
-      "tagline": "[de] Three tiers. One promise: every pet you unlock stays with you forever.",
-      "guarantee": "[de] 30-day money-back guarantee",
-      "secure": "[de] Secured by PayPal · Alipay · AlipayHK"
+      "eyebrow": "Choose your journey",
+      "headline": "Unlock a life that grows with you",
+      "tagline": "Three tiers. One promise: every pet you unlock stays with you forever.",
+      "guarantee": "30-day money-back guarantee",
+      "secure": "Secured by PayPal · Alipay · AlipayHK"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "[de] Seedling",
-        "tagline": "[de] Begin your journey",
-        "peeking": "[de] pets hiding"
+        "eyebrow": "Seedling",
+        "tagline": "Begin your journey",
+        "peeking": "pets hiding"
       },
       "plus": {
-        "eyebrow": "[de] Companion",
-        "tagline": "[de] Choose your soul",
-        "peeking": "[de] pets excited"
+        "eyebrow": "Companion",
+        "tagline": "Choose your soul",
+        "peeking": "pets excited"
       },
       "eternal": {
-        "eyebrow": "[de] Stardust",
-        "tagline": "[de] Become timeless",
-        "peeking": "[de] pets ascended"
+        "eyebrow": "Stardust",
+        "tagline": "Become timeless",
+        "peeking": "pets ascended"
       }
     },
     "petMatrix": {
       "free": {
-        "label": "[de] 3 Basic Companions",
-        "sub": "[de] Buds, sprouts, starters"
+        "label": "3 Basic Companions",
+        "sub": "Buds, sprouts, starters"
       },
       "plus": {
-        "label": "[de] Unlock 50+ Suits",
-        "sub": "[de] Career · Festival · Emotion · Fantasy"
+        "label": "Unlock 50+ Suits",
+        "sub": "Career · Festival · Emotion · Fantasy"
       },
       "eternal": {
-        "label": "[de] All Access + Exclusive",
-        "sub": "[de] Including Golden Legendary"
+        "label": "All Access + Exclusive",
+        "sub": "Including Golden Legendary"
       }
     },
     "legendary": {
-      "label": "[de] Golden Legendary",
-      "odds": "[de] 1 in 72",
-      "hint": "[de] Random drop from Eternal box"
+      "label": "Golden Legendary",
+      "odds": "1 in 72",
+      "hint": "Random drop from Eternal box"
     },
     "countdown": {
-      "label": "[de] Spring Festival Limited",
-      "endsIn": "[de] Ends in",
-      "days": "[de] d",
-      "hours": "[de] h",
-      "minutes": "[de] m",
-      "seconds": "[de] s"
+      "label": "Spring Festival Limited",
+      "endsIn": "Ends in",
+      "days": "d",
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
     },
-    "ctaSubscribe": "[de] Subscribe Now",
-    "ctaStartFree": "[de] Start Free",
-    "ctaPopular": "[de] Choose Companion",
-    "ctaEternal": "[de] Become Eternal"
+    "ctaSubscribe": "Subscribe Now",
+    "ctaStartFree": "Start Free",
+    "ctaPopular": "Choose Companion",
+    "ctaEternal": "Become Eternal"
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
@@ -630,84 +630,84 @@
       "sad": "Streit",
       "thinking": "Denkend",
       "sleeping": "Schlafend",
-      "sweet": "[de] Sweet",
-      "fight": "[de] Fighting",
-      "think": "[de] Thinking",
-      "sleep": "[de] Sleeping"
+      "sweet": "Sweet",
+      "fight": "Fighting",
+      "think": "Thinking",
+      "sleep": "Sleeping"
     },
     "rarity": {
-      "common": "[de] Common",
-      "rare": "[de] Rare",
-      "epic": "[de] Epic",
-      "legendary": "[de] Legendary"
+      "common": "Common",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary"
     },
     "series": {
-      "basic": "[de] Basic",
-      "career": "[de] Career",
-      "festival": "[de] Festival",
-      "emotion": "[de] Emotion",
-      "fantasy": "[de] Fantasy",
-      "legendary": "[de] Legendary"
+      "basic": "Basic",
+      "career": "Career",
+      "festival": "Festival",
+      "emotion": "Emotion",
+      "fantasy": "Fantasy",
+      "legendary": "Legendary"
     },
     "tier": {
-      "free": "[de] Free",
-      "plus": "[de] Togthr Plus",
-      "eternal": "[de] Togthr Eternal"
+      "free": "Free",
+      "plus": "Togthr Plus",
+      "eternal": "Togthr Eternal"
     },
     "card": {
-      "current": "[de] Current"
+      "current": "Current"
     },
     "altar": {
-      "title": "[de] Summon Your Soul Companion",
-      "back": "[de] Back",
-      "close": "[de] Close",
-      "hint": "[de] Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
-      "summon": "[de] Summon",
-      "summoned": "[de] has arrived",
-      "current": "[de] In Use"
+      "title": "Summon Your Soul Companion",
+      "back": "Back",
+      "close": "Close",
+      "hint": "Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
+      "summon": "Summon",
+      "summoned": "has arrived",
+      "current": "In Use"
     },
-    "petting": "[de] Pet me~",
-    "statusHello": "[de] Hi there!",
-    "statusSleepy": "[de] Zzz...",
-    "statusMiss": "[de] Miss you",
-    "changePet": "[de] Change Appearance",
-    "changePetBadge": "[de] Summon Altar",
-    "lockHint": "[de] Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "petting": "Pet me~",
+    "statusHello": "Hi there!",
+    "statusSleepy": "Zzz...",
+    "statusMiss": "Miss you",
+    "changePet": "Change Appearance",
+    "changePetBadge": "Summon Altar",
+    "lockHint": "Locked pets are still previewed — subscribe or open blind boxes to unlock",
     "info": {
-      "days": "[de] Days Together",
-      "interactions": "[de] Interactions",
-      "growth": "[de] Growth"
+      "days": "Days Together",
+      "interactions": "Interactions",
+      "growth": "Growth"
     },
     "actions": {
-      "journal": "[de] Journal",
-      "history": "[de] History",
-      "share": "[de] Share"
+      "journal": "Journal",
+      "history": "History",
+      "share": "Share"
     },
     "festival": {
-      "newyear": "[de] New Year",
-      "easter": "[de] Easter",
-      "thanksgiving": "[de] Thanksgiving",
-      "mothersday": "[de] Mother's Day",
-      "fathersday": "[de] Father's Day",
-      "qixi": "[de] Qixi Festival",
-      "dragonboat": "[de] Dragon Boat Festival",
-      "lantern": "[de] Lantern Festival",
-      "qingming": "[de] Qingming Festival",
-      "chongyang": "[de] Chongyang Festival",
-      "blackfriday": "[de] Black Friday",
-      "cybermonday": "[de] Cyber Monday",
-      "arborday": "[de] Arbor Day",
-      "earthday": "[de] Earth Day",
-      "environment": "[de] World Environment Day",
-      "aprilfool": "[de] April Fool's Day",
-      "graduation": "[de] Graduation",
-      "wedding": "[de] Wedding",
-      "babyshower": "[de] Baby Shower",
-      "birthday": "[de] Birthday",
-      "anniversary": "[de] Anniversary",
-      "pride": "[de] Pride Month",
-      "diwali": "[de] Diwali",
-      "carnival": "[de] Carnival"
+      "newyear": "New Year",
+      "easter": "Easter",
+      "thanksgiving": "Thanksgiving",
+      "mothersday": "Mother's Day",
+      "fathersday": "Father's Day",
+      "qixi": "Qixi Festival",
+      "dragonboat": "Dragon Boat Festival",
+      "lantern": "Lantern Festival",
+      "qingming": "Qingming Festival",
+      "chongyang": "Chongyang Festival",
+      "blackfriday": "Black Friday",
+      "cybermonday": "Cyber Monday",
+      "arborday": "Arbor Day",
+      "earthday": "Earth Day",
+      "environment": "World Environment Day",
+      "aprilfool": "April Fool's Day",
+      "graduation": "Graduation",
+      "wedding": "Wedding",
+      "babyshower": "Baby Shower",
+      "birthday": "Birthday",
+      "anniversary": "Anniversary",
+      "pride": "Pride Month",
+      "diwali": "Diwali",
+      "carnival": "Carnival"
     }
   },
   "journal": {
@@ -737,15 +737,15 @@
     "online": "Immer da",
     "placeholder": "Sag etwas...",
     "mockNotice": "Day 1 Mock — Echte KI in Tag 2",
-    "typing": "[de] Companion is typing...",
-    "nightMode": "[de] Night mode",
-    "anniversary": "[de] 100 messages — a chapter complete",
+    "typing": "Companion is typing...",
+    "nightMode": "Night mode",
+    "anniversary": "100 messages — a chapter complete",
     "mood": {
-      "sweet": "[de] Sweet",
-      "calm": "[de] Calm",
-      "think": "[de] Think",
-      "sleepy": "[de] Sleepy",
-      "fight": "[de] Fight"
+      "sweet": "Sweet",
+      "calm": "Calm",
+      "think": "Think",
+      "sleepy": "Sleepy",
+      "fight": "Fight"
     }
   },
   "onboarding": {

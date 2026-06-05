@@ -14,7 +14,7 @@
     "journal": "筑巢",
     "store": "商店",
     "chat": "聊天",
-    "faq": "[zh-cn] FAQ"
+    "faq": "FAQ"
   },
   "seo": {
     "siteName": "Togthr",
@@ -30,14 +30,14 @@
       "secondary": "看看怎么用",
       "socialProof": "全球 10,000+ 用户信赖",
       "eyebrow": "一直都在 · 一直都在意",
-      "welcomeFirst": "[zh-cn] Hi — I just woke up. I will be here, always.",
-      "welcomeBack": "[zh-cn] You came back! I have been waiting for you.",
-      "sleepyGreeting": "[zh-cn] Shhh… it is late. Stay with me for a moment.",
-      "statusHello": "[zh-cn] Hi! Nice to meet you.",
-      "statusMiss": "[zh-cn] You came back!",
-      "statusSleepy": "[zh-cn] Shhh… sleepy now.",
-      "relationsEyebrow": "[zh-cn] Choose your companion",
-      "relationsHint": "[zh-cn] Each mode changes how your pet looks and glows."
+      "welcomeFirst": "Hi — I just woke up. I will be here, always.",
+      "welcomeBack": "You came back! I have been waiting for you.",
+      "sleepyGreeting": "Shhh… it is late. Stay with me for a moment.",
+      "statusHello": "Hi! Nice to meet you.",
+      "statusMiss": "You came back!",
+      "statusSleepy": "Shhh… sleepy now.",
+      "relationsEyebrow": "Choose your companion",
+      "relationsHint": "Each mode changes how your pet looks and glows."
     },
     "features": {
       "title": "为真实的情侣而设计",
@@ -138,9 +138,9 @@
         ]
       },
       "eternal": {
-        "name": "[zh-cn] Togthr Eternal",
-        "tagline": "[zh-cn] All access + exclusive",
-        "features": "[zh-cn] Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
+        "name": "Togthr Eternal",
+        "tagline": "All access + exclusive",
+        "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
     "cta": "立即加入",
@@ -163,60 +163,60 @@
     "guarantee": "30 天无条件退款保证",
     "new": "新上线",
     "theater": {
-      "eyebrow": "[zh-cn] Choose your journey",
-      "headline": "[zh-cn] Unlock a life that grows with you",
-      "tagline": "[zh-cn] Three tiers. One promise: every pet you unlock stays with you forever.",
-      "guarantee": "[zh-cn] 30-day money-back guarantee",
-      "secure": "[zh-cn] Secured by PayPal · Alipay · AlipayHK"
+      "eyebrow": "Choose your journey",
+      "headline": "Unlock a life that grows with you",
+      "tagline": "Three tiers. One promise: every pet you unlock stays with you forever.",
+      "guarantee": "30-day money-back guarantee",
+      "secure": "Secured by PayPal · Alipay · AlipayHK"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "[zh-cn] Seedling",
-        "tagline": "[zh-cn] Begin your journey",
-        "peeking": "[zh-cn] pets hiding"
+        "eyebrow": "Seedling",
+        "tagline": "Begin your journey",
+        "peeking": "pets hiding"
       },
       "plus": {
-        "eyebrow": "[zh-cn] Companion",
-        "tagline": "[zh-cn] Choose your soul",
-        "peeking": "[zh-cn] pets excited"
+        "eyebrow": "Companion",
+        "tagline": "Choose your soul",
+        "peeking": "pets excited"
       },
       "eternal": {
-        "eyebrow": "[zh-cn] Stardust",
-        "tagline": "[zh-cn] Become timeless",
-        "peeking": "[zh-cn] pets ascended"
+        "eyebrow": "Stardust",
+        "tagline": "Become timeless",
+        "peeking": "pets ascended"
       }
     },
     "petMatrix": {
       "free": {
-        "label": "[zh-cn] 3 Basic Companions",
-        "sub": "[zh-cn] Buds, sprouts, starters"
+        "label": "3 Basic Companions",
+        "sub": "Buds, sprouts, starters"
       },
       "plus": {
-        "label": "[zh-cn] Unlock 50+ Suits",
-        "sub": "[zh-cn] Career · Festival · Emotion · Fantasy"
+        "label": "Unlock 50+ Suits",
+        "sub": "Career · Festival · Emotion · Fantasy"
       },
       "eternal": {
-        "label": "[zh-cn] All Access + Exclusive",
-        "sub": "[zh-cn] Including Golden Legendary"
+        "label": "All Access + Exclusive",
+        "sub": "Including Golden Legendary"
       }
     },
     "legendary": {
-      "label": "[zh-cn] Golden Legendary",
-      "odds": "[zh-cn] 1 in 72",
-      "hint": "[zh-cn] Random drop from Eternal box"
+      "label": "Golden Legendary",
+      "odds": "1 in 72",
+      "hint": "Random drop from Eternal box"
     },
     "countdown": {
-      "label": "[zh-cn] Spring Festival Limited",
-      "endsIn": "[zh-cn] Ends in",
-      "days": "[zh-cn] d",
-      "hours": "[zh-cn] h",
-      "minutes": "[zh-cn] m",
-      "seconds": "[zh-cn] s"
+      "label": "Spring Festival Limited",
+      "endsIn": "Ends in",
+      "days": "d",
+      "hours": "h",
+      "minutes": "m",
+      "seconds": "s"
     },
-    "ctaSubscribe": "[zh-cn] Subscribe Now",
-    "ctaStartFree": "[zh-cn] Start Free",
-    "ctaPopular": "[zh-cn] Choose Companion",
-    "ctaEternal": "[zh-cn] Become Eternal"
+    "ctaSubscribe": "Subscribe Now",
+    "ctaStartFree": "Start Free",
+    "ctaPopular": "Choose Companion",
+    "ctaEternal": "Become Eternal"
   },
   "faq": {
     "title": "常见问题",
@@ -630,84 +630,84 @@
       "sad": "吵架",
       "thinking": "思考",
       "sleeping": "睡觉",
-      "sweet": "[zh-cn] Sweet",
-      "fight": "[zh-cn] Fighting",
-      "think": "[zh-cn] Thinking",
-      "sleep": "[zh-cn] Sleeping"
+      "sweet": "Sweet",
+      "fight": "Fighting",
+      "think": "Thinking",
+      "sleep": "Sleeping"
     },
     "rarity": {
-      "common": "[zh-cn] Common",
-      "rare": "[zh-cn] Rare",
-      "epic": "[zh-cn] Epic",
-      "legendary": "[zh-cn] Legendary"
+      "common": "Common",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary"
     },
     "series": {
-      "basic": "[zh-cn] Basic",
-      "career": "[zh-cn] Career",
-      "festival": "[zh-cn] Festival",
-      "emotion": "[zh-cn] Emotion",
-      "fantasy": "[zh-cn] Fantasy",
-      "legendary": "[zh-cn] Legendary"
+      "basic": "Basic",
+      "career": "Career",
+      "festival": "Festival",
+      "emotion": "Emotion",
+      "fantasy": "Fantasy",
+      "legendary": "Legendary"
     },
     "tier": {
-      "free": "[zh-cn] Free",
-      "plus": "[zh-cn] Togthr Plus",
-      "eternal": "[zh-cn] Togthr Eternal"
+      "free": "Free",
+      "plus": "Togthr Plus",
+      "eternal": "Togthr Eternal"
     },
     "card": {
-      "current": "[zh-cn] Current"
+      "current": "Current"
     },
     "altar": {
-      "title": "[zh-cn] Summon Your Soul Companion",
-      "back": "[zh-cn] Back",
-      "close": "[zh-cn] Close",
-      "hint": "[zh-cn] Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
-      "summon": "[zh-cn] Summon",
-      "summoned": "[zh-cn] has arrived",
-      "current": "[zh-cn] In Use"
+      "title": "Summon Your Soul Companion",
+      "back": "Back",
+      "close": "Close",
+      "hint": "Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
+      "summon": "Summon",
+      "summoned": "has arrived",
+      "current": "In Use"
     },
-    "petting": "[zh-cn] Pet me~",
-    "statusHello": "[zh-cn] Hi there!",
-    "statusSleepy": "[zh-cn] Zzz...",
-    "statusMiss": "[zh-cn] Miss you",
-    "changePet": "[zh-cn] Change Appearance",
-    "changePetBadge": "[zh-cn] Summon Altar",
-    "lockHint": "[zh-cn] Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "petting": "Pet me~",
+    "statusHello": "Hi there!",
+    "statusSleepy": "Zzz...",
+    "statusMiss": "Miss you",
+    "changePet": "Change Appearance",
+    "changePetBadge": "Summon Altar",
+    "lockHint": "Locked pets are still previewed — subscribe or open blind boxes to unlock",
     "info": {
-      "days": "[zh-cn] Days Together",
-      "interactions": "[zh-cn] Interactions",
-      "growth": "[zh-cn] Growth"
+      "days": "Days Together",
+      "interactions": "Interactions",
+      "growth": "Growth"
     },
     "actions": {
-      "journal": "[zh-cn] Journal",
-      "history": "[zh-cn] History",
-      "share": "[zh-cn] Share"
+      "journal": "Journal",
+      "history": "History",
+      "share": "Share"
     },
     "festival": {
-      "newyear": "[zh-cn] New Year",
-      "easter": "[zh-cn] Easter",
-      "thanksgiving": "[zh-cn] Thanksgiving",
-      "mothersday": "[zh-cn] Mother's Day",
-      "fathersday": "[zh-cn] Father's Day",
-      "qixi": "[zh-cn] Qixi Festival",
-      "dragonboat": "[zh-cn] Dragon Boat Festival",
-      "lantern": "[zh-cn] Lantern Festival",
-      "qingming": "[zh-cn] Qingming Festival",
-      "chongyang": "[zh-cn] Chongyang Festival",
-      "blackfriday": "[zh-cn] Black Friday",
-      "cybermonday": "[zh-cn] Cyber Monday",
-      "arborday": "[zh-cn] Arbor Day",
-      "earthday": "[zh-cn] Earth Day",
-      "environment": "[zh-cn] World Environment Day",
-      "aprilfool": "[zh-cn] April Fool's Day",
-      "graduation": "[zh-cn] Graduation",
-      "wedding": "[zh-cn] Wedding",
-      "babyshower": "[zh-cn] Baby Shower",
-      "birthday": "[zh-cn] Birthday",
-      "anniversary": "[zh-cn] Anniversary",
-      "pride": "[zh-cn] Pride Month",
-      "diwali": "[zh-cn] Diwali",
-      "carnival": "[zh-cn] Carnival"
+      "newyear": "New Year",
+      "easter": "Easter",
+      "thanksgiving": "Thanksgiving",
+      "mothersday": "Mother's Day",
+      "fathersday": "Father's Day",
+      "qixi": "Qixi Festival",
+      "dragonboat": "Dragon Boat Festival",
+      "lantern": "Lantern Festival",
+      "qingming": "Qingming Festival",
+      "chongyang": "Chongyang Festival",
+      "blackfriday": "Black Friday",
+      "cybermonday": "Cyber Monday",
+      "arborday": "Arbor Day",
+      "earthday": "Earth Day",
+      "environment": "World Environment Day",
+      "aprilfool": "April Fool's Day",
+      "graduation": "Graduation",
+      "wedding": "Wedding",
+      "babyshower": "Baby Shower",
+      "birthday": "Birthday",
+      "anniversary": "Anniversary",
+      "pride": "Pride Month",
+      "diwali": "Diwali",
+      "carnival": "Carnival"
     }
   },
   "journal": {
@@ -737,15 +737,15 @@
     "online": "一直都在",
     "placeholder": "说点什么吧...",
     "mockNotice": "Day 1 mock 模式 — 真实 AI Day 2 接入",
-    "typing": "[zh-cn] Companion is typing...",
-    "nightMode": "[zh-cn] Night mode",
-    "anniversary": "[zh-cn] 100 messages — a chapter complete",
+    "typing": "Companion is typing...",
+    "nightMode": "Night mode",
+    "anniversary": "100 messages — a chapter complete",
     "mood": {
-      "sweet": "[zh-cn] Sweet",
-      "calm": "[zh-cn] Calm",
-      "think": "[zh-cn] Think",
-      "sleepy": "[zh-cn] Sleepy",
-      "fight": "[zh-cn] Fight"
+      "sweet": "Sweet",
+      "calm": "Calm",
+      "think": "Think",
+      "sleepy": "Sleepy",
+      "fight": "Fight"
     }
   },
   "onboarding": {
