@@ -74,3 +74,14 @@ pricing-*.html
 
 # Old / refactored source backups (delete after refactor verified)
 *_old.ts
+
+# MCP / Matrix image-gen request payloads (transient, never commit)
+*-batch-*.json
+ip-*.json
+pet-*.json
+anim-*.json
+occupation-*.json
+locale-report.json
+.translation-baseline.json
+upload-translations.json
+components.json

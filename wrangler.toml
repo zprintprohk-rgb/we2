@@ -4,33 +4,32 @@ main = ".open-next/worker.js"
 compatibility_date = "2026-05-29"
 compatibility_flags = ["nodejs_compat"]
 
-# ─── 非敏感环境变量（生产环境�?───
-# 敏感变量（SUPABASE_SERVICE_ROLE_KEY、PAYPAL_CLIENT_SECRET 等）
-# 通过命令行设置：npx wrangler secret put <KEY>
+# ─── Non-sensitive env vars (production defaults) ────────────────────────
+# Sensitive vars (SUPABASE_SERVICE_ROLE_KEY, PAYPAL_CLIENT_SECRET, etc.)
+# are set via CLI: npx wrangler secret put <KEY>
 [vars]
-NEXT_PUBLIC_SITE_URL = "https://we2-v3.zprintprohk.workers.dev"
+NEXT_PUBLIC_SITE_URL = "https://togthr.life"
 NEXTJS_ENV = "production"
 PAYPAL_MODE = "live"
-# ⚠️ 以下为必�?�?请在部署前替换为真实值，或留空并通过 wrangler secret 设置
+# ⚠️ Below must be set before deploy — either fill here or via wrangler secret
 NEXT_PUBLIC_SUPABASE_URL = ""
 NEXT_PUBLIC_SUPABASE_ANON_KEY = ""
 PAYPAL_CLIENT_ID = ""
 ALIPAY_APP_ID = ""
 ALIPAY_PUBLIC_KEY = ""
 VAPID_PUBLIC_KEY = ""
-CRON_SECRET = ""  # 用于保护 /api/cron/* 端点
+CRON_SECRET = ""  # protects /api/cron/* endpoints
 
-# Cron 触发器：每天 UTC 0:00 检查过期订�?
+# Cron trigger: daily UTC 0:00 to check expired subscriptions
 [triggers]
 crons = ["0 0 * * *"]
 
-# 静态资源绑�?(OpenNext 自动生成�?assets 目录)
+# Static assets (OpenNext auto-generates .open-next/assets/)
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
 
-# R2 文件存储桶（需先在 Cloudflare Dashboard 创建名为 we2-storage 的桶�?
-# 临时注释：R2 桶未创建，文件上传功能暂时不可用
+# R2 bucket (togthr-images — for skin sprites, capsule media, sticker PNGs)
 [[r2_buckets]]
 binding = "R2"
 bucket_name = "togthr-images"

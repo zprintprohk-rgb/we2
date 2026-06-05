@@ -23,7 +23,7 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 44,
+        monthly: 45,
         quarterly: 112,
         yearly: 326,
         quarterlyDiscount: 0.15,  // (132-112)/132
@@ -48,7 +48,7 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 53,
+        monthly: 55,
         quarterly: 135,
         yearly: 392,
         quarterlyDiscount: 0.15,
@@ -73,7 +73,7 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 206,
+        monthly: 209,
         quarterly: 525,
         yearly: 1530,
         quarterlyDiscount: 0.15,
@@ -298,7 +298,7 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 882,
+        monthly: 889,
         quarterly: 2249,
         yearly: 6560,
         quarterlyDiscount: 0.15,
@@ -323,7 +323,7 @@ const pricingTable: Record<CountryCode, CountryPricing> = {
     tiers: {
       free: { monthly: 0, quarterly: 0, yearly: 0 },
       plus: {
-        monthly: 8910,
+        monthly: 8999,
         quarterly: 22720,
         yearly: 66290,
         quarterlyDiscount: 0.15,
