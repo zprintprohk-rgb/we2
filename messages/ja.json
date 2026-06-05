@@ -475,5 +475,22 @@
         }
       ]
     }
+  },
+  "store": {
+    "title": "Togthr コンパニオン",
+    "subtitle": "6+1 ミステリーボックス、1/72の確率で金色が出現",
+    "firstOrder": "初回価格",
+    "regular": "通常価格",
+    "save": "50%オフ",
+    "blindboxTitle": "Togthr コンパニオン — 6+1 ミステリーボックス",
+    "blindboxDesc": "プログラマー、ドクター、宇宙飛行士、シェフ、消防士、警察... 1/72の確率で伝説の金色 Togthr が出現。",
+    "ctaBuy": "ボックスを購入",
+    "ctaTrySoulmate": "Soulmate AI 1ヶ月分付き",
+    "odds": "確率",
+    "oddsGolden": "1 / 72",
+    "oddsCommon": "71 / 72",
+    "perma": "永久アンロック",
+    "checkoutNote": "PayPal テストモード · 初回50%オフ",
+    "checkoutNote2": "サブスクなし · 一度だけ · 永久"
   }
 }

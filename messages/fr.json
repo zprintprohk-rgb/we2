@@ -475,5 +475,22 @@
         }
       ]
     }
+  },
+  "store": {
+    "title": "Compagnons Togthr",
+    "subtitle": "Boîte mystère 6+1, 1 chance sur 72 pour la dorée",
+    "firstOrder": "Première commande",
+    "regular": "Prix normal",
+    "save": "Économisez 50%",
+    "blindboxTitle": "Compagnons Togthr — Boîte mystère 6+1",
+    "blindboxDesc": "Une surprise par boîte : Programmeur, Médecin, Astronaute, Cuisinier, Pompier, Policier... et 1 chance sur 72 pour la légendaire Togthr dorée.",
+    "ctaBuy": "Acheter la boîte",
+    "ctaTrySoulmate": "1 mois de Soulmate AI inclus",
+    "odds": "Probabilité",
+    "oddsGolden": "1 / 72",
+    "oddsCommon": "71 / 72",
+    "perma": "Déverrouillage permanent",
+    "checkoutNote": "PayPal sandbox · 50% première commande",
+    "checkoutNote2": "Sans abonnement · Paiement unique · Pour toujours"
   }
 }

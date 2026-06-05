@@ -475,5 +475,22 @@
         }
       ]
     }
+  },
+  "store": {
+    "title": "Togthr 萌宠盲盒",
+    "subtitle": "6+1 神秘盲盒，1/72 概率开出隐藏金色款",
+    "firstOrder": "首单价",
+    "regular": "原价",
+    "save": "立减 50%",
+    "blindboxTitle": "Togthr 萌宠 — 6+1 神秘盲盒",
+    "blindboxDesc": "每盒随机一款萌宠皮肤：程序员、医生、宇航员、厨师、消防员、警察... 1/72 概率开出传说级金色款。",
+    "ctaBuy": "立即购买",
+    "ctaTrySoulmate": "含 1 个月 Soulmate AI 试用",
+    "odds": "概率",
+    "oddsGolden": "1 / 72",
+    "oddsCommon": "71 / 72",
+    "perma": "永久解锁",
+    "checkoutNote": "PayPal 测试模式 · 首单 5 折",
+    "checkoutNote2": "无订阅 · 一次购买 · 永久拥有"
   }
 }

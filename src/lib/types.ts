@@ -85,7 +85,7 @@ export const countryToGateway: Record<CountryCode, PaymentGateway[]> = {
   SG: ['paypal'],
 };
 
-export type SubscriptionTier = 'free' | 'plus' | 'premium' | 'lifetime';
+export type SubscriptionTier = 'free' | 'plus' | 'soulmate' | 'premium' | 'lifetime';
 
 export interface SubscriptionPlan {
   tier: SubscriptionTier;
@@ -123,6 +123,7 @@ export interface CountryPricing {
   tiers: {
     free: PriceTier
     plus: PriceTier
+    soulmate: PriceTier
     premium: PriceTier
     lifetime: { monthly: number; quarterly: number; yearly: number }
   }

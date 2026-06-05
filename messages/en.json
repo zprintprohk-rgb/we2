@@ -475,5 +475,22 @@
         }
       ]
     }
+  },
+  "store": {
+    "title": "Togthr Companions",
+    "subtitle": "6+1 mystery box. 1 in 72 chance for the golden Togthr.",
+    "firstOrder": "First order",
+    "regular": "Regular price",
+    "save": "Save 50%",
+    "blindboxTitle": "Togthr Companions — 6+1 Mystery Box",
+    "blindboxDesc": "A surprise skin in every box. Programmer, Doctor, Astronaut, Chef, Firefighter, Police... and a 1 in 72 chance for the legendary Golden Togthr.",
+    "ctaBuy": "Buy Blind Box",
+    "ctaTrySoulmate": "Includes 1 month Soulmate AI",
+    "odds": "Odds",
+    "oddsGolden": "1 / 72",
+    "oddsCommon": "71 / 72",
+    "perma": "Permanent unlock",
+    "checkoutNote": "PayPal sandbox · 50% off first order",
+    "checkoutNote2": "No subscription · Pay once · Yours forever"
   }
 }

@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "WeChat sticker style cute round robot character, pixel art style, 16-bit color palette, sharp edges, no anti-aliasing, limited color palette. Chibi style with exaggerated big head and small body, winking with one eye closed and tongue out playfully, peace sign V with one hand, white background, isolated single character, no other elements, perfect for sticker pack, sticker art style with thick outline, pastel purple and pink, kawaii emoji feel. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion blur, photorealistic",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "WeChat sticker style cute round robot character, pixel art style, 16-bit color palette, sharp edges, no anti-aliasing, limited color palette. Chibi style with exaggerated big head and small body, fighting cheering pose with one tiny fist raised in the air, determined confident expression, sweatband on head, sparkles around fist, white background, isolated single character, no other elements, perfect for sticker pack, sticker art style with thick outline, pastel purple and pink, kawaii emoji feel. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion blur, photorealistic",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "WeChat sticker style cute round robot character, pixel art style, 16-bit color palette, sharp edges, no anti-aliasing, limited color palette. Chibi style with exaggerated big head and small body, shy blushing expression with hands covering face but peeking through fingers, dark pink blush on cheeks, tiny embarrassed smile, white background, isolated single character, no other elements, perfect for sticker pack, sticker art style with thick outline, pastel purple and pink, kawaii emoji feel. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion blur, photorealistic",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "WeChat sticker style cute round robot character, pixel art style, 16-bit color palette, sharp edges, no anti-aliasing, limited color palette. Chibi style with exaggerated big head and small body, giving thumbs up with one hand, big confident smile, sparkle stars around the thumbs up, white background, isolated single character, no other elements, perfect for sticker pack, sticker art style with thick outline, pastel purple and pink, kawaii emoji feel. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion blur, photorealistic",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    }
+  ]
+}

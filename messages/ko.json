@@ -475,5 +475,22 @@
         }
       ]
     }
+  },
+  "store": {
+    "title": "Togthr 동반자",
+    "subtitle": "6+1 미스터리 박스, 1/72 확률로 골든 등장",
+    "firstOrder": "첫 주문가",
+    "regular": "정가",
+    "save": "50% 할인",
+    "blindboxTitle": "Togthr 동반자 — 6+1 미스터리 박스",
+    "blindboxDesc": "프로그래머, 의사, 우주비행사, 셰프, 소방관, 경찰... 1/72 확률로 전설의 골든 Togthr 등장.",
+    "ctaBuy": "박스 구매",
+    "ctaTrySoulmate": "Soulmate AI 1개월 포함",
+    "odds": "확률",
+    "oddsGolden": "1 / 72",
+    "oddsCommon": "71 / 72",
+    "perma": "영구 해제",
+    "checkoutNote": "PayPal 테스트 모드 · 첫 주문 50% 할인",
+    "checkoutNote2": "구독 없음 · 일회 결제 · 영구 소유"
   }
 }

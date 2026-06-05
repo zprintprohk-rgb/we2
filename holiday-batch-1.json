@@ -1,0 +1,22 @@
+{
+  "requests": [
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute round robot character, pixel art style, special holiday Christmas edition, soft lighting, cel shading, 16-bit pixel art, sharp edges no anti-aliasing, limited color palette, sprite sheet style. Front view standing pose, wearing brown reindeer antlers on top of head, a small red nose like Rudolph, a red Christmas scarf around neck, tiny gift box next to character, sparkles, white background, isolated, orthographic projection, consistent proportions, Game Boy Advance inspired, kawaii design, candy colors, festive mood. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion blur",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute round robot character, pixel art style, special holiday Valentine edition, soft lighting, cel shading, 16-bit pixel art, sharp edges no anti-aliasing, limited color palette, sprite sheet style. Front view standing pose, holding a giant pink and red heart in both hands, blushing pink cheeks, eyes shaped like hearts, small cupid wings on back, sparkles around, white background, isolated, orthographic projection, consistent proportions, Game Boy Advance inspired, kawaii design, candy colors, pink and red heart theme. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion blur",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute round robot character, pixel art style, special holiday Halloween edition, soft lighting, cel shading, 16-bit pixel art, sharp edges no anti-aliasing, limited color palette, sprite sheet style. Front view standing pose, dressed as a tiny ghost with white sheet over body with cutout eyes, holding a small orange pumpkin jack-o-lantern, purple witch hat on head, sparkles, white background, isolated, orthographic projection, consistent proportions, Game Boy Advance inspired, kawaii design, candy colors, halloween spooky cute theme. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion blur",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    }
+  ]
+}

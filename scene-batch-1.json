@@ -1,0 +1,22 @@
+{
+  "requests": [
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute round robot character, pixel art style, pastel purple and pink color scheme, soft lighting, cel shading, 16-bit pixel art, sharp edges no anti-aliasing, limited color palette, sprite sheet style. Front view, sitting on top of a horizontal loading progress bar UI element, the progress bar showing 65% filled with violet color, small sparkle particles around the character, white background, isolated, orthographic projection, consistent proportions, Game Boy Advance inspired, kawaii design, candy colors, lavender and pink and cyan accents. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion blur",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute round robot character, pixel art style, pastel purple and pink color scheme, soft lighting, cel shading, 16-bit pixel art, sharp edges no anti-aliasing, limited color palette, sprite sheet style. Front view, hugging a giant low battery icon that is red and flashing with lightning bolt, worried expression, small sweat drops on head, white background, isolated, orthographic projection, consistent proportions, Game Boy Advance inspired, kawaii design, candy colors, lavender and pink and cyan accents. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion blur",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    },
+    {
+      "input_urls": ["https://cdn.hailuoai.com/mcp/u518179092751826944/image_tool/output/1780600416_5b04bfef.png"],
+      "prompt": "A cute round robot character, pixel art style, pastel purple and pink color scheme, soft lighting, cel shading, 16-bit pixel art, sharp edges no anti-aliasing, limited color palette, sprite sheet style. Front view, holding a small white megaphone speaker in both hands, mouth open as if announcing, sparkles and notification lines around, white background, isolated, orthographic projection, consistent proportions, Game Boy Advance inspired, kawaii design, candy colors, lavender and pink and cyan accents. Negative prompt: 3d render, realistic, blurry, extra limbs, asymmetrical eyes, complex background, perspective distortion, dynamic pose, motion blur",
+      "aspect_ratio": "1:1",
+      "resolution": "1024x1024"
+    }
+  ]
+}

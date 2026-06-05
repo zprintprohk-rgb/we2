@@ -475,5 +475,22 @@
         }
       ]
     }
+  },
+  "store": {
+    "title": "Togthr Begleiter",
+    "subtitle": "6+1 Mystery-Box, 1/72 Chance auf die goldene Togthr",
+    "firstOrder": "Erstkäufer",
+    "regular": "Regulärer Preis",
+    "save": "50% sparen",
+    "blindboxTitle": "Togthr Begleiter — 6+1 Mystery-Box",
+    "blindboxDesc": "Eine Überraschung pro Box: Programmierer, Arzt, Astronaut, Koch, Feuerwehrmann, Polizist... und 1/72 Chance auf die legendäre goldene Togthr.",
+    "ctaBuy": "Box kaufen",
+    "ctaTrySoulmate": "1 Monat Soulmate AI inklusive",
+    "odds": "Quote",
+    "oddsGolden": "1 / 72",
+    "oddsCommon": "71 / 72",
+    "perma": "Dauerhaft freischalten",
+    "checkoutNote": "PayPal Test-Modus · 50% Erstkäufer-Rabatt",
+    "checkoutNote2": "Kein Abo · Einmalzahlung · Für immer"
   }
 }

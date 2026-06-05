@@ -475,5 +475,22 @@
         }
       ]
     }
+  },
+  "store": {
+    "title": "Compañeros Togthr",
+    "subtitle": "Caja misterio 6+1, 1 de 72 para la dorada",
+    "firstOrder": "Primera compra",
+    "regular": "Precio regular",
+    "save": "Ahorra 50%",
+    "blindboxTitle": "Compañeros Togthr — Caja misterio 6+1",
+    "blindboxDesc": "Una sorpresa por caja: Programador, Médico, Astronauta, Cocinero, Bombero, Policía... y 1 de 72 para la legendaria Togthr dorada.",
+    "ctaBuy": "Comprar caja",
+    "ctaTrySoulmate": "1 mes de Soulmate AI incluido",
+    "odds": "Probabilidad",
+    "oddsGolden": "1 / 72",
+    "oddsCommon": "71 / 72",
+    "perma": "Desbloqueo permanente",
+    "checkoutNote": "PayPal sandbox · 50% primera compra",
+    "checkoutNote2": "Sin suscripción · Pago único · Para siempre"
   }
 }
