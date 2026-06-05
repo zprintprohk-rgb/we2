@@ -78,7 +78,37 @@ export default function SoulmateChatPage() {
   }
 
   return (
-    <div className="relative mx-auto flex h-[calc(100vh-4rem)] max-w-2xl flex-col px-4">
+    <div className="relative mx-auto flex h-[calc(100vh-4rem)] max-w-2xl flex-col overflow-hidden bg-gradient-to-b from-[#1a0b2e] via-[#0f0524] to-[#0a0118] px-4 text-zinc-100">
+      {/* ── Cinematic atmosphere ── */}
+      <div className="pointer-events-none absolute inset-0">
+        {Array.from({ length: 30 }).map((_, i) => (
+          <span
+            key={i}
+            className="absolute rounded-full bg-zinc-200"
+            style={{
+              top: `${(i * 47) % 100}%`,
+              left: `${(i * 79) % 100}%`,
+              width: (i % 4) + 1,
+              height: (i % 4) + 1,
+              opacity: 0.3,
+            }}
+          />
+        ))}
+        {Array.from({ length: 4 }).map((_, i) => (
+          <span
+            key={i}
+            className="absolute rounded-full blur-3xl"
+            style={{
+              top: `${20 + (i * 41) % 65}%`,
+              left: `${(i * 47) % 100}%`,
+              width: 80 + (i * 17) % 70,
+              height: 80 + (i * 17) % 70,
+              background: `radial-gradient(circle, hsla(${280 + (i * 27) % 60}, 70%, 50%, 0.12) 0%, transparent 70%)`,
+            }}
+          />
+        ))}
+      </div>
+
       {/* Header */}
       <div className="border-b border-zinc-200 bg-white/80 py-3 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/80">
         <div className="flex items-center gap-3">
@@ -184,6 +214,26 @@ export default function SoulmateChatPage() {
       <p className="py-2 text-center text-[10px] text-zinc-400">
         🧪 {t('mockNotice')}
       </p>
+
+      {/* Floating mascot (always-on companion) */}
+      <motion.div
+        initial={{ opacity: 0, y: 40, scale: 0.6 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ delay: 1.2, duration: 0.8, type: 'spring' }}
+        className="fixed bottom-6 right-6 z-40 hidden md:block pointer-events-none"
+        aria-hidden="true"
+      >
+        <motion.div
+          animate={{ y: [0, -8, 0], rotate: [0, -3, 3, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+          className="relative h-20 w-20"
+        >
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/30 via-rose-300/30 to-purple-400/30 blur-xl" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/pets/robot-base.png" alt="" className="relative h-full w-full object-contain drop-shadow-[0_4px_12px_rgba(251,191,36,0.4)]" />
+          <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border-2 border-[#0a0118] bg-emerald-400 animate-pulse" />
+        </motion.div>
+      </motion.div>
     </div>
   )
 }
