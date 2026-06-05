@@ -113,6 +113,18 @@
           "Contenido exclusivo",
           "Acceso anticipado"
         ]
+      },
+      "soulmate": {
+        "name": "Togthr Alma gemela",
+        "price": "",
+        "period": "/mes",
+        "features": [
+          "Todo de Plus",
+          "Estilo de habla IA",
+          "Habla como el otro",
+          "Sugerencias inteligentes de recuerdos",
+          "Soporte prioritario"
+        ]
       }
     },
     "cta": "Comenzar ahora",
@@ -132,7 +144,8 @@
     "promoApply": "Aplicar",
     "promoHint": "¡Códigos promocionales próximamente!",
     "secure": "Asegurado por PayPal",
-    "guarantee": "Garantía de devolución de 30 días"
+    "guarantee": "Garantía de devolución de 30 días",
+    "new": "Nuevo"
   },
   "faq": {
     "title": "Preguntas frecuentes",

@@ -99,18 +99,11 @@ export default async function PricingPage({
         yearly: pricing.tiers.plus.yearly,
       },
       {
-        key: 'premium' as const,
-        badge: null,
-        monthly: 0,
-        quarterly: 0,
-        yearly: 0,
-      },
-      {
-        key: 'lifetime' as const,
-        badge: saveTemplate,
-        monthly: 0,
-        quarterly: 0,
-        yearly: 0,
+        key: 'soulmate' as const,
+        badge: ts(t, 'pricing.new', 'New'),
+        monthly: getPrice(country, 'soulmate', 'monthly'),
+        quarterly: pricing.tiers.soulmate.quarterly,
+        yearly: pricing.tiers.soulmate.yearly,
       },
     ]
 
@@ -153,7 +146,7 @@ export default async function PricingPage({
         </div>
 
         {/* Pricing cards */}
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {tiers.map(({ key, badge, monthly, quarterly, yearly }) => {
             const name = t(`pricing.tiers.${key}.name`)
             const features = ta(t, `pricing.tiers.${key}.features`, [])

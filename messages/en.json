@@ -113,6 +113,18 @@
           "Exclusive content",
           "Early features"
         ]
+      },
+      "soulmate": {
+        "name": "Togthr Soulmate",
+        "price": "",
+        "period": "/month",
+        "features": [
+          "Everything in Plus",
+          "AI speech style",
+          "Speaks like the one you care about",
+          "Smart memory suggestions",
+          "Priority support"
+        ]
       }
     },
     "cta": "Get Started",
@@ -132,7 +144,8 @@
     "promoApply": "Apply",
     "promoHint": "Promo codes coming soon!",
     "secure": "Secured by PayPal",
-    "guarantee": "30-day money-back guarantee"
+    "guarantee": "30-day money-back guarantee",
+    "new": "New"
   },
   "faq": {
     "title": "Frequently Asked Questions",

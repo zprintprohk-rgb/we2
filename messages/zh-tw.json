@@ -113,6 +113,18 @@
           "獨家內容",
           "提前體驗新功能"
         ]
+      },
+      "soulmate": {
+        "name": "Togthr 靈魂伴侶",
+        "price": "",
+        "period": "/月",
+        "features": [
+          "包含 Plus 全部功能",
+          "AI 語料風格",
+          "像 TA 一樣說話",
+          "智能回憶推薦",
+          "優先客服"
+        ]
       }
     },
     "cta": "立即加入",
@@ -132,7 +144,8 @@
     "promoApply": "使用",
     "promoHint": "優惠碼功能即將推出！",
     "secure": "由 PayPal 安全支付",
-    "guarantee": "30 天無條件退款保證"
+    "guarantee": "30 天無條件退款保證",
+    "new": "新上線"
   },
   "faq": {
     "title": "常見問題",

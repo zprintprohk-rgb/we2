@@ -113,6 +113,18 @@
           "Exklusive Inhalte",
           "Früher Zugang zu Features"
         ]
+      },
+      "soulmate": {
+        "name": "Togthr Seelenverwandter",
+        "price": "",
+        "period": "/Monat",
+        "features": [
+          "Alles aus Plus",
+          "KI-Sprachstil",
+          "Spricht wie der andere",
+          "Smart-Memory-Vorschläge",
+          "Prioritäts-Support"
+        ]
       }
     },
     "cta": "Jetzt starten",
@@ -132,7 +144,8 @@
     "promoApply": "Anwenden",
     "promoHint": "Aktionscodes kommen bald!",
     "secure": "Geschützt durch PayPal",
-    "guarantee": "30-Tage-Geld-zurück-Garantie"
+    "guarantee": "30-Tage-Geld-zurück-Garantie",
+    "new": "Neu"
   },
   "faq": {
     "title": "Häufig gestellte Fragen",

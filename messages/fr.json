@@ -113,6 +113,18 @@
           "Contenu exclusif",
           "Accès anticipé aux nouveautés"
         ]
+      },
+      "soulmate": {
+        "name": "Togthr Âme sœur",
+        "price": "",
+        "period": "/mois",
+        "features": [
+          "Tout de Plus",
+          "Style de parole IA",
+          "Parle comme l'autre",
+          "Suggestions de souvenirs intelligentes",
+          "Support prioritaire"
+        ]
       }
     },
     "cta": "Commencer maintenant",
@@ -132,7 +144,8 @@
     "promoApply": "Appliquer",
     "promoHint": "Codes promo bientôt disponibles !",
     "secure": "Sécurisé par PayPal",
-    "guarantee": "Garantie satisfait ou remboursé 30 jours"
+    "guarantee": "Garantie satisfait ou remboursé 30 jours",
+    "new": "Nouveau"
   },
   "faq": {
     "title": "Questions fréquentes",
