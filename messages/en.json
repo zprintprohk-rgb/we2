@@ -7,7 +7,12 @@
     "pricing": "Pricing",
     "community": "Community",
     "login": "Log In",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "daily": "Daily",
+    "capsule": "Capsule",
+    "pet": "Pet",
+    "journal": "Nest",
+    "store": "Store"
   },
   "seo": {
     "siteName": "We2",

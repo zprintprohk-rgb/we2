@@ -7,7 +7,12 @@
     "pricing": "定价",
     "community": "社区",
     "login": "登录",
-    "dashboard": "我的空间"
+    "dashboard": "我的空间",
+    "daily": "喂食",
+    "capsule": "胶囊",
+    "pet": "宠物",
+    "journal": "筑巢",
+    "store": "商店"
   },
   "seo": {
     "siteName": "We2",

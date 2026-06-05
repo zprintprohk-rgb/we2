@@ -7,7 +7,12 @@
     "pricing": "Tarifs",
     "community": "Communauté",
     "login": "Connexion",
-    "dashboard": "Tableau de bord"
+    "dashboard": "Tableau de bord",
+    "daily": "Repas",
+    "capsule": "Capsule",
+    "pet": "Animal",
+    "journal": "Nid",
+    "store": "Boutique"
   },
   "seo": {
     "siteName": "We2",

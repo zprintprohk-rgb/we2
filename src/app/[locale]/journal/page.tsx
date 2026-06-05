@@ -45,8 +45,8 @@ const SEED_ENTRIES: Entry[] = [
   { id: 'e3', text: '第一次一起过圣诞 🎄',         mood: 'festive', ts: Date.now() - 86400e3 * 1 },
 ]
 
-function getStage(count: number) {
-  let s = STAGES[0]
+function getStage(count: number): typeof STAGES[number] {
+  let s: typeof STAGES[number] = STAGES[0]
   for (const stage of STAGES) if (count >= stage.at) s = stage
   return s
 }

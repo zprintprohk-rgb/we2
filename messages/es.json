@@ -7,7 +7,12 @@
     "pricing": "Precios",
     "community": "Comunidad",
     "login": "Iniciar sesión",
-    "dashboard": "Panel"
+    "dashboard": "Panel",
+    "daily": "Diario",
+    "capsule": "Cápsula",
+    "pet": "Mascota",
+    "journal": "Nido",
+    "store": "Tienda"
   },
   "seo": {
     "siteName": "We2",

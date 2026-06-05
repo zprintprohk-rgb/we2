@@ -7,7 +7,12 @@
     "pricing": "プラン",
     "community": "コミュニティ",
     "login": "ログイン",
-    "dashboard": "ダッシュボード"
+    "dashboard": "ダッシュボード",
+    "daily": "えさ",
+    "capsule": "カプセル",
+    "pet": "ペット",
+    "journal": "巣",
+    "store": "ショップ"
   },
   "seo": {
     "siteName": "We2",

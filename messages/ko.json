@@ -7,7 +7,12 @@
     "pricing": "요금제",
     "community": "커뮤니티",
     "login": "로그인",
-    "dashboard": "대시보드"
+    "dashboard": "대시보드",
+    "daily": "밥주기",
+    "capsule": "캡슐",
+    "pet": "펫",
+    "journal": "둥지",
+    "store": "상점"
   },
   "seo": {
     "siteName": "We2",

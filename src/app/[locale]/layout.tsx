@@ -80,6 +80,11 @@ export default async function LocaleLayout({ children, params }: Props) {
       pricing: t('nav.pricing'),
       community: t('nav.community'),
       login: t('nav.login'),
+      daily: t('nav.daily'),
+      capsule: t('nav.capsule'),
+      pet: t('nav.pet'),
+      journal: t('nav.journal'),
+      store: t('nav.store'),
     }
     const footer = {
       privacy: t('footer.privacy'),
@@ -141,6 +146,36 @@ export default async function LocaleLayout({ children, params }: Props) {
                   className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
                 >
                   FAQ
+                </Link>
+                <Link
+                  href={`/${locale}/daily`}
+                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                >
+                  {nav.daily}
+                </Link>
+                <Link
+                  href={`/${locale}/capsule`}
+                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                >
+                  {nav.capsule}
+                </Link>
+                <Link
+                  href={`/${locale}/pet`}
+                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                >
+                  {nav.pet}
+                </Link>
+                <Link
+                  href={`/${locale}/journal`}
+                  className="text-sm font-medium text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                >
+                  {nav.journal}
+                </Link>
+                <Link
+                  href={`/${locale}/store`}
+                  className="text-sm font-semibold text-rose-500 hover:text-rose-600 dark:text-rose-400 dark:hover:text-rose-300"
+                >
+                  🛒 {nav.store}
                 </Link>
               </div>
             </div>

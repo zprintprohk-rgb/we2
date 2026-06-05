@@ -7,7 +7,12 @@
     "pricing": "Preise",
     "community": "Community",
     "login": "Anmelden",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "daily": "Täglich",
+    "capsule": "Kapsel",
+    "pet": "Tier",
+    "journal": "Nest",
+    "store": "Shop"
   },
   "seo": {
     "siteName": "We2",

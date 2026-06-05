@@ -7,7 +7,12 @@
     "pricing": "方案",
     "community": "社群",
     "login": "登入",
-    "dashboard": "儀表板"
+    "dashboard": "儀表板",
+    "daily": "餵食",
+    "capsule": "膠囊",
+    "pet": "寵物",
+    "journal": "築巢",
+    "store": "商店"
   },
   "seo": {
     "siteName": "We2",
