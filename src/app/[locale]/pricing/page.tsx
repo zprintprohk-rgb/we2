@@ -115,13 +115,53 @@ export default async function PricingPage({
     ]
 
     return (
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
+      <div className="relative mx-auto max-w-6xl overflow-hidden bg-gradient-to-b from-[#1a0b2e] via-[#0f0524] to-[#0a0118] px-4 py-16 sm:py-24 text-zinc-100">
+        {/* ── Atmospheric layers (CSS-only, SSR-safe) ── */}
+        <div className="pointer-events-none absolute inset-0">
+          {/* Constellation (40 faint stars) */}
+          {Array.from({ length: 40 }, (_, i) => (
+            <span
+              key={i}
+              className="absolute rounded-full bg-zinc-200"
+              style={{
+                top: `${(i * 47) % 100}%`,
+                left: `${(i * 79) % 100}%`,
+                width: (i % 4) + 1,
+                height: (i % 4) + 1,
+                opacity: 0.4,
+              }}
+            />
+          ))}
+          {/* Bokeh */}
+          {Array.from({ length: 8 }, (_, i) => (
+            <span
+              key={i}
+              className="absolute rounded-full blur-3xl"
+              style={{
+                top: `${20 + (i * 41) % 65}%`,
+                left: `${(i * 47) % 100}%`,
+                width: 80 + (i * 17) % 80,
+                height: 80 + (i * 17) % 80,
+                background: `radial-gradient(circle, hsla(${280 + (i * 27) % 60}, 70%, 50%, 0.15) 0%, transparent 70%)`,
+              }}
+            />
+          ))}
+          {/* Holographic radial */}
+          <div
+            className="absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/3"
+            style={{ background: 'radial-gradient(ellipse, rgba(168,85,247,0.15) 0%, transparent 70%)' }}
+          />
+        </div>
+
         {/* Hero */}
-        <div className="text-center space-y-4">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+        <div className="relative z-10 text-center space-y-4">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-amber-200/80 sm:text-sm">
+            ✦ Choose your journey ✦
+          </p>
+          <h1 className="bg-gradient-to-r from-amber-200 via-rose-200 to-purple-200 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl lg:text-5xl">
             {t('pricing.title')}
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-zinc-500 dark:text-zinc-400">
+          <p className="mx-auto max-w-2xl text-lg text-zinc-300/90">
             {t('pricing.subtitle')}
           </p>
 
@@ -130,7 +170,7 @@ export default async function PricingPage({
             {gatewayBadges.map(({ emoji, label }) => (
               <span
                 key={label}
-                className="inline-flex items-center gap-1 rounded-full border border-zinc-200 px-3 py-1 text-xs font-medium text-zinc-600 dark:border-zinc-700 dark:text-zinc-400"
+                className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium text-zinc-200 backdrop-blur"
               >
                 {emoji} {label}
               </span>
@@ -146,7 +186,7 @@ export default async function PricingPage({
         </div>
 
         {/* Pricing cards */}
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="relative z-10 mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {tiers.map(({ key, badge, monthly, quarterly, yearly }) => {
             const name = t(`pricing.tiers.${key}.name`)
             const features = ta(t, `pricing.tiers.${key}.features`, [])
@@ -159,36 +199,36 @@ export default async function PricingPage({
             return (
               <div
                 key={key}
-                className={`relative flex flex-col rounded-2xl border bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:bg-zinc-900 ${
+                className={`group relative flex flex-col rounded-3xl border bg-white/5 p-6 backdrop-blur-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${
                   badge
-                    ? 'border-purple-300 ring-2 ring-purple-100 dark:border-purple-700 dark:ring-purple-900/30'
-                    : 'border-zinc-200 dark:border-zinc-800'
+                    ? 'border-amber-300/40 ring-2 ring-amber-300/20'
+                    : 'border-white/10 hover:border-amber-300/30 hover:bg-white/10'
                 }`}
               >
                 {badge && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-purple-600 px-3 py-0.5 text-xs font-semibold text-white shadow-sm">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-amber-400 to-rose-500 px-3 py-0.5 text-xs font-semibold text-white shadow-sm">
                     {badge}
                   </span>
                 )}
 
                 <div className="text-center">
-                  <h3 className="text-lg font-semibold">{name}</h3>
+                  <h3 className="text-lg font-semibold text-zinc-100">{name}</h3>
 
                   {isActive ? (
                     <div className="mt-3 space-y-1">
                       <div className="flex items-baseline justify-center gap-1">
-                        <span className="text-3xl font-bold">
+                        <span className="bg-gradient-to-r from-amber-200 to-rose-200 bg-clip-text text-3xl font-bold text-transparent">
                           {getDisplayPrice(monthly, currency)}
                         </span>
-                        <span className="text-sm text-zinc-500 dark:text-zinc-400">
+                        <span className="text-sm text-zinc-400">
                           /mo
                         </span>
                       </div>
                       {/* Yearly save badge */}
                       {yearlyDiscountPct > 0 && (
-                        <div className="text-xs text-green-600 dark:text-green-400">
+                        <div className="text-xs text-emerald-400">
                           {getDisplayPrice(yearly, currency)}/yr —{' '}
-                          <span className="line-through text-zinc-400">
+                          <span className="line-through text-zinc-500">
                             {getDisplayPrice(originalYearly, currency)}
                           </span>{' '}
                           {saveTemplate.replace('{discount}', String(yearlyDiscountPct))}
@@ -197,7 +237,7 @@ export default async function PricingPage({
                     </div>
                   ) : (
                     <div className="mt-3 flex items-baseline justify-center gap-1">
-                      <span className="text-3xl font-bold">
+                      <span className="bg-gradient-to-r from-amber-200 to-rose-200 bg-clip-text text-3xl font-bold text-transparent">
                         {monthly === 0 ? t('pricing.free') : getDisplayPrice(monthly, currency)}
                       </span>
                     </div>
@@ -208,10 +248,10 @@ export default async function PricingPage({
                   {features.map((feat, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-400"
+                      className="flex items-start gap-2 text-sm text-zinc-300"
                     >
                       <svg
-                        className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500"
+                        className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-400"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -225,10 +265,6 @@ export default async function PricingPage({
                 </ul>
 
                 {isActive ? (
-                  // Interactive pricing card with period selector.
-                  // Pre-translated `labels` are resolved in this RSC and
-                  // passed as plain strings — t() cannot cross the
-                  // RSC→Client boundary (serialisation error).
                   <PricingCard
                     labels={labels}
                     locale={locale}
@@ -244,10 +280,10 @@ export default async function PricingPage({
                 ) : (
                   <Link
                     href="/login"
-                    className={`mt-6 block rounded-full py-2.5 text-center text-sm font-semibold transition-colors ${
+                    className={`mt-6 block rounded-full py-2.5 text-center text-sm font-semibold transition-all ${
                       badge
-                        ? 'bg-purple-600 text-white hover:bg-purple-700'
-                        : 'bg-zinc-900 text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200'
+                        ? 'bg-gradient-to-r from-amber-400 to-rose-500 text-white shadow-lg shadow-rose-500/30 hover:from-amber-500 hover:to-rose-600'
+                        : 'border border-white/15 bg-white/5 text-zinc-100 backdrop-blur hover:bg-white/10 hover:border-amber-300/30'
                     }`}
                   >
                     {key === 'free' ? t('pricing.ctaFree') : t('pricing.cta')}
@@ -259,25 +295,25 @@ export default async function PricingPage({
         </div>
 
         {/* Promo code input (placeholder for future batch) */}
-        <div className="mt-12 mx-auto max-w-sm">
-          <div className="flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-1 py-1 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
+        <div className="relative z-10 mt-12 mx-auto max-w-sm">
+          <div className="flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-1 py-1 shadow-sm backdrop-blur">
             <input
               type="text"
               placeholder={t('pricing.promoPlaceholder')}
-              className="flex-1 bg-transparent px-3 py-1.5 text-sm text-zinc-900 outline-none placeholder:text-zinc-400 dark:text-zinc-100"
+              className="flex-1 bg-transparent px-3 py-1.5 text-sm text-zinc-100 outline-none placeholder:text-zinc-500"
               disabled
             />
-            <span className="rounded-full bg-zinc-200 px-4 py-1.5 text-xs font-medium text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+            <span className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-medium text-zinc-300">
               {t('pricing.promoApply')}
             </span>
           </div>
-          <p className="mt-2 text-center text-xs text-zinc-400">
+          <p className="mt-2 text-center text-xs text-zinc-500">
             {t('pricing.promoHint')}
           </p>
         </div>
 
         {/* Guarantee */}
-        <p className="mt-6 text-center text-sm text-zinc-500 dark:text-zinc-400">
+        <p className="relative z-10 mt-6 text-center text-sm text-zinc-400">
           🛡️ {t('pricing.guarantee')}
         </p>
       </div>
