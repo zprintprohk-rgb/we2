@@ -1,6 +1,6 @@
 /* ============================================
    DesktopPet - 桌面宠物组件样式
-   雪碧图: 500x64 (8 帧 × 64x64)
+   雪碧图: 512x64 (8 帧 × 64x64)
    帧映射:
      0-1   (0 → -128px)  idle
      2-3   (-128 → -256)  working
@@ -34,7 +34,7 @@
   height: 100%;
   background-image: url('/pet-sprite.png');
   background-repeat: no-repeat;
-  background-size: 500px 64px;
+  background-size: 512px 64px;
   background-position: 0 0;
   image-rendering: pixelated;
   pointer-events: none;
