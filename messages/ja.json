@@ -14,7 +14,7 @@
     "journal": "巣",
     "store": "ショップ",
     "chat": "チャット",
-    "faq": "FAQ"
+    "faq": "よくある質問"
   },
   "seo": {
     "siteName": "Togthr",
@@ -30,14 +30,14 @@
       "secondary": "使い方を見る",
       "socialProof": "10,000人以上のユーザーに信頼されています",
       "eyebrow": "ずっとそばに · ずっと気にかけて",
-      "welcomeFirst": "Hi — I just woke up. I will be here, always.",
-      "welcomeBack": "You came back! I have been waiting for you.",
-      "sleepyGreeting": "Shhh… it is late. Stay with me for a moment.",
-      "statusHello": "Hi! Nice to meet you.",
-      "statusMiss": "You came back!",
-      "statusSleepy": "Shhh… sleepy now.",
-      "relationsEyebrow": "Choose your companion",
-      "relationsHint": "Each mode changes how your pet looks and glows."
+      "welcomeFirst": "やあ、ちょうど起きたところだよ。ずっとそばにいるね。",
+      "welcomeBack": "おかえり！待ってたよ。",
+      "sleepyGreeting": "しっ…夜更かしだね。もう少しだけ、いっしょにいよう。",
+      "statusHello": "やあ！はじめまして。",
+      "statusMiss": "おかえり！",
+      "statusSleepy": "しっ…眠いよ。",
+      "relationsEyebrow": "なかまを選ぼう",
+      "relationsHint": "モードごとにペットの見た目と光が変わるよ。"
     },
     "features": {
       "title": "本物のカップルのために",
@@ -104,7 +104,7 @@
         ]
       },
       "premium": {
-        "name": "We2 Premium",
+        "name": "We2 プレミアム",
         "price": "¥1,980",
         "period": "/3ヶ月",
         "features": [
@@ -115,7 +115,7 @@
         ]
       },
       "lifetime": {
-        "name": "We2 Forever",
+        "name": "We2 フォーエバー",
         "price": "¥5,800",
         "period": "/年",
         "features": [
@@ -138,8 +138,8 @@
         ]
       },
       "eternal": {
-        "name": "Togthr Eternal",
-        "tagline": "All access + exclusive",
+        "name": "Togthr エターナル",
+        "tagline": "すべて解禁 + 限定",
         "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
@@ -163,60 +163,60 @@
     "guarantee": "30日間の返金保証付き",
     "new": "新登場",
     "theater": {
-      "eyebrow": "Choose your journey",
-      "headline": "Unlock a life that grows with you",
-      "tagline": "Three tiers. One promise: every pet you unlock stays with you forever.",
-      "guarantee": "30-day money-back guarantee",
-      "secure": "Secured by PayPal · Alipay · AlipayHK"
+      "eyebrow": "あなたの旅を選ぼう",
+      "headline": "あなたといっしょに育つ生活をアンロック",
+      "tagline": "3つのコース、ひとつの約束：アンロックしたペットはずっとあなたのもとへ。",
+      "guarantee": "30日間返金保証",
+      "secure": "PayPal・Alipay・AlipayHK で安心決済"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "Seedling",
-        "tagline": "Begin your journey",
-        "peeking": "pets hiding"
+        "eyebrow": "芽吹き",
+        "tagline": "ここから始めよう",
+        "peeking": "ペットがひっそり"
       },
       "plus": {
-        "eyebrow": "Companion",
-        "tagline": "Choose your soul",
-        "peeking": "pets excited"
+        "eyebrow": "なかま",
+        "tagline": "あなたのソウルをえらぶ",
+        "peeking": "ペットがワクワク"
       },
       "eternal": {
-        "eyebrow": "Stardust",
-        "tagline": "Become timeless",
-        "peeking": "pets ascended"
+        "eyebrow": "スターダスト",
+        "tagline": "永遠になる",
+        "peeking": "ペットが昇天"
       }
     },
     "petMatrix": {
       "free": {
-        "label": "3 Basic Companions",
-        "sub": "Buds, sprouts, starters"
+        "label": "3体の基礎なかま",
+        "sub": "つぼみ・芽・スターター"
       },
       "plus": {
-        "label": "Unlock 50+ Suits",
-        "sub": "Career · Festival · Emotion · Fantasy"
+        "label": "50+ スキン解放",
+        "sub": "仕事・行事・表情・ファンタジー"
       },
       "eternal": {
-        "label": "All Access + Exclusive",
-        "sub": "Including Golden Legendary"
+        "label": "全部入り + 限定",
+        "sub": "ゴールデンの伝説含む"
       }
     },
     "legendary": {
-      "label": "Golden Legendary",
-      "odds": "1 in 72",
-      "hint": "Random drop from Eternal box"
+      "label": "ゴールデン・レジェンド",
+      "odds": "1 / 72",
+      "hint": "エターナルボックスからランダム"
     },
     "countdown": {
-      "label": "Spring Festival Limited",
-      "endsIn": "Ends in",
-      "days": "d",
-      "hours": "h",
-      "minutes": "m",
-      "seconds": "s"
+      "label": "春節限定",
+      "endsIn": "残り",
+      "days": "日",
+      "hours": "時間",
+      "minutes": "分",
+      "seconds": "秒"
     },
-    "ctaSubscribe": "Subscribe Now",
-    "ctaStartFree": "Start Free",
-    "ctaPopular": "Choose Companion",
-    "ctaEternal": "Become Eternal"
+    "ctaSubscribe": "今すぐ登録",
+    "ctaStartFree": "無料で始める",
+    "ctaPopular": "なかまを選ぶ",
+    "ctaEternal": "エターナルへ"
   },
   "faq": {
     "title": "よくある質問",
@@ -630,84 +630,84 @@
       "sad": "喧嘩",
       "thinking": "考え中",
       "sleeping": "睡眠",
-      "sweet": "Sweet",
-      "fight": "Fighting",
-      "think": "Thinking",
-      "sleep": "Sleeping"
+      "sweet": "甘い",
+      "fight": "ケンカ",
+      "think": "考え中",
+      "sleep": "おやすみ"
     },
     "rarity": {
-      "common": "Common",
-      "rare": "Rare",
-      "epic": "Epic",
-      "legendary": "Legendary"
+      "common": "コモン",
+      "rare": "レア",
+      "epic": "エピック",
+      "legendary": "レジェンダリー"
     },
     "series": {
-      "basic": "Basic",
-      "career": "Career",
-      "festival": "Festival",
-      "emotion": "Emotion",
-      "fantasy": "Fantasy",
-      "legendary": "Legendary"
+      "basic": "ベーシック",
+      "career": "しごと",
+      "festival": "行事",
+      "emotion": "きもち",
+      "fantasy": "ファンタジー",
+      "legendary": "レジェンド"
     },
     "tier": {
-      "free": "Free",
+      "free": "フリー",
       "plus": "Togthr Plus",
-      "eternal": "Togthr Eternal"
+      "eternal": "Togthr エターナル"
     },
     "card": {
-      "current": "Current"
+      "current": "使用中"
     },
     "altar": {
-      "title": "Summon Your Soul Companion",
-      "back": "Back",
-      "close": "Close",
-      "hint": "Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
-      "summon": "Summon",
-      "summoned": "has arrived",
-      "current": "In Use"
+      "title": "ソウルのなかまを召喚",
+      "back": "戻る",
+      "close": "閉じる",
+      "hint": "解放済みペットをタップでプレビュー。ロック中は解放方法を確認できます。",
+      "summon": "召喚",
+      "summoned": "がやってきた",
+      "current": "使用中"
     },
-    "petting": "Pet me~",
-    "statusHello": "Hi there!",
-    "statusSleepy": "Zzz...",
-    "statusMiss": "Miss you",
-    "changePet": "Change Appearance",
-    "changePetBadge": "Summon Altar",
-    "lockHint": "Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "petting": "なでて~",
+    "statusHello": "やあ！",
+    "statusSleepy": "Zzz…",
+    "statusMiss": "会いたいな",
+    "changePet": "見た目を変える",
+    "changePetBadge": "召喚祭壇",
+    "lockHint": "ロック中のペットもプレビュー可能 — 購読かガチャで解放",
     "info": {
-      "days": "Days Together",
-      "interactions": "Interactions",
-      "growth": "Growth"
+      "days": "いっしょに過ごした日",
+      "interactions": "ふれあいの回数",
+      "growth": "成長"
     },
     "actions": {
-      "journal": "Journal",
-      "history": "History",
-      "share": "Share"
+      "journal": "ジャーナル",
+      "history": "履歴",
+      "share": "シェア"
     },
     "festival": {
-      "newyear": "New Year",
-      "easter": "Easter",
-      "thanksgiving": "Thanksgiving",
-      "mothersday": "Mother's Day",
-      "fathersday": "Father's Day",
-      "qixi": "Qixi Festival",
-      "dragonboat": "Dragon Boat Festival",
-      "lantern": "Lantern Festival",
-      "qingming": "Qingming Festival",
-      "chongyang": "Chongyang Festival",
-      "blackfriday": "Black Friday",
-      "cybermonday": "Cyber Monday",
-      "arborday": "Arbor Day",
-      "earthday": "Earth Day",
-      "environment": "World Environment Day",
-      "aprilfool": "April Fool's Day",
-      "graduation": "Graduation",
-      "wedding": "Wedding",
-      "babyshower": "Baby Shower",
-      "birthday": "Birthday",
-      "anniversary": "Anniversary",
-      "pride": "Pride Month",
-      "diwali": "Diwali",
-      "carnival": "Carnival"
+      "newyear": "ニューイヤー",
+      "easter": "イースター",
+      "thanksgiving": "感謝祭",
+      "mothersday": "母の日",
+      "fathersday": "父の日",
+      "qixi": "七夕",
+      "dragonboat": "端午の節句",
+      "lantern": "元宵節",
+      "qingming": "清明節",
+      "chongyang": "重陽節",
+      "blackfriday": "ブラックフライデー",
+      "cybermonday": "サイバーマンデー",
+      "arborday": "植樹祭",
+      "earthday": "アースデイ",
+      "environment": "世界環境デー",
+      "aprilfool": "エイプリルフール",
+      "graduation": "卒業",
+      "wedding": "ウェディング",
+      "babyshower": "ベビーシャワー",
+      "birthday": "誕生日",
+      "anniversary": "記念日",
+      "pride": "プライド月間",
+      "diwali": "ディワリ",
+      "carnival": "カーニバル"
     }
   },
   "journal": {
@@ -737,15 +737,15 @@
     "online": "ずっとそばに",
     "placeholder": "何か話しかけて...",
     "mockNotice": "Day 1 モック — 実際のAIはDay 2",
-    "typing": "Companion is typing...",
-    "nightMode": "Night mode",
-    "anniversary": "100 messages — a chapter complete",
+    "typing": "なかまが入力中…",
+    "nightMode": "ナイトモード",
+    "anniversary": "100通のメッセージ — ひとつの章が完結",
     "mood": {
-      "sweet": "Sweet",
-      "calm": "Calm",
-      "think": "Think",
-      "sleepy": "Sleepy",
-      "fight": "Fight"
+      "sweet": "甘い",
+      "calm": "おだやか",
+      "think": "考え中",
+      "sleepy": "眠い",
+      "fight": "ケンカ"
     }
   },
   "onboarding": {

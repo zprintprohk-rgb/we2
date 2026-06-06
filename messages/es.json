@@ -14,7 +14,7 @@
     "journal": "Nido",
     "store": "Tienda",
     "chat": "Chat",
-    "faq": "FAQ"
+    "faq": "Preguntas"
   },
   "seo": {
     "siteName": "Togthr",
@@ -30,14 +30,14 @@
       "secondary": "Ver cómo funciona",
       "socialProof": "Más de 10 000 usuarios en todo el mundo",
       "eyebrow": "Siempre aquí · Siempre atento",
-      "welcomeFirst": "Hi — I just woke up. I will be here, always.",
-      "welcomeBack": "You came back! I have been waiting for you.",
-      "sleepyGreeting": "Shhh… it is late. Stay with me for a moment.",
-      "statusHello": "Hi! Nice to meet you.",
-      "statusMiss": "You came back!",
-      "statusSleepy": "Shhh… sleepy now.",
-      "relationsEyebrow": "Choose your companion",
-      "relationsHint": "Each mode changes how your pet looks and glows."
+      "welcomeFirst": "¡Hola! Acabo de despertar. Estaré aquí, siempre.",
+      "welcomeBack": "¡Volviste! Te estaba esperando.",
+      "sleepyGreeting": "Shhh… es tarde. Quédate un momento conmigo.",
+      "statusHello": "¡Hola! Mucho gusto.",
+      "statusMiss": "¡Volviste!",
+      "statusSleepy": "Shhh… tengo sueño.",
+      "relationsEyebrow": "Elige a tu compañero",
+      "relationsHint": "Cada modo cambia el aspecto y el brillo de tu mascota."
     },
     "features": {
       "title": "Diseñado para parejas reales",
@@ -115,7 +115,7 @@
         ]
       },
       "lifetime": {
-        "name": "We2 Forever",
+        "name": "We2 Para Siempre",
         "price": "39,99€",
         "period": "/año",
         "features": [
@@ -139,7 +139,7 @@
       },
       "eternal": {
         "name": "Togthr Eternal",
-        "tagline": "All access + exclusive",
+        "tagline": "Todo incluido + exclusivo",
         "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
@@ -163,60 +163,60 @@
     "guarantee": "Garantía de devolución de 30 días",
     "new": "Nuevo",
     "theater": {
-      "eyebrow": "Choose your journey",
-      "headline": "Unlock a life that grows with you",
-      "tagline": "Three tiers. One promise: every pet you unlock stays with you forever.",
-      "guarantee": "30-day money-back guarantee",
-      "secure": "Secured by PayPal · Alipay · AlipayHK"
+      "eyebrow": "Elige tu camino",
+      "headline": "Desbloquea una vida que crece contigo",
+      "tagline": "Tres niveles. Una promesa: cada mascota que desbloquees se queda contigo para siempre.",
+      "guarantee": "Garantía de devolución de 30 días",
+      "secure": "Pagos seguros con PayPal · Alipay · AlipayHK"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "Seedling",
-        "tagline": "Begin your journey",
-        "peeking": "pets hiding"
+        "eyebrow": "Brote",
+        "tagline": "Empieza tu camino",
+        "peeking": "mascotas escondidas"
       },
       "plus": {
-        "eyebrow": "Companion",
-        "tagline": "Choose your soul",
-        "peeking": "pets excited"
+        "eyebrow": "Compañero",
+        "tagline": "Elige tu alma",
+        "peeking": "mascotas emocionadas"
       },
       "eternal": {
-        "eyebrow": "Stardust",
-        "tagline": "Become timeless",
-        "peeking": "pets ascended"
+        "eyebrow": "Polvo de estrellas",
+        "tagline": "Vuélvete atemporal",
+        "peeking": "mascotas ascendidas"
       }
     },
     "petMatrix": {
       "free": {
-        "label": "3 Basic Companions",
-        "sub": "Buds, sprouts, starters"
+        "label": "3 compañeros básicos",
+        "sub": "Brotes, semillas, iniciadores"
       },
       "plus": {
-        "label": "Unlock 50+ Suits",
-        "sub": "Career · Festival · Emotion · Fantasy"
+        "label": "Desbloquea 50+ atuendos",
+        "sub": "Profesión · Fiesta · Emoción · Fantasía"
       },
       "eternal": {
-        "label": "All Access + Exclusive",
-        "sub": "Including Golden Legendary"
+        "label": "Todo incluido + exclusivo",
+        "sub": "Incluye la leyenda dorada"
       }
     },
     "legendary": {
-      "label": "Golden Legendary",
-      "odds": "1 in 72",
-      "hint": "Random drop from Eternal box"
+      "label": "Leyenda dorada",
+      "odds": "1 / 72",
+      "hint": "Drop aleatorio de la caja Eternal"
     },
     "countdown": {
-      "label": "Spring Festival Limited",
-      "endsIn": "Ends in",
+      "label": "Edición Festival de Primavera",
+      "endsIn": "Termina en",
       "days": "d",
       "hours": "h",
       "minutes": "m",
       "seconds": "s"
     },
-    "ctaSubscribe": "Subscribe Now",
-    "ctaStartFree": "Start Free",
-    "ctaPopular": "Choose Companion",
-    "ctaEternal": "Become Eternal"
+    "ctaSubscribe": "Suscribirse",
+    "ctaStartFree": "Empezar gratis",
+    "ctaPopular": "Elegir compañero",
+    "ctaEternal": "Hacerse Eternal"
   },
   "faq": {
     "title": "Preguntas frecuentes",
@@ -386,64 +386,64 @@
       "step3": "Estableced fechas objetivo y seguid el progreso juntos",
       "step4": "Celebrad cada logro con una animación especial"
     },
-    "backToFeatures": "Back to Features",
-    "howItWorks": "How It Works",
-    "tryItOut": "Try It Out"
+    "backToFeatures": "Volver a funciones",
+    "howItWorks": "Cómo funciona",
+    "tryItOut": "Pruébalo"
   },
   "demo": {
     "dailyCheckIn": {
-      "title": "Today's Question",
-      "placeholder": "Share your moment...",
-      "save": "Save Answer",
-      "saved": "Answer saved!",
-      "nextQuestion": "Next question →",
-      "history": "Your Answers",
-      "empty": "Start your first check-in"
+      "title": "Pregunta de hoy",
+      "placeholder": "Comparte tu momento...",
+      "save": "Guardar respuesta",
+      "saved": "¡Respuesta guardada!",
+      "nextQuestion": "Siguiente pregunta →",
+      "history": "Tus respuestas",
+      "empty": "Empieza tu primer check-in"
     },
     "timeCapsules": {
-      "title": "Memory Capsules",
-      "titlePlaceholder": "A title for our future...",
-      "contentPlaceholder": "Write down this moment...",
-      "lockCapsule": "Lock Capsule 🔒",
-      "empty": "Create your first memory capsule",
-      "unlocked": "Unlocked",
-      "daysLeft": "{days} days left",
-      "noContent": "(No content)"
+      "title": "Cápsulas de memoria",
+      "titlePlaceholder": "Un título para nuestro futuro...",
+      "contentPlaceholder": "Escribe este momento...",
+      "lockCapsule": "Cerrar cápsula 🔒",
+      "empty": "Crea tu primera cápsula",
+      "unlocked": "Abierta",
+      "daysLeft": "{days} días restantes",
+      "noContent": "(Sin contenido)"
     },
     "virtualPet": {
-      "title": "Your Pet",
+      "title": "Tu mascota",
       "petName": "Luna",
-      "virtualCompanion": "Virtual Companion",
-      "level": "Level {level}",
-      "hunger": "Hunger",
-      "happiness": "Happiness",
-      "intimacy": "Intimacy",
-      "feed": "Feed",
-      "play": "Play",
-      "cuddle": "Cuddle"
+      "virtualCompanion": "Compañero virtual",
+      "level": "Nivel {level}",
+      "hunger": "Hambre",
+      "happiness": "Felicidad",
+      "intimacy": "Intimidad",
+      "feed": "Alimentar",
+      "play": "Jugar",
+      "cuddle": "Abrazo"
     },
     "privateCommunity": {
-      "title": "Community Stories"
+      "title": "Historias de la comunidad"
     },
     "sharedJournal": {
-      "title": "Shared Journal",
-      "placeholder": "Write today's entry...",
-      "writeEntry": "Write Entry",
-      "you": "You",
-      "partner": "Partner"
+      "title": "Diario compartido",
+      "placeholder": "Escribe la entrada de hoy...",
+      "writeEntry": "Escribir entrada",
+      "you": "Tú",
+      "partner": "Pareja"
     },
     "dreamWall": {
-      "title": "Dream Wall",
-      "placeholder": "Our next big dream...",
-      "pin": "Pin",
-      "empty": "Pin your first dream to the wall"
+      "title": "Muro de sueños",
+      "placeholder": "Nuestro próximo gran sueño...",
+      "pin": "Fijar",
+      "empty": "Fija tu primer sueño en el muro"
     }
   },
   "legal": {
-    "lastUpdated": "Last updated: June 1, 2026",
+    "lastUpdated": "Última actualización: 1 de junio de 2026",
     "privacy": {
-      "title": "Privacy Policy",
-      "subtitle": "Your privacy matters. This page explains what data we collect, how we use it, and the rights you have over your information.",
+      "title": "Política de privacidad",
+      "subtitle": "Tu privacidad importa. Esta página explica qué datos recogemos, cómo los usamos y los derechos que tienes sobre tu información.",
       "sections": [
         {
           "heading": "1. Information We Collect",
@@ -468,8 +468,8 @@
       ]
     },
     "terms": {
-      "title": "Terms of Service",
-      "subtitle": "By using We2 you agree to the following terms. Please read them carefully — they protect both you and us.",
+      "title": "Términos del servicio",
+      "subtitle": "Al usar We2 aceptas los siguientes términos. Léelos con atención: te protegen a ti y a nosotros.",
       "sections": [
         {
           "heading": "1. Eligibility",
@@ -502,8 +502,8 @@
       ]
     },
     "cookies": {
-      "title": "Cookie Policy",
-      "subtitle": "We use a minimal set of cookies to keep We2 running smoothly. Here's exactly what we set and why.",
+      "title": "Política de cookies",
+      "subtitle": "Usamos un conjunto mínimo de cookies para que We2 funcione sin problemas. Aquí ves exactamente cuáles ponemos y por qué.",
       "sections": [
         {
           "heading": "1. Essential Cookies",
@@ -524,8 +524,8 @@
       ]
     },
     "help": {
-      "title": "Help Center",
-      "subtitle": "Find quick answers to the most common questions. Can't find what you need? Reach out and we'll be happy to help.",
+      "title": "Centro de ayuda",
+      "subtitle": "Respuestas rápidas a las preguntas más comunes. ¿No encuentras lo que necesitas? Escríbenos y te ayudaremos con gusto.",
       "sections": [
         {
           "heading": "Getting Started",
@@ -550,8 +550,8 @@
       ]
     },
     "contact": {
-      "title": "Contact Us",
-      "subtitle": "We'd love to hear from you. Choose the channel that best fits your question.",
+      "title": "Contáctanos",
+      "subtitle": "Nos encantaría saber de ti. Elige el canal que mejor se adapte a tu pregunta.",
       "sections": [
         {
           "heading": "General Support",
@@ -630,84 +630,84 @@
       "sad": "Pelea",
       "thinking": "Pensando",
       "sleeping": "Durmiendo",
-      "sweet": "Sweet",
-      "fight": "Fighting",
-      "think": "Thinking",
-      "sleep": "Sleeping"
+      "sweet": "Dulce",
+      "fight": "Pelea",
+      "think": "Pensando",
+      "sleep": "Durmiendo"
     },
     "rarity": {
-      "common": "Common",
-      "rare": "Rare",
-      "epic": "Epic",
-      "legendary": "Legendary"
+      "common": "Común",
+      "rare": "Rara",
+      "epic": "Épica",
+      "legendary": "Legendaria"
     },
     "series": {
-      "basic": "Basic",
-      "career": "Career",
-      "festival": "Festival",
-      "emotion": "Emotion",
-      "fantasy": "Fantasy",
-      "legendary": "Legendary"
+      "basic": "Básica",
+      "career": "Profesión",
+      "festival": "Fiesta",
+      "emotion": "Emoción",
+      "fantasy": "Fantasía",
+      "legendary": "Legendaria"
     },
     "tier": {
-      "free": "Free",
+      "free": "Gratis",
       "plus": "Togthr Plus",
       "eternal": "Togthr Eternal"
     },
     "card": {
-      "current": "Current"
+      "current": "Actual"
     },
     "altar": {
-      "title": "Summon Your Soul Companion",
-      "back": "Back",
-      "close": "Close",
-      "hint": "Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
-      "summon": "Summon",
-      "summoned": "has arrived",
-      "current": "In Use"
+      "title": "Invoca a tu compañero del alma",
+      "back": "Atrás",
+      "close": "Cerrar",
+      "hint": "Toca una mascota desbloqueada para previsualizar. En una bloqueada verás cómo desbloquearla.",
+      "summon": "Invocar",
+      "summoned": "ha llegado",
+      "current": "En uso"
     },
-    "petting": "Pet me~",
-    "statusHello": "Hi there!",
-    "statusSleepy": "Zzz...",
-    "statusMiss": "Miss you",
-    "changePet": "Change Appearance",
-    "changePetBadge": "Summon Altar",
-    "lockHint": "Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "petting": "Acaríciame~",
+    "statusHello": "¡Hola!",
+    "statusSleepy": "Zzz…",
+    "statusMiss": "Te extraño",
+    "changePet": "Cambiar aspecto",
+    "changePetBadge": "Altar de invocación",
+    "lockHint": "Las mascotas bloqueadas también se previsualizan — suscríbete o abre cajas sorpresa para desbloquearlas",
     "info": {
-      "days": "Days Together",
-      "interactions": "Interactions",
-      "growth": "Growth"
+      "days": "Días juntos",
+      "interactions": "Interacciones",
+      "growth": "Crecimiento"
     },
     "actions": {
-      "journal": "Journal",
-      "history": "History",
-      "share": "Share"
+      "journal": "Diario",
+      "history": "Historial",
+      "share": "Compartir"
     },
     "festival": {
-      "newyear": "New Year",
-      "easter": "Easter",
-      "thanksgiving": "Thanksgiving",
-      "mothersday": "Mother's Day",
-      "fathersday": "Father's Day",
-      "qixi": "Qixi Festival",
-      "dragonboat": "Dragon Boat Festival",
-      "lantern": "Lantern Festival",
-      "qingming": "Qingming Festival",
-      "chongyang": "Chongyang Festival",
+      "newyear": "Año Nuevo",
+      "easter": "Pascua",
+      "thanksgiving": "Acción de Gracias",
+      "mothersday": "Día de la Madre",
+      "fathersday": "Día del Padre",
+      "qixi": "Festival Qixi",
+      "dragonboat": "Festival del Bote del Dragón",
+      "lantern": "Festival de los Faroles",
+      "qingming": "Festival Qingming",
+      "chongyang": "Festival Chongyang",
       "blackfriday": "Black Friday",
       "cybermonday": "Cyber Monday",
-      "arborday": "Arbor Day",
-      "earthday": "Earth Day",
-      "environment": "World Environment Day",
-      "aprilfool": "April Fool's Day",
-      "graduation": "Graduation",
-      "wedding": "Wedding",
+      "arborday": "Día del Árbol",
+      "earthday": "Día de la Tierra",
+      "environment": "Día Mundial del Medio Ambiente",
+      "aprilfool": "Día de los Inocentes",
+      "graduation": "Graduación",
+      "wedding": "Boda",
       "babyshower": "Baby Shower",
-      "birthday": "Birthday",
-      "anniversary": "Anniversary",
-      "pride": "Pride Month",
+      "birthday": "Cumpleaños",
+      "anniversary": "Aniversario",
+      "pride": "Mes del Orgullo",
       "diwali": "Diwali",
-      "carnival": "Carnival"
+      "carnival": "Carnaval"
     }
   },
   "journal": {
@@ -737,15 +737,15 @@
     "online": "Siempre aquí",
     "placeholder": "Di algo...",
     "mockNotice": "Mock Día 1 — IA real Día 2",
-    "typing": "Companion is typing...",
-    "nightMode": "Night mode",
-    "anniversary": "100 messages — a chapter complete",
+    "typing": "El compañero está escribiendo...",
+    "nightMode": "Modo nocturno",
+    "anniversary": "100 mensajes — un capítulo completo",
     "mood": {
-      "sweet": "Sweet",
-      "calm": "Calm",
-      "think": "Think",
-      "sleepy": "Sleepy",
-      "fight": "Fight"
+      "sweet": "Dulce",
+      "calm": "Calma",
+      "think": "Pensar",
+      "sleepy": "Adormilado",
+      "fight": "Pelea"
     }
   },
   "onboarding": {

@@ -85,3 +85,14 @@ locale-report.json
 .translation-baseline.json
 upload-translations.json
 components.json
+
+# ── Local dev artifacts (never commit) ──
+# Dev server background logs
+dev-bg*.err
+dev-bg*.log
+dev-bg*.out
+# Worker transient scripts
+.gen-*.js
+# Window-generated text files (Chinese names)
+新建文本文档/
+新建文本文档.*

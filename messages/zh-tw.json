@@ -14,7 +14,7 @@
     "journal": "築巢",
     "store": "商店",
     "chat": "聊天",
-    "faq": "FAQ"
+    "faq": "常見問題"
   },
   "seo": {
     "siteName": "Togthr",
@@ -30,14 +30,14 @@
       "secondary": "看看怎麼用",
       "socialProof": "全球 10,000+ 用戶信賴",
       "eyebrow": "一直都在 · 一直都在意",
-      "welcomeFirst": "Hi — I just woke up. I will be here, always.",
-      "welcomeBack": "You came back! I have been waiting for you.",
-      "sleepyGreeting": "Shhh… it is late. Stay with me for a moment.",
-      "statusHello": "Hi! Nice to meet you.",
-      "statusMiss": "You came back!",
-      "statusSleepy": "Shhh… sleepy now.",
-      "relationsEyebrow": "Choose your companion",
-      "relationsHint": "Each mode changes how your pet looks and glows."
+      "welcomeFirst": "嗨，我啱啱醒。我會一直喺度㗎。",
+      "welcomeBack": "你返嚟啦！我等咗你好耐喇。",
+      "sleepyGreeting": "嘘…夜啦。陪我多坐一陣啦。",
+      "statusHello": "嗨！你好呀。",
+      "statusMiss": "你返嚟啦！",
+      "statusSleepy": "嘘…我眼瞓喇。",
+      "relationsEyebrow": "揀一個陪你嘅佢",
+      "relationsHint": "每種模式都會改變寵物嘅樣同光環。"
     },
     "features": {
       "title": "為真實的情侶關係設計",
@@ -84,7 +84,7 @@
     "tiers": {
       "free": {
         "name": "免費版",
-        "price": "$0",
+        "price": "HK$0",
         "features": [
           "每日打卡",
           "3 個時光膠囊",
@@ -94,7 +94,7 @@
       },
       "plus": {
         "name": "Togthr Plus",
-        "price": "$5.49",
+        "price": "HK$43",
         "period": "/月",
         "features": [
           "無限膠囊",
@@ -104,8 +104,8 @@
         ]
       },
       "premium": {
-        "name": "We2 Premium",
-        "price": "$13.99",
+        "name": "We2 高級版",
+        "price": "HK$108",
         "period": "/季",
         "features": [
           "Plus 所有功能",
@@ -116,7 +116,7 @@
       },
       "lifetime": {
         "name": "We2 永久版",
-        "price": "$39.99",
+        "price": "HK$310",
         "period": "/年",
         "features": [
           "Premium 所有功能",
@@ -138,8 +138,8 @@
         ]
       },
       "eternal": {
-        "name": "Togthr Eternal",
-        "tagline": "All access + exclusive",
+        "name": "Togthr 至尊",
+        "tagline": "全部解鎖 + 獨家",
         "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
@@ -163,60 +163,60 @@
     "guarantee": "30 天無條件退款保證",
     "new": "新上線",
     "theater": {
-      "eyebrow": "Choose your journey",
-      "headline": "Unlock a life that grows with you",
-      "tagline": "Three tiers. One promise: every pet you unlock stays with you forever.",
-      "guarantee": "30-day money-back guarantee",
-      "secure": "Secured by PayPal · Alipay · AlipayHK"
+      "eyebrow": "揀你嘅旅程",
+      "headline": "解鎖一段同你一齊成長嘅生活",
+      "tagline": "三個方案，一個承諾：你解鎖嘅每一隻寵物都會永遠陪住你。",
+      "guarantee": "30 日無條件退款保證",
+      "secure": "由 PayPal · 支付寶 · AlipayHK 安全支付"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "Seedling",
-        "tagline": "Begin your journey",
-        "peeking": "pets hiding"
+        "eyebrow": "小種子",
+        "tagline": "由呢度開始",
+        "peeking": "小寵物匿埋咗"
       },
       "plus": {
-        "eyebrow": "Companion",
-        "tagline": "Choose your soul",
-        "peeking": "pets excited"
+        "eyebrow": "同行者",
+        "tagline": "揀你鍾意嘅靈魂",
+        "peeking": "寵物好興奮"
       },
       "eternal": {
-        "eyebrow": "Stardust",
-        "tagline": "Become timeless",
-        "peeking": "pets ascended"
+        "eyebrow": "星塵",
+        "tagline": "成為永恆",
+        "peeking": "寵物已昇華"
       }
     },
     "petMatrix": {
       "free": {
-        "label": "3 Basic Companions",
-        "sub": "Buds, sprouts, starters"
+        "label": "3 隻基礎小夥伴",
+        "sub": "小芽、小苗、新手"
       },
       "plus": {
-        "label": "Unlock 50+ Suits",
-        "sub": "Career · Festival · Emotion · Fantasy"
+        "label": "解鎖 50+ 造型",
+        "sub": "職業 · 節日 · 表情 · 奇幻"
       },
       "eternal": {
-        "label": "All Access + Exclusive",
-        "sub": "Including Golden Legendary"
+        "label": "全部解鎖 + 獨家",
+        "sub": "包括金色傳說"
       }
     },
     "legendary": {
-      "label": "Golden Legendary",
-      "odds": "1 in 72",
-      "hint": "Random drop from Eternal box"
+      "label": "金色傳說",
+      "odds": "1 / 72",
+      "hint": "由至尊盲盒隨機掉落"
     },
     "countdown": {
-      "label": "Spring Festival Limited",
-      "endsIn": "Ends in",
-      "days": "d",
-      "hours": "h",
-      "minutes": "m",
-      "seconds": "s"
+      "label": "農曆新年限定",
+      "endsIn": "倒數",
+      "days": "日",
+      "hours": "時",
+      "minutes": "分",
+      "seconds": "秒"
     },
-    "ctaSubscribe": "Subscribe Now",
-    "ctaStartFree": "Start Free",
-    "ctaPopular": "Choose Companion",
-    "ctaEternal": "Become Eternal"
+    "ctaSubscribe": "即刻訂閱",
+    "ctaStartFree": "免費開始",
+    "ctaPopular": "揀同行者",
+    "ctaEternal": "成為至尊"
   },
   "faq": {
     "title": "常見問題",
@@ -386,64 +386,64 @@
       "step3": "設定目標日期並一起追蹤進度",
       "step4": "用特殊動畫慶祝每一項成就"
     },
-    "backToFeatures": "Back to Features",
-    "howItWorks": "How It Works",
-    "tryItOut": "Try It Out"
+    "backToFeatures": "返回功能",
+    "howItWorks": "運作方式",
+    "tryItOut": "試一試"
   },
   "demo": {
     "dailyCheckIn": {
-      "title": "Today's Question",
-      "placeholder": "Share your moment...",
-      "save": "Save Answer",
-      "saved": "Answer saved!",
-      "nextQuestion": "Next question →",
-      "history": "Your Answers",
-      "empty": "Start your first check-in"
+      "title": "今日嘅問題",
+      "placeholder": "分享你嘅心情...",
+      "save": "儲存答案",
+      "saved": "答案已儲存！",
+      "nextQuestion": "下一題 →",
+      "history": "你嘅答案",
+      "empty": "開始你嘅第一次打卡"
     },
     "timeCapsules": {
-      "title": "Memory Capsules",
-      "titlePlaceholder": "A title for our future...",
-      "contentPlaceholder": "Write down this moment...",
-      "lockCapsule": "Lock Capsule 🔒",
-      "empty": "Create your first memory capsule",
-      "unlocked": "Unlocked",
-      "daysLeft": "{days} days left",
-      "noContent": "(No content)"
+      "title": "回憶膠囊",
+      "titlePlaceholder": "為我哋嘅將來起個名...",
+      "contentPlaceholder": "寫低呢個時刻...",
+      "lockCapsule": "封存膠囊 🔒",
+      "empty": "建立你嘅第一個回憶膠囊",
+      "unlocked": "已解鎖",
+      "daysLeft": "仲有 {days} 日",
+      "noContent": "（未有內容）"
     },
     "virtualPet": {
-      "title": "Your Pet",
-      "petName": "Luna",
-      "virtualCompanion": "Virtual Companion",
-      "level": "Level {level}",
-      "hunger": "Hunger",
-      "happiness": "Happiness",
-      "intimacy": "Intimacy",
-      "feed": "Feed",
-      "play": "Play",
-      "cuddle": "Cuddle"
+      "title": "你嘅寵物",
+      "petName": "小月",
+      "virtualCompanion": "虛擬同伴",
+      "level": "等級 {level}",
+      "hunger": "飽肚度",
+      "happiness": "開心度",
+      "intimacy": "親密度",
+      "feed": "餵食",
+      "play": "玩耍",
+      "cuddle": "攬吓"
     },
     "privateCommunity": {
-      "title": "Community Stories"
+      "title": "社群故事"
     },
     "sharedJournal": {
-      "title": "Shared Journal",
-      "placeholder": "Write today's entry...",
-      "writeEntry": "Write Entry",
-      "you": "You",
-      "partner": "Partner"
+      "title": "共享日記",
+      "placeholder": "寫低今日嘅日記...",
+      "writeEntry": "寫一篇",
+      "you": "你",
+      "partner": "另一半"
     },
     "dreamWall": {
-      "title": "Dream Wall",
-      "placeholder": "Our next big dream...",
-      "pin": "Pin",
-      "empty": "Pin your first dream to the wall"
+      "title": "夢想牆",
+      "placeholder": "我哋下一個大夢想...",
+      "pin": "釘上",
+      "empty": "釘低你哋嘅第一個夢想"
     }
   },
   "legal": {
-    "lastUpdated": "Last updated: June 1, 2026",
+    "lastUpdated": "最後更新：2026 年 6 月 1 日",
     "privacy": {
-      "title": "Privacy Policy",
-      "subtitle": "Your privacy matters. This page explains what data we collect, how we use it, and the rights you have over your information.",
+      "title": "私隱政策",
+      "subtitle": "你嘅私隱好重要。呢頁會講解我哋收集咩資料、點樣用，同埋你對自己資料擁有嘅權利。",
       "sections": [
         {
           "heading": "1. Information We Collect",
@@ -468,8 +468,8 @@
       ]
     },
     "terms": {
-      "title": "Terms of Service",
-      "subtitle": "By using We2 you agree to the following terms. Please read them carefully — they protect both you and us.",
+      "title": "使用條款",
+      "subtitle": "使用 We2 即代表你同意以下條款。請仔細閱讀——佢哋保護你，亦保護我哋。",
       "sections": [
         {
           "heading": "1. Eligibility",
@@ -502,8 +502,8 @@
       ]
     },
     "cookies": {
-      "title": "Cookie Policy",
-      "subtitle": "We use a minimal set of cookies to keep We2 running smoothly. Here's exactly what we set and why.",
+      "title": "Cookie 政策",
+      "subtitle": "我哋用最少嘅 Cookie 嚟維持 We2 順暢運作。呢度會列明我哋設定咗咩 Cookie 同埋點解。",
       "sections": [
         {
           "heading": "1. Essential Cookies",
@@ -524,8 +524,8 @@
       ]
     },
     "help": {
-      "title": "Help Center",
-      "subtitle": "Find quick answers to the most common questions. Can't find what you need? Reach out and we'll be happy to help.",
+      "title": "幫助中心",
+      "subtitle": "搵到最常見問題嘅快速解答。搵唔到你要嘅嘢？聯絡我哋，我哋好樂意幫手。",
       "sections": [
         {
           "heading": "Getting Started",
@@ -550,8 +550,8 @@
       ]
     },
     "contact": {
-      "title": "Contact Us",
-      "subtitle": "We'd love to hear from you. Choose the channel that best fits your question.",
+      "title": "聯絡我哋",
+      "subtitle": "我哋好樂意聽到你嘅聲音。揀最適合你問題嘅渠道就得。",
       "sections": [
         {
           "heading": "General Support",
@@ -630,84 +630,84 @@
       "sad": "吵架",
       "thinking": "思考",
       "sleeping": "睡覺",
-      "sweet": "Sweet",
-      "fight": "Fighting",
-      "think": "Thinking",
-      "sleep": "Sleeping"
+      "sweet": "甜蜜",
+      "fight": "嗌交",
+      "think": "諗緊嘢",
+      "sleep": "瞓覺"
     },
     "rarity": {
-      "common": "Common",
-      "rare": "Rare",
-      "epic": "Epic",
-      "legendary": "Legendary"
+      "common": "普通",
+      "rare": "稀有",
+      "epic": "史詩",
+      "legendary": "傳說"
     },
     "series": {
-      "basic": "Basic",
-      "career": "Career",
-      "festival": "Festival",
-      "emotion": "Emotion",
-      "fantasy": "Fantasy",
-      "legendary": "Legendary"
+      "basic": "基礎",
+      "career": "職業",
+      "festival": "節日",
+      "emotion": "表情",
+      "fantasy": "奇幻",
+      "legendary": "傳說"
     },
     "tier": {
-      "free": "Free",
+      "free": "免費版",
       "plus": "Togthr Plus",
-      "eternal": "Togthr Eternal"
+      "eternal": "Togthr 至尊"
     },
     "card": {
-      "current": "Current"
+      "current": "使用中"
     },
     "altar": {
-      "title": "Summon Your Soul Companion",
-      "back": "Back",
-      "close": "Close",
-      "hint": "Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
-      "summon": "Summon",
-      "summoned": "has arrived",
-      "current": "In Use"
+      "title": "召喚你嘅靈魂同伴",
+      "back": "返回",
+      "close": "關閉",
+      "hint": "撳未鎖嘅寵物可以預覽；撳鎖住嘅睇下點樣解鎖。",
+      "summon": "召喚",
+      "summoned": "已經到咗",
+      "current": "用緊"
     },
-    "petting": "Pet me~",
-    "statusHello": "Hi there!",
-    "statusSleepy": "Zzz...",
-    "statusMiss": "Miss you",
-    "changePet": "Change Appearance",
-    "changePetBadge": "Summon Altar",
-    "lockHint": "Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "petting": "摸下我~",
+    "statusHello": "嗨，你好！",
+    "statusSleepy": "Zzz…",
+    "statusMiss": "掛住你",
+    "changePet": "換樣",
+    "changePetBadge": "召喚台",
+    "lockHint": "未解鎖嘅寵物都可以預覽——訂閱或者開盲盒就可以拎到",
     "info": {
-      "days": "Days Together",
-      "interactions": "Interactions",
-      "growth": "Growth"
+      "days": "一齊嘅日子",
+      "interactions": "互動次數",
+      "growth": "成長值"
     },
     "actions": {
-      "journal": "Journal",
-      "history": "History",
-      "share": "Share"
+      "journal": "日記",
+      "history": "歷史",
+      "share": "分享"
     },
     "festival": {
-      "newyear": "New Year",
-      "easter": "Easter",
-      "thanksgiving": "Thanksgiving",
-      "mothersday": "Mother's Day",
-      "fathersday": "Father's Day",
-      "qixi": "Qixi Festival",
-      "dragonboat": "Dragon Boat Festival",
-      "lantern": "Lantern Festival",
-      "qingming": "Qingming Festival",
-      "chongyang": "Chongyang Festival",
-      "blackfriday": "Black Friday",
-      "cybermonday": "Cyber Monday",
-      "arborday": "Arbor Day",
-      "earthday": "Earth Day",
-      "environment": "World Environment Day",
-      "aprilfool": "April Fool's Day",
-      "graduation": "Graduation",
-      "wedding": "Wedding",
-      "babyshower": "Baby Shower",
-      "birthday": "Birthday",
-      "anniversary": "Anniversary",
-      "pride": "Pride Month",
-      "diwali": "Diwali",
-      "carnival": "Carnival"
+      "newyear": "元旦",
+      "easter": "復活節",
+      "thanksgiving": "感恩節",
+      "mothersday": "母親節",
+      "fathersday": "父親節",
+      "qixi": "七夕",
+      "dragonboat": "端午",
+      "lantern": "元宵",
+      "qingming": "清明",
+      "chongyang": "重陽",
+      "blackfriday": "黑五",
+      "cybermonday": "網購星期一",
+      "arborday": "植樹日",
+      "earthday": "地球日",
+      "environment": "世界環境日",
+      "aprilfool": "愚人節",
+      "graduation": "畢業",
+      "wedding": "婚禮",
+      "babyshower": "迎嬰派對",
+      "birthday": "生日",
+      "anniversary": "紀念日",
+      "pride": "同志驕傲月",
+      "diwali": "排燈節",
+      "carnival": "嘉年華"
     }
   },
   "journal": {
@@ -737,15 +737,15 @@
     "online": "一直都在",
     "placeholder": "說點什麼吧...",
     "mockNotice": "Day 1 mock 模式 — 真實 AI Day 2 接入",
-    "typing": "Companion is typing...",
-    "nightMode": "Night mode",
-    "anniversary": "100 messages — a chapter complete",
+    "typing": "同伴打緊字…",
+    "nightMode": "深夜模式",
+    "anniversary": "100 個訊息——一章完咗",
     "mood": {
-      "sweet": "Sweet",
-      "calm": "Calm",
-      "think": "Think",
-      "sleepy": "Sleepy",
-      "fight": "Fight"
+      "sweet": "甜蜜",
+      "calm": "平靜",
+      "think": "諗嘢",
+      "sleepy": "眼瞓",
+      "fight": "嗌交"
     }
   },
   "onboarding": {

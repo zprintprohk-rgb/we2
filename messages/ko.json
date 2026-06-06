@@ -14,7 +14,7 @@
     "journal": "둥지",
     "store": "상점",
     "chat": "채팅",
-    "faq": "FAQ"
+    "faq": "자주 묻는 질문"
   },
   "seo": {
     "siteName": "Togthr",
@@ -30,14 +30,14 @@
       "secondary": "사용 방법 보기",
       "socialProof": "전 세계 10,000명 이상의 사용자가 신뢰",
       "eyebrow": "항상 함께 · 항상 신경 쓰고",
-      "welcomeFirst": "Hi — I just woke up. I will be here, always.",
-      "welcomeBack": "You came back! I have been waiting for you.",
-      "sleepyGreeting": "Shhh… it is late. Stay with me for a moment.",
-      "statusHello": "Hi! Nice to meet you.",
-      "statusMiss": "You came back!",
-      "statusSleepy": "Shhh… sleepy now.",
-      "relationsEyebrow": "Choose your companion",
-      "relationsHint": "Each mode changes how your pet looks and glows."
+      "welcomeFirst": "안녕! 방금 깼어. 계속 곁에 있을게.",
+      "welcomeBack": "돌아왔어! 기다리고 있었어.",
+      "sleepyGreeting": "쉿… 너무 늦었어. 잠깐만 같이 있자.",
+      "statusHello": "안녕! 만나서 반가워.",
+      "statusMiss": "다시 왔어!",
+      "statusSleepy": "쉿… 졸려.",
+      "relationsEyebrow": "동반자를 골라봐",
+      "relationsHint": "모드마다 펫의 모습과 빛이 달라져."
     },
     "features": {
       "title": "진짜 커플을 위해 디자인했어요",
@@ -104,7 +104,7 @@
         ]
       },
       "premium": {
-        "name": "We2 Premium",
+        "name": "We2 프리미엄",
         "price": "₩19,000",
         "period": "/분기",
         "features": [
@@ -115,7 +115,7 @@
         ]
       },
       "lifetime": {
-        "name": "We2 Forever",
+        "name": "We2 포에버",
         "price": "₩55,000",
         "period": "/년",
         "features": [
@@ -138,8 +138,8 @@
         ]
       },
       "eternal": {
-        "name": "Togthr Eternal",
-        "tagline": "All access + exclusive",
+        "name": "Togthr 이터널",
+        "tagline": "전부 잠금해제 + 독점",
         "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
@@ -163,60 +163,60 @@
     "guarantee": "30일 환불 보장",
     "new": "신규",
     "theater": {
-      "eyebrow": "Choose your journey",
-      "headline": "Unlock a life that grows with you",
-      "tagline": "Three tiers. One promise: every pet you unlock stays with you forever.",
-      "guarantee": "30-day money-back guarantee",
-      "secure": "Secured by PayPal · Alipay · AlipayHK"
+      "eyebrow": "여정을 선택해",
+      "headline": "당신과 함께 자라는 삶을 열어 봐",
+      "tagline": "세 가지 등급, 한 가지 약속: 잠금해제한 펫은 영원히 곁에 남아.",
+      "guarantee": "30일 환불 보장",
+      "secure": "PayPal · Alipay · AlipayHK 안전 결제"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "Seedling",
-        "tagline": "Begin your journey",
-        "peeking": "pets hiding"
+        "eyebrow": "새싹",
+        "tagline": "여기서 시작해",
+        "peeking": "펫이 숨어있어"
       },
       "plus": {
-        "eyebrow": "Companion",
-        "tagline": "Choose your soul",
-        "peeking": "pets excited"
+        "eyebrow": "동반자",
+        "tagline": "너의 영혼을 골라",
+        "peeking": "펫이 신나해"
       },
       "eternal": {
-        "eyebrow": "Stardust",
-        "tagline": "Become timeless",
-        "peeking": "pets ascended"
+        "eyebrow": "스타더스트",
+        "tagline": "영원이 되다",
+        "peeking": "펫이 승화했어"
       }
     },
     "petMatrix": {
       "free": {
-        "label": "3 Basic Companions",
-        "sub": "Buds, sprouts, starters"
+        "label": "기본 동반자 3종",
+        "sub": "봉우리 · 새싹 · 스타터"
       },
       "plus": {
-        "label": "Unlock 50+ Suits",
-        "sub": "Career · Festival · Emotion · Fantasy"
+        "label": "50+ 스킨 잠금해제",
+        "sub": "직업 · 축제 · 감정 · 판타지"
       },
       "eternal": {
-        "label": "All Access + Exclusive",
-        "sub": "Including Golden Legendary"
+        "label": "올 액세스 + 독점",
+        "sub": "골든 레전더리 포함"
       }
     },
     "legendary": {
-      "label": "Golden Legendary",
-      "odds": "1 in 72",
-      "hint": "Random drop from Eternal box"
+      "label": "골든 레전더리",
+      "odds": "1 / 72",
+      "hint": "이터널 박스에서 랜덤 드랍"
     },
     "countdown": {
-      "label": "Spring Festival Limited",
-      "endsIn": "Ends in",
-      "days": "d",
-      "hours": "h",
-      "minutes": "m",
-      "seconds": "s"
+      "label": "봄 축제 한정",
+      "endsIn": "종료까지",
+      "days": "일",
+      "hours": "시간",
+      "minutes": "분",
+      "seconds": "초"
     },
-    "ctaSubscribe": "Subscribe Now",
-    "ctaStartFree": "Start Free",
-    "ctaPopular": "Choose Companion",
-    "ctaEternal": "Become Eternal"
+    "ctaSubscribe": "지금 구독",
+    "ctaStartFree": "무료로 시작",
+    "ctaPopular": "동반자 선택",
+    "ctaEternal": "이터널이 되기"
   },
   "faq": {
     "title": "자주 묻는 질문",
@@ -294,7 +294,7 @@
     "cookie": "쿠키 설정",
     "help": "고객센터",
     "contact": "문의하기",
-    "copyright": "© {year} We2. All rights reserved."
+    "copyright": "© {year} We2. 모든 권리 보유."
   },
   "notFound": {
     "title": "길을 잃었나요?",
@@ -386,64 +386,64 @@
       "step3": "목표 날짜를 설정하고 함께 진행 상황 추적하기",
       "step4": "각 성취를 특별한 애니메이션으로 축하하기"
     },
-    "backToFeatures": "Back to Features",
-    "howItWorks": "How It Works",
-    "tryItOut": "Try It Out"
+    "backToFeatures": "기능으로 돌아가기",
+    "howItWorks": "사용 방법",
+    "tryItOut": "사용해 보기"
   },
   "demo": {
     "dailyCheckIn": {
-      "title": "Today's Question",
-      "placeholder": "Share your moment...",
-      "save": "Save Answer",
-      "saved": "Answer saved!",
-      "nextQuestion": "Next question →",
-      "history": "Your Answers",
-      "empty": "Start your first check-in"
+      "title": "오늘의 질문",
+      "placeholder": "지금 마음을 나눠 봐...",
+      "save": "답변 저장",
+      "saved": "답변 저장 완료!",
+      "nextQuestion": "다음 질문 →",
+      "history": "나의 답변",
+      "empty": "첫 체크인을 시작해 봐"
     },
     "timeCapsules": {
-      "title": "Memory Capsules",
-      "titlePlaceholder": "A title for our future...",
-      "contentPlaceholder": "Write down this moment...",
-      "lockCapsule": "Lock Capsule 🔒",
-      "empty": "Create your first memory capsule",
-      "unlocked": "Unlocked",
-      "daysLeft": "{days} days left",
-      "noContent": "(No content)"
+      "title": "추억 캡슐",
+      "titlePlaceholder": "미래의 우리를 위한 제목...",
+      "contentPlaceholder": "지금 이 순간을 적어 봐...",
+      "lockCapsule": "캡슐 잠그기 🔒",
+      "empty": "첫 추억 캡슐을 만들어 봐",
+      "unlocked": "잠금해제됨",
+      "daysLeft": "{days}일 남음",
+      "noContent": "(내용 없음)"
     },
     "virtualPet": {
-      "title": "Your Pet",
-      "petName": "Luna",
-      "virtualCompanion": "Virtual Companion",
-      "level": "Level {level}",
-      "hunger": "Hunger",
-      "happiness": "Happiness",
-      "intimacy": "Intimacy",
-      "feed": "Feed",
-      "play": "Play",
-      "cuddle": "Cuddle"
+      "title": "내 펫",
+      "petName": "달이",
+      "virtualCompanion": "가상 동반자",
+      "level": "레벨 {level}",
+      "hunger": "배부름",
+      "happiness": "행복도",
+      "intimacy": "친밀도",
+      "feed": "먹이기",
+      "play": "놀기",
+      "cuddle": "안기"
     },
     "privateCommunity": {
-      "title": "Community Stories"
+      "title": "커뮤니티 이야기"
     },
     "sharedJournal": {
-      "title": "Shared Journal",
-      "placeholder": "Write today's entry...",
-      "writeEntry": "Write Entry",
-      "you": "You",
-      "partner": "Partner"
+      "title": "공유 일기",
+      "placeholder": "오늘의 일기를 써 봐...",
+      "writeEntry": "일기 쓰기",
+      "you": "나",
+      "partner": "상대방"
     },
     "dreamWall": {
-      "title": "Dream Wall",
-      "placeholder": "Our next big dream...",
-      "pin": "Pin",
-      "empty": "Pin your first dream to the wall"
+      "title": "꿈 보드",
+      "placeholder": "우리의 다음 큰 꿈...",
+      "pin": "고정",
+      "empty": "보드에 첫 꿈을 고정해 봐"
     }
   },
   "legal": {
-    "lastUpdated": "Last updated: June 1, 2026",
+    "lastUpdated": "최종 업데이트: 2026년 6월 1일",
     "privacy": {
-      "title": "Privacy Policy",
-      "subtitle": "Your privacy matters. This page explains what data we collect, how we use it, and the rights you have over your information.",
+      "title": "개인정보 처리방침",
+      "subtitle": "당신의 사생활은 중요해요. 이 페이지는 우리가 어떤 데이터를 수집하고 어떻게 쓰는지, 그리고 정보에 대한 당신의 권리를 설명합니다.",
       "sections": [
         {
           "heading": "1. Information We Collect",
@@ -468,8 +468,8 @@
       ]
     },
     "terms": {
-      "title": "Terms of Service",
-      "subtitle": "By using We2 you agree to the following terms. Please read them carefully — they protect both you and us.",
+      "title": "이용약관",
+      "subtitle": "We2를 사용하면 아래 약관에 동의하는 것으로 간주됩니다. 당신과 우리 모두를 보호하는 약관이니 주의 깊게 읽어 주세요.",
       "sections": [
         {
           "heading": "1. Eligibility",
@@ -502,8 +502,8 @@
       ]
     },
     "cookies": {
-      "title": "Cookie Policy",
-      "subtitle": "We use a minimal set of cookies to keep We2 running smoothly. Here's exactly what we set and why.",
+      "title": "쿠키 정책",
+      "subtitle": "We2가 매끄럽게 돌아가도록 최소한의 쿠키를 사용합니다. 어떤 쿠키를 왜 쓰는지 정확히 알려드릴게요.",
       "sections": [
         {
           "heading": "1. Essential Cookies",
@@ -524,8 +524,8 @@
       ]
     },
     "help": {
-      "title": "Help Center",
-      "subtitle": "Find quick answers to the most common questions. Can't find what you need? Reach out and we'll be happy to help.",
+      "title": "도움말 센터",
+      "subtitle": "가장 자주 묻는 질문의 빠른 답변을 찾아보세요. 원하는 답을 못 찾았다면 알려주세요 — 기꺼이 도와드릴게요.",
       "sections": [
         {
           "heading": "Getting Started",
@@ -550,8 +550,8 @@
       ]
     },
     "contact": {
-      "title": "Contact Us",
-      "subtitle": "We'd love to hear from you. Choose the channel that best fits your question.",
+      "title": "문의하기",
+      "subtitle": "당신의 의견을 듣고 싶어요. 질문에 가장 잘 맞는 채널을 골라 주세요.",
       "sections": [
         {
           "heading": "General Support",
@@ -630,84 +630,84 @@
       "sad": "싸움",
       "thinking": "생각중",
       "sleeping": "잠자는중",
-      "sweet": "Sweet",
-      "fight": "Fighting",
-      "think": "Thinking",
-      "sleep": "Sleeping"
+      "sweet": "달콤",
+      "fight": "싸움",
+      "think": "생각 중",
+      "sleep": "잠자는 중"
     },
     "rarity": {
-      "common": "Common",
-      "rare": "Rare",
-      "epic": "Epic",
-      "legendary": "Legendary"
+      "common": "일반",
+      "rare": "레어",
+      "epic": "에픽",
+      "legendary": "레전더리"
     },
     "series": {
-      "basic": "Basic",
-      "career": "Career",
-      "festival": "Festival",
-      "emotion": "Emotion",
-      "fantasy": "Fantasy",
-      "legendary": "Legendary"
+      "basic": "기본",
+      "career": "직업",
+      "festival": "축제",
+      "emotion": "감정",
+      "fantasy": "판타지",
+      "legendary": "레전더리"
     },
     "tier": {
-      "free": "Free",
+      "free": "무료",
       "plus": "Togthr Plus",
-      "eternal": "Togthr Eternal"
+      "eternal": "Togthr 이터널"
     },
     "card": {
-      "current": "Current"
+      "current": "사용 중"
     },
     "altar": {
-      "title": "Summon Your Soul Companion",
-      "back": "Back",
-      "close": "Close",
-      "hint": "Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
-      "summon": "Summon",
-      "summoned": "has arrived",
-      "current": "In Use"
+      "title": "영혼의 동반자를 소환",
+      "back": "뒤로",
+      "close": "닫기",
+      "hint": "잠금해제된 펫을 탭하면 미리보기. 잠긴 펫은 어떻게 해제하는지 볼 수 있어요.",
+      "summon": "소환",
+      "summoned": "도착했어요",
+      "current": "사용 중"
     },
-    "petting": "Pet me~",
-    "statusHello": "Hi there!",
-    "statusSleepy": "Zzz...",
-    "statusMiss": "Miss you",
-    "changePet": "Change Appearance",
-    "changePetBadge": "Summon Altar",
-    "lockHint": "Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "petting": "쓰다듬어 줘~",
+    "statusHello": "안녕!",
+    "statusSleepy": "Zzz…",
+    "statusMiss": "보고 싶어",
+    "changePet": "모습 바꾸기",
+    "changePetBadge": "소환 제단",
+    "lockHint": "잠긴 펫도 미리보기는 가능 — 구독하거나 블라인드박스를 열어 해제해요",
     "info": {
-      "days": "Days Together",
-      "interactions": "Interactions",
-      "growth": "Growth"
+      "days": "함께한 날",
+      "interactions": "상호작용",
+      "growth": "성장"
     },
     "actions": {
-      "journal": "Journal",
-      "history": "History",
-      "share": "Share"
+      "journal": "저널",
+      "history": "기록",
+      "share": "공유"
     },
     "festival": {
-      "newyear": "New Year",
-      "easter": "Easter",
-      "thanksgiving": "Thanksgiving",
-      "mothersday": "Mother's Day",
-      "fathersday": "Father's Day",
-      "qixi": "Qixi Festival",
-      "dragonboat": "Dragon Boat Festival",
-      "lantern": "Lantern Festival",
-      "qingming": "Qingming Festival",
-      "chongyang": "Chongyang Festival",
-      "blackfriday": "Black Friday",
-      "cybermonday": "Cyber Monday",
-      "arborday": "Arbor Day",
-      "earthday": "Earth Day",
-      "environment": "World Environment Day",
-      "aprilfool": "April Fool's Day",
-      "graduation": "Graduation",
-      "wedding": "Wedding",
-      "babyshower": "Baby Shower",
-      "birthday": "Birthday",
-      "anniversary": "Anniversary",
-      "pride": "Pride Month",
-      "diwali": "Diwali",
-      "carnival": "Carnival"
+      "newyear": "새해",
+      "easter": "부활절",
+      "thanksgiving": "추수감사절",
+      "mothersday": "어머니날",
+      "fathersday": "아버지날",
+      "qixi": "칠석",
+      "dragonboat": "단오",
+      "lantern": "정월대보름",
+      "qingming": "청명",
+      "chongyang": "중양절",
+      "blackfriday": "블랙프라이데이",
+      "cybermonday": "사이버먼데이",
+      "arborday": "식목일",
+      "earthday": "지구의 날",
+      "environment": "세계 환경의 날",
+      "aprilfool": "만우절",
+      "graduation": "졸업",
+      "wedding": "결혼식",
+      "babyshower": "베이비 샤워",
+      "birthday": "생일",
+      "anniversary": "기념일",
+      "pride": "프라이드 월",
+      "diwali": "디왈리",
+      "carnival": "카니발"
     }
   },
   "journal": {
@@ -737,15 +737,15 @@
     "online": "항상 함께",
     "placeholder": "뭐든 말해보세요...",
     "mockNotice": "Day 1 목업 — 실제 AI는 Day 2",
-    "typing": "Companion is typing...",
-    "nightMode": "Night mode",
-    "anniversary": "100 messages — a chapter complete",
+    "typing": "동반자가 입력 중...",
+    "nightMode": "야간 모드",
+    "anniversary": "메시지 100개 — 한 챕터 완성",
     "mood": {
-      "sweet": "Sweet",
-      "calm": "Calm",
-      "think": "Think",
-      "sleepy": "Sleepy",
-      "fight": "Fight"
+      "sweet": "달콤",
+      "calm": "차분",
+      "think": "생각",
+      "sleepy": "졸림",
+      "fight": "싸움"
     }
   },
   "onboarding": {

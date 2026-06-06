@@ -30,14 +30,14 @@
       "secondary": "So funktioniert es",
       "socialProof": "Über 10.000 Nutzer weltweit vertrauen uns",
       "eyebrow": "Immer da · Immer fürsorglich",
-      "welcomeFirst": "Hi — I just woke up. I will be here, always.",
-      "welcomeBack": "You came back! I have been waiting for you.",
-      "sleepyGreeting": "Shhh… it is late. Stay with me for a moment.",
-      "statusHello": "Hi! Nice to meet you.",
-      "statusMiss": "You came back!",
-      "statusSleepy": "Shhh… sleepy now.",
-      "relationsEyebrow": "Choose your companion",
-      "relationsHint": "Each mode changes how your pet looks and glows."
+      "welcomeFirst": "Hi! Ich bin gerade aufgewacht. Ich bin immer für dich da.",
+      "welcomeBack": "Da bist du wieder! Ich habe auf dich gewartet.",
+      "sleepyGreeting": "Pssst… es ist spät. Bleib noch einen Moment bei mir.",
+      "statusHello": "Hi! Schön, dich zu sehen.",
+      "statusMiss": "Da bist du wieder!",
+      "statusSleepy": "Pssst… ich bin müde.",
+      "relationsEyebrow": "Wähle deine Begleitung",
+      "relationsHint": "Jeder Modus verändert Aussehen und Leuchten deines Pets."
     },
     "features": {
       "title": "Für echte Paare entwickelt",
@@ -139,7 +139,7 @@
       },
       "eternal": {
         "name": "Togthr Eternal",
-        "tagline": "All access + exclusive",
+        "tagline": "Voller Zugang + exklusiv",
         "features": "Everything in Plus,All 50+ pet suits unlocked,Golden legendary pets,Priority support,Early access to new features"
       }
     },
@@ -163,60 +163,60 @@
     "guarantee": "30-Tage-Geld-zurück-Garantie",
     "new": "Neu",
     "theater": {
-      "eyebrow": "Choose your journey",
-      "headline": "Unlock a life that grows with you",
-      "tagline": "Three tiers. One promise: every pet you unlock stays with you forever.",
-      "guarantee": "30-day money-back guarantee",
-      "secure": "Secured by PayPal · Alipay · AlipayHK"
+      "eyebrow": "Wähle deine Reise",
+      "headline": "Schalte ein Leben frei, das mit dir wächst",
+      "tagline": "Drei Stufen. Ein Versprechen: Jedes Pet, das du freischaltest, bleibt für immer bei dir.",
+      "guarantee": "30 Tage Geld-zurück-Garantie",
+      "secure": "Sicher bezahlt mit PayPal · Alipay · AlipayHK"
     },
     "tierMeta": {
       "free": {
-        "eyebrow": "Seedling",
-        "tagline": "Begin your journey",
-        "peeking": "pets hiding"
+        "eyebrow": "Sämling",
+        "tagline": "Beginne deine Reise",
+        "peeking": "Pets verstecken sich"
       },
       "plus": {
-        "eyebrow": "Companion",
-        "tagline": "Choose your soul",
-        "peeking": "pets excited"
+        "eyebrow": "Begleiter",
+        "tagline": "Wähle deine Seele",
+        "peeking": "Pets sind aufgeregt"
       },
       "eternal": {
-        "eyebrow": "Stardust",
-        "tagline": "Become timeless",
-        "peeking": "pets ascended"
+        "eyebrow": "Sternenstaub",
+        "tagline": "Werde zeitlos",
+        "peeking": "Pets sind aufgestiegen"
       }
     },
     "petMatrix": {
       "free": {
-        "label": "3 Basic Companions",
-        "sub": "Buds, sprouts, starters"
+        "label": "3 Basis-Begleiter",
+        "sub": "Knospen, Sprösslinge, Starter"
       },
       "plus": {
-        "label": "Unlock 50+ Suits",
-        "sub": "Career · Festival · Emotion · Fantasy"
+        "label": "50+ Outfits freischalten",
+        "sub": "Beruf · Fest · Emotion · Fantasie"
       },
       "eternal": {
-        "label": "All Access + Exclusive",
-        "sub": "Including Golden Legendary"
+        "label": "Voller Zugang + Exklusiv",
+        "sub": "Inklusive goldener Legende"
       }
     },
     "legendary": {
-      "label": "Golden Legendary",
-      "odds": "1 in 72",
-      "hint": "Random drop from Eternal box"
+      "label": "Goldene Legende",
+      "odds": "1 / 72",
+      "hint": "Zufalls-Drop aus der Eternal-Box"
     },
     "countdown": {
-      "label": "Spring Festival Limited",
-      "endsIn": "Ends in",
-      "days": "d",
-      "hours": "h",
-      "minutes": "m",
-      "seconds": "s"
+      "label": "Frühlingsfest-Edition",
+      "endsIn": "Endet in",
+      "days": "T",
+      "hours": "Std",
+      "minutes": "Min",
+      "seconds": "Sek"
     },
-    "ctaSubscribe": "Subscribe Now",
-    "ctaStartFree": "Start Free",
-    "ctaPopular": "Choose Companion",
-    "ctaEternal": "Become Eternal"
+    "ctaSubscribe": "Jetzt abonnieren",
+    "ctaStartFree": "Kostenlos starten",
+    "ctaPopular": "Begleiter wählen",
+    "ctaEternal": "Eternal werden"
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
@@ -440,10 +440,10 @@
     }
   },
   "legal": {
-    "lastUpdated": "Last updated: June 1, 2026",
+    "lastUpdated": "Zuletzt aktualisiert: 1. Juni 2026",
     "privacy": {
-      "title": "Privacy Policy",
-      "subtitle": "Your privacy matters. This page explains what data we collect, how we use it, and the rights you have over your information.",
+      "title": "Datenschutzerklärung",
+      "subtitle": "Deine Privatsphäre ist uns wichtig. Diese Seite erklärt, welche Daten wir erheben, wie wir sie nutzen und welche Rechte du an deinen Informationen hast.",
       "sections": [
         {
           "heading": "1. Information We Collect",
@@ -468,8 +468,8 @@
       ]
     },
     "terms": {
-      "title": "Terms of Service",
-      "subtitle": "By using We2 you agree to the following terms. Please read them carefully — they protect both you and us.",
+      "title": "Nutzungsbedingungen",
+      "subtitle": "Mit der Nutzung von We2 stimmst du den folgenden Bedingungen zu. Bitte lies sie sorgfältig — sie schützen dich und uns.",
       "sections": [
         {
           "heading": "1. Eligibility",
@@ -502,8 +502,8 @@
       ]
     },
     "cookies": {
-      "title": "Cookie Policy",
-      "subtitle": "We use a minimal set of cookies to keep We2 running smoothly. Here's exactly what we set and why.",
+      "title": "Cookie-Richtlinie",
+      "subtitle": "Wir verwenden nur das Minimum an Cookies, damit We2 reibungslos läuft. Hier siehst du genau, welche wir setzen und warum.",
       "sections": [
         {
           "heading": "1. Essential Cookies",
@@ -524,8 +524,8 @@
       ]
     },
     "help": {
-      "title": "Help Center",
-      "subtitle": "Find quick answers to the most common questions. Can't find what you need? Reach out and we'll be happy to help.",
+      "title": "Hilfe-Center",
+      "subtitle": "Schnelle Antworten auf die häufigsten Fragen. Du findest nicht, was du suchst? Melde dich — wir helfen dir gerne weiter.",
       "sections": [
         {
           "heading": "Getting Started",
@@ -550,8 +550,8 @@
       ]
     },
     "contact": {
-      "title": "Contact Us",
-      "subtitle": "We'd love to hear from you. Choose the channel that best fits your question.",
+      "title": "Kontaktiere uns",
+      "subtitle": "Wir freuen uns von dir zu hören. Wähle den Kanal, der am besten zu deiner Frage passt.",
       "sections": [
         {
           "heading": "General Support",
@@ -630,84 +630,84 @@
       "sad": "Streit",
       "thinking": "Denkend",
       "sleeping": "Schlafend",
-      "sweet": "Sweet",
-      "fight": "Fighting",
-      "think": "Thinking",
-      "sleep": "Sleeping"
+      "sweet": "Süß",
+      "fight": "Streit",
+      "think": "Nachdenklich",
+      "sleep": "Schläft"
     },
     "rarity": {
-      "common": "Common",
-      "rare": "Rare",
-      "epic": "Epic",
-      "legendary": "Legendary"
+      "common": "Gewöhnlich",
+      "rare": "Selten",
+      "epic": "Episch",
+      "legendary": "Legendär"
     },
     "series": {
-      "basic": "Basic",
-      "career": "Career",
-      "festival": "Festival",
+      "basic": "Basis",
+      "career": "Beruf",
+      "festival": "Fest",
       "emotion": "Emotion",
-      "fantasy": "Fantasy",
-      "legendary": "Legendary"
+      "fantasy": "Fantasie",
+      "legendary": "Legendär"
     },
     "tier": {
-      "free": "Free",
+      "free": "Gratis",
       "plus": "Togthr Plus",
       "eternal": "Togthr Eternal"
     },
     "card": {
-      "current": "Current"
+      "current": "Aktuell"
     },
     "altar": {
-      "title": "Summon Your Soul Companion",
-      "back": "Back",
-      "close": "Close",
-      "hint": "Tap an unlocked pet to preview. Tap a locked pet to see how to unlock.",
-      "summon": "Summon",
-      "summoned": "has arrived",
-      "current": "In Use"
+      "title": "Beschwöre deinen Seelen-Begleiter",
+      "back": "Zurück",
+      "close": "Schließen",
+      "hint": "Tippe auf ein freigeschaltetes Pet zur Vorschau. Bei gesperrten Pets siehst du, wie du sie freischaltest.",
+      "summon": "Beschwören",
+      "summoned": "ist eingetroffen",
+      "current": "In Benutzung"
     },
-    "petting": "Pet me~",
-    "statusHello": "Hi there!",
-    "statusSleepy": "Zzz...",
-    "statusMiss": "Miss you",
-    "changePet": "Change Appearance",
-    "changePetBadge": "Summon Altar",
-    "lockHint": "Locked pets are still previewed — subscribe or open blind boxes to unlock",
+    "petting": "Streichle mich~",
+    "statusHello": "Hi!",
+    "statusSleepy": "Zzz…",
+    "statusMiss": "Vermisse dich",
+    "changePet": "Aussehen ändern",
+    "changePetBadge": "Beschwörungsaltar",
+    "lockHint": "Gesperrte Pets sind weiterhin sichtbar — freischalten per Abo oder Blindbox",
     "info": {
-      "days": "Days Together",
-      "interactions": "Interactions",
-      "growth": "Growth"
+      "days": "Tage zusammen",
+      "interactions": "Interaktionen",
+      "growth": "Wachstum"
     },
     "actions": {
       "journal": "Journal",
-      "history": "History",
-      "share": "Share"
+      "history": "Verlauf",
+      "share": "Teilen"
     },
     "festival": {
-      "newyear": "New Year",
-      "easter": "Easter",
+      "newyear": "Neujahr",
+      "easter": "Ostern",
       "thanksgiving": "Thanksgiving",
-      "mothersday": "Mother's Day",
-      "fathersday": "Father's Day",
-      "qixi": "Qixi Festival",
-      "dragonboat": "Dragon Boat Festival",
-      "lantern": "Lantern Festival",
-      "qingming": "Qingming Festival",
-      "chongyang": "Chongyang Festival",
+      "mothersday": "Muttertag",
+      "fathersday": "Vatertag",
+      "qixi": "Qixi-Fest",
+      "dragonboat": "Drachenbootfest",
+      "lantern": "Laternenfest",
+      "qingming": "Qingming-Fest",
+      "chongyang": "Chongyang-Fest",
       "blackfriday": "Black Friday",
       "cybermonday": "Cyber Monday",
-      "arborday": "Arbor Day",
-      "earthday": "Earth Day",
-      "environment": "World Environment Day",
-      "aprilfool": "April Fool's Day",
-      "graduation": "Graduation",
-      "wedding": "Wedding",
+      "arborday": "Tag des Baumes",
+      "earthday": "Tag der Erde",
+      "environment": "Weltumwelttag",
+      "aprilfool": "Aprilscherz-Tag",
+      "graduation": "Abschluss",
+      "wedding": "Hochzeit",
       "babyshower": "Baby Shower",
-      "birthday": "Birthday",
-      "anniversary": "Anniversary",
-      "pride": "Pride Month",
+      "birthday": "Geburtstag",
+      "anniversary": "Jahrestag",
+      "pride": "Pride-Monat",
       "diwali": "Diwali",
-      "carnival": "Carnival"
+      "carnival": "Karneval"
     }
   },
   "journal": {
@@ -737,15 +737,15 @@
     "online": "Immer da",
     "placeholder": "Sag etwas...",
     "mockNotice": "Day 1 Mock — Echte KI in Tag 2",
-    "typing": "Companion is typing...",
-    "nightMode": "Night mode",
-    "anniversary": "100 messages — a chapter complete",
+    "typing": "Begleiter tippt...",
+    "nightMode": "Nachtmodus",
+    "anniversary": "100 Nachrichten — ein Kapitel vollendet",
     "mood": {
-      "sweet": "Sweet",
-      "calm": "Calm",
-      "think": "Think",
-      "sleepy": "Sleepy",
-      "fight": "Fight"
+      "sweet": "Süß",
+      "calm": "Ruhig",
+      "think": "Nachdenklich",
+      "sleepy": "Müde",
+      "fight": "Streit"
     }
   },
   "onboarding": {
