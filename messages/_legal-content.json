@@ -6,7 +6,7 @@
     "sections": [
       {
         "heading": "1. Information We Collect",
-        "body": "We collect only the information needed to provide We2's couple-wellness services: account email, encrypted password, profile details (nickname, avatar, anniversary date), and the content you create in the app (check-in answers, journal entries, time capsules, photos). We never sell your data to third parties."
+        "body": "We collect only the information needed to provide Togthr's couple-wellness services: account email, encrypted password, profile details (nickname, avatar, anniversary date), and the content you create in the app (check-in answers, journal entries, time capsules, photos). We never sell your data to third parties."
       },
       {
         "heading": "2. How We Use Your Data",
@@ -14,7 +14,7 @@
       },
       {
         "heading": "3. Data Storage & Security",
-        "body": "All data is stored encrypted at rest (AES-256) and in transit (TLS 1.3) on Supabase and Cloudflare infrastructure. Time capsules remain end-to-end encrypted and cannot be read by We2 staff. We perform quarterly security audits and notify affected users of any breach within 72 hours."
+        "body": "All data is stored encrypted at rest (AES-256) and in transit (TLS 1.3) on Supabase and Cloudflare infrastructure. Time capsules remain end-to-end encrypted and cannot be read by Togthr staff. We perform quarterly security audits and notify affected users of any breach within 72 hours."
       },
       {
         "heading": "4. Your Rights",
@@ -28,15 +28,15 @@
   },
   "terms": {
     "title": "Terms of Service",
-    "subtitle": "By using We2 you agree to the following terms. Please read them carefully — they protect both you and us.",
+    "subtitle": "By using Togthr you agree to the following terms. Please read them carefully — they protect both you and us.",
     "sections": [
       {
         "heading": "1. Eligibility",
-        "body": "You must be at least 16 years old (18 in some jurisdictions) to create a We2 account. By signing up you confirm that you meet this requirement and that all information you provide is accurate."
+        "body": "You must be at least 16 years old (18 in some jurisdictions) to create a Togthr account. By signing up you confirm that you meet this requirement and that all information you provide is accurate."
       },
       {
         "heading": "2. Account & Pairing",
-        "body": "We2 works as a couple: you create a private pair by inviting your partner via email. Each pair shares a private space. You are responsible for keeping your login credentials secure. Sharing your account with non-parties is not permitted."
+        "body": "Togthr works as a couple: you create a private pair by inviting your partner via email. Each pair shares a private space. You are responsible for keeping your login credentials secure. Sharing your account with non-parties is not permitted."
       },
       {
         "heading": "3. Subscriptions & Payments",
@@ -48,11 +48,11 @@
       },
       {
         "heading": "5. Acceptable Use",
-        "body": "You agree not to: upload illegal, hateful, or sexually explicit content; harass or threaten other users; attempt to reverse-engineer the app; use We2 for commercial spam; or impersonate any person or entity. Violations may result in account suspension."
+        "body": "You agree not to: upload illegal, hateful, or sexually explicit content; harass or threaten other users; attempt to reverse-engineer the app; use Togthr for commercial spam; or impersonate any person or entity. Violations may result in account suspension."
       },
       {
         "heading": "6. Limitation of Liability",
-        "body": "We2 is provided 'as is' without warranties. To the maximum extent permitted by law, our liability is limited to the amount you paid us in the past 12 months. We are not liable for indirect, incidental, or consequential damages."
+        "body": "Togthr is provided 'as is' without warranties. To the maximum extent permitted by law, our liability is limited to the amount you paid us in the past 12 months. We are not liable for indirect, incidental, or consequential damages."
       },
       {
         "heading": "7. Changes",
@@ -62,7 +62,7 @@
   },
   "cookies": {
     "title": "Cookie Policy",
-    "subtitle": "We use a minimal set of cookies to keep We2 running smoothly. Here's exactly what we set and why.",
+    "subtitle": "We use a minimal set of cookies to keep Togthr running smoothly. Here's exactly what we set and why.",
     "sections": [
       {
         "heading": "1. Essential Cookies",
@@ -96,7 +96,7 @@
       },
       {
         "heading": "Privacy & Security",
-        "body": "Your private content (time capsules, journal entries, photos) is end-to-end encrypted. We2 staff cannot read it. Enable two-factor authentication from Settings > Security for an extra layer of protection. To delete your account permanently, go to Settings > Privacy > Delete Account."
+        "body": "Your private content (time capsules, journal entries, photos) is end-to-end encrypted. Togthr staff cannot read it. Enable two-factor authentication from Settings > Security for an extra layer of protection. To delete your account permanently, go to Settings > Privacy > Delete Account."
       },
       {
         "heading": "Report a Bug",
@@ -104,7 +104,7 @@
       },
       {
         "heading": "International Support",
-        "body": "We2 is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
+        "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
       }
     ]
   },

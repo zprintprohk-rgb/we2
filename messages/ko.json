@@ -220,11 +220,11 @@
   },
   "faq": {
     "title": "자주 묻는 질문",
-    "subtitle": "We2에 대해 궁금한 점",
+    "subtitle": "Togthr에 대해 궁금한 점",
     "items": [
       {
-        "question": "We2는 어떤 앱인가요?",
-        "answer": "We2는 심리학자의 협력으로 설계된 커플 감정 성장 앱입니다. 매일 체크인, 타임캡슐, 공동 챌린지를 통해 일상 속에서 관계를 깊게 만들어갑니다."
+        "question": "Togthr는 어떤 앱인가요?",
+        "answer": "Togthr는 심리학자의 협력으로 설계된 커플 감정 성장 앱입니다. 매일 체크인, 타임캡슐, 공동 챌린지를 통해 일상 속에서 관계를 깊게 만들어갑니다."
       },
       {
         "question": "개인정보는 안전하게 보호되나요?",
@@ -232,7 +232,7 @@
       },
       {
         "question": "장거리 연애 중에도 사용할 수 있나요?",
-        "answer": "네! We2는 같은 방에 있든 세계 반대편에 있든 모든 커플을 위해 설계되었습니다. 타임캡슐과 매일 체크인은 거리를 초월한 연결을 유지하는 데 완벽합니다."
+        "answer": "네! Togthr는 같은 방에 있든 세계 반대편에 있든 모든 커플을 위해 설계되었습니다. 타임캡슐과 매일 체크인은 거리를 초월한 연결을 유지하는 데 완벽합니다."
       },
       {
         "question": "가상 펫은 어떻게 키우나요?",
@@ -294,7 +294,7 @@
     "cookie": "쿠키 설정",
     "help": "고객센터",
     "contact": "문의하기",
-    "copyright": "© {year} We2. 모든 권리 보유."
+    "copyright": "© {year} Togthr. 모든 권리 보유."
   },
   "notFound": {
     "title": "길을 잃었나요?",
@@ -447,7 +447,7 @@
       "sections": [
         {
           "heading": "1. Information We Collect",
-          "body": "We collect only the information needed to provide We2's couple-wellness services: account email, encrypted password, profile details (nickname, avatar, anniversary date), and the content you create in the app (check-in answers, journal entries, time capsules, photos). We never sell your data to third parties."
+          "body": "We collect only the information needed to provide Togthr's couple-wellness services: account email, encrypted password, profile details (nickname, avatar, anniversary date), and the content you create in the app (check-in answers, journal entries, time capsules, photos). We never sell your data to third parties."
         },
         {
           "heading": "2. How We Use Your Data",
@@ -455,7 +455,7 @@
         },
         {
           "heading": "3. Data Storage & Security",
-          "body": "All data is stored encrypted at rest (AES-256) and in transit (TLS 1.3) on Supabase and Cloudflare infrastructure. Time capsules remain end-to-end encrypted and cannot be read by We2 staff. We perform quarterly security audits and notify affected users of any breach within 72 hours."
+          "body": "All data is stored encrypted at rest (AES-256) and in transit (TLS 1.3) on Supabase and Cloudflare infrastructure. Time capsules remain end-to-end encrypted and cannot be read by Togthr staff. We perform quarterly security audits and notify affected users of any breach within 72 hours."
         },
         {
           "heading": "4. Your Rights",
@@ -469,15 +469,15 @@
     },
     "terms": {
       "title": "이용약관",
-      "subtitle": "We2를 사용하면 아래 약관에 동의하는 것으로 간주됩니다. 당신과 우리 모두를 보호하는 약관이니 주의 깊게 읽어 주세요.",
+      "subtitle": "Togthr를 사용하면 아래 약관에 동의하는 것으로 간주됩니다. 당신과 우리 모두를 보호하는 약관이니 주의 깊게 읽어 주세요.",
       "sections": [
         {
           "heading": "1. Eligibility",
-          "body": "You must be at least 16 years old (18 in some jurisdictions) to create a We2 account. By signing up you confirm that you meet this requirement and that all information you provide is accurate."
+          "body": "You must be at least 16 years old (18 in some jurisdictions) to create a Togthr account. By signing up you confirm that you meet this requirement and that all information you provide is accurate."
         },
         {
           "heading": "2. Account & Pairing",
-          "body": "We2 works as a couple: you create a private pair by inviting your partner via email. Each pair shares a private space. You are responsible for keeping your login credentials secure. Sharing your account with non-parties is not permitted."
+          "body": "Togthr works as a couple: you create a private pair by inviting your partner via email. Each pair shares a private space. You are responsible for keeping your login credentials secure. Sharing your account with non-parties is not permitted."
         },
         {
           "heading": "3. Subscriptions & Payments",
@@ -489,11 +489,11 @@
         },
         {
           "heading": "5. Acceptable Use",
-          "body": "You agree not to: upload illegal, hateful, or sexually explicit content; harass or threaten other users; attempt to reverse-engineer the app; use We2 for commercial spam; or impersonate any person or entity. Violations may result in account suspension."
+          "body": "You agree not to: upload illegal, hateful, or sexually explicit content; harass or threaten other users; attempt to reverse-engineer the app; use Togthr for commercial spam; or impersonate any person or entity. Violations may result in account suspension."
         },
         {
           "heading": "6. Limitation of Liability",
-          "body": "We2 is provided 'as is' without warranties. To the maximum extent permitted by law, our liability is limited to the amount you paid us in the past 12 months. We are not liable for indirect, incidental, or consequential damages."
+          "body": "Togthr is provided 'as is' without warranties. To the maximum extent permitted by law, our liability is limited to the amount you paid us in the past 12 months. We are not liable for indirect, incidental, or consequential damages."
         },
         {
           "heading": "7. Changes",
@@ -503,7 +503,7 @@
     },
     "cookies": {
       "title": "쿠키 정책",
-      "subtitle": "We2가 매끄럽게 돌아가도록 최소한의 쿠키를 사용합니다. 어떤 쿠키를 왜 쓰는지 정확히 알려드릴게요.",
+      "subtitle": "Togthr가 매끄럽게 돌아가도록 최소한의 쿠키를 사용합니다. 어떤 쿠키를 왜 쓰는지 정확히 알려드릴게요.",
       "sections": [
         {
           "heading": "1. Essential Cookies",
@@ -537,7 +537,7 @@
         },
         {
           "heading": "Privacy & Security",
-          "body": "Your private content (time capsules, journal entries, photos) is end-to-end encrypted. We2 staff cannot read it. Enable two-factor authentication from Settings > Security for an extra layer of protection. To delete your account permanently, go to Settings > Privacy > Delete Account."
+          "body": "Your private content (time capsules, journal entries, photos) is end-to-end encrypted. Togthr staff cannot read it. Enable two-factor authentication from Settings > Security for an extra layer of protection. To delete your account permanently, go to Settings > Privacy > Delete Account."
         },
         {
           "heading": "Report a Bug",
@@ -545,7 +545,7 @@
         },
         {
           "heading": "International Support",
-          "body": "We2 is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
+          "body": "Togthr is available in 8 languages: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, and Deutsch. Support email replies are in English by default — let us know if you'd prefer another language and we will do our best."
         }
       ]
     },

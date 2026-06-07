@@ -1,46 +1,46 @@
 {
   "zh-cn": {
-    "total": 222,
+    "total": 465,
     "untranslated": 0,
     "coverage": 1,
     "score": "HIGH"
   },
   "zh-tw": {
-    "total": 222,
+    "total": 465,
     "untranslated": 0,
     "coverage": 1,
     "score": "HIGH"
   },
   "ja": {
-    "total": 222,
+    "total": 465,
     "untranslated": 0,
     "coverage": 1,
     "score": "HIGH"
   },
   "ko": {
-    "total": 222,
+    "total": 465,
     "untranslated": 0,
     "coverage": 1,
     "score": "HIGH"
   },
   "de": {
-    "total": 222,
+    "total": 465,
     "untranslated": 0,
     "coverage": 1,
     "score": "HIGH"
   },
   "es": {
-    "total": 222,
+    "total": 465,
     "untranslated": 0,
     "coverage": 1,
     "score": "HIGH"
   },
   "fr": {
-    "total": 222,
+    "total": 465,
     "untranslated": 0,
     "coverage": 1,
     "score": "HIGH"
   },
-  "_savedAt": "2026-06-03T14:00:34.219Z",
-  "_enHash": "9bbdab4c1ec3"
+  "_savedAt": "2026-06-07T02:31:53.259Z",
+  "_enHash": "564349d46f1a"
 }
